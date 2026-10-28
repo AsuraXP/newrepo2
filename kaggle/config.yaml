@@ -46,7 +46,7 @@ timing:
 # authoring-stage estimator ONLY (workspace QC). Calibrated after every real
 # Kaggle run - see calibration.json diff in the iteration loop.
 estimate:
-  sec_per_word: 0.33            # Andrew @ +10% ~= 180 wpm
+  sec_per_word: 0.246           # measured from a real Kaggle run (244s / 835 words)
   pauses:
     ".": 0.30
     "!": 0.30

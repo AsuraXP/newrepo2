@@ -294,7 +294,7 @@ async def _synth_async(text: str, tts_cfg: dict, mp3_path: Path,
         pitch=tts_cfg.get("pitch", "+0Hz"),
     )
 
-    words: list[dict] = []
+    chunks: list[dict] = []
     try:
         with open(mp3_path, "wb") as fh:
             async for chunk in communicate.stream():
@@ -311,15 +311,68 @@ async def _synth_async(text: str, tts_cfg: dict, mp3_path: Path,
                     duration = float(chunk.get("duration", 0)) / TICKS
                     label = str(chunk.get("text", "")).strip()
                     if label:
-                        words.append({"text": label, "start": offset,
-                                      "end": offset + duration})
+                        chunks.append({"text": label, "start": offset,
+                                       "duration": duration, "kind": kind})
     except Exception as exc:  # noqa: BLE001 - surface the real reason, never mask it
         stats["error"] = f"{type(exc).__name__}: {exc}"
         if debug:
             import traceback
             traceback.print_exc()
 
-    return words, stats
+    stats["chunks"] = len(chunks)
+    return chunks, stats
+
+
+def _word_cost(token: str, pauses: dict) -> float:
+    """Rough share of a sentence a single word should occupy."""
+    letters = len(re.sub(r"[^A-Za-z0-9']", "", token))
+    speak = max(letters, 1) / 5.0
+    return speak + pause_for(token, pauses) / 0.33
+
+
+def expand_boundaries(chunks: list[dict], audio_dur: float,
+                      est_cfg: dict) -> tuple[list[dict], str, float]:
+    """Turn boundary chunks into per-word timings.
+
+    edge-tts is not consistent about granularity: some builds emit one event per
+    WORD, newer ones emit one per SENTENCE (or per phrase). Both are useful, but
+    they must not be treated the same way - a sentence event used as if it were a
+    word collapses every anchor inside that sentence onto a single instant.
+
+    For multi-word chunks only the chunk's own start/end are measured; the words
+    inside are distributed by length and punctuation. Sentence-level events are
+    therefore "sentence-anchored": real spans, inferred interior.
+    """
+    pauses = est_cfg.get("pauses") or {}
+    words: list[dict] = []
+    multi = 0
+
+    for i, ch in enumerate(chunks):
+        tokens = ch["text"].split()
+        if not tokens:
+            continue
+        # chunk end: its own duration if trustworthy, else the next chunk's start
+        end = ch["start"] + ch["duration"]
+        if ch["duration"] <= 0:
+            end = chunks[i + 1]["start"] if i + 1 < len(chunks) else audio_dur
+        span = max(end - ch["start"], 0.001)
+        if len(tokens) > 1:
+            multi += 1
+
+        costs = [_word_cost(t, pauses) for t in tokens]
+        total = sum(costs) or 1.0
+        t = ch["start"]
+        for token, cost in zip(tokens, costs):
+            share = span * cost / total
+            words.append({"text": token, "start": round(t, 4),
+                          "end": round(t + share, 4)})
+            t += share
+
+    words.sort(key=lambda w: w["start"])
+    granularity = "measured" if multi == 0 else (
+        "sentence-anchored" if multi > len(chunks) * 0.5 else "mixed")
+    avg_tokens = (sum(len(c["text"].split()) for c in chunks) / len(chunks)) if chunks else 0
+    return words, granularity, round(avg_tokens, 2)
 
 
 def _proportional_words(text: str, audio_dur: float, est_cfg: dict) -> list[dict]:
@@ -355,15 +408,30 @@ def synth(text: str, tts_cfg: dict, mp3_path: Path, est_cfg: dict,
     attempts = max(int(tts_cfg.get("retries", 3)), 1)
     last: dict = {}
     for attempt in range(1, attempts + 1):
-        words, stats = asyncio.run(
+        chunks, stats = asyncio.run(
             _synth_async(text, tts_cfg, mp3_path, debug=debug))
         stats["attempts"] = attempt
         last = stats
-        if words and stats["audio_bytes"]:
+        if chunks and stats["audio_bytes"]:
+            audio_dur = probe_duration(mp3_path) or chunks[-1]["start"]
+            words, granularity, avg_tokens = expand_boundaries(
+                chunks, audio_dur, est_cfg)
             print(f"        edge-tts {stats['version']} | "
                   f"audio {stats['audio_bytes'] / 1024:.0f} KiB | "
-                  f"{len(words)} word boundaries | attempt {attempt}")
-            return words, "measured"
+                  f"{len(chunks)} boundary events ({avg_tokens} words each) "
+                  f"-> {len(words)} word timings | attempt {attempt}")
+            if granularity != "measured":
+                print(f"        this build reports {granularity.upper()} events, not "
+                      f"per-word ones.")
+                print("        sentence spans are measured; word positions inside a "
+                      "sentence are inferred")
+                print("        from word length and punctuation. Anchor starts are "
+                      "accurate to the sentence.")
+            script_words = len(text.split())
+            if len(words) < script_words * 0.75:
+                print(f"        ! only {len(words)} words recovered from "
+                      f"{script_words} in the script - check the audio is complete")
+            return words, granularity
         kinds = ", ".join(f"{k}={v}" for k, v in stats["kinds"].items()) or "none"
         reason = stats["error"] or f"stream ended (chunk types seen: {kinds})"
         print(f"        attempt {attempt}/{attempts} incomplete: {reason}")
@@ -954,11 +1022,12 @@ def main(argv: list[str] | None = None) -> int:
     words, sync_source = synth(text, cfg["tts"], mp3, cfg["estimate"],
                                debug=bool(args.tts_debug))
     audio_dur = probe_duration(mp3) or words[-1]["end"]
-    if sync_source == "measured":
-        print(f"        {len(words)} word boundaries, {audio_dur:.2f}s audio -> {mp3}")
-    else:
-        print(f"        {len(words)} inferred word timings, {audio_dur:.2f}s audio -> {mp3}")
-        print("        sync_source=estimated")
+    label = {"measured": "measured word boundaries",
+             "sentence-anchored": "word timings from measured sentence spans",
+             "mixed": "word timings from mixed-granularity events"}.get(
+                 sync_source, "inferred word timings")
+    print(f"        {len(words)} {label}, {audio_dur:.2f}s audio -> {mp3}")
+    print(f"        sync_source={sync_source}")
 
     segments = assign_timings(frames, words, audio_dur, cfg)
     segments = validate_holds(segments, cfg)
