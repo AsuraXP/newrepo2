@@ -9,8 +9,8 @@
 #  * Nothing here sets frame durations. Durations are MEASURED.
 
 tts:
-  voice: "en-US-EmmaMultilingualNeural"   # engine default voice; user may change (re-calibrate after)
-  rate: "+0%"
+  voice: "en-US-AndrewNeural"             # user-selected 2026-10-28 (re-calibrate after any change)
+  rate: "+10%"
   volume: "+0%"
   pitch: "+0Hz"
   boundary: "WordBoundary"                # requested EXPLICITLY; never rely on the engine default

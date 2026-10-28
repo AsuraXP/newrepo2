@@ -6,10 +6,12 @@ were observed - every value below must come from an actual run.
 
 ## Episode
 
-- topic: PENDING (awaiting user selection)
-- narrator voice: PENDING (awaiting user selection; config default until then: en-US-EmmaMultilingualNeural / +0%)
+- topic: Apocalypse survival aboard a ship you just boarded — crowds onboard, a few
+  infections among passengers, but safer than land: no contact with shore, and far
+  more zombies on land than on the ship (second person, explicitly fictional).
+- narrator voice: en-US-AndrewNeural @ +10% (user-selected 2026-10-28; calibrate with this)
 - working branch: arena/99202f8c-newrepo2
-- status: Phase 0 tooling prepared; awaiting topic/voice selection, then Kaggle preflight run
+- status: Topic + voice recorded; Phase 0 preflight awaiting user's Kaggle run
 
 ## Calibration
 
@@ -17,7 +19,7 @@ Filled ONLY from an actual Kaggle preflight run of narration/preflight.md.
 Until then every field reads PENDING - nothing here is measured yet.
 
 - edge-tts: PENDING
-- voice and rate: PENDING (current config default: en-US-EmmaMultilingualNeural / +0%)
+- voice and rate: PENDING measurement (config set to user choice: en-US-AndrewNeural / +10%)
 - requested boundary type: PENDING (config requests WordBoundary explicitly)
 - observed boundary type: PENDING
 - granularity and coverage: PENDING
