@@ -5,8 +5,8 @@
   "genre": "fictional zombie survival",
   "narration_style": "first person, measured, unsentimental",
   "runtime_target_sec": 300,
-  "script_words": 955,
-  "projected_runtime_sec_3_1wps": 308,
+  "script_words": 908,
+  "projected_runtime_sec_3_1wps": 293,
   "voice": {
     "engine": "edge-tts",
     "name": "en-US-ChristopherNeural",
@@ -14,21 +14,6 @@
     "pitch": "+0Hz",
     "takes": 1,
     "note": "one continuous take, word-level timestamps are the cut points"
-  },
-  "visual": {
-    "style": "flat 2D hand-drawn stick-figure cartoon, 5px uniform black ink, flat muted fills, no shading, full-bleed",
-    "aspect": "16:9",
-    "width": 1920,
-    "height": 1080,
-    "fps": 30,
-    "frame_pattern": "frames/beat{MM}m{NN}.png",
-    "frame_source": "realesrgan-off, native generation, pad-only in runner",
-    "anchors": [
-      "refs/anchor_survivor.png",
-      "refs/anchor_ash.png",
-      "refs/anchor_tower.png",
-      "refs/anchor_thirdfloor.png"
-    ]
   },
   "captions": {
     "burned": false,
@@ -54,11 +39,31 @@
     "radio counts consistent: 841 prev month, 794 tonight, 796 post-broadcast",
     "protagonist unnamed until the transmission"
   ],
-  "status": "script draft 2 awaiting go; 0 frames",
-  "frame_count": 89,
+  "status": "script draft 3 (procedural) awaiting go; 0 frames",
+  "frame_count": null,
   "created": "2026-10-28",
-  "narration_pov": "second person, present tense",
+  "narration_pov": "second person, present tense, male lead, held throughout",
   "protagonist": "male stick figure, unnamed until beat 84",
-  "slides": 12,
-  "accepted_frames": 0
+  "slides": null,
+  "accepted_frames": 0,
+  "spine": "archived \u2014 rebuild pending go (archive/visuals_v1_STALE.csv)",
+  "format_engine": "numbered problems, day markers, costed arithmetic, house-rule refrain, inventory ledger",
+  "thumbnail": {
+    "artifact": "own generation, 3 candidates on one labelled sheet",
+    "readable_at": "15% on phone"
+  },
+  "visual": {
+    "style": "flat 2D hand-drawn stick-figure cartoon, 5px uniform black ink, flat muted fills, no shading, full-bleed",
+    "aspect": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frame_pattern": "frames/beat{MM}m{NN}.png",
+    "anchors": [
+      "refs/anchor_survivor.png",
+      "refs/anchor_ash.png",
+      "refs/anchor_tower.png",
+      "refs/anchor_thirdfloor.png"
+    ]
+  }
 }

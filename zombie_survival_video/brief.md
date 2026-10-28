@@ -10,8 +10,8 @@ radio that reads the names of the living, one at a time, every night.
 |---|---|
 | Slug | `zombie_survival_video` |
 | Working title | THE LIST |
-| Runtime target | 300 s (5 min) |
-| POV | Second person, present tense, male lead |
+| Runtime target | 300 s (5 min) — draft 3 projects 293 s |
+| POV | **Second person, present tense, male lead, held throughout** |
 | Voice | Deep male, measured — edge-tts `en-US-ChristopherNeural`, rate `-10%` |
 | Pace basis | ~3.1 wps for runtime projection |
 | Style / look | **LOCKED** — flat 2D hand-drawn stick-figure cartoon (owner refs in `refs/`) |
@@ -30,8 +30,16 @@ documentary cadence with room between sentences. The runner preflights the voice
 against `edge-tts --list-voices` and dies if it does not resolve — no silent
 substitution.
 
+## Format engine (from the owner reference)
+1. Cold open on a blunt fact that turns. 2. "First problem, the X."
+3. Real arithmetic on real quantities. 4. A house-rule refrain, amended
+on the final line. 5. "Here is the thing nobody tells you about the dead."
+6. Inventory ledger before the ending. 7. End on a knock.
+
 ## Tone locks
-- Second person, present tense, entirely without exclamation.
+- Second person, present tense, held for the entire script. No POV switches.
+- Procedural voice, modelled on the owner's reference video: numbered problems,
+  day markers, costed arithmetic, flat statements, no lyrical simile.
 - Short declaratives. Facts, not adjectives. The horror is in the arithmetic.
 - No explanation of the outbreak's origin. Ever.
 - The dog is a partner, never a victim and never comic relief.

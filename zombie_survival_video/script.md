@@ -1,196 +1,100 @@
 # THE LIST — narration script
 
-Slug: `zombie_survival_video`
-Status: **draft 2 — second person, present tense, male lead.** Awaiting owner go.
-POV: second person ("you"), present tense, except one deliberate past-tense
-flashback (you found Ash in November) and the closing line's future.
-Voice target: deep male, measured (edge-tts `en-US-ChristopherNeural`, rate -10%)
-Written for: ~300 s
+**POV:** second person ("you"), present tense, held for the entire script
+**Lead:** male, unnamed throughout
+**Words:** 908
+**Projected runtime:** 293 s (4.9 min) at 3.1 wps
+**Target:** 300 s — within tolerance (7 s under)
+**Status:** draft 3 — procedural rewrite, matching the reference video's engine
 
-One line = one spoken beat. Line breaks are the visual-moment divisions for
-`visuals.csv`; they are **not** pauses and carry no timing authority. Actual cuts
-come from TTS word timestamps in the Kaggle runner.
+Framing: numbered problems, day markers, costed arithmetic, a house-rule refrain
+that gets amended on the last line, and a ledger before the ending. No lyrical
+similes. Facts, then the turn.
 
 ---
 
-Day four hundred and twelve. The city has stopped pretending.
+At eleven every night, the tower on the east point reads out the names of the living. It does not check whether you still are one.
 
-You wake first. You always wake first.
+Day four hundred and twelve. Third floor. One dog, one rifle with four rounds in it, and a radio that keeps better hours than you do.
 
-Not a growl. A question, low in his chest.
+Names, one at a time, slow. Then a number. Last month, eight hundred and forty-one. Tonight, seven hundred and ninety-four.
 
-You put your hand flat on his ribs until he stops asking.
+You listen for your own name. You have listened for four hundred and twelve nights. It has never come.
 
-You sleep on the third floor, because the third floor is quiet.
+Four hundred and twelve nights of not being counted. That is not loneliness. That is an audit.
 
-Stairs are a filter. Anything that still remembers how to climb gets tired by the second landing.
+First problem, the stairs.
 
-You have rules. You keep them in pencil on the wall.
+Twelve floors, one staircase, and the door at the bottom opens inward. Inward is good. Inward means a crowd pushes it shut. You learn that on day nine, when you stop being able to sleep through the sound of weight on the other side of it.
 
-When the pencil ran out, you scratched them with a nail.
+So you build the stairs into a job. The piano from the second floor landing, laid flat across the fourth. Two fridges across the sixth. Forty-one cans of paint at fourteen kilos each, stacked to the ceiling at the eighth. That is five hundred and seventy-four kilos of paint. It takes eleven days. It is the most useful thing you have ever done.
 
-You found Ash in a stairwell in November, thin as a broom, sitting on somebody's coat.
+House rule one. Nobody gets in.
 
-He didn't bark. He waited to see what you would do.
+You write the rules on the wall in pencil. When the pencil runs out, you use a nail. There are nine rules. Six of them are the same rule.
 
-That's how you knew he'd survive.
+Second problem, the water.
 
-Rule one. Never run in the open.
+On day eight the taps cough and stop. No power, no pumps, no water. The bathtub on the second floor holds two hundred litres. You fill it on day two, before you understood anything, which is the only reason you are still alive.
 
-Rule two. Never answer a sound that might be a person.
+Two hundred litres is a hundred and fifty days at one litre a day. It is twenty days at ten. So you learn to be a one-litre man. The dog gets a litre. You get a litre. You do not negotiate with the dog. You are not that far gone yet.
 
-Rule three. Count everything. Cans, candles, days.
+Rain is free. The roof is flat. One bucket, one tarp, thirty-one millimetres of rain in April, which is thirty-one litres, if the bucket is level.
 
-If the count stops making sense, you made a mistake a week ago.
+The bucket is not level. You fix the bucket.
 
-You're not the last one. You have evidence.
+House rule four. Nobody goes on the roof after dark.
 
-Every night at eleven, the tower on the east point transmits.
+Third problem, the noise.
 
-Not a voice talking. A voice reading.
+The tower reads from eleven to eleven forty. You have to hear it. To hear it, the radio has to be on, and the radio on is a six-watt speaker in a room with a window in it.
 
-Names, one at a time, slow. Then a number.
+So you do the arithmetic. Forty minutes of sound, once a night, at the back of the flat, behind two doors and a mattress. That is the price of knowing whether you still exist.
 
-Seven hundred and ninety-four.
+Most nights it costs nothing. On the twenty-eighth, it costs the hallway. Something comes up as far as the eighth floor and leans on the paint for nine hours. You listen to it lean. You do not get your name that night, because the radio was off.
 
-That's how many names are left tonight.
+House rule seven. You can miss the list. You cannot miss the door.
 
-Last month it was eight hundred and forty-one.
+Fourth problem, the living.
 
-Fewer names could mean fewer people.
+Day two hundred and ninety. A truck pulls into the street below. Working engine, which means working fuel, which means somebody out there has a supply and the patience to defend it. Three men and a woman spend four hours measuring your building from the road. They are not counting exits. They are counting windows.
 
-Or it could mean somebody is finding bodies and correcting the list.
+You do the arithmetic before they finish. If they come in, the stairs come down. If the stairs come down, everything below the eighth floor gets to meet everything above it.
 
-Either way the tower is alive. Either way, east is where the living are.
+So you do not fight them. You leave a note on the windscreen. Pencil, block capitals. Building is sealed. There is food on the roof. Come up alone.
 
-So you decide something stupid.
+Nobody comes up alone.
 
-You decide to go.
+Then the night the number moves.
 
-Four hundred and twelve days is a long time to be careful.
+Seven hundred and ninety-five.
 
-Careful is just dying slowly with extra steps.
+You play it back twice to be certain. Eight forty-one, seven ninety-four, seven ninety-four, seven ninety-four, and tonight, seven ninety-five.
 
-The pharmacy on Calder Street is four blocks of open ground.
+Somebody at that tower heard a name and wrote it down.
 
-Open ground is where people die looking at their feet, so you keep your eyes up.
+You are on the list. Four hundred and thirteen days late, and you are on it.
 
-Ash keeps his nose down. Between you, you cover the whole world.
+And that is a problem, because a broadcast is not a phone call. It goes out in every direction, at once, to anything with a radio and no reason not to walk toward the sound of one.
 
-Third block. A woman in a green coat stands in the middle of the road, facing the water.
+Here is the thing nobody tells you about the dead. They are not hunting you. They are still going where they were going. Every one of them is on the way to work, or the shops, or home. You have four hundred and twelve days of evidence and not one of them has ever knocked.
 
-She has been facing the water for a long time.
+Day four hundred and thirteen. Inventory.
 
-Her coat is clean. That's the part that frightens you.
+People, one. Dog, one. Rifle, four rounds. Cans, two hundred and six. Names, one.
 
-Somebody dressed her.
+Then, tonight, at eleven fifty, three knocks on the stair door.
 
-You don't raise the rifle. The rifle makes a sound, and sound is a debt.
+A pause.
 
-You take the alley instead.
+Three more.
 
-The alley is full.
+You stand at a door you spent eleven days sealing, with the nail in one hand and the pencil in the other, and you do the only sum that has ever mattered.
 
-Not a horde. A crowd.
+If you open it, everything below the eighth floor comes up.
 
-Twenty of them standing in the wet between two buildings, swaying like a field.
+If you do not, you go back to being a number nobody wrote down.
 
-All of them waiting for something they've forgotten.
+House rule one, amended.
 
-Ash goes rigid under your hand.
-
-You are sixteen steps from the mouth of that alley, and every step is a life you're spending.
-
-Step one. Step four.
-
-A can rolls out from under a car.
-
-Twenty heads turn at once, one crowd inhaling the same idea.
-
-You run. Not smart, not quiet. Alive.
-
-The laundromat on the corner has a door that sticks.
-
-You get it open with your shoulder and your whole weight behind it.
-
-Inside, thirty dryers, a wall of detergent, and a radio behind the counter, still plugged in.
-
-You never reach the pharmacy.
-
-Iodine and rope, four blocks away, and you're running the other direction.
-
-You'll want the rope later. The body keeps its own accounts.
-
-You have one idea. It's a bad one. It's the only one.
-
-You set the dryers to forty minutes and switch on every machine in the row.
-
-Then you switch on the radio, loud enough to hurt.
-
-The drums start. The whole street turns toward the glass.
-
-You and Ash go out the back, into the rain, and you don't stop.
-
-The east point is a mile of wet road and one long bridge.
-
-Halfway across, one comes up out of the dark beside the rail.
-
-Not fast. Just close. Close enough to hear the wet in its throat.
-
-You put the pry bar against its shoulder and let its own weight do the rest.
-
-It goes over quiet, like a coat sliding off a chair.
-
-You don't stop to feel anything about it. There'll be a year for that later, maybe.
-
-On the bridge you can hear them behind you, a sound like a tide that learned to walk.
-
-But the tide is going the wrong way now. Toward the music. Toward the drums.
-
-You don't look back. Looking back is a hobby for people with time.
-
-The tower stands in a gravel lot above the marina, red light turning, turning.
-
-There are boats down there, six of them, tied and waiting.
-
-Nobody has taken a boat. That's either very good news or very bad.
-
-Eleven o'clock comes while you're still climbing the stairs.
-
-The voice starts above you, patient as a clock.
-
-Angela Ruiz. Michael Osei. Priya Raman.
-
-You reach the transmitter room at eleven forty.
-
-The door is open. The machine is reading to an empty room.
-
-There's a microphone on the desk. Beside it, a cassette case, and a pencil.
-
-The pencil is sharpened. Somebody sharpened it.
-
-There's a logbook open on the desk. A column of days. A column of numbers.
-
-The last entry is this morning. In pencil.
-
-The tape ends at the end of the list, and the room goes quiet, and a little red light stays on, waiting.
-
-So you sit down.
-
-You press the button, and you say your name like it's an address.
-
-Then you say his. Ash. Just Ash. It's the only name he's ever needed.
-
-Seven hundred and ninety-six.
-
-It's the wrong direction. You know it's the wrong direction.
-
-But it's a number, and you're in it, and tonight the count makes sense.
-
-Whoever you are, listening. The door is unlocked.
-
-The pencil's sharp. Come east.
-
-If you're reading the list, you're already on it.
-
-That's all a list is. A door somebody left open.
+Nobody gets in. Unless they knock.

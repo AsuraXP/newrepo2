@@ -1,35 +1,40 @@
 TITLE
-The List — A Zombie Survival Story (Narrated)
+The List — 413 Days Locked on the Third Floor (Zombie Survival Story)
 
 THUMBNAIL TEXT
-794 NAMES / and going down
+794 NAMES / your name isn't one
 
 DESCRIPTION
-Every night at eleven, the tower on the east point reads out the names of the
-living, one at a time, and then a number. Tonight the number is 794. Last month
-it was 841.
+At eleven every night, the tower on the east point reads out the names of the
+living. It does not check whether you still are one.
 
-Day 412. Four blocks of open ground. One dog, one rope she never gets to buy,
-and a radio that will not stop counting.
+Day 412. Third floor. One dog, one rifle with four rounds, and a radio that keeps
+better hours than you do. Eight hundred and forty-one names last month. Seven
+hundred and ninety-four tonight. You have listened for four hundred and twelve
+nights and it has never said yours.
 
-A short fictional survival story, narrated.
+Four problems stand between you and being counted: the stairs, the water, the
+noise, and the living. Here is the arithmetic on all four.
+
+A fictional survival story, narrated. Animated.
 
 Chapters
-00:00 Day four hundred and twelve
-00:38 The rules
-01:22 The number
-02:05 Calder Street
-02:58 Drums
-03:44 The bridge
-04:15 Eleven o'clock
-04:52 Two names
+00:00 794 names
+00:35 First problem: the stairs
+01:35 Second problem: the water
+02:20 Third problem: the noise
+02:55 Fourth problem: the living
+04:00 The number moves
+04:40 Inventory
+04:55 Three knocks
 
 Written, illustrated and narrated as an original animation. Fictional. Any
 resemblance to real people, places, or events is coincidental.
 
 TAGS
 zombie survival story, animated short story, narration, audio story, post
-apocalyptic, short film, dystopian story, survival horror animation, storytelling
+apocalyptic, survival analysis, short film, dystopian story, storytelling,
+second person narration
 
 CATEGORY
 Film & Animation
@@ -38,5 +43,6 @@ MADE FOR KIDS
 No
 
 NOTE
-Chapter timestamps are placeholders from the word-count projection; re-cut them
-against the final render before publishing.
+Chapter timestamps are placeholders from the 908-word projection at 3.1 wps.
+Re-cut them against the final render before publishing — the TTS take will move
+them by 10–20 seconds either way.
