@@ -47,7 +47,7 @@ Research the selected topic and retain source URLs. Put speakable prose only bet
 
 ## Phase 2 — anchors
 
-For word-boundary timing, anchors can land on any word. For sentence-level timing, every anchor must be the first words of a distinct sentence; there can be no two anchors in one sentence. In all cases use 3–8 verbatim words, one anchor per sentence, ordered in narration, with explicit `occurrence` for repeated phrases. Aim for 5–10 seconds per frame; holds under 3 seconds or over 12 seconds fail. A frame entry has this shape:
+For word-boundary timing, anchors can land on any word. For sentence-level timing, every anchor must be the first words of a distinct sentence; there can be no two anchors in one sentence. In all cases use 3–8 verbatim words, one anchor per sentence, ordered in narration, with explicit `occurrence` for repeated phrases. The 5–10 second cadence is a soft authoring sanity check, not a duration target: do not trim, pad, or rewrite narration to make holds uniform. The renderer never takes hand-set durations; measured timestamps determine each hold. Hard hold bounds are 3–12 seconds. A frame entry has this shape:
 
 ```json
 {
