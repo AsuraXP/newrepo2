@@ -24,8 +24,10 @@ python tools/selftest.py                                # prove the pipeline off
 Render side (Kaggle notebook, internet ON, one cell):
 
 ```bash
-!git clone https://github.com/AsuraXP/newrepo2.git && pip install -q edge-tts pyyaml && python newrepo2/kaggle/run.py --repo newrepo2 --out final.mp4
+!git clone -b arena/9c89fb1f-newrepo2 https://github.com/AsuraXP/newrepo2.git && pip install -q edge-tts pyyaml && python newrepo2/kaggle/run.py --repo newrepo2 --out final.mp4
 ```
+
+(The `-b` pins the working branch; drop it once this lands on `main`.)
 
 Dry run first — it stops after PASS 1 so you can read `timings.csv`:
 
