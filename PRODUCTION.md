@@ -29,6 +29,9 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-10-28: Workflow spec streamlined to v2 (docs/WORKFLOW_SPEC.md): tooling
+  marked as built (never rebuild), activity-narration banned, remaining steps
+  only.
 - 2026-10-28: Workflow tooling created (vidsync library, kaggle/preflight.py,
   kaggle/run.py, tools/prep_frames.py, tools/selftest.py, config, preflight
   passage). Offline validation and selftest run in the workspace; no TTS run
