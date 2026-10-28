@@ -21,14 +21,19 @@ video:
   preset: medium                # Kaggle-safe; use "fast" if a render gets slow
   pix_fmt: yuv420p              # required for broad player compatibility
   audio_bitrate: "192k"
-  # subtle ken-burns so locked-off frames still breathe; costs render time
-  ken_burns: true
-  ken_burns_zoom: 1.10          # max zoom over a frame's life
-  ken_burns_rate: 0.0006        # zoom delta per output frame
+  # OFF by default: zoompan rounds its crop to whole pixels, so a slow zoom on a
+  # still image judders instead of drifting (measured ~13/255 change per frame).
+  # Flat 2D art should be locked off anyway. Only enable for photographic frames,
+  # and expect to have to re-check for judder.
+  ken_burns: false
+  ken_burns_zoom: 1.10          # max zoom over a frame's life (only if enabled)
+  ken_burns_rate: 0.0006        # zoom delta per output frame (only if enabled)
 
 transitions:
   # per-frame `transition` in frames.json wins; this is the fallback
-  default: "fade:0.5"
+  # 1.0s dissolve: flat 2D art has no motion cues, so short fades read as hard
+  # cuts. Anything under ~0.8s looks like a snap, not a transition.
+  default: "dissolve:1.0"
   # a "cut" is rendered as a very short dissolve (cut_frames / fps) because the
   # whole timeline is one xfade chain; 2 frames reads as a cut and keeps word
   # sync exact. Raise to 4-5 if you want a visible snap.

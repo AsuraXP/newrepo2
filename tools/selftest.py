@@ -111,6 +111,14 @@ def build_project(root: Path) -> dict:
     (root / "stub").mkdir(parents=True)
     shutil.copy(RUN_PY, root / "kaggle" / "run.py")
     shutil.copy(CONFIG, root / "kaggle" / "config.yaml")
+    # the fixture is a 6-frame compression of a real episode, so the production
+    # pacing floor (3s) would merge half of it. Test the mechanics, not the policy.
+    cfg_path = root / "kaggle" / "config.yaml"
+    import yaml as _yaml
+    cfg = _yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
+    cfg["timing"]["min_hold_s"] = 1.2
+    cfg["transitions"]["default"] = "dissolve:1.0"
+    cfg_path.write_text(_yaml.safe_dump(cfg, sort_keys=False), encoding="utf-8")
     shutil.copy(REPO / "tools" / "prep_frames.py", root / "tools" / "prep_frames.py")
     (root / "narration" / "narration.md").write_text(SCRIPT, encoding="utf-8")
     frames = [{"id": slug, "anchor_phrase": phrase, "occurrence": occ,
@@ -229,6 +237,50 @@ def main() -> int:
         if best != r["frame_id"]:
             mismatches.append(f"{r['frame_id']} @{t:.2f}s showed {best}")
     assert not mismatches, "sync failures: " + "; ".join(mismatches)
+
+    # static shots must be static: no zoompan judder
+    band = subprocess.run(
+        [ffmpeg, "-v", "error", "-ss", "1.5", "-i", str(video), "-t", "2",
+         "-vf", "scale=320:180", "-vsync", "0", "-f", "image2",
+         str(root / "jit_%03d.png")], capture_output=True, text=True)
+    jit = sorted((root).glob("jit_*.png"))
+    assert len(jit) > 20, "could not sample frames for the jitter check"
+    import numpy as _np
+    arrs = [_np.asarray(Image.open(pf).convert("L"), dtype=_np.float32) for pf in jit]
+    diffs = [float(_np.abs(arrs[i + 1] - arrs[i]).mean()) for i in range(len(arrs) - 1)]
+    mean_diff = sum(diffs) / len(diffs)
+    assert mean_diff < 0.15, (
+        f"frames are not static (mean frame-to-frame diff {mean_diff:.3f}) - "
+        f"ken_burns/zoompan is on and will judder")
+
+    # transitions must actually blend, not snap
+    first = rows[0]
+    second = rows[1]
+    t_end = float(second["start_s"])
+    refs2 = {
+        first["frame_id"]: _np.asarray(Image.open(
+            root / "assets" / "frames" / first["image"]).convert("RGB")
+            .resize((160, 90)), dtype=_np.float32),
+        second["frame_id"]: _np.asarray(Image.open(
+            root / "assets" / "frames" / second["image"]).convert("RGB")
+            .resize((160, 90)), dtype=_np.float32),
+    }
+    dur = float(second.get("transition_dur_s") or 0.0)
+    sampled = blended = 0
+    if dur > 0:
+        for k in range(10):
+            t = t_end - dur + dur * (0.15 + 0.7 * k / 9)
+            if t <= 0:
+                continue
+            sampled += 1
+            shot = grab(t)
+            d = {k2: float(_np.abs(shot - v).mean()) for k2, v in refs2.items()}
+            if min(d.values()) > 6:
+                blended += 1
+        assert sampled and blended >= max(4, int(sampled * 0.6)), (
+            f"transition 1->2 is {dur:.2f}s but only {blended}/{sampled} sampled "
+            f"frames were blended - it is snapping, not dissolving "
+            f"(raise transitions.default)")
 
     print("[5/5] error paths")
     good = (root / "narration" / "frames.json").read_text(encoding="utf-8")

@@ -88,6 +88,8 @@ PROMPT.md                  authoring brief for a fresh agent
 | last frame | +`0.8 s` tail | holds after the last word so the audio can breathe |
 | transitions | complete on the anchor word | xfade offset = anchor start − transition duration |
 | spare frame | +1 frame per clip | xfade always has material at the boundary |
+| transitions | `dissolve:1.0` default | flat art has no motion cues: under ~0.8s reads as a hard cut |
+| camera | locked off | `ken_burns` is off — zoompan rounds to whole pixels and judders |
 
 Frame *n* ends exactly where frame *n+1*'s anchor word begins, so every cut, wipe
 or dissolve lands on a spoken word.

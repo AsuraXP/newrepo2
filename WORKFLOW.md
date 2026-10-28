@@ -77,8 +77,15 @@ python kaggle/run.py --estimate --repo .
 ```
 
 First green light: `python tools/selftest.py` exercises the whole pipeline
-(fake TTS, synthetic frames, real ffmpeg) and asserts every frame lands on its
-anchor timestamp. Run it after touching `run.py`.
+(fake TTS, synthetic frames, real ffmpeg) and asserts three things:
+
+1. every frame lands on its anchor timestamp
+2. **the picture is static** — mean frame-to-frame change under 0.15, which fails
+   if `ken_burns` is ever switched back on (zoompan judders on still frames)
+3. **transitions actually blend** — 60%+ of sampled frames inside a transition
+   window must match neither source image; otherwise the cut is snapping
+
+Run it after touching `run.py` or the transition/camera settings.
 
 Reads the same script, same anchors, and reports estimated holds +
 `output/estimates.csv`. Fix here, not on Kaggle:

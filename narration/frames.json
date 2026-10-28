@@ -5,7 +5,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic lying flat on a woven reed mat on the floor, eyes wide open, a hard shaft of daylight falling across its face from a square smoke hole in a ceiling of reed lattice, dust in the beam, a folded blanket beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.8"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "02_reed_ceiling",
@@ -13,7 +13,7 @@
     "occurrence": 1,
     "image_prompt": "view straight up at a ceiling of woven reed lattice and two crooked wooden beams, a bright square smoke hole in the middle, small straw ends hanging down, soot marks around the hole, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.7"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "03_packed_earth",
@@ -21,7 +21,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic sitting up on a swept earth floor beside a crumpled blanket, one hand on the ground, a clay cup and a broom of bound twigs beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.7"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "04_no_traffic",
@@ -29,7 +29,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing in a low doorway looking out into a narrow alley, a donkey and a goat being led away, two figures walking off with their backs turned, a scrawny dog in the middle of the path, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "05_own_hands",
@@ -37,7 +37,7 @@
     "occurrence": 1,
     "image_prompt": "stick figure hero in a ragged brown fur tunic facing the viewer, both arms raised with two simple mitten-shaped line hands held up beside its face, three fingers per hand, staring at its own hands with raised eyebrows and a flat surprised mouth, the head exactly a plain white circle with two small black dot eyes and a small straight mouth, unchanged and facing the viewer, plain cream background wall behind, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "06_working_town",
@@ -45,7 +45,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing on a flat roof with both hands on the parapet, looking out over a skyline of flat mud-brick roofs, three smoking chimneys, laundry lines, a cat on a wall, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "07_no_year",
@@ -53,7 +53,7 @@
     "occurrence": 1,
     "image_prompt": "stick figure hero in a ragged brown fur tunic standing small in the lower middle of a narrow street, facing the viewer, head upright and facing forward with two small dot eyes and a small straight mouth, arms hanging at its sides, two tall plain walls rising on either side and converging toward the top of the frame, a plain cream sky with a single small round white sun near the top, completely blank ground with no shadow, no clock and no sundial, nothing to read the time by, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "wipeup:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "08_smell",
@@ -61,7 +61,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic crouched in a courtyard beside a small smoking fire of dung cakes, pinching its nose with one hand and waving smoke away with the other, a round clay bread oven glowing behind, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "09_mouth_dry",
@@ -69,7 +69,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at the edge of a dry cracked channel holding an empty clay jar upside down, a thin muddy puddle far below, tongue sticking out, hard blank sun overhead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "10_canal_walk",
@@ -77,7 +77,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic walking in profile along a dusty path with a big clay jar balanced against its hip, one arm around it, low walls and a line of reeds ahead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "wipeleft:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "11_downstream",
@@ -85,7 +85,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic crouched at the bank of a brown canal holding a jar, a goat drinking upstream and a figure beating laundry on the stones, the water drawn as flat murky brown with a wavy line for stink, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "12_boiling_water",
@@ -93,7 +93,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a wide clay pot over a small orange fire with both hands, three curly steam lines rising, sparks as small dots, a second empty jar at its feet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "13_breakfast",
@@ -101,7 +101,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic sitting cross-legged holding a bowl of thick porridge with a flat round bread leaning against the rim, one eyebrow raised at it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "14_grit_flour",
@@ -109,7 +109,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic kneeling and grinding grain between a flat stone and a rubbing stone, a small heap of pale flour on a mat, a sweat drop on its forehead, arms drawn as straight lines, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "15_flat_teeth",
@@ -117,7 +117,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a torn flatbread up to its face with a grimace and a chipped tooth, small dark grit specks drawn as dots in the crumb, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "16_beer_safer",
@@ -125,7 +125,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing between two big jars, pointing at the taller one with a long reed straw in it, a wavy stink line over the smaller jar of brown water, choosing, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "17_nothing_keeps",
@@ -133,7 +133,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic in a storeroom of clay jars holding up a lump of spoiled food with one hand and pinching its nose with the other, a small fly as a dot, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "18_shorter",
@@ -141,7 +141,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing beside a much taller stick figure with its head craned back looking up, only reaching the taller one's chest, flat ground line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "19_parasites",
@@ -149,7 +149,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic scratching its forearm with a worried face, two small flies as dots circling, a shallow cut drawn as a short red-brown line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "20_work_begins",
@@ -157,7 +157,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic bending to pick up a wooden hoe and a coil of rope from beside a doorway, a long flat shadow stretching from the wall, sun low as a half circle, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "21_no_weekend",
@@ -165,7 +165,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic bent over a barley field of simple stalk shapes, a row of other bent stick figures behind, a shaduf pole by the canal, a blank high sun directly overhead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "wipeleft:0.4"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "22_no_coins",
@@ -173,7 +173,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding both hands cupped out to receive a scoop of barley from a wooden measure held by another stick figure's arm, grains as small dots falling, a clay storage jar beside them, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "23_silver_scale",
@@ -181,7 +181,7 @@
     "occurrence": 1,
     "image_prompt": "a small balance scale on a low table with a coiled silver ring on one pan and a heap of barley on the other, the same stick figure hero in a ragged brown fur tunic watching it with hands behind its back, a merchant's arm adjusting the beam, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "24_debt_children",
@@ -189,7 +189,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding the hand of a much smaller stick figure child, a wet clay tablet with rows of tiny wedge marks lying on the ground at their feet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "25_scribe",
@@ -197,7 +197,7 @@
     "occurrence": 1,
     "image_prompt": "a seated scribe stick figure pressing a cut reed stylus into a wet clay tablet on a low desk, rows of wedge marks appearing, the same stick figure hero in a ragged brown fur tunic leaning in over its shoulder to watch, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "26_witnesses",
@@ -205,7 +205,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic and two other stick figures standing in a circle with one hand each resting flat on the same upright boundary stone, all three heads tilted down at it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "27_family_police",
@@ -213,7 +213,7 @@
     "occurrence": 1,
     "image_prompt": "four angry stick figures with wooden staffs standing shoulder to shoulder in a doorway, eyebrows drawn as sharp angles, the same stick figure hero in a ragged brown fur tunic seen small in the foreground across the threshold, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fadeblack:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "28_day_ends",
@@ -221,7 +221,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at the end of an alley watching a large orange half-circle sun set between two flat roof lines, one long shadow running back toward the viewer, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.8"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "29_no_room",
@@ -229,7 +229,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic lying on a mat in a crowded dark room beside two sleeping stick figures under one blanket and a curled goat, all heads on one line, a single lamp dot above, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.7"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "30_true_dark",
@@ -237,7 +237,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a tiny oil lamp with one flame, only its face and hands lit, everything else solid black, wide eyes, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fadeblack:0.8"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "31_stranger",
@@ -245,7 +245,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at its own doorway looking at a travel-worn stranger stick figure with a stick and a bundle, a gap of empty ground between them, both heads on one line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "32_hospitality",
@@ -253,7 +253,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic receiving a steaming bowl with both hands from another stick figure's hands, steam as three curls, a fire drawn as a flat orange triangle below, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "33_status_cloth",
@@ -261,7 +261,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic in its ragged tunic standing beside a smug stick figure in a clean white robe with a gold trim line, the two of them side by side under one flat sky, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.5"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "34_skill_moves",
@@ -269,7 +269,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic at a small forge striking a copper blade on a stone anvil with a hammer, sparks as orange dots, a clay crucible and tongs beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "35_difficult_birth",
@@ -277,7 +277,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing anxiously outside a small dark house at night holding a bucket, warm light in the one window, another figure's silhouette in the doorway, navy sky with three cream stars, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "cut"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "36_quiet_gain",
@@ -285,7 +285,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic asleep on a mat with a small smile, seen from above with the reed ceiling framing the shot and a dense field of cream stars through the smoke hole, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.9"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "37_what_would_you_do",
@@ -293,7 +293,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing facing the viewer with both hands on its hips and one eyebrow raised, three small empty thought circles floating beside its head, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "dissolve:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "38_be_useful",
@@ -301,7 +301,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic seated at a low potter's wheel shaping a tall clay jar with wet hands, three finished jars standing in a row behind, muddy line on the floor, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.6"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "39_clean_sky",
@@ -309,7 +309,7 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing on a flat roof with its back to the viewer looking up at a huge navy sky with a pale band of stars across it and no other lights anywhere, a low parapet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:0.9"
+    "transition": "dissolve:1.0"
   },
   {
     "id": "40_weather_known",
@@ -317,6 +317,6 @@
     "occurrence": 1,
     "image_prompt": "the same stick figure hero in a ragged brown fur tunic on a rooftop at dawn with one hand shading its eyes, looking at a flat rose-to-cream horizon over simple field lines, the sun as a small half circle, completely still air, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
     "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
-    "transition": "fade:1.0"
+    "transition": "dissolve:1.0"
   }
 ]
