@@ -34,6 +34,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 TICKS = 10_000_000  # edge-tts WordBoundary offset/duration unit = 100 ns
@@ -266,11 +267,24 @@ def estimate_seconds(text: str, est_cfg: dict) -> float:
 # TTS - one request, one continuous track
 # ---------------------------------------------------------------------------
 
-async def _synth_async(text: str, tts_cfg: dict, mp3_path: Path) -> list[dict]:
+def _chunk_kind(raw: object) -> str:
+    """edge-tts has renamed chunk types across versions - match generously."""
+    if not isinstance(raw, dict):
+        return ""
+    return str(raw.get("type", "")).strip().lower()
+
+
+async def _synth_async(text: str, tts_cfg: dict, mp3_path: Path,
+                       debug: bool = False) -> tuple[list[dict], dict]:
+    """One request, one continuous track. Returns (word boundaries, diagnostics)."""
     try:
         import edge_tts
     except ImportError:
         sys.exit("edge-tts is required for PASS 1: pip install -q edge-tts")
+
+    version = getattr(edge_tts, "__version__", "unknown")
+    stats = {"version": version, "kinds": {}, "audio_bytes": 0,
+             "error": None, "attempts": 0}
 
     communicate = edge_tts.Communicate(
         text,
@@ -281,29 +295,112 @@ async def _synth_async(text: str, tts_cfg: dict, mp3_path: Path) -> list[dict]:
     )
 
     words: list[dict] = []
-    audio_bytes = 0
-    with open(mp3_path, "wb") as fh:
-        async for chunk in communicate.stream():
-            if chunk["type"] == "audio":
-                fh.write(chunk["data"])
-                audio_bytes += len(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                offset = chunk["offset"] / TICKS
-                words.append({
-                    "text": chunk["text"],
-                    "start": offset,
-                    "end": offset + chunk["duration"] / TICKS,
-                })
+    try:
+        with open(mp3_path, "wb") as fh:
+            async for chunk in communicate.stream():
+                kind = _chunk_kind(chunk)
+                stats["kinds"][kind or "?"] = stats["kinds"].get(kind or "?", 0) + 1
+                if debug:
+                    print(f"        chunk: {kind} {list(chunk.keys())[:5]}")
+                if kind == "audio":
+                    data = chunk.get("data") or b""
+                    fh.write(data)
+                    stats["audio_bytes"] += len(data)
+                elif "boundary" in kind:
+                    offset = float(chunk.get("offset", 0)) / TICKS
+                    duration = float(chunk.get("duration", 0)) / TICKS
+                    label = str(chunk.get("text", "")).strip()
+                    if label:
+                        words.append({"text": label, "start": offset,
+                                      "end": offset + duration})
+    except Exception as exc:  # noqa: BLE001 - surface the real reason, never mask it
+        stats["error"] = f"{type(exc).__name__}: {exc}"
+        if debug:
+            import traceback
+            traceback.print_exc()
 
-    if not words:
-        sys.exit("edge-tts returned no WordBoundary events - check internet access")
-    if audio_bytes == 0:
-        sys.exit("edge-tts returned no audio - check internet access")
+    return words, stats
+
+
+def _proportional_words(text: str, audio_dur: float, est_cfg: dict) -> list[dict]:
+    """Last-resort timing when the boundary stream is unavailable.
+
+    The narration audio is real and correctly measured; only the per-word
+    timestamps are inferred, by weighting the estimator with word length and
+    scaling the whole thing to the measured audio duration.
+    """
+    raw = text.split()
+    if not raw or audio_dur <= 0:
+        return []
+    pauses = est_cfg.get("pauses") or {}
+    spw = float(est_cfg["sec_per_word"])
+    weights = []
+    for w in raw:
+        weight = max(len(re.sub(r"[^A-Za-z0-9']", "", w)), 1) / 5.0
+        weights.append(weight * spw + pause_for(w, pauses))
+    total = sum(weights) or 1.0
+    scale = audio_dur / total
+    words: list[dict] = []
+    t = 0.0
+    for w, weight in zip(raw, weights):
+        span = weight * scale
+        words.append({"text": w, "start": t, "end": t + span})
+        t += span
     return words
 
 
-def synth(text: str, tts_cfg: dict, mp3_path: Path) -> list[dict]:
-    return asyncio.run(_synth_async(text, tts_cfg, mp3_path))
+def synth(text: str, tts_cfg: dict, mp3_path: Path, est_cfg: dict,
+          debug: bool = False) -> tuple[list[dict], str]:
+    """Run PASS 1, retrying a bare connection failure. Returns (words, sync_source)."""
+    attempts = max(int(tts_cfg.get("retries", 3)), 1)
+    last: dict = {}
+    for attempt in range(1, attempts + 1):
+        words, stats = asyncio.run(
+            _synth_async(text, tts_cfg, mp3_path, debug=debug))
+        stats["attempts"] = attempt
+        last = stats
+        if words and stats["audio_bytes"]:
+            print(f"        edge-tts {stats['version']} | "
+                  f"audio {stats['audio_bytes'] / 1024:.0f} KiB | "
+                  f"{len(words)} word boundaries | attempt {attempt}")
+            return words, "measured"
+        kinds = ", ".join(f"{k}={v}" for k, v in stats["kinds"].items()) or "none"
+        reason = stats["error"] or f"stream ended (chunk types seen: {kinds})"
+        print(f"        attempt {attempt}/{attempts} incomplete: {reason}")
+        if stats["audio_bytes"]:
+            print(f"        audio WAS received ({stats['audio_bytes'] / 1024:.0f} KiB) "
+                  f"but no word boundaries came with it")
+            break
+        if attempt < attempts:
+            print("        retrying in 3s ...")
+            time.sleep(3)
+
+    audio_dur = probe_duration(mp3_path)
+    if last.get("audio_bytes") and audio_dur:
+        if not tts_cfg.get("allow_estimated_fallback", True):
+            sys.exit(
+                "edge-tts returned audio but no word boundaries.\n"
+                "  Fix: pip install -q --upgrade --force-reinstall edge-tts\n"
+                "  Then re-run. Set tts.allow_estimated_fallback: false to keep\n"
+                "  this a hard failure.")
+        print("\n  ! FALLBACK: audio is real and measured, but the boundary stream\n"
+              "    is unavailable on this edge-tts build. Frame timings will be\n"
+              "    inferred proportionally across the measured audio length.\n"
+              "    The video will be watchable but NOT word-accurate.\n"
+              "    Nothing in the repo changes - fix edge-tts and re-run to get\n"
+              "    exact sync.")
+        words = _proportional_words(text, audio_dur, est_cfg)
+        return words, "estimated"
+
+    hint = ""
+    if last.get("error") and ("403" in str(last["error"]) or "401" in str(last["error"])):
+        hint = ("\n  This is an Azure auth rejection. Upgrade edge-tts:\n"
+                "    pip install -q --upgrade --force-reinstall edge-tts")
+    sys.exit(
+        "PASS 1 failed: no audio and no word boundaries.\n"
+        f"  edge-tts version: {last.get('version', 'unknown')}\n"
+        f"  last error: {last.get('error') or 'stream produced nothing'}{hint}\n"
+        "  Check: is Internet enabled in the Kaggle sidebar?")
 
 
 def probe_duration(path: Path) -> float | None:
@@ -670,14 +767,15 @@ def render(plan: dict, images: list[Path], cfg: dict, out_path: Path,
 # ---------------------------------------------------------------------------
 
 CSV_FIELDS = [
-    "frame_index", "frame_id", "status", "anchor_phrase", "occurrence",
+    "frame_index", "frame_id", "status", "sync_source", "anchor_phrase", "occurrence",
     "matched_text", "match_quality", "anchor_word_start_s", "anchor_word_end_s",
     "start_s", "end_s", "hold_s", "est_hold_s", "hold_delta_s", "est_words",
     "image", "transition", "transition_dur_s",
 ]
 
 
-def write_csv(segments: list[dict], path: Path, cfg: dict) -> None:
+def write_csv(segments: list[dict], path: Path, cfg: dict,
+              sync_source: str = "estimated") -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=CSV_FIELDS, extrasaction="ignore")
@@ -688,6 +786,7 @@ def write_csv(segments: list[dict], path: Path, cfg: dict) -> None:
                 "frame_index": seg["frame_index"],
                 "frame_id": seg["id"],
                 "status": seg["status"],
+                "sync_source": sync_source,
                 "anchor_phrase": seg["anchor_phrase"],
                 "occurrence": seg["occurrence"],
                 "matched_text": seg["matched_text"],
@@ -789,6 +888,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--draft", action="store_true",
                     help="render a SILENT draft from estimated timings "
                          "(no TTS, no network - pacing preview only)")
+    ap.add_argument("--tts-debug", action="store_true",
+                    help="print every edge-tts chunk type (diagnose missing word boundaries)")
     ap.add_argument("--narration", default=None, help="override narration path")
     ap.add_argument("--frames", default=None, help="override frames.json path")
     args = ap.parse_args(argv)
@@ -850,9 +951,14 @@ def main(argv: list[str] | None = None) -> int:
     # ---------------- PASS 1: one continuous narration ----------------------
     mp3 = work / "narration.mp3"
     print("PASS 1  synthesising narration (single request, whole script)")
-    words = synth(text, cfg["tts"], mp3)
+    words, sync_source = synth(text, cfg["tts"], mp3, cfg["estimate"],
+                               debug=bool(args.tts_debug))
     audio_dur = probe_duration(mp3) or words[-1]["end"]
-    print(f"        {len(words)} word boundaries, {audio_dur:.2f}s audio -> {mp3}")
+    if sync_source == "measured":
+        print(f"        {len(words)} word boundaries, {audio_dur:.2f}s audio -> {mp3}")
+    else:
+        print(f"        {len(words)} inferred word timings, {audio_dur:.2f}s audio -> {mp3}")
+        print("        sync_source=estimated")
 
     segments = assign_timings(frames, words, audio_dur, cfg)
     segments = validate_holds(segments, cfg)
@@ -861,8 +967,8 @@ def main(argv: list[str] | None = None) -> int:
     print("\n  measured timeline")
     print_table(segments)
 
-    write_csv(segments, work / "timings.csv", cfg)
-    write_csv(segments, repo / cfg["paths"]["out_dir"] / "timings.csv", cfg)
+    write_csv(segments, work / "timings.csv", cfg, sync_source)
+    write_csv(segments, repo / cfg["paths"]["out_dir"] / "timings.csv", cfg, sync_source)
     info = report(segments, cfg, audio_dur, est_total)
 
     if audio_dur and est_total:

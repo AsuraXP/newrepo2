@@ -9,6 +9,9 @@ tts:
   rate: "+10%"                  # ~180 wpm
   volume: "+0%"
   pitch: "+0Hz"
+  retries: 3                    # retry a bare connection failure before giving up
+  allow_estimated_fallback: true  # audio-but-no-boundaries: infer timings, warn loudly
+                                  # set false to make that a hard failure instead
 
 video:
   width: 1280
