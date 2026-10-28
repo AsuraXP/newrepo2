@@ -1,0 +1,54 @@
+{
+  "slug": "zombie_survival_video",
+  "title": "THE LIST",
+  "subtitle": "Day four hundred and twelve",
+  "genre": "fictional zombie survival",
+  "narration_style": "first person, measured, unsentimental",
+  "runtime_target_sec": 300,
+  "script_words": 955,
+  "projected_runtime_sec_3_1wps": 308,
+  "voice": {
+    "engine": "edge-tts",
+    "name": "en-US-ChristopherNeural",
+    "rate": "-10%",
+    "pitch": "+0Hz",
+    "takes": 1,
+    "note": "one continuous take, word-level timestamps are the cut points"
+  },
+  "visual": {
+    "style": "PENDING owner art-style reference",
+    "aspect": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frame_pattern": "frames/beat{MM}m{NN}.png",
+    "frame_source": "realesrgan-off, native generation, pad-only in runner"
+  },
+  "captions": {
+    "burned": false,
+    "srt": false
+  },
+  "audio_mix": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "loudnorm": "-14 LUFS",
+    "music": "none",
+    "sfx": "none"
+  },
+  "delivery": {
+    "container": "mp4",
+    "video_codec": "libx264",
+    "pix_fmt": "yuv420p",
+    "package": "zombie_survival_video_DELIVERABLE.zip"
+  },
+  "platform": "YouTube",
+  "hard_rules": [
+    "no gore",
+    "no real people, places, or events",
+    "radio counts consistent: 841 prev month, 794 tonight, 796 post-broadcast",
+    "protagonist unnamed until the transmission"
+  ],
+  "status": "script approval pending",
+  "frame_count": null,
+  "created": "2026-10-28"
+}
