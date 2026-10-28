@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Private/generated source art and Kaggle renders/audio are not Git assets.
+assets/source_frames/
+kaggle/output/
+*.mp4
+*.wav
+*.mp3
+*.aac

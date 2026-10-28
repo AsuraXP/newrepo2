@@ -1,0 +1,11 @@
+# Calibrate on Kaggle before authoring. Never treat this as an assumed rate.
+voice: en-US-AndrewNeural
+rate: "+10%"
+estimate:
+  sec_per_word: null # Fill from the preflight measurement in PRODUCTION.md.
+render:
+  width: 1280
+  height: 720
+  fps: 30
+  transition_seconds: 1.0 # Flat 2D default; never lower than 0.8.
+  transition: fade
