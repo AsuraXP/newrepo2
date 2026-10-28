@@ -1,0 +1,66 @@
+# =============================================================================
+# narration-first pipeline config
+# Everything the renderer needs. Edit here, never in run.py.
+# =============================================================================
+
+tts:
+  engine: edge-tts
+  voice: en-US-AndrewNeural     # "Andrew"
+  rate: "+10%"                  # ~180 wpm
+  volume: "+0%"
+  pitch: "+0Hz"
+
+video:
+  width: 1280
+  height: 720
+  fps: 30
+  crf: 20                       # x264 quality (18-23 sensible)
+  preset: medium                # Kaggle-safe; use "fast" if a render gets slow
+  pix_fmt: yuv420p              # required for broad player compatibility
+  audio_bitrate: "192k"
+  # subtle ken-burns so locked-off frames still breathe; costs render time
+  ken_burns: true
+  ken_burns_zoom: 1.10          # max zoom over a frame's life
+  ken_burns_rate: 0.0006        # zoom delta per output frame
+
+transitions:
+  # per-frame `transition` in frames.json wins; this is the fallback
+  default: "fade:0.5"
+  # a "cut" is rendered as a very short dissolve (cut_frames / fps) because the
+  # whole timeline is one xfade chain; 2 frames reads as a cut and keeps word
+  # sync exact. Raise to 4-5 if you want a visible snap.
+  cut_frames: 2
+
+timing:
+  min_hold_s: 1.2               # below this a frame is merged into its neighbour
+  max_hold_s: 12.0              # above this we warn (never freeze the picture)
+  under_min_policy: merge       # merge | warn
+  over_max_policy: warn         # warn only - clamping would break word sync
+  lead_in_max_s: 0.6            # frame 1 always starts at 0.0; warn if first anchor is later
+  tail_end_s: 0.8               # last frame holds this long after the last word
+  target_runtime_s: null        # set once the script is final (sanity check)
+
+# authoring-stage estimator ONLY (workspace QC). Calibrated after every real
+# Kaggle run - see calibration.json diff in the iteration loop.
+estimate:
+  sec_per_word: 0.33            # Andrew @ +10% ~= 180 wpm
+  pauses:
+    ".": 0.30
+    "!": 0.30
+    "?": 0.30
+    ";": 0.25
+    ":": 0.20
+    ",": 0.20
+    "…": 0.30
+    "-": 0.15
+    "—": 0.20
+
+paths:
+  narration: narration/narration.md
+  frames: narration/frames.json
+  frames_dir: assets/frames
+  out_dir: output
+
+render:
+  fade_in_s: 0.4                # from black at t=0
+  fade_out_s: 0.5               # to black over the tail hold
