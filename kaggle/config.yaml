@@ -1,6 +1,7 @@
 # Calibrate on Kaggle before authoring. Never treat this as an assumed rate.
 voice: en-US-AndrewNeural
 rate: "+10%"
+boundary: SentenceBoundary # Keep unchanged after the calibration preflight.
 estimate:
   sec_per_word: null # Fill from the preflight measurement in PRODUCTION.md.
 render:

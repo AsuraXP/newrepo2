@@ -19,7 +19,7 @@ The workspace must not run TTS. In a Kaggle notebook with Internet enabled, clon
 !python newrepo2/kaggle/run.py --repo newrepo2 --dry-run --tts-debug --preflight
 ```
 
-The script reports boundary event count, words per event, suggested seconds per word, and the installed Edge TTS version. Inspect the output and preflight audio; record the observed values above, then copy the measured rate into `kaggle/config.yaml`. Keep the actual observed boundary granularity wording; do not label sentence-level timing as word-level. `--preflight` synthesizes the marked preflight passage in exactly one request. It writes runtime artifacts under `kaggle/output/`.
+The script reports boundary event count, words per event, suggested seconds per word, and the installed Edge TTS version. `kaggle/config.yaml` explicitly requests `SentenceBoundary` by default; you may select `WordBoundary` before calibration, but keep that setting unchanged for the episode render. Inspect the output and preflight audio; record the observed values above, then copy the measured rate into `kaggle/config.yaml`. Keep the actual observed boundary granularity wording; do not label sentence-level timing as word-level. `--preflight` synthesizes the marked preflight passage in exactly one request. It writes runtime artifacts under `kaggle/output/`.
 
 ### Gate 0
 

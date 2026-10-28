@@ -71,6 +71,13 @@ def main() -> int:
             check(len(rows) == 3 and all(row["status"] == "ok" for row in rows), "not every anchor resolved")
             check([row["word_index"] for row in rows] == [0, 8, 17], "anchor word positions drifted")
             check(all(3 <= row["hold_s"] <= 12 for row in rows), "synthetic holds outside 3–12s")
+            sentence_chunks = [
+                {"type": "SentenceBoundary", "offset_s": 0.0, "text": "Amber lanterns glow above the quiet station tonight."},
+                {"type": "SentenceBoundary", "offset_s": 4.0, "text": "Blue shadows gather beyond the wooden bridge at dusk."},
+                {"type": "SentenceBoundary", "offset_s": 8.5, "text": "White windows shine across the sleeping town below."},
+            ]
+            measured, measured_errors, _ = pipeline.measured_rows(text, frames, sentence_chunks, 12.5, 0.5)
+            check(not measured_errors and all(row["anchor_precision"] == "exact" for row in measured), "sentence-boundary events were not recovered as exact sentence starts")
             repeated, repeat_errors = pipeline.resolve_anchors("Red birds circle above the river. Later, red birds circle above the bridge.", [{"id": "last", "anchor_phrase": "red birds circle", "occurrence": -1}], 0.5)
             check(repeated[0]["word_index"] == 7 and any("FIRST anchor" in error for error in repeat_errors), "negative occurrence did not select the final repeated phrase")
             collision, collision_errors = pipeline.resolve_anchors(text, [frames[0], {"id": "same_sentence", "anchor_phrase": "above the quiet", "occurrence": 1}], 0.5)

@@ -182,23 +182,25 @@ def run_ffprobe(path: Path) -> float:
     return hours * 3600 + minutes * 60 + seconds
 
 
-async def synthesize(text: str, voice: str, rate: str, audio_path: Path) -> list[dict[str, Any]]:
+async def synthesize(text: str, voice: str, rate: str, boundary: str, audio_path: Path) -> list[dict[str, Any]]:
     try:
         import edge_tts
     except ImportError as exc:
         raise RuntimeError("edge-tts is missing; force-reinstall it on Kaggle before the TTS pass") from exc
-    communicator = edge_tts.Communicate(text, voice, rate=rate)
+    if boundary not in ("WordBoundary", "SentenceBoundary"):
+        raise ValueError("boundary must be WordBoundary or SentenceBoundary")
+    communicator = edge_tts.Communicate(text, voice, rate=rate, boundary=boundary)
     boundaries: list[dict[str, Any]] = []
     audio_path.parent.mkdir(parents=True, exist_ok=True)
     with audio_path.open("wb") as out:
         async for chunk in communicator.stream():
             if chunk["type"] == "audio":
                 out.write(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                data = chunk
-                boundaries.append({"offset_s": float(data.get("offset", 0)) / 10_000_000,
-                                   "duration_s": float(data.get("duration", 0)) / 10_000_000,
-                                   "text": data.get("text", "")})
+            elif chunk["type"] in ("WordBoundary", "SentenceBoundary"):
+                boundaries.append({"type": chunk["type"],
+                                   "offset_s": float(chunk.get("offset", 0)) / 10_000_000,
+                                   "duration_s": float(chunk.get("duration", 0)) / 10_000_000,
+                                   "text": chunk.get("text", "")})
     return boundaries
 
 
@@ -212,13 +214,17 @@ def measured_rows(text: str, frames: list[dict[str, Any]], boundaries: list[dict
     boundary_words: list[tuple[int, float]] = []
     cursor = 0
     for event in events:
-        ew = WORD_RE.findall(event["text"])
-        if ew:
+        event_words = WORD_RE.findall(event["text"])
+        if event_words:
             boundary_words.append((cursor, event["offset_s"]))
-            cursor += len(ew)
-    exact = len(boundary_words) >= len(words) and all(len(WORD_RE.findall(e["text"])) == 1 for e in events)
+            cursor += len(event_words)
+    boundary_word_indices = {index for index, _ in boundary_words}
+    exact_word_events = (
+        len(boundary_words) >= len(words)
+        and all(event.get("type") == "WordBoundary" and len(WORD_RE.findall(event["text"])) == 1 for event in events)
+    )
     def timestamp(word_index: int) -> float:
-        if exact:
+        if exact_word_events:
             return boundary_words[min(word_index, len(boundary_words) - 1)][1]
         if boundary_words:
             before = [b for b in boundary_words if b[0] <= word_index]
@@ -237,7 +243,7 @@ def measured_rows(text: str, frames: list[dict[str, Any]], boundaries: list[dict
         wi = int(row["word_index"])
         t = timestamp(wi)
         row["start_s"] = round(t, 3)
-        row["anchor_precision"] = "exact" if exact else ("sentence-boundary" if int(row["word_index"]) in sentence_index(text)[1] and boundary_words else "interpolated")
+        row["anchor_precision"] = "exact" if wi in boundary_word_indices else "in-sentence"
         starts.append((row, t))
     for i, (row, start) in enumerate(starts):
         end = starts[i + 1][1] if i + 1 < len(starts) else duration
@@ -327,13 +333,14 @@ def main() -> int:
         output_dir = repo / "kaggle" / "output"
         audio = output_dir / ("preflight.mp3" if args.preflight else "narration.mp3")
         voice, rate = str(config.get("voice", "en-US-AndrewNeural")), str(config.get("rate", "+0%"))
+        boundary = str(config.get("boundary", "SentenceBoundary"))
         print("PASS 1 — Edge TTS")
         try:
             import edge_tts
             print(f"edge-tts {edge_tts.__version__}")
         except Exception:
             print("edge-tts version unavailable")
-        boundaries = asyncio.run(synthesize(text, voice, rate, audio))
+        boundaries = asyncio.run(synthesize(text, voice, rate, boundary, audio))
         measured_duration = run_ffprobe(audio)
         if measured_duration <= 0:
             raise RuntimeError("TTS produced zero-duration audio")
@@ -344,15 +351,24 @@ def main() -> int:
         recovered_words = sum(len(WORD_RE.findall(event.get("text", ""))) for event in boundaries)
         if recovered_words != len(source_words):
             errors.append(f"WORD COUNT mismatch: script has {len(source_words)} words but boundary text recovers {recovered_words}")
-        word_level = bool(boundaries) and recovered_words >= len(source_words) and all(len(WORD_RE.findall(event.get("text", ""))) == 1 for event in boundaries)
-        print(f"sync_source: {'word-boundary timestamps' if word_level else 'boundary timestamps with interpolation'}")
+        boundary_types = {event.get("type") for event in boundaries}
+        if boundary_types == {"WordBoundary"}:
+            sync_source = "word-boundary timestamps"
+        elif boundary_types == {"SentenceBoundary"}:
+            sync_source = "sentence-boundary timestamps; words within sentences interpolated"
+        elif boundary_types:
+            sync_source = "mixed boundary timestamps with interpolation"
+        else:
+            sync_source = "no boundary metadata; timing unavailable"
+            errors.append("BOUNDARY error: Edge TTS returned no word or sentence boundary metadata")
+        print(f"sync_source: {sync_source}")
         print(f"Audio duration: {measured_duration:.3f}s; script words: {len(source_words)}; words recovered from boundaries: {recovered_words}")
         print(f"{len(boundaries)} boundary events ({recovered_words / max(1, len(boundaries)):.2f} words each)")
         print(f"suggested sec_per_word: {suggested:.4f}")
         if args.tts_debug:
             print("TTS DEBUG boundary samples:")
             for event in boundaries[:12]:
-                print(f"  {event['offset_s']:.3f}s | {event['text']}")
+                print(f"  {event.get('type', 'boundary')} @ {event['offset_s']:.3f}s | {event['text']}")
         timings_path = output_dir / "timings.csv"
         write_csv(timings_path, rows)
         print(f"timings: {timings_path}")
