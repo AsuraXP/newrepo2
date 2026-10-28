@@ -618,6 +618,25 @@ def build_ffmpeg_cmd(plan: dict, images: list[Path], cfg: dict,
     return cmd
 
 
+def resolve_images(segments: list[dict], cfg: dict, repo: Path) -> list[Path]:
+    """Every rendered frame must exist - never ship a video with a hole in it."""
+    frames_dir = repo / cfg["paths"]["frames_dir"]
+    images: list[Path] = []
+    missing: list[str] = []
+    for seg in segments:
+        if not seg["effective"]:
+            continue
+        img = Path(seg["image"])
+        img = img if img.is_absolute() else frames_dir / img
+        if not img.is_file():
+            missing.append(str(img))
+        images.append(img)
+    if missing:
+        sys.exit("missing frame images:\n  " + "\n  ".join(missing)
+                 + "\n  generate + verify every frame before rendering")
+    return images
+
+
 def find_ffmpeg() -> str | None:
     """PATH first, then an explicit FFMPEG_BIN override."""
     found = shutil.which("ffmpeg")
@@ -767,6 +786,9 @@ def main(argv: list[str] | None = None) -> int:
                     help="PASS 1 only: real TTS + timings.csv, no render")
     ap.add_argument("--estimate", action="store_true",
                     help="no TTS: authoring estimator only (works offline)")
+    ap.add_argument("--draft", action="store_true",
+                    help="render a SILENT draft from estimated timings "
+                         "(no TTS, no network - pacing preview only)")
     ap.add_argument("--narration", default=None, help="override narration path")
     ap.add_argument("--frames", default=None, help="override frames.json path")
     args = ap.parse_args(argv)
@@ -809,7 +831,20 @@ def main(argv: list[str] | None = None) -> int:
         write_csv(segments, repo / cfg["paths"]["out_dir"] / "estimates.csv", cfg)
         report(segments, cfg, None, est_total)
         print(f"\n  wrote {work / 'estimates.csv'}")
-        print("  estimator is QC only - final sync always comes from Kaggle word boundaries")
+        if not args.draft:
+            print("  estimator is QC only - final sync always comes from Kaggle word boundaries")
+            return 0
+        # silent pacing draft: same render path, estimated timings, no audio
+        print("\n  DRAFT  rendering silent pacing preview from estimated timings")
+        images = resolve_images(segments, cfg, repo)
+        plan = plan_render(segments, cfg)
+        stem = Path(args.out).stem
+        if not stem.endswith("_draft"):
+            stem += "_draft"
+        out_path = Path(args.out) if Path(args.out).is_absolute() else work / (stem + ".mp4")
+        render(plan, images, cfg, out_path, audio=None, work=work)
+        print(f"\n  draft: {out_path}  ({plan['total_s']:.1f}s, no audio)")
+        print("  timing is estimated - the real sync always comes from Kaggle")
         return 0
 
     # ---------------- PASS 1: one continuous narration ----------------------
@@ -857,20 +892,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     # ---------------- PASS 2: stitch ---------------------------------------
-    frames_dir = repo / cfg["paths"]["frames_dir"]
-    images: list[Path] = []
-    missing: list[str] = []
-    for seg in segments:
-        if not seg["effective"]:
-            continue
-        img = Path(seg["image"])
-        img = img if img.is_absolute() else frames_dir / img
-        if not img.is_file():
-            missing.append(str(img))
-        images.append(img)
-    if missing:
-        sys.exit("missing frame images:\n  " + "\n  ".join(missing))
-
+    images = resolve_images(segments, cfg, repo)
     plan = plan_render(segments, cfg)
     out_path = Path(args.out)
     if not out_path.is_absolute() and out_path.parent == Path("."):
