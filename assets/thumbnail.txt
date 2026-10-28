@@ -10,10 +10,14 @@ ALT TITLES
 - What If You Woke Up 5,000 Years Ago? (The Honest Answer)
 - You Wake Up 5,000 Years Ago — Could You Make It to Day Two?
 
-THUMBNAIL TEXT
---------------
-YOUR WAKE UP / 5,000 YEARS AGO  (5,000 in rust)
-strap: COULD YOU SURVIVE?
+THUMBNAILS
+----------
+assets/thumbnail.png      - "5,000 YEARS AGO" + hero shocked at the brown water jar
+assets/thumbnail_alt.png  - "DAY ONE" + hero lost in a crowd of locals
+Both 1280x720, under 2 MB. Text is baked into the art, no overlay.
+
+NOTE: the description below assumes a 4:04 runtime. If the render differs,
+re-cut the chapter timestamps from timings.csv.
 
 DESCRIPTION
 -----------
@@ -32,18 +36,18 @@ Then the part nobody says out loud: what actually keeps you alive is being
 useful, quiet, and patient. Not clever. Clever gets people accused of things.
 
 CHAPTERS
+These timestamps are cut from the measured timings.csv, not guessed.
 00:00 Waking up to the light
-00:26 No traffic, no clock, no year
-01:03 Water, and why you boil it
-01:23 Bread, grit, and your teeth
-01:34 Beer instead of water
-01:57 Nobody hands you a coin
-02:27 You can't read any of it
+00:16 No traffic, no clock, no year
+00:55 Water, and why you boil it
+01:10 Bread, grit, and your teeth
+01:30 Beer instead of water
+02:06 Nobody hands you a coin
+02:26 You can't read any of it
 02:39 Your family is the police
-03:13 A stranger at your door
-03:37 What actually kills you
-03:59 What you gain instead
-04:07 So what would you do?
+03:03 A stranger at your door
+03:29 What actually kills you
+03:39 So what would you actually do
 
 SOURCES (as cited in the video)
 - World History Encyclopedia — Daily Life in Ancient Mesopotamia
