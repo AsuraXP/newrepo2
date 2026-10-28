@@ -1,6 +1,6 @@
 # Production record and gates
 
-This checkout is a production in progress. Phases 0–2 have passed: calibration is recorded, the 913-word narration has user read-aloud approval, and 43 sentence-start anchors pass the offline estimate. Phase 3 is in progress; the user-selected style is locked, and frames 01–10 have been generated and visually reviewed. Frames 11–43 remain.
+This checkout is a production in progress. Phases 0–2 have passed: calibration is recorded, the 913-word narration has user read-aloud approval, and 43 sentence-start anchors pass the offline estimate. Phase 3 is in progress; the user-selected style is locked. Frames 01–16 and 19 have passed visual QC; frames 17–18 were rejected for subject mismatch and removed. Frames 20–43 remain to generate. The image-generation limit for the current turn has been reached.
 
 ## Episode premise
 
