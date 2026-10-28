@@ -1,6 +1,6 @@
 # Production record and gates
 
-This checkout is a production in progress. Phase 0 calibration has passed. Research and a narration draft for the ancient-world zombie-survival episode are in place. Anchor authoring, the user's read-aloud review, approved style, and reviewed frames are still outstanding. Do not advance a gate by assuming those inputs.
+This checkout is a production in progress. Phase 0 calibration has passed. Research and a longer narration draft for the ancient-world zombie-survival episode are in place (913 words across 43 sentence-sized beats). Anchor authoring, the user's read-aloud review, approved style, and reviewed frames are still outstanding. Do not advance a gate by assuming those inputs.
 
 ## Episode premise
 
@@ -42,7 +42,7 @@ Research the selected topic and retain source URLs. Put speakable prose only bet
 
 - [x] No markdown characters or non-spoken material inside the TTS markers
 - [x] Every historical factual claim has a source in `## Sources`
-- [x] Estimated duration reported as an estimate, not a target (about 2:10)
+- [x] Estimated duration reported as an estimate, not a target (about 4:58)
 - [ ] Read aloud once; rewrite any sentence that is awkward to say (awaiting review before Phase 2)
 
 ## Phase 2 — anchors
