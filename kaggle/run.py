@@ -149,7 +149,9 @@ def load_frames(path: Path) -> list[dict]:
 
     seen = set()
     for i, fr in enumerate(frames):
-        for key in ("id", "anchor_phrase", "image_prompt", "negative_prompt", "transition"):
+        # `transition` is optional: omit it and the config default applies. That
+        # keeps one global look instead of 40 hand-written durations drifting.
+        for key in ("id", "anchor_phrase", "image_prompt", "negative_prompt"):
             if key not in fr:
                 sys.exit(f"frames[{i}] missing required key '{key}'")
         if fr["id"] in seen:
