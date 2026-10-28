@@ -32,13 +32,13 @@ transitions:
   cut_frames: 2
 
 timing:
-  min_hold_s: 1.2               # below this a frame is merged into its neighbour
+  min_hold_s: 3.0               # below this a frame is merged into its neighbour
   max_hold_s: 12.0              # above this we warn (never freeze the picture)
   under_min_policy: merge       # merge | warn
   over_max_policy: warn         # warn only - clamping would break word sync
   lead_in_max_s: 0.6            # frame 1 always starts at 0.0; warn if first anchor is later
   tail_end_s: 0.8               # last frame holds this long after the last word
-  target_runtime_s: null        # set once the script is final (sanity check)
+  target_runtime_s: 314         # measured from the script; anchors decide frame count
 
 # authoring-stage estimator ONLY (workspace QC). Calibrated after every real
 # Kaggle run - see calibration.json diff in the iteration loop.
