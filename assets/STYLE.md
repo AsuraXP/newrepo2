@@ -1,42 +1,55 @@
-# LOCKED ART STYLE — POV series
+# LOCKED ART STYLE — stick-figure explainer series
 
-Reference frame: `assets/frames/01_wake_light.jpg`
+Reference frames: `assets/frames/01_wake_light.jpg`, `06_working_town.jpg`
 
-Every prompt in `narration/frames.json` is built from this exact token set. Do not
-paraphrase it, do not reorder it, do not "improve" it per frame — consistency across
-the video is the channel's look.
+Every prompt in `narration/frames.json` is composed from the subject + this exact
+token set. Do not paraphrase it per frame — the flat look is the channel's identity.
 
-## Style token set (verbatim)
+## Style token set (verbatim, appended to every subject)
 
 ```
-Strict first-person POV shot, 16:9 widescreen, camera positioned as the eyes of
-the narrator. {SUBJECT}. Ancient Near Eastern Bronze Age {SETTING}. Cinematic
-photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty
-amber palette, fine 35mm film grain, muted highlights, documentary realism.
-No human face visible anywhere, no eyes, no portrait, no reflection.
+flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple
+round-headed stick figure character with a blank white circular head, two small
+black dot eyes and a small straight mouth, thin black line limbs, matte flat
+colour fills with no gradients, no shading and no texture, muted limited palette
+of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered
+background, hand-drawn animation still, 16:9 widescreen
 ```
 
 ## Negative token set (verbatim)
 
 ```
-face, portrait, eyes, mirror reflection, modern clothing, wristwatch, text,
-watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare
+photograph, photorealistic, 3d render, gradient shading, soft shadows, texture,
+realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background,
+neon colours, text, letters, words, caption, watermark, logo, signature
 ```
 
-## The POV rules
+## The rules
 
-1. The camera **is** the narrator's eyes. Never a third-person establishing shot.
-2. Own body allowed and encouraged: hands, forearms, bare feet, lap, knees, own
-   shadow, the rim of a jar held against the hip.
-3. Other people appear from the narrator's eye level: backlit silhouettes, backs
-   turned, cropped at the collar, out of focus behind, hands reaching into frame.
-4. **No face, ever.** Not a reflection, not a glimpse in water, not a mirror.
-5. Space reads as cramped and low: doorways, courtyards, ceilings, alley width.
-6. Palette is fixed: terracotta, ochre, dust, soot, undyed linen, one copper accent.
-7. Light is the only light: sun shafts, fire, oil lamp. No modern light source.
+1. **Flat.** Solid fills, one weight of black outline, no gradients, no lighting,
+   no texture, no cast shadows beyond a simple flat shape.
+2. **The hero is one stick figure, always the same.** White circular head, two dot
+   eyes, small straight mouth. Ragged brown fur tunic, bare line legs. Never
+   redesign the head or the eyes.
+3. **The head always faces the viewer.** No side profiles, no head-on-pillow
+   angles, no looking straight up — the model collapses the eyes and mouth onto
+   each other and the character goes off-model. Convey action with limbs, body
+   angle and props; keep the face frontal.
+4. **Hands are simple line mittens, three fingers.** Detailed hands read as a
+   different cartoon and break the style.
+5. Face is allowed and encouraged — expression is carried by the eyebrows and the
+   mouth line, nothing else. Deadpan is the default; surprise is two dots and an
+   open oval.
+6. Backgrounds are **props, not scenery**: a wall, a floor line, a fire, a jar, a
+   horizon. Three or four shapes maximum. Nothing that needs detail.
+7. Palette is closed: cream paper, grey-blue, warm brown, tan, mustard, plus one
+   accent (fire orange or night navy). No other hues.
+8. Composition is simple and centred, read at a glance in under a second.
+9. Modern-day gags may appear as a cold open or a cutaway (couch, phone, TV) —
+   these stay in the same flat style and same palette.
 
 ## Per-episode continuity
 
-- Same lens (24mm), same grain, same palette, same crop discipline.
-- Night frames go nearly black with one small source — never blue "movie night".
+- Same head, same eyes, same tunic, same palette, same line weight, every episode.
+- Night scenes: navy field, cream stars, one orange fire.
 - Cut on the word: the picture settles as the phrase is spoken (see `WORKFLOW.md`).

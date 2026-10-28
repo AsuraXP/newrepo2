@@ -3,320 +3,320 @@
     "id": "01_wake_light",
     "anchor_phrase": "You wake up because the light changed",
     "occurrence": 1,
-    "image_prompt": "first-person POV, lying on your back on a reed mat, looking straight up at a flat roof of woven reeds and palm beams, a small smoke hole punching a hard shaft of dawn light down through drifting dust, soot-blackened reeds around the opening, a slice of your own forearm and shoulder in the lower corner of the frame, ancient Near Eastern Bronze Age village interior, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, mirror reflection, modern clothing, wristwatch, plastic, glass window, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic lying flat on a woven reed mat on the floor, eyes wide open, a hard shaft of daylight falling across its face from a square smoke hole in a ceiling of reed lattice, dust in the beam, a folded blanket beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.8"
   },
   {
     "id": "02_reed_ceiling",
     "anchor_phrase": "The ceiling above you is a lattice of reeds",
     "occurrence": 1,
-    "image_prompt": "first-person POV, close on a ceiling of woven reed matting lashed to rough palm-wood beams, blackened soot rings where smoke escapes, loose straw ends dangling into frame, thin blades of daylight through the weave, dust motes floating, ancient Near Eastern Bronze Age village interior, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, mirror reflection, modern clothing, ceiling tiles, electric light, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "view straight up at a ceiling of woven reed lattice and two crooked wooden beams, a bright square smoke hole in the middle, small straw ends hanging down, soot marks around the hole, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.7"
   },
   {
     "id": "03_packed_earth",
     "anchor_phrase": "the ground under your back is packed earth",
     "occurrence": 1,
-    "image_prompt": "first-person POV tilted down, view past your own bare shoulder and arm onto a floor of packed swept earth, fine cracks and a broom's arc of dust, a coarse woven blanket edge in the corner, low morning light raking across the floor, ancient Near Eastern Bronze Age village interior, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, mirror reflection, modern floor, tiles, concrete, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic sitting up on a swept earth floor beside a crumpled blanket, one hand on the ground, a clay cup and a broom of bound twigs beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.7"
   },
   {
     "id": "04_no_traffic",
     "anchor_phrase": "There is no traffic",
     "occurrence": 1,
-    "image_prompt": "first-person POV standing in a doorway looking out into a narrow alley of mudbrick walls, a goat and a donkey being led past, two women in undyed linen walking away from camera, a scrawny dog in the middle of the path, dust hanging in low sunlight, no vehicles anywhere, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, looking at camera, modern clothing, car, cart with wheels, bicycle, power lines, mirror reflection, text, watermark, logo, cartoon, anime, illustration, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing in a low doorway looking out into a narrow alley, a donkey and a goat being led away, two figures walking off with their backs turned, a scrawny dog in the middle of the path, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "05_own_hands",
     "anchor_phrase": "You lift your hands in front of your face",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own two hands raised in front of you against a blurred mudbrick wall, young weathered hands with dirt packed under the nails and a small healing cut, cracked palms, no jewellery and no watch, harsh raking morning sun, ancient Near Eastern Bronze Age setting, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, wristwatch, ring, bracelet, manicured nails, modern hands, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, extra fingers, oversaturated",
+    "image_prompt": "stick figure hero in a ragged brown fur tunic facing the viewer, both arms raised with two simple mitten-shaped line hands held up beside its face, three fingers per hand, staring at its own hands with raised eyebrows and a flat surprised mouth, the head exactly a plain white circle with two small black dot eyes and a small straight mouth, unchanged and facing the viewer, plain cream background wall behind, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.6"
   },
   {
     "id": "06_working_town",
     "anchor_phrase": "This is not a ruin",
     "occurrence": 1,
-    "image_prompt": "first-person POV from a rooftop looking along a crowded low skyline of flat mudbrick roofs and domed ovens, laundry stretched on ropes, smoke rising from three chimneys, a cat walking a parapet, people working on the roofs, the town clearly inhabited and busy, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, ruins, rubble, sand dunes, modern buildings, concrete, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing on a flat roof with both hands on the parapet, looking out over a skyline of flat mud-brick roofs, three smoking chimneys, laundry lines, a cat on a wall, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "07_no_year",
     "anchor_phrase": "Nobody here will tell you the year",
     "occurrence": 1,
-    "image_prompt": "first-person POV tilted steeply upward in a narrow street, two tall blank mudbrick walls converging, the white glare of the sun exactly overhead in a bleached sky, no shadow to read the time by, a rope and a hanging bundle silhouetted at the top of the frame, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, clock, sundial, calendar, modern buildings, power lines, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "stick figure hero in a ragged brown fur tunic standing small in the lower middle of a narrow street, facing the viewer, head upright and facing forward with two small dot eyes and a small straight mouth, arms hanging at its sides, two tall plain walls rising on either side and converging toward the top of the frame, a plain cream sky with a single small round white sun near the top, completely blank ground with no shadow, no clock and no sundial, nothing to read the time by, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "wipeup:0.5"
   },
   {
     "id": "08_smell",
     "anchor_phrase": "The first thing that hits you is the smell",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking into a courtyard corner at a smoking dung-cake cooking fire, a stack of dried dung cakes beside it, a clay bread oven glowing at the mouth, acrid smoke curling up past your own forearm in the foreground, wet clay wall behind streaked with soot, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, gas stove, modern kitchen, metal cookware, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic crouched in a courtyard beside a small smoking fire of dung cakes, pinching its nose with one hand and waving smoke away with the other, a round clay bread oven glowing behind, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "09_mouth_dry",
     "anchor_phrase": "Then your mouth goes dry",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at cracked sun-baked ground at your own bare feet, dust between the toes, a dry irrigation channel with a shrinking puddle of muddy water just ahead, heat shimmer, no water in reach, ancient Near Eastern Bronze Age farmland, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, shoes, sandals on feet, modern paving, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at the edge of a dry cracked channel holding an empty clay jar upside down, a thin muddy puddle far below, tongue sticking out, hard blank sun overhead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "10_canal_walk",
     "anchor_phrase": "You walk to the canal with a jar on your hip",
     "occurrence": 1,
-    "image_prompt": "first-person POV mid-stride on a dusty path toward an irrigation canal, your own bare feet hitting the earth in the lower frame, the rim of a heavy clay water jar tucked against your hip and partly filling the foreground, a line of mudbrick field walls ahead, hard morning sun, ancient Near Eastern Bronze Age countryside, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, plastic bottle, metal bucket, modern clothing, shoes, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic walking in profile along a dusty path with a big clay jar balanced against its hip, one arm around it, low walls and a line of reeds ahead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "wipeleft:0.5"
   },
   {
     "id": "11_downstream",
     "anchor_phrase": "downstream of the animals",
     "occurrence": 1,
-    "image_prompt": "first-person POV crouched at the bank of a brown irrigation canal, a herd of goats drinking twenty paces upstream, a woman beating wet laundry on the stones beside them, the water thick and opaque with silt, your own hands and the mouth of a clay jar in the foreground, harsh overhead sun, ancient Near Eastern Bronze Age countryside, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, clean blue water, modern plumbing, pipe, tap, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic crouched at the bank of a brown canal holding a jar, a goat drinking upstream and a figure beating laundry on the stones, the water drawn as flat murky brown with a wavy line for stink, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "12_boiling_water",
     "anchor_phrase": "Boiling that water is the single most valuable thing",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own hands lifting a wide clay jar onto a bed of glowing embers, steam breaking over the rim, sparks and ash rising, a second empty jar waiting beside your knee, warm firelight against the cool blue of the courtyard wall, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, kettle, steel pot, gas flame, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a wide clay pot over a small orange fire with both hands, three curly steam lines rising, sparks as small dots, a second empty jar at its feet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "13_breakfast",
     "anchor_phrase": "Breakfast is barley",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own two hands cradling a rough clay bowl of thick barley porridge, steam rising, a dark torn flatbread resting across the rim, a small pinch of salt on the mat below, hard low morning light and a long shadow of your own arm, ancient Near Eastern Bronze Age household courtyard, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, glazed bowl, modern cereal, spoon, table, packaging, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic sitting cross-legged holding a bowl of thick porridge with a flat round bread leaning against the rim, one eyebrow raised at it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "14_grit_flour",
     "anchor_phrase": "a little of themselves into the flour",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own hands on a saddle quern grinding barley between a flat stone and a rubbing stone, coarse pale flour spilling onto a woven mat, faint grit and stone dust visible in the meal, wrists dusted white, low warm side light in a shaded courtyard, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, electric grinder, modern kitchen, plastic bowl, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic kneeling and grinding grain between a flat stone and a rubbing stone, a small heap of pale flour on a mat, a sweat drop on its forehead, arms drawn as straight lines, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.6"
   },
   {
     "id": "15_flat_teeth",
     "anchor_phrase": "your back teeth nearly flat before you are forty",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at a dark barley flatbread torn open in your own two hands, visible coarse grit and husk inside the crumb, a small clay dish of salt on the mat below, hard morning light, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, white sliced bread, modern packaging, plate, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a torn flatbread up to its face with a grimace and a chipped tooth, small dark grit specks drawn as dots in the crumb, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "16_beer_safer",
     "anchor_phrase": "safer than the canal",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at two vessels side by side on a mudbrick ledge, a clay jar of cloudy brown canal water on the left and a taller jar of thick opaque beer on the right with a long perforated reed drinking tube standing in it, your own hand reaching for the beer, warm sunlight and a hard shadow line, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, glass pint, beer bottle, label, modern cup, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing between two big jars, pointing at the taller one with a long reed straw in it, a wavy stink line over the smaller jar of brown water, choosing, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "17_nothing_keeps",
     "anchor_phrase": "Nothing here keeps",
     "occurrence": 1,
-    "image_prompt": "first-person POV inside a dim mudbrick storeroom looking at shelves of sealed clay jars, strings of drying fish and onions hanging in the foreground, a shallow basket of coarse salt, no ice and no cold, one narrow shaft of light through the door slot, dust in the beam, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, refrigerator, plastic containers, cans, glass jars with labels, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic in a storeroom of clay jars holding up a lump of spoiled food with one hand and pinching its nose with the other, a small fly as a dot, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "18_shorter",
     "anchor_phrase": "You are also shorter than you were yesterday",
     "occurrence": 1,
-    "image_prompt": "first-person POV standing very close to another adult, looking up at the underside of their jaw and the rough wool collar of their tunic, head cropped out of the top of the frame, their hand resting on a doorframe above your eye line, low dusty sunlight from the side, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, eyes, mouth, chin close up, modern clothing, t-shirt, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing beside a much taller stick figure with its head craned back looking up, only reaching the taller one's chest, flat ground line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "19_parasites",
     "anchor_phrase": "there is a low background dread",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own bare forearm and wrist, a shallow scratch going septic at the edge, two flies settled on the skin, a splash of dirty water drying on the ground beneath, tight and slightly uncomfortable framing, harsh sunlight, ancient Near Eastern Bronze Age setting, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, bandage, modern medicine, plaster, mirror reflection, gore, blood spray, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic scratching its forearm with a worried face, two small flies as dots circling, a shallow cut drawn as a short red-brown line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.5"
   },
   {
     "id": "20_work_begins",
     "anchor_phrase": "Work begins when the light clears the wall",
     "occurrence": 1,
-    "image_prompt": "first-person POV crouched to pick up a wooden hoe and a coiled rope from beside a doorway, the shadow line of the wall sliding down the courtyard floor toward your own hands, a copper adze leaning where it was left, hard low sun casting long shadows, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, steel tools, plastic handle, modern boots, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic bending to pick up a wooden hoe and a coil of rope from beside a doorway, a long flat shadow stretching from the wall, sun low as a half circle, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "21_no_weekend",
     "anchor_phrase": "There is no weekend, and no clock to watch",
     "occurrence": 1,
-    "image_prompt": "first-person POV standing at the edge of an irrigated barley field looking at a line of workers bent over the crop in the middle distance, backs turned, sun straight overhead with almost no shadow, a shaduf water lift silhouetted at the canal edge, heat haze on the horizon, ancient Near Eastern Bronze Age farmland, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, tractor, combine harvester, modern farming, telephone pole, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic bent over a barley field of simple stalk shapes, a row of other bent stick figures behind, a shaduf pole by the canal, a blank high sun directly overhead, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "wipeleft:0.4"
   },
   {
     "id": "22_no_coins",
     "anchor_phrase": "Nobody hands you a coin, because there are no coins",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own cupped hands receiving a scoop of barley from a wooden measure, grain spilling between your fingers, a clay storage jar and a woven sack behind, no coins anywhere in frame, dusty golden light through an open door, ancient Near Eastern Bronze Age granary, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, coins, banknotes, wallet, modern packaging, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding both hands cupped out to receive a scoop of barley from a wooden measure held by another stick figure's arm, grains as small dots falling, a clay storage jar beside them, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "23_silver_scale",
     "anchor_phrase": "Silver is a promise measured on a scale against barley",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at a small bronze balance scale on a low table, a coiled silver ring on one pan and a heap of barley on the other, your own hands steadying the beam, a worn hematite weight beside it, a clay tablet and stylus at the edge of frame, warm raking light, ancient Near Eastern Bronze Age merchant's stall, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, coins, modern scale, digital scale, calculator, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "a small balance scale on a low table with a coiled silver ring on one pan and a heap of barley on the other, the same stick figure hero in a ragged brown fur tunic watching it with hands behind its back, a merchant's arm adjusting the beam, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.5"
   },
   {
     "id": "24_debt_children",
     "anchor_phrase": "the debt can reach your children",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own hand holding a small child's hand, a clay tablet covered in dense wedge-shaped marks resting on the ground by their feet, late afternoon light, dust and a worn threshold underfoot, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, child looking at camera, modern clothing, shoes, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding the hand of a much smaller stick figure child, a wet clay tablet with rows of tiny wedge marks lying on the ground at their feet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "25_scribe",
     "anchor_phrase": "Perhaps one person in a hundred",
     "occurrence": 1,
-    "image_prompt": "first-person POV leaning over the shoulder of a seated scribe in a dim room, looking down at a wet clay tablet being pressed with a cut reed stylus, wedge-shaped marks appearing in rows, his bare arm and the edge of his shoulder in frame with the head cropped away, a clay bowl of water and three blank tablets beside him, single shaft of daylight, ancient Near Eastern Bronze Age tablet house, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, paper, pen, laptop, printed letters, latin alphabet, mirror reflection, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "a seated scribe stick figure pressing a cut reed stylus into a wet clay tablet on a low desk, rows of wedge marks appearing, the same stick figure hero in a ragged brown fur tunic leaning in over its shoulder to watch, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "26_witnesses",
     "anchor_phrase": "So you live on witnesses",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at a weathered boundary stone in a dusty lane, your own hand flat on it and three other hands from different people resting on the same stone, coarse wool cuffs at the edge of frame, hard midday sun, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, crowd looking at camera, modern clothing, watch, rings, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic and two other stick figures standing in a circle with one hand each resting flat on the same upright boundary stone, all three heads tilted down at it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.5"
   },
   {
     "id": "27_family_police",
     "anchor_phrase": "Your family is the police",
     "occurrence": 1,
-    "image_prompt": "first-person POV from inside a dark doorway looking out at four men standing in the lane, backlit into near-silhouette against blown-out daylight, faces lost in shadow and cropped by the doorframe, wooden staffs held low, dust swirling in the light, tense and still, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, visible eyes, modern clothing, police uniform, weapon, gun, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "four angry stick figures with wooden staffs standing shoulder to shoulder in a doorway, eyebrows drawn as sharp angles, the same stick figure hero in a ragged brown fur tunic seen small in the foreground across the threshold, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fadeblack:0.6"
   },
   {
     "id": "28_day_ends",
     "anchor_phrase": "The day ends when the sun does",
     "occurrence": 1,
-    "image_prompt": "first-person POV at the end of a narrow street looking west into a low orange sun sitting on the horizon between mudbrick rooflines, long shadows stretching toward the camera, smoke hanging in the still air, the sky turning dusty rose, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, city skyline, power lines, modern buildings, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at the end of an alley watching a large orange half-circle sun set between two flat roof lines, one long shadow running back toward the viewer, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.8"
   },
   {
     "id": "29_no_room",
     "anchor_phrase": "You will not have a room of your own",
     "occurrence": 1,
-    "image_prompt": "first-person POV from a sleeping mat low to the ground in a dim interior, looking across at two sleeping figures under coarse blankets with their backs turned, a goat curled by the wall, stacked clay jars and a hanging net, the last light of the door slot falling across the floor, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, sleeping face visible, modern bed, pillow, bedroom furniture, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic lying on a mat in a crowded dark room beside two sleeping stick figures under one blanket and a curled goat, all heads on one line, a single lamp dot above, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.7"
   },
   {
     "id": "30_true_dark",
     "anchor_phrase": "the dark will be genuinely dark",
     "occurrence": 1,
-    "image_prompt": "first-person POV in near-total darkness, a single tiny oil lamp flame on a saucer lighting only the clay wall in front and the tips of your own fingers holding the lamp, deep black falling away in every other direction, warm flicker, almost no visible horizon line, ancient Near Eastern Bronze Age interior, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, electric light, flashlight, phone screen, candle in glass, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic holding a tiny oil lamp with one flame, only its face and hands lit, everything else solid black, wide eyes, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fadeblack:0.8"
   },
   {
     "id": "31_stranger",
     "anchor_phrase": "A stranger with no household to vouch for him",
     "occurrence": 1,
-    "image_prompt": "first-person POV standing at your own threshold looking down at your bare feet and, just beyond them, a pair of cracked leather sandals belonging to a stranger who has stopped in the lane, his frayed hem and a walking stick in frame, his head out of frame above, hard afternoon sun and a long shadow between you, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern shoes, sneakers, boots, backpack, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing at its own doorway looking at a travel-worn stranger stick figure with a stick and a bundle, a gap of empty ground between them, both heads on one line, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "32_hospitality",
     "anchor_phrase": "Hospitality is not politeness here",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down as two weathered hands place a warm clay bowl of barley porridge into your own waiting hands, steam rising, a torn piece of flatbread balanced on the rim, a woven mat and the edge of a fire below, warm firelight from below, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern bowl, ceramic glaze, spoon, table, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic receiving a steaming bowl with both hands from another stick figure's hands, steam as three curls, a fire drawn as a flat orange triangle below, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.5"
   },
   {
     "id": "33_status_cloth",
     "anchor_phrase": "Your status is not something a good interview can change",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own arm in a coarse undyed wool tunic, and beside it the finer bleached linen sleeve of someone standing close to you, the two textures side by side in the same light, a small bronze pin on the linen cuff, shallow focus, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern shirt, denim, buttons, zipper, watch, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic in its ragged tunic standing beside a smug stick figure in a clean white robe with a gold trim line, the two of them side by side under one flat sky, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.5"
   },
   {
     "id": "34_skill_moves",
     "anchor_phrase": "If you can heal, smith, brew, count, or fix, you eat",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own hands working a hammered copper blade on a stone anvil, a scatter of orange sparks rising past your wrists, tongs and a clay crucible at the edge of frame, forge glow on the underside of your forearms, dim workshop with one bright doorway, ancient Near Eastern Bronze Age workshop, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern tools, welding mask, factory, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic at a small forge striking a copper blade on a stone anvil with a hammer, sparks as orange dots, a clay crucible and tongs beside it, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "35_difficult_birth",
     "anchor_phrase": "A difficult birth",
     "occurrence": 1,
-    "image_prompt": "first-person POV in a low lamplit room, looking down at your own hands gripping a folded linen cloth and passing it toward two other women's hands reaching in from the frame edge, a bowl of water and a bundle of herbs on the floor, everything tense, warm flickering light and deep shadow, ancient Near Eastern Bronze Age household, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern hospital, medical equipment, scrubs, mirror reflection, gore, blood, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing anxiously outside a small dark house at night holding a bucket, warm light in the one window, another figure's silhouette in the doorway, navy sky with three cream stars, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "cut"
   },
   {
     "id": "36_quiet_gain",
     "anchor_phrase": "Sleep that starts when you are tired",
     "occurrence": 1,
-    "image_prompt": "first-person POV lying on your back in the dark looking up through the roof smoke hole at a dense field of bright stars, the black edges of reed matting framing the opening, a faint warm glow of dying embers on the left, no light pollution anywhere, ancient Near Eastern Bronze Age village interior, cinematic photorealistic, 24mm lens, shallow depth of field, cool starlight against warm terracotta palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, city lights, airplane, satellite trail, electric light, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic asleep on a mat with a small smile, seen from above with the reed ceiling framing the shot and a dense field of cream stars through the smoke hole, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.9"
   },
   {
     "id": "37_what_would_you_do",
     "anchor_phrase": "So what would you actually do",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own two open hands held out in front of you, empty, palms up, dust and old calluses, the packed earth floor and the edge of a clay jar below, clean morning light, quiet and deliberate framing, ancient Near Eastern Bronze Age setting, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern clothing, watch, ring, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, extra fingers, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing facing the viewer with both hands on its hips and one eyebrow raised, three small empty thought circles floating beside its head, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "dissolve:0.6"
   },
   {
     "id": "38_be_useful",
     "anchor_phrase": "You would not survive by being clever",
     "occurrence": 1,
-    "image_prompt": "first-person POV looking down at your own hands shaping wet clay on a low wooden turntable, muddy water running to the wrists, three finished jars drying against the wall, a kick-wheel stone at the edge of frame, dusty workshop light from one high opening, ancient Near Eastern Bronze Age workshop, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, electric pottery wheel, modern studio, apron with logo, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic seated at a low potter's wheel shaping a tall clay jar with wet hands, three finished jars standing in a row behind, muddy line on the floor, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.6"
   },
   {
     "id": "39_clean_sky",
     "anchor_phrase": "And the strangest part is not the dirt",
     "occurrence": 1,
-    "image_prompt": "first-person POV standing on a flat mudbrick rooftop at dusk looking up and out over a low dark town skyline into an enormous clean sky with the Milky Way visible and no artificial light anywhere, parapet wall and a coiled rope at the bottom of frame, ancient Near Eastern Bronze Age town, cinematic photorealistic, 24mm lens, shallow depth of field, deep blue sky against warm terracotta palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, city lights, streetlights, power lines, airplane, modern skyline, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic standing on a flat roof with its back to the viewer looking up at a huge navy sky with a pale band of stars across it and no other lights anywhere, a low parapet, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:0.9"
   },
   {
     "id": "40_weather_known",
     "anchor_phrase": "what tomorrow's weather is",
     "occurrence": 1,
-    "image_prompt": "first-person POV at first light looking east across an open plain from a rooftop, your own hand raised in the corner of frame shading the view, a bank of thin cloud low on a rose-gold horizon over irrigated fields and a distant mudbrick town, still air, ancient Near Eastern Bronze Age landscape, cinematic photorealistic, 24mm lens, shallow depth of field, warm terracotta and dusty amber palette, fine 35mm film grain, muted highlights, documentary realism, no visible face",
-    "negative_prompt": "face, portrait, modern buildings, power lines, wind turbine, airplane, mirror reflection, text, watermark, logo, cartoon, anime, illustration, painting, oversaturated, lens flare",
+    "image_prompt": "the same stick figure hero in a ragged brown fur tunic on a rooftop at dawn with one hand shading its eyes, looking at a flat rose-to-cream horizon over simple field lines, the sun as a small half circle, completely still air, flat 2D cartoon illustration, thick slightly uneven black ink outlines, simple round-headed stick figure character with a blank white circular head, two small black dot eyes and a small straight mouth, thin black line limbs, matte flat colour fills with no gradients, no shading and no texture, muted limited palette of cream, pale grey-blue, warm brown, tan and mustard yellow, plain uncluttered background, hand-drawn animation still, 16:9 widescreen",
+    "negative_prompt": "photograph, photorealistic, 3d render, gradient shading, soft shadows, texture, realistic anatomy, extra limbs, extra fingers, anime, manga, detailed background, neon colours, text, letters, words, caption, watermark, logo, signature",
     "transition": "fade:1.0"
   }
 ]
