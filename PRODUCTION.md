@@ -32,6 +32,9 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-10-28: Preflight crash fixed: edge-tts 7.3.1 stores `Communicate.texts`
+  as a generator consumed by the stream; chunk counting now tees instead of
+  len()-ing. Selftest 43/43 PASS. Re-run Phase 0 on Kaggle.
 - 2026-10-28: Built v2 tooling imported unchanged from branch
   arena/d8370f31-newrepo2 into this session's branch (run, never rebuild).
   Awaiting user: topic + narrator voice.

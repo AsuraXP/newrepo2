@@ -12,6 +12,7 @@ StandInTTS   - deterministic offline backend for tools/selftest.py.  Produces
 
 from __future__ import annotations
 
+import itertools
 import json
 import math
 import wave
@@ -134,7 +135,19 @@ class RealEdgeTTS:
             pitch=self.pitch,
             boundary=boundary,
         )
-        text_chunks = len(getattr(comm, "texts", [text]))
+        # edge-tts 7.x stores `texts` as a GENERATOR consumed by the stream
+        # itself. Never len() it directly (TypeError) and never exhaust it
+        # (the engine would receive zero chunks). tee() lets us count without
+        # depriving the engine of its chunks. Older versions used a list.
+        _texts = getattr(comm, "texts", None)
+        if _texts is None:
+            text_chunks = 1
+        else:
+            try:
+                text_chunks = len(_texts)
+            except TypeError:
+                _count_view, comm.texts = itertools.tee(_texts)
+                text_chunks = sum(1 for _ in _count_view)
 
         out_audio = Path(out_audio)
         out_audio.parent.mkdir(parents=True, exist_ok=True)
