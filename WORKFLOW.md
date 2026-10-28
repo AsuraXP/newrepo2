@@ -2,6 +2,22 @@
 
 Narration is the master timeline. Frames react to the words.
 
+## 0. Preflight — calibrate the engine first
+
+Before writing a word, measure what the TTS engine actually does. See `PROMPT.md` Phase 0.
+
+```python
+!pip install -q --upgrade --force-reinstall edge-tts pyyaml
+!python newrepo2/kaggle/run.py --repo newrepo2 --dry-run --tts-debug
+```
+
+Record three things in `PRODUCTION.md`: edge-tts version, boundary granularity
+(words per event), and the suggested `sec_per_word`. Put the rate into
+`kaggle/config.yaml`. If granularity is sentence-level rather than per-word, place every
+anchor at a sentence start — one per sentence — before authoring `frames.json`.
+
+Do not proceed on an assumed rate or an assumed granularity.
+
 ## The three locations
 
 | location | owns | never does |
@@ -33,6 +49,8 @@ Rules that matter for timing later:
 - 90–160 words per minute of target runtime; Andrew @ +10% ≈ 180 wpm raw.
 - Anchor phrases should be **short (3–8 words)** and **unique**, or count the
   repeats with `occurrence`.
+- **One anchor per sentence, placed at the sentence start.** Two anchors inside one
+  sentence collapse onto the same instant on sentence-level engines.
 - Never put an anchor inside a sentence you also anchor mid-way through — keep
   anchors in reading order and non-overlapping.
 - One anchor per frame. A 2-minute video is typically 20–30 frames.

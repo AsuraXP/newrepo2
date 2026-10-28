@@ -13,6 +13,9 @@ script words ──► edge-tts WordBoundary stream ──► anchor match ─�
 
 ## Quick start
 
+**Phase 0 comes first — calibrate the engine on Kaggle before authoring anything.**
+See `PROMPT.md`. Record the results in `PRODUCTION.md`.
+
 Authoring side (this repo, any machine with python + pillow):
 
 ```bash
