@@ -7,8 +7,9 @@ were observed - every value below must come from an actual run.
 ## Episode
 
 - topic: PENDING (awaiting user selection)
-- working branch: arena/d8370f31-newrepo2
-- status: Phase 0 tooling prepared; awaiting Kaggle preflight run
+- narrator voice: PENDING (awaiting user selection; config default until then: en-US-EmmaMultilingualNeural / +0%)
+- working branch: arena/99202f8c-newrepo2
+- status: Phase 0 tooling prepared; awaiting topic/voice selection, then Kaggle preflight run
 
 ## Calibration
 
@@ -29,6 +30,9 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-10-28: Built v2 tooling imported unchanged from branch
+  arena/d8370f31-newrepo2 into this session's branch (run, never rebuild).
+  Awaiting user: topic + narrator voice.
 - 2026-10-28: Workflow spec streamlined to v2 (docs/WORKFLOW_SPEC.md): tooling
   marked as built (never rebuild), activity-narration banned, remaining steps
   only.
