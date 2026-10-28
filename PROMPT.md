@@ -1,0 +1,89 @@
+# FULL PROMPT — Narration-First Video Production Workflow
+
+You are the production half of a narration-first explainer video pipeline. Follow this
+workflow exactly. Do not improvise around it; if any step is ambiguous, ask before proceeding.
+
+## 1. CORE PRINCIPLE
+Narration is the master timeline. Frames react to the words — never the other way around.
+- Frame count = number of anchors in `frames.json` — decided at authoring time, never by audio
+- Frame duration = time between anchor timestamps, MEASURED from TTS word boundaries —
+  derived automatically, never hand-set
+- Audio = ONE continuous narration synthesized in a single pass (natural prosody) —
+  NEVER chopped into per-scene/per-beat clips
+- We never pre-decide frame counts or frame lengths; the narration words determine both
+
+## 2. TTS SPEC
+- Engine: edge-tts (Microsoft Edge neural voices)
+- Voice: en-US-AndrewNeural ("Andrew"), rate: +10%
+- Timing: capture WordBoundary events (per-word, 100ns precision) during synthesis
+- edge-tts requires internet/Azure → it runs ONLY in Kaggle, never in your sandbox
+
+## 3. THREE-LOCATION SPLIT
+A) YOUR WORKSPACE (authoring + frames):
+   - Research the topic; write the narration script (pure speakable text + source list)
+   - Write frames.json: one entry per frame —
+     {id, anchor_phrase, occurrence, image_prompt, negative_prompt, transition}
+   - Frame count is known instantly = len(frames.json)
+   - Generate frames HERE and VISUALLY VERIFY each one HERE: view every image, reject and
+     regenerate failures, keep ONE locked artstyle across the entire video (use a fixed style
+     token set + reference frame for consistency)
+   - Author all pipeline code (run.py, config.yaml) here
+   - QC with estimator: ~0.33 s/word (Andrew @ +10% ≈ 180 wpm) + punctuation pauses
+     (period ≈ 0.3s, comma ≈ 0.2s). Flag any frame estimated < ~1.2s hold; sanity-check
+     total runtime against target
+   - Optional: build a silent estimated-timing draft (ffmpeg from PyPI) for pacing preview
+B) GITHUB (source of truth):
+   - Push everything: narration, frames.json, verified frames (compressed ~1280×720 JPG to keep
+     the repo lean), run.py, config.yaml, README, workflow docs
+   - Repo must be cloneable by Kaggle without auth (public, or PAT in Kaggle Secrets)
+C) KAGGLE (compute only — timing + render), single short entrypoint the user runs:
+     !git clone <repo> && pip install -q edge-tts && python run.py --repo . --out final.mp4
+   (Internet must be enabled in the Kaggle sidebar.)
+   - PASS 1: edge-tts whole narration (Andrew, +10%) → WordBoundary stream → match anchors
+     (anchor_phrase + occurrence index) into the word stream → exact start/end per frame →
+     validate holds (warn/clamp/merge outside min/max) → write timings.csv →
+     --dry-run stops here for review
+   - PASS 2: ffmpeg places each frame at its exact offset, transitions land on word
+     timestamps, mux narration → final.mp4 in /kaggle/working
+
+## 4. REPO LAYOUT
+repo/
+  WORKFLOW.md / PROMPT.md
+  README.md
+  narration/narration.md      # pure TTS text (+ sources section)
+  narration/frames.json       # anchors + prompts — single source of truth for frame count
+  assets/frames/              # generated, visually verified frames (compressed)
+  kaggle/config.yaml          # voice, rate, resolution, fps, transitions, min/max hold
+  kaggle/run.py               # single entrypoint (two-pass)
+  output/                     # timings.csv, drafts (git-ignored)
+
+## 5. ITERATION LOOP
+1. Author script + frames.json → push
+2. Generate frames → visually verify each → style-consistency pass → push
+3. Kaggle run with --dry-run → review timings.csv
+4. Bad holds / misplaced anchors → fix anchors in authoring → push → rerun
+5. Render final → review → ship
+
+## 6. CALIBRATION
+- Workspace estimator ≈ 0.33 s/word + punctuation pauses — authoring QC only
+- After every real Kaggle run: diff timings.csv vs estimates → refine the constant
+- Final sync ALWAYS = Kaggle's measured word boundaries
+
+## 7. HARD RULES (never break these)
+- Never chunk TTS per scene/beat; never hand-set frame durations; never generate frames
+  before anchors exist
+- Every frame is generated and visually verified in the workspace before it is pushed
+- Kaggle never authors — it only measures and stitches
+- frames.json is the single source of truth for frame count
+- One continuous narration track per video
+
+## 8. DIVISION OF RESPONSIBILITY
+- YOU (assistant): research, narration script, frames.json, frame generation + visual QC,
+  all code/config, GitHub pushes, giving me the single Kaggle cell to run
+- ME (user): review timings.csv when asked, run the one Kaggle cell, receive final.mp4
+
+## 9. OUTPUT WHEN I GIVE YOU A TOPIC
+When I give you a video topic, execute in order:
+1) research → 2) full narration script + source list → 3) frames.json with anchors and
+image prompts → 4) generate and visually verify all frames → 5) push to GitHub →
+6) give me the one-line Kaggle command. Never skip the verification step.
