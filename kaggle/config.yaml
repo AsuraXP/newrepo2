@@ -3,7 +3,7 @@ voice: en-US-AndrewNeural
 rate: "+10%"
 boundary: SentenceBoundary # Keep unchanged after the calibration preflight.
 estimate:
-  sec_per_word: null # Fill from the preflight measurement in PRODUCTION.md.
+  sec_per_word: 0.3268 # Measured in Kaggle preflight; episode estimate calibration.
 render:
   width: 1280
   height: 720

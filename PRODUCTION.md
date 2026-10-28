@@ -1,13 +1,19 @@
 # Production record and gates
 
-This checkout is a pipeline scaffold, not a finished episode. No topic, research, calibration run, authored anchors, approved style, or reviewed frames have been supplied. Do not advance a gate by assuming those inputs.
+This checkout is a production in progress. Phase 0 calibration has passed. Research and a narration draft for the ancient-world zombie-survival episode are in place. Anchor authoring, the user's read-aloud review, approved style, and reviewed frames are still outstanding. Do not advance a gate by assuming those inputs.
+
+## Episode premise
+
+A second-person, explicitly fictional survival scenario in Rome around 200 CE. The outbreak rules are slow-moving undead and bite transmission; the episode focuses on immediate decisions available to an ordinary renter: leave a dense neighborhood, find water and food, avoid bottlenecks, and seek a defensible shelter. This is not a claim about a real historical event.
 
 ## Calibration (episode 1)
 
-- edge-tts: NOT MEASURED — fill from first line of Kaggle PASS 1
-- granularity: NOT MEASURED — record boundary events and words/event
-- sec_per_word: NOT MEASURED — set `estimate.sec_per_word` in `kaggle/config.yaml`
-- measured with: `narration/preflight.md`, roughly 60 words, `en-US-AndrewNeural` @ `+10%`
+- edge-tts: 7.3.1
+- granularity: sentence-level; 7 boundary events for 65 words (9.29 words/event)
+- sec_per_word: 0.3268 (set in `kaggle/config.yaml`)
+- measured with: `narration/preflight.md`, 65 words, `en-US-AndrewNeural` @ `+10%`; audio duration 21.240s
+- sync_source: sentence-boundary timestamps; words within sentences interpolated
+- recovered word count: 65/65
 
 ## Phase 0 — preflight calibration (Kaggle)
 
@@ -23,10 +29,10 @@ The script reports boundary event count, words per event, suggested seconds per 
 
 ### Gate 0
 
-- [ ] `sync_source` is printed and understood
-- [ ] Boundary granularity and words/event recorded; Phase 2 rules follow the measured granularity
-- [ ] `estimate.sec_per_word` equals the measured value
-- [ ] Non-zero audio duration; recovered word count matches marked preflight text
+- [x] `sync_source` is printed and understood
+- [x] Boundary granularity and words/event recorded; Phase 2 rules follow the measured granularity (sentence-level)
+- [x] `estimate.sec_per_word` equals the measured value (0.3268)
+- [x] Non-zero audio duration (21.240s); recovered words match marked preflight text (65/65)
 
 ## Phase 1 — research and script
 
@@ -34,10 +40,10 @@ Research the selected topic and retain source URLs. Put speakable prose only bet
 
 ### Gate 1
 
-- [ ] No markdown characters or non-spoken material inside the TTS markers
-- [ ] Every factual claim has a source in `## Sources`
-- [ ] Estimated duration reported as an estimate, not a target
-- [ ] Read aloud once; rewrite any sentence that is awkward to say
+- [x] No markdown characters or non-spoken material inside the TTS markers
+- [x] Every historical factual claim has a source in `## Sources`
+- [x] Estimated duration reported as an estimate, not a target (about 2:10)
+- [ ] Read aloud once; rewrite any sentence that is awkward to say (awaiting review before Phase 2)
 
 ## Phase 2 — anchors
 
