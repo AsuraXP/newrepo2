@@ -362,10 +362,13 @@ def expand_boundaries(chunks: list[dict], audio_dur: float,
         costs = [_word_cost(t, pauses) for t in tokens]
         total = sum(costs) or 1.0
         t = ch["start"]
-        for token, cost in zip(tokens, costs):
+        for k, (token, cost) in enumerate(zip(tokens, costs)):
             share = span * cost / total
             words.append({"text": token, "start": round(t, 4),
-                          "end": round(t + share, 4)})
+                          "end": round(t + share, 4),
+                          # the first word of a chunk sits on a measured timestamp;
+                          # anything after it is interpolated inside a real span
+                          "event_start": k == 0})
             t += share
 
     words.sort(key=lambda w: w["start"])
@@ -527,9 +530,13 @@ def assign_timings(frames: list[dict], words: list[dict], audio_dur: float,
                 f"    frames.json must be in narration order.")
         last_word_idx = word_idx
 
+        precision = ("exact" if words[word_idx].get("event_start")
+                     else "in-sentence")
+
         segments.append({
             "frame_index": fi + 1,
             "id": fr["id"],
+            "anchor_precision": precision,
             "anchor_phrase": fr["anchor_phrase"],
             "occurrence": int(fr["occurrence"]),
             "matched_text": " ".join(w["text"] for w in
@@ -836,7 +843,8 @@ def render(plan: dict, images: list[Path], cfg: dict, out_path: Path,
 
 CSV_FIELDS = [
     "frame_index", "frame_id", "status", "sync_source", "anchor_phrase", "occurrence",
-    "matched_text", "match_quality", "anchor_word_start_s", "anchor_word_end_s",
+    "matched_text", "match_quality", "anchor_precision",
+    "anchor_word_start_s", "anchor_word_end_s",
     "start_s", "end_s", "hold_s", "est_hold_s", "hold_delta_s", "est_words",
     "image", "transition", "transition_dur_s",
 ]
@@ -859,6 +867,7 @@ def write_csv(segments: list[dict], path: Path, cfg: dict,
                 "occurrence": seg["occurrence"],
                 "matched_text": seg["matched_text"],
                 "match_quality": seg["match_quality"],
+                "anchor_precision": seg.get("anchor_precision", "estimated"),
                 "anchor_word_start_s": f"{seg['anchor_word_start_s']:.3f}",
                 "anchor_word_end_s": f"{seg['anchor_word_end_s']:.3f}",
                 "start_s": f"{seg['start_s']:.3f}",
@@ -928,6 +937,12 @@ def report(segments: list[dict], cfg: dict, audio_dur: float | None,
     if audio_dur:
         print(f"  narration length: {audio_dur:.2f}s")
     print(f"  estimated length: {estimate_total:.2f}s")
+    exact = sum(1 for s in active if s.get("anchor_precision") == "exact")
+    if active and exact < len(active):
+        est = len(active) - exact
+        print(f"  anchor precision : {exact}/{len(active)} exact, "
+              f"{est} inferred inside a measured sentence")
+
     if warnings:
         print(f"\n  {len(warnings)} warning(s):")
         for w in warnings:
