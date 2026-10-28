@@ -1,1 +1,303 @@
-[]
+[
+  {
+    "id": "01_imagine_you_wake_in_rome",
+    "anchor_phrase": "Imagine you wake in",
+    "occurrence": 1,
+    "image_prompt": "The same Roman renter in an upstairs insula room, looking through wooden shutters toward distant slow undead in the street below, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "02_you_hear_running_feet_a",
+    "anchor_phrase": "You hear running feet,",
+    "occurrence": 1,
+    "image_prompt": "A Roman market street as people flee past baskets and stalls, with the renter listening from an upper window, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "03_for_this_thought_experiment_they",
+    "anchor_phrase": "For this thought experiment,",
+    "occurrence": 1,
+    "image_prompt": "The renter watches one slow undead figure at a distance, emphasizing the fictional outbreak rules without showing gore, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "04_your_goal_is_smaller_than",
+    "anchor_phrase": "Your goal is smaller",
+    "occurrence": 1,
+    "image_prompt": "The renter studies the crowded street, water jar in hand, choosing an escape route from the city, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "05_you_rent_an_apartment_like",
+    "anchor_phrase": "You rent an apartment-like",
+    "occurrence": 1,
+    "image_prompt": "The renter on an upper landing inside an insula, looking toward a stairwell filling with panicked neighbors, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "06_before_you_move_learn_where",
+    "anchor_phrase": "Before you move, learn",
+    "occurrence": 1,
+    "image_prompt": "The renter pauses in a dim doorway, listening toward a noisy street before choosing which way to go, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "07_do_not_lean_over_the",
+    "anchor_phrase": "Do not lean over",
+    "occurrence": 1,
+    "image_prompt": "The renter stays back from a balcony as a crowd rushes beneath the building, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "08_you_need_shoes_a_cloak",
+    "anchor_phrase": "You need shoes, a",
+    "occurrence": 1,
+    "image_prompt": "The renter packs sandals, cloak, water jar, bread, and a small practical tool into a light bundle, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "09_a_knife_can_cut_rope",
+    "anchor_phrase": "A knife can cut",
+    "occurrence": 1,
+    "image_prompt": "Close view of the renter using a small knife to cut cord beside a loaf, distant danger outside, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "10_leave_family_heirlooms_and_heavy",
+    "anchor_phrase": "Leave family heirlooms and",
+    "occurrence": 1,
+    "image_prompt": "The renter leaves heavy household belongings behind while climbing down from the apartment, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "11_water_is_your_first_practical",
+    "anchor_phrase": "Water is your first",
+    "occurrence": 1,
+    "image_prompt": "A Roman aqueduct and public fountain in the distance, with the renter considering the water route, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "12_many_ordinary_romans_fetched_water",
+    "anchor_phrase": "Many ordinary Romans fetched",
+    "occurrence": 1,
+    "image_prompt": "The renter carefully fills a clay jar at a public fountain while keeping watch on a nearby crowd, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "13_if_your_building_has_a",
+    "anchor_phrase": "If your building has",
+    "occurrence": 1,
+    "image_prompt": "The renter checks a courtyard well and the building entrance before drawing water, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "14_ration_what_you_carry_and",
+    "anchor_phrase": "Ration what you carry,",
+    "occurrence": 1,
+    "image_prompt": "A small group rations water and marks a safe source by memory while sheltering in a courtyard, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "15_food_is_the_next_constraint",
+    "anchor_phrase": "Food is the next",
+    "occurrence": 1,
+    "image_prompt": "Grain sacks moving from a Roman river port into warehouses, with the renter observing the supply route, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "16_that_system_feeds_a_city",
+    "anchor_phrase": "That system feeds a",
+    "occurrence": 1,
+    "image_prompt": "A Roman harbor and grain storehouses under threat as a crowded city waits for provisions, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "17_so_do_not_join_a",
+    "anchor_phrase": "So do not join",
+    "occurrence": 1,
+    "image_prompt": "A dense anxious line near the Forum and river port, seen from the renter's safer side street, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "18_instead_choose_a_small_group",
+    "anchor_phrase": "Instead choose a small",
+    "occurrence": 1,
+    "image_prompt": "The renter gathers a small trusted group and checks their carried supplies before departure, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "19_do_not_let_the_strongest",
+    "anchor_phrase": "Do not let the",
+    "occurrence": 1,
+    "image_prompt": "A calm local guide, lookout, and supply keeper coordinate with the renter in a courtyard, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "20_agree_on_signals_before_you",
+    "anchor_phrase": "Agree on signals before",
+    "occurrence": 1,
+    "image_prompt": "The group agrees on quiet visual signals, one person raising a cloth while others watch, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "21_the_first_streets_are_the",
+    "anchor_phrase": "The first streets are",
+    "occurrence": 1,
+    "image_prompt": "The renter guides the group along a visible side street while crowds surge along a broad road, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "22_a_narrow_alley_hides_what",
+    "anchor_phrase": "A narrow alley hides",
+    "occurrence": 1,
+    "image_prompt": "The group checks both ends of a narrow alley before deciding whether to enter, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "23_the_roman_road_network_links",
+    "anchor_phrase": "The Roman road network",
+    "occurrence": 1,
+    "image_prompt": "A Roman road stretching from the city toward distant settlements, the renter comparing route choices, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "24_walking_with_a_load_is",
+    "anchor_phrase": "Walking with a load",
+    "occurrence": 1,
+    "image_prompt": "The group walks with light packs while a loaded cart blocks part of the road, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "25_if_a_gate_or_bridge",
+    "anchor_phrase": "If a gate or",
+    "occurrence": 1,
+    "image_prompt": "The group waits away from a packed gate and bridge, scanning for an alternate route, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "26_once_you_reach_the_edge",
+    "anchor_phrase": "Once you reach the",
+    "occurrence": 1,
+    "image_prompt": "The renter and group leave the dense city edge and cross open ground carefully, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "27_a_nearby_farm_or_fortified",
+    "anchor_phrase": "A nearby farm or",
+    "occurrence": 1,
+    "image_prompt": "A small farmstead with a well, stored grain, and a defensible enclosure beyond the city, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "28_approach_from_a_place_where",
+    "anchor_phrase": "Approach from a place",
+    "occurrence": 1,
+    "image_prompt": "The renter watches a farmyard from cover, keeping an unobstructed retreat route, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "29_a_closed_gate_is_useful",
+    "anchor_phrase": "A closed gate is",
+    "occurrence": 1,
+    "image_prompt": "People inside a farm enclosure share watch at a closed gate and protect the well, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "30_offer_work_instead_of_demanding",
+    "anchor_phrase": "Offer work instead of",
+    "occurrence": 1,
+    "image_prompt": "The renter carries water and repairs a fence while asking the farm group for shelter, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "31_if_no_one_lets_you",
+    "anchor_phrase": "If no one lets",
+    "occurrence": 1,
+    "image_prompt": "The renter hides briefly in a modest outbuilding while watching the sunrise and planning onward travel, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "32_roman_soldiers_knew_how_to",
+    "anchor_phrase": "Roman soldiers knew how",
+    "occurrence": 1,
+    "image_prompt": "A Roman military camp with a ditch and earthen rampart, soldiers working in coordinated formation, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "33_you_probably_cannot_copy_a",
+    "anchor_phrase": "You probably cannot copy",
+    "occurrence": 1,
+    "image_prompt": "The renter builds a modest barrier with two visible exits and a clear view of the approach, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "34_keep_watch_in_pairs_one",
+    "anchor_phrase": "Keep watch in pairs;",
+    "occurrence": 1,
+    "image_prompt": "Two members of the group keep watch in turns while the others rest inside the shelter, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "35_keep_noise_and_light_low",
+    "anchor_phrase": "Keep noise and light",
+    "occurrence": 1,
+    "image_prompt": "The group stays quiet in a small building at night, avoiding an indoor flame, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "36_at_night_decide_what_would",
+    "anchor_phrase": "At night, decide what",
+    "occurrence": 1,
+    "image_prompt": "The group checks the door, water jar, and escape route by lamplight before night watch, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "37_if_someone_is_bitten_tell",
+    "anchor_phrase": "If someone is bitten,",
+    "occurrence": 1,
+    "image_prompt": "The group tells a bitten member the truth and keeps them apart without violence or gore, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "38_keep_the_bitten_person_apart",
+    "anchor_phrase": "Keep the bitten person",
+    "occurrence": 1,
+    "image_prompt": "A companion stays nearby with water while the bitten person rests in a separate area, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "39_at_dawn_scout_before_you",
+    "anchor_phrase": "At dawn, scout before",
+    "occurrence": 1,
+    "image_prompt": "At dawn, the renter scouts beyond the farm gate while the group remains sheltered, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "40_roman_messages_and_travelers_crosse",
+    "anchor_phrase": "Roman messages and travelers",
+    "occurrence": 1,
+    "image_prompt": "A Roman messenger and travelers moving along a road as the renter waits for reliable news, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "41_that_delay_might_buy_you",
+    "anchor_phrase": "That delay might buy",
+    "occurrence": 1,
+    "image_prompt": "The renter listens for distant activity from a sheltered hillside, weighing whether to move, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "42_survival_is_not_a_sword",
+    "anchor_phrase": "Survival is not a",
+    "occurrence": 1,
+    "image_prompt": "The group shares supplies, plans a route, and adapts after discovering a blocked path, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  },
+  {
+    "id": "43_survival_is_possible_if_the",
+    "anchor_phrase": "Survival is possible if",
+    "occurrence": 1,
+    "image_prompt": "The renter and companions move together toward a quiet horizon, with slow undead far behind, simple hand-drawn 2D cartoon, expressive stick-figure people with large plain off-white circular faces, tiny black dot eyes and minimal mouth, simple black line arms and legs, bold slightly wobbly black outlines, flat muted color fills, sparse softly textured backgrounds, imperfect sketchy linework, clear readable poses, recurring protagonist with short scribbled dark hair, rust-red Roman tunic and sand-colored cloak, understated Roman-era props and architecture, widescreen 16:9 composition",
+    "negative_prompt": "text, captions, lettering, watermarks, logos, photorealism, 3D render, realistic detailed faces, gore, extra limbs, distorted stick-figure limbs, modern objects"
+  }
+]

@@ -1,6 +1,6 @@
 # Production record and gates
 
-This checkout is a production in progress. Phase 0 calibration has passed. Research and a longer narration draft for the ancient-world zombie-survival episode are in place (913 words across 43 sentence-sized beats). Anchor authoring, the user's read-aloud review, approved style, and reviewed frames are still outstanding. Do not advance a gate by assuming those inputs.
+This checkout is a production in progress. Phases 0–2 have passed: calibration is recorded, the 913-word narration has user read-aloud approval, and 43 sentence-start anchors pass the offline estimate. Phase 3 is in progress; the user-selected style is locked, and frames 01–10 have been generated and visually reviewed. Frames 11–43 remain.
 
 ## Episode premise
 
@@ -43,7 +43,7 @@ Research the selected topic and retain source URLs. Put speakable prose only bet
 - [x] No markdown characters or non-spoken material inside the TTS markers
 - [x] Every historical factual claim has a source in `## Sources`
 - [x] Estimated duration reported as an estimate, not a target (about 4:58)
-- [ ] Read aloud once; rewrite any sentence that is awkward to say (awaiting review before Phase 2)
+- [x] Read aloud once; user approved the draft as sounding good
 
 ## Phase 2 — anchors
 
@@ -69,15 +69,17 @@ python kaggle/run.py --estimate --repo .
 
 ### Gate 2
 
-- [ ] Every anchor matched, in order; no missing/duplicate ambiguity
-- [ ] Rendered frame count equals entries in `frames.json`
-- [ ] Shortest hold ≥3 s, longest ≤12 s, no warnings
-- [ ] Estimated runtime is plausible for the topic
-- [ ] Sentence-level engine: no two anchors share a sentence
+Offline estimate (`python kaggle/run.py --estimate --repo .`): 43/43 anchors matched; estimated runtime 298.37 s (4:58); estimated holds 5.882–8.170 s; zero warnings. `timings.csv` contains 43 rows for 43 entries in `frames.json`.
+
+- [x] Every anchor matched, in order; no missing/duplicate ambiguity
+- [x] Frame/anchor count is 43 entries; no entries merged
+- [x] Shortest estimated hold ≥3 s, longest ≤12 s, no warnings
+- [x] Estimated runtime is plausible for the topic; estimate only
+- [x] Sentence-level engine: one anchor at the start of each distinct sentence
 
 ## Phase 3 — frames and visual QC (workspace)
 
-Freeze `assets/STYLE.md`, generate and inspect a reference frame, then append the exact same style and negative token blocks to each prompt. Generate in small batches; open and compare every image against the reference. Regenerate any wrong subject/action, off-model character, palette drift, text/watermark, extra limbs, or different-film look. Keep only reviewed compressed 1280×720 JPGs; source PNGs stay out of Git.
+The style token block in `assets/STYLE.md` is frozen to the user's three cartoon references. The 16:9 reference frame was inspected and accepted; frames 01–10 were generated in small batches and visually checked against it. The image-generation allowance for this turn is exhausted, so frames 11–43 remain pending. Continue in small batches and inspect every image before compression. Regenerate any wrong subject/action, off-model character, palette drift, text/watermark, extra limbs, or different-film look. Keep only reviewed compressed 1280×720 JPGs; uncompressed/source images stay out of Git.
 
 ```bash
 python tools/prep_frames.py --repo . --sheet --strict
