@@ -39,13 +39,13 @@
     "radio counts consistent: 841 prev month, 794 tonight, 796 post-broadcast",
     "protagonist unnamed until the transmission"
   ],
-  "status": "script draft 3 (procedural) awaiting go; 0 frames",
-  "frame_count": null,
+  "status": "in production \u2014 batch 01 accepted (8/86 frames)",
+  "frame_count": 86,
   "created": "2026-10-28",
   "narration_pov": "second person, present tense, male lead, held throughout",
   "protagonist": "male stick figure, unnamed until beat 84",
-  "slides": null,
-  "accepted_frames": 0,
+  "slides": 9,
+  "accepted_frames": 8,
   "spine": "archived \u2014 rebuild pending go (archive/visuals_v1_STALE.csv)",
   "format_engine": "numbered problems, day markers, costed arithmetic, house-rule refrain, inventory ledger",
   "thumbnail": {
@@ -63,7 +63,11 @@
       "refs/anchor_survivor.png",
       "refs/anchor_ash.png",
       "refs/anchor_tower.png",
-      "refs/anchor_thirdfloor.png"
-    ]
-  }
+      "refs/anchor_thirdfloor.png",
+      "refs/anchor_paper.png"
+    ],
+    "frame_size": "1376x768 native, padded to even canvas in runner"
+  },
+  "batches_total": 11,
+  "batches_done": 1
 }

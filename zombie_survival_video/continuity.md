@@ -130,6 +130,7 @@ Fixed progression, monotonic. Never jumps backwards.
 | ✅ `refs/anchor_ash.png` | test 2b, accepted on repair r1 | all Ash beats |
 | ✅ `refs/anchor_tower.png` | test 3, accepted first pass | all tower beats |
 | ✅ `refs/anchor_thirdfloor.png` | test 4, accepted first pass | all home beats |
+| ✅ `refs/anchor_paper.png` | batch 01 frame 01:05 r1 | the list / rules motif in 6 later beats |
 
 ### Style test log
 
@@ -140,6 +141,18 @@ Fixed progression, monotonic. Never jumps backwards.
 | test 2b — Ash repair r1 | **ACCEPT** | Brown confined to two ear shapes + one back patch. Head clean white. |
 | test 3 — tower room | **ACCEPT** | Mic, deck, ruled notebook (no legible writing), exactly one orange light, unlit bulb. |
 | test 4 — third floor | **ACCEPT** | Scratches read as tally marks, illegible. Full-bleed. |
+
+**Permanent clauses added after batch 01:**
+
+1. **No inset panels.** Two of the first eight frames drew their subject as a
+   framed picture floating on the beige ground colour, camera outside the world.
+   Every prompt now carries: *the subject fills the frame as the background plane
+   itself — never drawn as a framed picture, inset panel, or rectangle floating on
+   a wall.*
+2. **Tallies are strokes, not writing.** One frame rendered "illegible black
+   marks" as cursive pseudo-handwriting. Every prompt now carries: *any marks on
+   paper are short straight tally strokes, evenly spaced, never cursive, never
+   joined, never handwriting.*
 
 **Permanent clause added after test 3:** `Full-bleed: the artwork fills the entire
 frame edge to edge, no border, no frame line, no vignette.` Test 3 and test 4's
