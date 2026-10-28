@@ -7,10 +7,10 @@ Animated short, ~5 minutes, 16:9, YouTube. Fictional zombie survival narration.
 | Stage | State |
 |---|---|
 | 1. Brief | done (style ref pending) |
-| 2. Script | **draft 1 — awaiting approval** |
-| 3. Spine (`visuals.csv`) | not started |
-| 4. Consistency set (refs) | blocked on style reference |
-| 5. Frames | 0 of N |
+| 2. Script | **draft 2 (2nd person, male lead) — awaiting go** |
+| 3. Spine (`visuals.csv`) | done — 89 rows, 12 slides |
+| 4. Consistency set (refs) | done — 4 anchors promoted |
+| 5. Frames | 0 of 89 (12 batches of 8) |
 | 6. Kaggle runner | not written |
 | 7. Deliverable | in Kaggle only |
 
