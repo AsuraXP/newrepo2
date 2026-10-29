@@ -180,3 +180,14 @@ Create one standalone 16:9 location-reference image for the same animated story.
 - Repair budget: 2 / 2 used; image cap 10 / 10 reached.
 - New anchors: none.
 - Declared exceptions: none.
+
+## Batch 10 QC — 8 accepted
+- Accepted: `beat06m01`, `beat06m02`, `beat06m03`, `beat06m04`, `beat06m05`, `beat06m06`, `beat06m07`, `beat06m08`.
+- Transformation timing: `beat06m01` has a normal-white-headed elderly passenger and a slipping tray; `beat06m02` has the kneeling crew response; `beat06m03` introduces the pale upright jerk; `beat06m04` isolates shivering; `beat06m05` introduces cloudy eyes aimed at the crew member's hands; `beat06m06` confines the matte charcoal stain to collar fabric without a wound; `beat06m07` shows a restrained, clearly separated forward jerk and freeze. No room eruption, toppling chairs, mother/child action, or falling Lina fork appears before its cue.
+- `beat06m07` returned two moderation-blocked no-image responses with no artifacts. A fresh restrained composition with both figures kneeling apart and the man's hands near his own knees succeeded and passed; the blocked responses consumed no QC repair artifacts.
+- Reject: `beat06m08_r1` — the fork and its impact burst appeared on the tabletop instead of the floor. The replacement changed only the framing and fork-placement clauses: floor occupies the lower half, tabletop stays high in the background, and exactly one fork strikes the foreground floor beside Lina's upright chair. Replacement `beat06m08` passed with Lina's braids, purple hoodie, open black mitten, fruit-and-cake plate, upright furniture, and no premature room panic.
+- The ignored `frames/rejects/` directory was dropped during a workspace reinitialization before the sheet was built, so the `beat06m08_r1` original could not be recovered. The contact sheet includes an explicit reject record rather than a fabricated substitute thumbnail; the rejection and successful repair remain fully documented here.
+- Contact sheet: `frames/contact_sheets/batch10.jpg` includes all eight accepted frames and the `beat06m08_r1` QC record.
+- Repair budget: 1 / 2 used for the successful `beat06m08` repair; the batch required two turns because the earlier image cap was reached.
+- New anchors: none.
+- Declared exceptions: missing ignored reject original, documented in the sheet and above.
