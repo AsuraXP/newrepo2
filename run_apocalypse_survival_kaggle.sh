@@ -212,9 +212,9 @@ echo ""
 
 # ---- Step 7: Package deliverable ----
 echo "[7/7] Packaging deliverable..."
-DELIVERABLE="newrepo2/apocalypse_survival_video/apocalypse_survival_DELIVERABLE.zip"
+cd "$PROJECT"
+DELIVERABLE="apocalypse_survival_DELIVERABLE.zip"
 
-cd newrepo2/apocalypse_survival_video
 zip -j "$DELIVERABLE" \
   build/VIDEO.mp4 \
   build/narration.mp3 \
@@ -226,7 +226,7 @@ zip -j "$DELIVERABLE" \
   visuals.csv \
   brief.md \
   README.md
-echo "  Deliverable: $DELIVERABLE"
+echo "  Deliverable: $PROJECT/$DELIVERABLE"
 echo ""
 
 echo "=== DONE ==="
