@@ -1,0 +1,18 @@
+{
+  "slug": "apocalypse_day1",
+  "title": "Can You Survive Day One of the Zombie Apocalypse?",
+  "logline": "A second-person survival story plunging you from a quiet 7:12 AM morning on your couch into a real-life zombie apocalypse—through hallway outbreaks, trapped elevators, highway gridlock, gas station ambushes, and an elevated fire lookout cabin at midnight.",
+  "target_runtime_minutes": 8,
+  "word_count": 1518,
+  "projected_runtime_seconds": 489.7,
+  "frame_count": 162,
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%",
+  "pov": "Voice-of (second-person story)",
+  "style": "2D minimalist stick-figure cartoon (strict match to user_style_ref_01..03)",
+  "hard_rules": "none",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "platform": "YouTube",
+  "status": "STATE_4_AWAITING_ANCHOR_APPROVAL"
+}
