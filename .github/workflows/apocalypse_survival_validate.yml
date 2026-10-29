@@ -1,0 +1,157 @@
+name: Apocalypse Survival - Frame Validation
+
+on:
+  push:
+    branches:
+      - 'arena/*'
+    paths:
+      - 'apocalypse_survival_video/**'
+  pull_request:
+    paths:
+      - 'apocalypse_survival_video/**'
+
+jobs:
+  validate-visuals-csv:
+    name: Validate visuals.csv
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apocalypse_survival_video
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check visuals.csv exists
+        run: |
+          if [ ! -f visuals.csv ]; then
+            echo "::error::visuals.csv not found in apocalypse_survival_video/"
+            exit 1
+          fi
+          echo "visuals.csv exists"
+
+      - name: Validate CSV structure
+        run: |
+          HEADER=$(head -1 visuals.csv)
+          EXPECTED="slide_id,moment,moment_text,visual_prompt"
+          if [ "$HEADER" != "$EXPECTED" ]; then
+            echo "::error::CSV header mismatch. Got: $HEADER"
+            echo "::error::Expected: $EXPECTED"
+            exit 1
+          fi
+          echo "CSV header correct"
+
+      - name: Validate slide IDs are sequential
+        run: |
+          python3 -c "
+          import csv, sys
+          with open('visuals.csv') as f:
+              reader = csv.DictReader(f)
+              ids = [row['slide_id'] for row in reader]
+          # Check all start with 's'
+          for i, sid in enumerate(ids):
+              if not sid.startswith('s'):
+                  print(f'::error::slide_id {sid} does not start with s')
+                  sys.exit(1)
+              num = int(sid[1:])
+              expected = i + 1
+              if num != expected:
+                  print(f'::error::slide_id {sid} out of order (expected s{expected})')
+                  sys.exit(1)
+          print(f'All {len(ids)} slide IDs are sequential')
+          "
+
+      - name: Check each slide has a frame
+        run: |
+          python3 -c "
+          import csv, os, sys
+          missing = []
+          with open('visuals.csv') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  sid = row['slide_id']
+                  for ext in ['jpg', 'jpeg', 'png']:
+                      if os.path.exists(f'frames/{sid}.{ext}'):
+                          break
+                  else:
+                      missing.append(sid)
+          if missing:
+              print(f'::error::Missing frames: {missing}')
+              print(f'::notice::{len(missing)} frame(s) still need generation')
+              # Write summary for later
+              with open('/tmp/missing_frames.txt', 'w') as f:
+                  f.write(' '.join(missing))
+              sys.exit(1)
+          else:
+              print('All frames present')
+          "
+        continue-on-error: true
+
+      - name: Frame completion summary
+        run: |
+          TOTAL=$(tail -n +2 visuals.csv | wc -l)
+          PRESENT=0
+          MISSING=""
+          while IFS=, read -r sid rest; do
+              [ "$sid" = "slide_id" ] && continue
+              if ls frames/${sid}.* &>/dev/null; then
+                  PRESENT=$((PRESENT + 1))
+              else
+                  MISSING="$MISSING $sid"
+              fi
+          done < visuals.csv
+          echo "Frames: $PRESENT / $TOTAL complete"
+          if [ -n "$MISSING" ]; then
+              echo "Still needed:$MISSING"
+          fi
+
+  validate-scripts:
+    name: Validate script and metadata
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apocalypse_survival_video
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          REQUIRED="README.md brief.md script.md visuals.csv metadata.json youtube.txt STATE.md continuity.md"
+          for f in $REQUIRED; do
+              if [ ! -f "$f" ]; then
+                  echo "::warning::Missing: $f"
+              else
+                  echo "OK: $f"
+              fi
+          done
+
+      - name: Check frames/ and refs/ directories exist
+        run: |
+          [ -d frames ] && echo "OK: frames/" || echo "::warning::Missing: frames/"
+          [ -d refs ] && echo "OK: refs/" || echo "::warning::Missing: refs/"
+
+  report:
+    name: Project report
+    runs-on: ubuntu-latest
+    needs: [validate-visuals-csv, validate-scripts]
+    if: always()
+    defaults:
+      run:
+        working-directory: apocalypse_survival_video
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate status report
+        run: |
+          echo "=== APOCALYPSE SURVIVAL VIDEO STATUS ==="
+          echo ""
+          echo "Files:"
+          ls -la *.md *.csv *.json *.txt 2>/dev/null || true
+          echo ""
+          echo "Frames:"
+          ls frames/ 2>/dev/null | wc -l | xargs echo "Frame count:"
+          echo ""
+          echo "Refs:"
+          ls refs/ 2>/dev/null || echo "(none)"
+          echo ""
+          echo "Visuals CSV lines:"
+          tail -n +2 visuals.csv | wc -l | xargs echo "Slide count:"
+          echo ""
+          echo "Job results: visuals=${{ needs.validate-visuals-csv.result }}, scripts=${{ needs.validate-scripts.result }}"
