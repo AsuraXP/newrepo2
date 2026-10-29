@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# run_apocalypse_survival_kaggle.sh — Fixed v2
+# run_apocalypse_survival_kaggle.sh — v3 (uses vidsync library for word-accurate TTS)
 # Run in a Kaggle notebook cell (internet ON):
 #   !rm -rf newrepo2
 #   !git clone --depth 1 --branch arena/138cc5e0-newrepo2 https://github.com/AsuraXP/newrepo2.git
@@ -12,7 +12,7 @@ PROJECT="${REPO}/apocalypse_survival_video"
 BUILD="${PROJECT}/build"
 FRAMES="${PROJECT}/frames"
 
-echo "=== APOCALYPSE SURVIVAL KAGGLE RUNNER v2 ==="
+echo "=== APOCALYPSE SURVIVAL KAGGLE RUNNER v3 ==="
 echo ""
 
 # ---- Step 1: Install dependencies ----
@@ -28,84 +28,75 @@ mkdir -p "$BUILD"
 echo "[2/7] Build directory ready: $BUILD"
 echo ""
 
-# ---- Step 3: Run TTS with word-level timestamps ----
-echo "[3/7] Synthesizing narration (ONE continuous request with WordBoundary)..."
+# ---- Step 3: Run TTS with word-level timestamps using vidsync library ----
+echo "[3/7] Synthesizing narration with WordBoundary (via vidsync.RealEdgeTTS)..."
 python3 << 'PYEOF'
-import asyncio, json, os, sys, re
+import sys, re
+sys.path.insert(0, "newrepo2")
 
-async def main():
-    import edge_tts
+from vidsync.tts import RealEdgeTTS, TTSError
 
-    # Read narration from script.md — extract plain speakable text
-    with open("newrepo2/apocalypse_survival_video/script.md") as f:
-        text = f.read()
+# Read narration from script.md
+with open("newrepo2/apocalypse_survival_video/script.md") as f:
+    text = f.read()
 
-    # Extract speakable text: skip markdown headers, blank lines between paragraphs
-    lines = text.split('\n')
-    paragraphs = []
-    current_para = []
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith('#'):
-            if current_para:
-                paragraphs.append(' '.join(current_para))
-                current_para = []
-            continue
-        if not stripped:
-            if current_para:
-                paragraphs.append(' '.join(current_para))
-                current_para = []
-            continue
-        current_para.append(stripped)
-    if current_para:
-        paragraphs.append(' '.join(current_para))
+# Extract speakable text: skip headers, join paragraphs
+lines = text.split('\n')
+paragraphs = []
+current = []
+for line in lines:
+    s = line.strip()
+    if s.startswith('#'):
+        if current:
+            paragraphs.append(' '.join(current))
+            current = []
+        continue
+    if not s:
+        if current:
+            paragraphs.append(' '.join(current))
+            current = []
+        continue
+    current.append(s)
+if current:
+    paragraphs.append(' '.join(current))
 
-    narration = ' '.join(paragraphs).strip()
-    # Clean any remaining markdown artifacts
-    narration = re.sub(r'\*+', '', narration)
-    narration = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', narration)
+narration = ' '.join(paragraphs).strip()
+narration = re.sub(r'\*+', '', narration)
+narration = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', narration)
 
-    print(f"  Narration: {len(narration)} chars, ~{len(narration.split())} words")
+word_count = len(narration.split())
+print(f"  Narration: {len(narration)} chars, ~{word_count} words")
 
-    voice = "en-US-AndrewNeural"
-    rate = "+10%"
+audio_path = "newrepo2/apocalypse_survival_video/build/narration.mp3"
 
-    communicate = edge_tts.Communicate(narration, voice, rate=rate)
+tts = RealEdgeTTS(voice="en-US-AndrewNeural", rate="+10%")
+result = tts.synthesize(narration, audio_path, boundary="WordBoundary")
 
-    audio_path = "newrepo2/apocalypse_survival_video/build/narration.mp3"
-    events_path = "newrepo2/apocalypse_survival_video/build/word_events.json"
+print(f"  Audio: {result.audio_path} ({result.audio_duration_s:.2f}s)")
+print(f"  Word boundaries: {len(result.events)}")
+print(f"  Requested boundary: {result.requested_boundary}")
+print(f"  Returned types: {result.returned_boundary_types}")
+for note in result.notes:
+    print(f"  NOTE: {note}")
 
-    # Use save_with_audio_file to get both audio and metadata
-    submaker = edge_tts.SubMaker()
-    audio_chunks = []
-    boundary_events = []
+# Save events as JSON for downstream use
+import json
+events_data = []
+for e in result.events:
+    events_data.append({
+        "type": e.type,
+        "offset_s": e.offset_s,
+        "duration_s": e.duration_s,
+        "text": e.text,
+    })
+with open("newrepo2/apocalypse_survival_video/build/word_events.json", "w") as f:
+    json.dump(events_data, f, indent=2)
 
-    async for chunk in communicate.stream():
-        if chunk["type"] == "audio":
-            audio_chunks.append(chunk["data"])
-        elif chunk["type"] == "WordBoundary":
-            boundary_events.append({
-                "offset": chunk["offset"],
-                "duration": chunk["duration"],
-                "text": chunk["text"],
-            })
+if len(result.events) == 0:
+    print("  ERROR: No word boundaries returned! Check Kaggle internet is ON.")
+    sys.exit(1)
 
-    # Write audio
-    with open(audio_path, "wb") as f:
-        for chunk in audio_chunks:
-            f.write(chunk)
-    audio_size = os.path.getsize(audio_path)
-    print(f"  Audio: {audio_path} ({audio_size} bytes)")
-
-    # Write boundary events
-    with open(events_path, "w") as f:
-        json.dump(boundary_events, f, indent=2)
-    print(f"  Word boundaries captured: {len(boundary_events)}")
-
-    if len(boundary_events) == 0:
-        print("  WARNING: No WordBoundary events! Check edge-tts version compatibility.")
-
-asyncio.run(main())
+print("  Word-level TTS complete.")
 PYEOF
 echo ""
 
@@ -135,52 +126,62 @@ print(f"  Padded {len(frame_files)} frames to {TARGET_W}x{TARGET_H}")
 PYEOF
 echo ""
 
-# ---- Step 5: Build FFmpeg concat list with measured durations ----
-echo "[5/7] Building video timeline..."
+# ---- Step 5: Build frame timing from word boundaries ----
+echo "[5/7] Computing per-frame durations from word boundaries..."
 python3 << 'PYEOF'
 import json, os
 
 events_path = "newrepo2/apocalypse_survival_video/build/word_events.json"
+with open(events_path) as f:
+    events = json.load(f)
+
 num_frames = 68
+total_s = events[-1]["offset_s"] + events[-1]["duration_s"]
+print(f"  Total audio: {total_s:.2f}s ({len(events)} word boundaries)")
 
-# Try to use word boundary events for timing
-total_s = None
-use_word_timing = False
+# Compute word-indexed timeline: each word has a start time
+# Map each frame to the words it should cover (even distribution)
+words_per_frame = len(events) / num_frames
 
-if os.path.exists(events_path):
-    with open(events_path) as f:
-        events = json.load(f)
+# For each frame, compute start/end from the word boundaries
+frame_timings = []
+for i in range(num_frames):
+    start_word_idx = int(i * words_per_frame)
+    end_word_idx = int((i + 1) * words_per_frame)
+    if end_word_idx >= len(events):
+        end_word_idx = len(events) - 1
 
-    if events and len(events) > 0:
-        # Calculate total duration from last event
-        last = events[-1]
-        # edge-tts offset and duration are in 100-nanosecond units
-        total_s = (last["offset"] + last["duration"]) / 10_000_000.0
-        use_word_timing = True
-        print(f"  Word-timed total: {total_s:.2f}s ({len(events)} boundaries)")
+    start_s = events[start_word_idx]["offset_s"]
+    end_s = events[end_word_idx]["offset_s"] + events[end_word_idx]["duration_s"]
+    duration = end_s - start_s
+    frame_timings.append({
+        "frame_id": f"s{i+1:02d}",
+        "start_s": start_s,
+        "end_s": end_s,
+        "duration_s": duration,
+        "words_covered": end_word_idx - start_word_idx + 1,
+    })
 
-if total_s is None:
-    # Fallback: estimate from word count
-    total_s = 272.0
-    print(f"  Fallback estimate: {total_s:.2f}s")
+# Write timings
+timings_path = "newrepo2/apocalypse_survival_video/build/frame_timings.json"
+with open(timings_path, "w") as f:
+    json.dump(frame_timings, f, indent=2)
+print(f"  Timings written: {num_frames} frames")
 
-frame_duration = total_s / num_frames
-print(f"  Per-frame duration: {frame_duration:.3f}s")
-
-# Write concat list
+# Write FFmpeg concat list
 concat_path = "newrepo2/apocalypse_survival_video/build/concat.txt"
 with open(concat_path, "w") as f:
-    for i in range(1, num_frames + 1):
-        sid = f"s{i:02d}"
+    for ft in frame_timings:
+        sid = ft["frame_id"]
         img = f"newrepo2/apocalypse_survival_video/build/padded/{sid}.jpg"
         abs_img = os.path.abspath(img)
         f.write(f"file '{abs_img}'\n")
-        f.write(f"duration {frame_duration:.4f}\n")
-    # FFmpeg concat demuxer requires last entry repeated
+        f.write(f"duration {ft['duration_s']:.4f}\n")
+    # FFmpeg concat requirement: repeat last entry
     last_img = f"newrepo2/apocalypse_survival_video/build/padded/s{num_frames:02d}.jpg"
     f.write(f"file '{os.path.abspath(last_img)}'\n")
 
-print(f"  Concat list: {concat_path}")
+print(f"  Concat list written")
 PYEOF
 echo ""
 
@@ -190,12 +191,6 @@ CONCAT_FILE="newrepo2/apocalypse_survival_video/build/concat.txt"
 AUDIO_FILE="newrepo2/apocalypse_survival_video/build/narration.mp3"
 OUTPUT_FILE="newrepo2/apocalypse_survival_video/build/VIDEO.mp4"
 
-# First pass: normalize audio loudness
-NORMALIZED_AUDIO="newrepo2/apocalypse_survival_video/build/narration_normalized.mp3"
-echo "  Pass 1: Measuring loudness..."
-ffmpeg -y -i "$AUDIO_FILE" -af loudnorm=I=-14:LRA=11:TP=-1.5:print_format=json -f null - 2>&1 | tail -20 > "$BUILD/loudnorm_stats.json" || true
-
-echo "  Pass 2: Applying loudness normalization + rendering..."
 ffmpeg -y \
   -f concat -safe 0 -i "$CONCAT_FILE" \
   -i "$AUDIO_FILE" \
@@ -222,6 +217,9 @@ DELIVERABLE="newrepo2/apocalypse_survival_video/apocalypse_survival_DELIVERABLE.
 cd newrepo2/apocalypse_survival_video
 zip -j "$DELIVERABLE" \
   build/VIDEO.mp4 \
+  build/narration.mp3 \
+  build/word_events.json \
+  build/frame_timings.json \
   metadata.json \
   script.md \
   youtube.txt \
