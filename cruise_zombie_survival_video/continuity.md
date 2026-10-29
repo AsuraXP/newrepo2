@@ -170,3 +170,13 @@ Create one standalone 16:9 location-reference image for the same animated story.
 - Rejects: none; repair budget 0 / 2 used. Nine of ten image slots used, including the new buffet anchor.
 - Contact sheet: `frames/contact_sheets/batch08.jpg`.
 - Declared exceptions: none.
+
+## Batch 9 QC — 8 accepted
+- Accepted: `beat05m08`, `beat05m09`, `beat05m10`, `beat05m11`, `beat05m12`, `beat05m13`, `beat05m14`, `beat05m15`.
+- Reject: `beat05m09_r1` — a skin-toned hand with separated fingers violated anchor B's solid black mitten silhouettes. Changed only the hand-style clause to require solid black rounded mittens with no skin tone or separated fingers; replacement `beat05m09` passed.
+- Reject: `beat05m15_r1` — the napkin became unrelated scribbles instead of the established cake-icon list. Changed only the napkin-description clause; replacement `beat05m15` passed with exactly three empty checkboxes, three cake-slice icons, one crescent moon, and no other writing.
+- Continuity checks: `beat05m08` shows fruit and cake on Lina's plate; `beat05m11` uses three cake icons and a crescent moon without a list; `beat05m12` establishes the icon-only napkin; `beat05m13` preserves the shared future-evening thought image; `beat05m14` uses an unlabeled orange-and-blue patrol vessel; no dropped tray appears early.
+- Contact sheet: `frames/contact_sheets/batch09.jpg` includes all eight accepted frames and both rejects.
+- Repair budget: 2 / 2 used; image cap 10 / 10 reached.
+- New anchors: none.
+- Declared exceptions: none.
