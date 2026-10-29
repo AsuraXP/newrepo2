@@ -93,3 +93,10 @@ Create one standalone 16:9 location-reference image for the same animated story,
 - Contact sheet: `frames/contact_sheets/batch02.jpg`.
 - New anchors: none.
 - Declared exceptions: none.
+
+## Batch 3 QC — 8 accepted
+- Accepted: `beat02m10`, `beat02m11`, `beat02m12`, `beat02m13`, `beat02m14`, `beat02m15`, `beat02m16`, `beat02m17`.
+- Reject: `beat02m17_r1` — `protagonist and crew hands realistic skin-toned vs anchor B solid black mitten silhouettes`. Changed only the hand-style clause to require solid black mitten hands for every visible person; replacement `beat02m17` passed.
+- Contact sheet: `frames/contact_sheets/batch03.jpg` includes the reject.
+- New anchors: none.
+- Declared exceptions: none.
