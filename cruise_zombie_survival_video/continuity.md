@@ -21,6 +21,7 @@ These are script details, not yet approved visual invariants.
 - Character reference derived from B: `refs/anchor_characters.png` (crop only; no new image content).
 - Atrium location reference: `refs/anchor_atrium.png` (exact copy of B).
 - Terminal location reference: `refs/anchor_terminal.png`, generated from B and visually QC-approved before batch 1.
+- Promenade location reference: `refs/anchor_promenade.png`, generated from B with terminal port geography and visually QC-approved before batch 6's departure frames.
 - Additional location anchors may be generated with B as the style reference before their first scene; they never replace B's style or character rules.
 - Anchor recipe for every episode frame: `images=[refs/anchor_characters.png, refs/anchor_<location>.png, optional_prior_approved_frame]`.
 - Exact B generation prompt is preserved below under `Style-test candidate prompts`.
@@ -79,6 +80,13 @@ Reference image: `refs/anchor_atrium.png`.
 Create one standalone 16:9 location-reference image for the same animated story, using the supplied approved atrium anchor only for its visual style. Location: exterior cruise-terminal gangway beside the immense white hull of the cruise ship Meridian. Show the open gangway door, metal railings, luggage barriers, abstract emergency-screen shapes with no legible writing, the distant pier and abandoned cars, and restrained hand-drawn black smoke rising far beyond the terminal. No named characters in the foreground; keep the location clear for later character placement. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them: motion lines, impact bursts, smoke, sea spray, flickering light, and dramatic shadows; never use comic-book captions or onomatopoeia text.
 ```
 
+### Promenade — `refs/anchor_promenade.png`
+Reference images: `refs/anchor_atrium.png`, `refs/anchor_terminal.png`.
+
+```text
+Create one standalone 16:9 location-reference image for the same animated story. Use the first image only for its approved hand-drawn style, palette, and line work, and the second only for distant port geography; do not copy either image's characters or action. Location: the Meridian's open exterior promenade deck while still near port. A warm cream deck runs beside a muted teal-gray ship wall on the left and a long white metal railing on the right. Beyond the railing are restrained blue water, a receding concrete pier with a few tiny abandoned cars, and a distant coastal city skyline. Include two orange lifeboats suspended below the outer railing and one closed cream life-jacket storage locker set into the ship wall, marked only with a simple icon-only life-jacket shape and no writing. Add one thin distant black smoke plume far above the city, keeping the deck itself calm and safe. No named characters, no passengers, no infected, no motion, no cheering, and no foreground props; keep the location clear for later character placement. Wide maritime geography must make the strip of water between ship and pier unmistakable. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them; here only the distant smoke and a few restrained hand-inked water lines, never comic-book captions or onomatopoeia text.
+```
+
 ## Batch 1 QC — 8 accepted
 - Accepted: `beat01m01`, `beat01m02`, `beat01m03`, `beat01m04`, `beat01m05`, `beat01m06`, `beat01m07`, `beat02m01`.
 - Reject: `beat01m04_r1` — readable `BOARDING PASS` and `SAVINGS` plus pseudo-writing violated the no-readable-text/gibberish floor. Changed only the close-up prop clause to a plain glass coin jar and completely blank cream cards; replacement `beat01m04` passed.
@@ -125,4 +133,13 @@ Create one standalone 16:9 location-reference image for the same animated story,
 - Contact sheet: `frames/contact_sheets/batch05.jpg` includes all eight accepted frames and all three rejects.
 - Repair budget final turn: 1 / 2 used; the batch required two turns because the earlier image and repair caps were reached.
 - New anchors: none.
+- Declared exceptions: none.
+
+## Batch 6 QC — 8 accepted
+- Accepted: `beat03m08`, `beat03m09`, `beat03m10`, `beat04m01`, `beat04m02`, `beat04m03`, `beat04m04`, `beat04m05`.
+- New location anchor: `refs/anchor_promenade.png`, QC-approved before `beat04m01`. It establishes the cream promenade, white railing, two orange lifeboats, icon-only locker, blue water gap, receding pier, and distant city without characters or readable text; exact prompt and references are logged above.
+- `beat03m09` is an explicitly unpopulated storybook metaphor of the city-like ship floating, not a new physical event. `beat03m10` introduces the horn only through offscreen resonance curves, glass jitter marks, and the siblings' reactions.
+- Departure timing checks: no cheering occurs through `beat04m05`; `beat04m03` shows exactly three abandoned cars and five distant runners; `beat04m04` is a non-graphic city-smoke cutaway; `beat04m05` emphasizes the widening water before the next moment's cheering.
+- Rejects: none; repair budget 0 / 2 used. Nine of ten image slots used, including the new location anchor.
+- Contact sheet: `frames/contact_sheets/batch06.jpg`.
 - Declared exceptions: none.
