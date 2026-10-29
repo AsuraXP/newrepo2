@@ -1,0 +1,87 @@
+# Continuity
+
+## User-supplied style references
+- `refs/style_ref_01.png`
+- `refs/style_ref_02.png`
+- `refs/style_ref_03.png`
+
+These establish the requested hand-drawn stick-figure look. They are not generated character/location anchors.
+
+
+## Narrative design cues — pending visual anchor approval
+- Protagonist: green windbreaker, cheap enamel anchor pin, red backpack, yellow muster wristband.
+- Lina: thirteen years old, small build, two dark braids, purple hoodie; carries flashlight and spare radio during the rescue.
+- Mara: young deck officer, cropped black braid, white uniform, silver radio, brass key ring.
+- Meridian: fourteen decks, glass atrium elevators, orange lifeboats, blue crew doors, forward observation lounge with steel shutters.
+
+These are script details, not yet approved visual invariants.
+
+## Approved anchors
+- **Winning style/reference anchor: B** — `refs/test_02_atrium.png`, explicitly selected by the user.
+- Character reference derived from B: `refs/anchor_characters.png` (crop only; no new image content).
+- Atrium location reference: `refs/anchor_atrium.png` (exact copy of B).
+- Terminal location reference: `refs/anchor_terminal.png`, generated from B and visually QC-approved before batch 1.
+- Additional location anchors may be generated with B as the style reference before their first scene; they never replace B's style or character rules.
+- Anchor recipe for every episode frame: `images=[refs/anchor_characters.png, refs/anchor_<location>.png, optional_prior_approved_frame]`.
+- Exact B generation prompt is preserved below under `Style-test candidate prompts`.
+
+## Invariants
+- Palette: warm off-white paper, uneven black ink, muted teal-gray architecture, green windbreaker, purple hoodie, white uniform, blue crew doors, restrained blue water, and desaturated gray infected.
+- Line weight: thick uneven black outer contours; very thin black stick limbs; flat muted fills; subtle dry-paper texture; no photorealism or 3D.
+- Protagonist: gender-neutral young stick figure, oversized white round head, tiny oval eyes, green windbreaker, small enamel anchor pin, red backpack, yellow muster wristband.
+- Lina: small thirteen-year-old stick figure, oversized white round head, two dark braids, purple hoodie. Flashlight and spare radio appear only after Mara gives them to her.
+- Mara: oversized white round head, cropped black hair with a single dark over-shoulder braid, white deck-officer uniform, silver radio, brass key ring. One sleeve is torn only after the rescue.
+- Props: red backpack, yellow wristband, anchor pin, blue crew doors, orange lifeboats, steel shutters, flashlight, silver radios, brass keys, and wheeled drinks cart must keep their established shapes and colors.
+- Creature rules: desaturated gray-green round heads, cloudy pale dot eyes, uneven posture, torn muted clothing, non-graphic action, no blood or wound detail.
+- Visual SFX: hand-drawn motion lines, abstract impact bursts, smoke, sea spray, flickering light, and dramatic shadows only when motivated by the exact micro-beat; no comic-book captions or onomatopoeia text.
+- Glass/barrier composition: camera on the viewer's side; figures seen from behind; hands on the viewer's side of the surface; interior visible through it.
+- Story state: every frame prompt must state the current location, door/shutter state, available props, character wardrobe state, and pursuit state. Never show a later action early.
+- Set dressing is lower priority than character, prop, palette, line-weight, and story-state fidelity.
+
+## Moderation substitutions
+- `test_03_pool_action.png`, first block: exact triggering token was not reported; blocked action clause `swings a red backpack into the chest of` replaced with `braces a red backpack between himself and`. No other prompt clause changed.
+- `test_03_pool_action.png`, second block: exact triggering token was not reported; negative phrase `no blood or wounds` replaced with `flat muted color shapes and no injury detail`.
+- `test_03_pool_action.png`, third block: direct-contact backpack action with Lina beside the threat replaced by a non-contact drinks-cart evasion composition; Lina and Mara are safely inside the lounge doorway and distant gray figures replace the close infected passenger.
+
+## Style-test QC
+- `test_03_pool_action.png`: `Mara dark round head vs test_02_atrium white round head`; rejected character drift and changed only the Mara appearance clause, adding `test_02_atrium.png` as her visual reference. Original preserved as `test_03_pool_action_reject.png`.
+
+
+## Style-test candidate prompts — pending user selection
+
+### A — `refs/test_01_gangway.png`
+Reference images: `refs/style_ref_01.png`, `refs/style_ref_02.png`, `refs/style_ref_03.png`.
+
+```text
+Create one standalone 16:9 style-test frame for an animated story. Use the three supplied images only as visual style references, not as scenes to copy. Scene: outside a cruise terminal on the gangway of the immense white cruise ship Meridian. A gender-neutral young stick-figure protagonist wears a green windbreaker with a tiny enamel anchor pin, a red backpack, and a yellow wristband. Beside them is their small thirteen-year-old sister Lina with two dark braids and a purple hoodie. They look up at the ship while distant emergency smoke and subtle hand-drawn siren-ray marks create tension on land. Full-body, clean character silhouettes, gangway and ship scale clearly readable. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them: motion lines, impact bursts, smoke, sea spray, flickering light, and dramatic shadows; never use comic-book captions or onomatopoeia text.
+```
+
+### B — `refs/test_02_atrium.png`
+Reference images: `refs/style_ref_01.png`, `refs/style_ref_02.png`, `refs/style_ref_03.png`.
+
+```text
+Create one standalone 16:9 style-test frame for an animated story. Use the three supplied images only as visual style references, not as scenes to copy. Scene: inside the Meridian's luxurious multi-level cruise atrium during the first panic. Glass elevators, curved staircases, a piano, and an abstract sculpture surround a clearly visible blue crew door. Mara, a young deck officer with a cropped black braid, white uniform, silver radio, and brass key ring, blows a whistle and points toward the door. The green-windbreaker protagonist with red backpack and their purple-hoodie sister Lina with two dark braids follow her. Background passengers rush in opposing directions. Use restrained hand-drawn motion lines and flickering-light marks, with no graphic injury. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them: motion lines, impact bursts, smoke, sea spray, flickering light, and dramatic shadows; never use comic-book captions or onomatopoeia text.
+```
+
+### C — `refs/test_03_pool_action.png`
+Reference images: `refs/test_02_atrium.png`, `refs/style_ref_01.png`, `refs/style_ref_02.png`, `refs/style_ref_03.png`.
+
+```text
+Create one standalone 16:9 style-test frame for an animated story. Use the supplied images only as visual style references, not as scenes to copy. Scene: on the Meridian's wet pool deck beside a white canopy and scattered loungers, with blue ocean beyond the railing. The green-windbreaker protagonist, wearing a yellow wristband and red backpack, kicks an empty wheeled drinks cart across the wet tiles toward an unoccupied lounger. The cart tips the lounger sideways with a small abstract hand-drawn impact burst and motion lines. Lina, small with two dark braids and a purple hoodie, and Mara, with the same white oversized round head and cropped black braid as the supplied atrium character reference, wearing a white deck-officer uniform, wait safely inside the open observation-lounge doorway and wave the protagonist forward. Two fully clothed, desaturated gray stick figures are distant background silhouettes with uneven posture, separated from the protagonists by deck furniture. Add light hand-drawn sea spray and keep every silhouette simple and readable. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them: motion lines, impact bursts, smoke, sea spray, flickering light, and dramatic shadows; never use comic-book captions or onomatopoeia text.
+```
+
+## Additional approved location-anchor prompts
+
+### Terminal — `refs/anchor_terminal.png`
+Reference image: `refs/anchor_atrium.png`.
+
+```text
+Create one standalone 16:9 location-reference image for the same animated story, using the supplied approved atrium anchor only for its visual style. Location: exterior cruise-terminal gangway beside the immense white hull of the cruise ship Meridian. Show the open gangway door, metal railings, luggage barriers, abstract emergency-screen shapes with no legible writing, the distant pier and abandoned cars, and restrained hand-drawn black smoke rising far beyond the terminal. No named characters in the foreground; keep the location clear for later character placement. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them: motion lines, impact bursts, smoke, sea spray, flickering light, and dramatic shadows; never use comic-book captions or onomatopoeia text.
+```
+
+## Batch 1 QC — 8 accepted
+- Accepted: `beat01m01`, `beat01m02`, `beat01m03`, `beat01m04`, `beat01m05`, `beat01m06`, `beat01m07`, `beat02m01`.
+- Reject: `beat01m04_r1` — readable `BOARDING PASS` and `SAVINGS` plus pseudo-writing violated the no-readable-text/gibberish floor. Changed only the close-up prop clause to a plain glass coin jar and completely blank cream cards; replacement `beat01m04` passed.
+- Contact sheet: `frames/contact_sheets/batch01.jpg` includes all eight accepted frames and the reject.
+- New anchor: `refs/anchor_terminal.png`.
+- Declared exceptions: none.

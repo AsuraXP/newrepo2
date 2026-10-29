@@ -20,3 +20,7 @@ assets/frames/source/
 # Session scratch.
 Unselected files/
 *.log
+
+# Episode QC originals stay out; reviewed contact sheets preserve the rejects.
+cruise_zombie_survival_video/frames/rejects/
+cruise_zombie_survival_video/refs/*_reject.png

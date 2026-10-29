@@ -1,0 +1,41 @@
+{
+  "title": "Surviving a Zombie Apocalypse on a Cruise Ship",
+  "slug": "cruise_zombie_survival",
+  "status": "frames_in_progress",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%",
+  "target_runtime_seconds": 660,
+  "pov": "second-person story",
+  "platform": "YouTube",
+  "style_references": [
+    "refs/style_ref_01.png",
+    "refs/style_ref_02.png",
+    "refs/style_ref_03.png"
+  ],
+  "runtime_note": "Flexible expanded target after user authorized a runtime longer than 8 minutes.",
+  "script_word_count": 2022,
+  "projected_runtime_seconds": 652.3,
+  "projected_runtime_basis": "word count / 3.1 words per second; estimate only",
+  "sfx_mode": "visual_effects_inside_frames_only",
+  "visual_sfx": [
+    "motion lines",
+    "impact bursts",
+    "smoke",
+    "sea spray",
+    "flickering light",
+    "dramatic shadows"
+  ],
+  "onomatopoeia_text": false,
+  "spine_rows": 275,
+  "spine_beats": 20,
+  "approved_style_anchor": "refs/test_02_atrium.png",
+  "accepted_frames": 8,
+  "remaining_frames": 267,
+  "latest_contact_sheet": "frames/contact_sheets/batch01.jpg",
+  "location_anchors": [
+    "refs/anchor_atrium.png",
+    "refs/anchor_terminal.png"
+  ]
+}
