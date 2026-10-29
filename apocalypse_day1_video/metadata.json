@@ -6,6 +6,7 @@
   "word_count": 1518,
   "projected_runtime_seconds": 489.7,
   "frame_count": 162,
+  "resolution": "1376x768",
   "voice": "en-US-AndrewNeural",
   "rate": "+10%",
   "pov": "Voice-of (second-person story)",
@@ -14,5 +15,8 @@
   "aspect_ratio": "16:9",
   "captions": "none",
   "platform": "YouTube",
-  "status": "STATE_4_AWAITING_ANCHOR_APPROVAL"
+  "autopilot": true,
+  "kaggle_runner": "run_apocalypse_day1_kaggle.sh",
+  "deliverable_zip": "apocalypse_day1_DELIVERABLE.zip",
+  "status": "STATE_7_READY_FOR_KAGGLE_RENDER"
 }
