@@ -85,3 +85,11 @@ Create one standalone 16:9 location-reference image for the same animated story,
 - Contact sheet: `frames/contact_sheets/batch01.jpg` includes all eight accepted frames and the reject.
 - New anchor: `refs/anchor_terminal.png`.
 - Declared exceptions: none.
+
+## Batch 2 QC — 8 accepted
+- Accepted: `beat02m02`, `beat02m03`, `beat02m04`, `beat02m05`, `beat02m06`, `beat02m07`, `beat02m08`, `beat02m09`.
+- Rejects: none; repair budget 0 / 2 used.
+- Prop checks: `beat02m08` shows exactly two water bottles and one flashlight, with no snacks or radio; `beat02m09` adds exactly three blank snack packets while retaining the two bottles and flashlight.
+- Contact sheet: `frames/contact_sheets/batch02.jpg`.
+- New anchors: none.
+- Declared exceptions: none.
