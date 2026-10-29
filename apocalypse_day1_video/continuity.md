@@ -45,3 +45,4 @@
 | Blocked Term / Clause | Approved Replacement | Frame / Ref ID |
 |---|---|---|
 | `lunges at Marcus's shoulder with tense open mouth` | `reaches abruptly toward Marcus's blue sleeve as Marcus steps back startled` | `beat01m16` |
+| `point the tip of his silver-grey aluminum baseball bat straight toward the windshield` | `stands blocking the lane, holding a silver-grey cylindrical sports bat raised diagonally in one stick hand toward the car hood while gesturing palm-out with his other stick hand to stop` | `beat06m07` |
