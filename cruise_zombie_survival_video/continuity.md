@@ -100,3 +100,18 @@ Create one standalone 16:9 location-reference image for the same animated story,
 - Contact sheet: `frames/contact_sheets/batch03.jpg` includes the reject.
 - New anchors: none.
 - Declared exceptions: none.
+
+## Post-checkpoint user review — `beat02m16` repaired
+- Reject: `beat02m16_r1` — the user flagged the cars-and-smoke terminal background as confusing in the playful sailor-memory shot. The original is preserved under `frames/rejects/`.
+- Changed only the location clause to a plain cream sky and clean ship hull, explicitly excluding the terminal, cars, smoke, and disaster effects. Character blocking, anchors, action, and all other prompt language stayed unchanged.
+- Replacement `beat02m16` passed: sailor pose and Lina's thumbs-up remain clear against the clean hull; style, palette, costumes, and solid black mitten hands match the anchors.
+- Updated `frames/contact_sheets/batch03.jpg` now includes both `beat02m16_r1` and `beat02m17_r1` rejects.
+
+## Batch 4 QC — 8 accepted
+- Accepted: `beat02m18`, `beat02m19`, `beat02m20`, `beat02m21`, `beat02m22`, `beat02m23`, `beat02m24`, `beat02m25`.
+- Reject: `beat02m19_r1` — duplicated the green-windbreaker/red-backpack protagonist in the refused-entry cutaway. Changed only the camera clause to a family-and-security cutaway with both siblings entirely out of frame and no green windbreaker, red backpack, yellow wristband, anchor pin, or purple hoodie visible; replacement `beat02m19` passed.
+- Action/prop checks: `beat02m20` uses an abstract red-triangle medical alert without readable text; `beat02m23` uses wristband icons without readable text or numbers; `beat02m24` shows an icon-only emergency route on the phone.
+- Contact sheet: `frames/contact_sheets/batch04.jpg` includes all eight accepted frames and the reject.
+- Repair budget this turn: 2 / 2 used across the `beat02m16` and `beat02m19` repairs.
+- New anchors: none.
+- Declared exceptions: none.
