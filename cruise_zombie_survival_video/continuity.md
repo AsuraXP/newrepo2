@@ -22,6 +22,7 @@ These are script details, not yet approved visual invariants.
 - Atrium location reference: `refs/anchor_atrium.png` (exact copy of B).
 - Terminal location reference: `refs/anchor_terminal.png`, generated from B and visually QC-approved before batch 1.
 - Promenade location reference: `refs/anchor_promenade.png`, generated from B with terminal port geography and visually QC-approved before batch 6's departure frames.
+- Buffet location reference: `refs/anchor_buffet.png`, generated from B with promenade maritime continuity and visually QC-approved before batch 8's buffet frames.
 - Additional location anchors may be generated with B as the style reference before their first scene; they never replace B's style or character rules.
 - Anchor recipe for every episode frame: `images=[refs/anchor_characters.png, refs/anchor_<location>.png, optional_prior_approved_frame]`.
 - Exact B generation prompt is preserved below under `Style-test candidate prompts`.
@@ -85,6 +86,13 @@ Reference images: `refs/anchor_atrium.png`, `refs/anchor_terminal.png`.
 
 ```text
 Create one standalone 16:9 location-reference image for the same animated story. Use the first image only for its approved hand-drawn style, palette, and line work, and the second only for distant port geography; do not copy either image's characters or action. Location: the Meridian's open exterior promenade deck while still near port. A warm cream deck runs beside a muted teal-gray ship wall on the left and a long white metal railing on the right. Beyond the railing are restrained blue water, a receding concrete pier with a few tiny abandoned cars, and a distant coastal city skyline. Include two orange lifeboats suspended below the outer railing and one closed cream life-jacket storage locker set into the ship wall, marked only with a simple icon-only life-jacket shape and no writing. Add one thin distant black smoke plume far above the city, keeping the deck itself calm and safe. No named characters, no passengers, no infected, no motion, no cheering, and no foreground props; keep the location clear for later character placement. Wide maritime geography must make the strip of water between ship and pier unmistakable. Hand-drawn 2D stick-figure animation matching the supplied user references: oversized round white heads, thick uneven black ink contours, tiny oval eyes, minimal expressive mouths, thin black stick limbs, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork when the action calls for them; here only the distant smoke and a few restrained hand-inked water lines, never comic-book captions or onomatopoeia text.
+```
+
+### Buffet — `refs/anchor_buffet.png`
+Reference images: `refs/anchor_atrium.png`, `refs/anchor_promenade.png`.
+
+```text
+Create one standalone 16:9 location-reference image for the same animated story. Use the first image only for its approved hand-drawn style, palette, and line work, and the second only for maritime atmosphere and ocean continuity; do not copy either image's characters or action. Location: the Meridian's bright, elegant buffet beside a long row of large ocean-view windows. Use warm cream walls and floor, muted teal-gray trim, simple brass-colored lights, and pale blue sea visible through every window. On the left, a long cream buffet counter holds neat trays of colorful fruit and several cake stands with simple frosted cakes, all without labels or writing. On the right, include a clearly recognizable dessert station with additional cakes and a few empty plates stacked neatly. Place three small round tables with simple chairs beside the windows, including one especially clear window-side table for the siblings. Mount one cream circular-grille loudspeaker high on the wall, switched off with no sound rays. No people, protagonist, Lina, Mara, crew, passengers, infected, food in hands, or Coast Guard vessel; keep the location clear for later character placement. No emergency activity, dropped dishes, stains, or panic. Hand-drawn 2D animation matching the supplied user references: thick uneven black ink contours, simple flat muted colors, sparse hand-inked environments, subtle dry-paper texture, expressive silhouettes, wide 16:9 composition; no photorealism, no 3D, no glossy shading, no readable text, no logos, no watermarks, no gore. Visual SFX are hand-drawn within the artwork only when the action calls for them; this quiet location anchor needs no motion lines, impact bursts, smoke, sea spray, flickering light, captions, or onomatopoeia text.
 ```
 
 ## Batch 1 QC — 8 accepted
@@ -152,4 +160,13 @@ Create one standalone 16:9 location-reference image for the same animated story.
 - Contact sheet: `frames/contact_sheets/batch07.jpg` includes all eight accepted frames and the reject.
 - Repair budget: 1 / 2 used; nine successful image slots used.
 - New anchors: none.
+- Declared exceptions: none.
+
+## Batch 8 QC — 8 accepted
+- Accepted: `beat04m14`, `beat05m01`, `beat05m02`, `beat05m03`, `beat05m04`, `beat05m05`, `beat05m06`, `beat05m07`.
+- New location anchor: `refs/anchor_buffet.png`, QC-approved before `beat05m04`. It establishes the bright ocean-window buffet, fruit counter, dessert station, window-side tables, and wall loudspeaker without people, readable labels, or an early Coast Guard vessel; exact prompt and references are logged above.
+- `beat04m14` reduces the coastline to a thin muted-orange burning strip. `beat05m02` uses exactly three icon-only harbor-status pictograms—shield, hourglass, and harbor gate—with no writing or premature all-clear.
+- Timing checks: the captain remains offscreen and is represented only by loudspeaker sound rays; `beat05m06` shows only empty passenger plates and no food served; `beat05m07` gives Lina her first gentle smile with empty hands and no plate. No Coast Guard vessel appears before its next-batch cue.
+- Rejects: none; repair budget 0 / 2 used. Nine of ten image slots used, including the new buffet anchor.
+- Contact sheet: `frames/contact_sheets/batch08.jpg`.
 - Declared exceptions: none.

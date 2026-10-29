@@ -31,12 +31,13 @@
   "spine_rows": 275,
   "spine_beats": 20,
   "approved_style_anchor": "refs/test_02_atrium.png",
-  "accepted_frames": 56,
-  "remaining_frames": 219,
-  "latest_contact_sheet": "frames/contact_sheets/batch07.jpg",
+  "accepted_frames": 64,
+  "remaining_frames": 211,
+  "latest_contact_sheet": "frames/contact_sheets/batch08.jpg",
   "location_anchors": [
     "refs/anchor_atrium.png",
     "refs/anchor_terminal.png",
-    "refs/anchor_promenade.png"
+    "refs/anchor_promenade.png",
+    "refs/anchor_buffet.png"
   ]
 }
