@@ -10,4 +10,4 @@
 - **Captions**: `None`
 - **Aspect Ratio**: `16:9`
 - **Platform**: `YouTube`
-- **Autopilot**: `false`
+- **Autopilot**: `true`

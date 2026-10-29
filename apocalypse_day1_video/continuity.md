@@ -44,4 +44,4 @@
 ## 5. Content Moderation Log
 | Blocked Term / Clause | Approved Replacement | Frame / Ref ID |
 |---|---|---|
-| *(None triggered in STATE 4)* | — | — |
+| `lunges at Marcus's shoulder with tense open mouth` | `reaches abruptly toward Marcus's blue sleeve as Marcus steps back startled` | `beat01m16` |
