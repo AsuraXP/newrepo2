@@ -5,17 +5,18 @@
 - Project slug: cruise_zombie_survival
 - Total spine: 275 moments across 20 beats; expanded 2,022-word script approved.
 - Approved style/reference anchor: B (`refs/test_02_atrium.png`)
-- Accepted frames: 48 / 275
-- Remaining frames: 227
+- Accepted frames: 56 / 275
+- Remaining frames: 219
 - Batch 1: complete; 1 text reject repaired.
 - Batch 2: complete; 0 rejects.
 - Batch 3: complete; hand-style and post-checkpoint location rejects repaired; contact sheet `frames/contact_sheets/batch03.jpg` includes both rejects.
 - Batch 4: complete; 1 duplicate-protagonist reject repaired; contact sheet `frames/contact_sheets/batch04.jpg`.
 - Batch 5: complete; 3 wristband-lettering rejects preserved across two turns; final `beat03m06` repair passed. Contact sheet `frames/contact_sheets/batch05.jpg` includes all rejects.
 - Batch 6: complete; 0 rejects; contact sheet `frames/contact_sheets/batch06.jpg`.
-- New anchors this turn: `refs/anchor_promenade.png` (QC-approved and logged)
-- Next batch: CSV rows 49–56, `beat04m06` through `beat04m13` — passenger cheering, orange lifeboat rows, remembered safety card, locker jackets, luxury versus safety equipment, and the siblings' solemn watch toward land.
-- Repair budget last turn: 0 / 2 used
+- Batch 7: complete; 1 jacket-count/expression reject repaired; contact sheet `frames/contact_sheets/batch07.jpg` includes the reject.
+- New anchors this turn: none
+- Next batch: CSV rows 57–64, `beat04m14` and `beat05m01` through `beat05m07` — the thin burning coastline, the captain's calm announcement, temporary precaution, lunch, and Lina's first buffet smile. Create and QC a buffet location anchor before the first buffet frame.
+- Repair budget last turn: 1 / 2 used (`beat04m11` jacket count and solemn expressions; passed)
 - Declared exceptions: none
 
 No TTS, audio mixing, FFmpeg previews, or video encoding may run in this workspace.

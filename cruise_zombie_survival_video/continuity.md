@@ -143,3 +143,13 @@ Create one standalone 16:9 location-reference image for the same animated story.
 - Rejects: none; repair budget 0 / 2 used. Nine of ten image slots used, including the new location anchor.
 - Contact sheet: `frames/contact_sheets/batch06.jpg`.
 - Declared exceptions: none.
+
+## Batch 7 QC — 8 accepted
+- Accepted: `beat04m06`, `beat04m07`, `beat04m08`, `beat04m09`, `beat04m10`, `beat04m11`, `beat04m12`, `beat04m13`.
+- Reject: `beat04m11_r1` — the open locker contained extra jackets instead of the established six, and both siblings smiled instead of remaining solemn. Changed only the jacket-count/arrangement and expression clauses; replacement `beat04m11` passed with exactly six jackets in two rows of three, flat mouths, and the pool secondary to the safety equipment.
+- Prop/timing checks: `beat04m07` shows eight hanging boats in two staggered rows; `beat04m08` keeps the safety card inside a thought cloud with exactly three pictograms and no writing; `beat04m09` shows exactly six jackets and no removal; `beat04m13` keeps the coastline individually readable and does not show the next moment's thin burning line.
+- `beat04m12` first returned a no-image generation response with no artifact; the identical prompt retry succeeded and passed, consuming no QC repair.
+- Contact sheet: `frames/contact_sheets/batch07.jpg` includes all eight accepted frames and the reject.
+- Repair budget: 1 / 2 used; nine successful image slots used.
+- New anchors: none.
+- Declared exceptions: none.
