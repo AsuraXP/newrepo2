@@ -1,0 +1,19 @@
+{
+  "slug": "apocalypse_survival",
+  "title": "The First 72 Hours — Apocalypse Survival Guide",
+  "description": "The world just ended. Here's how to survive the first 72 hours — and what comes after. Water, shelter, food, security, and the mindset shift from surviving to living.",
+  "narration_word_count": 842,
+  "estimated_runtime_seconds": 272,
+  "estimated_runtime_display": "4:32",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080",
+  "frame_count": 68,
+  "fps": 30,
+  "platform": "YouTube",
+  "voice": "en-US-AndrewNeural",
+  "voice_rate": "+10%",
+  "style": "stick-figure cartoon",
+  "created": "2026-10-29",
+  "branch": "arena/138cc5e0-newrepo2",
+  "repo": "https://github.com/AsuraXP/newrepo2"
+}

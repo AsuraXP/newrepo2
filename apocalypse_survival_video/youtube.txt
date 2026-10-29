@@ -1,0 +1,17 @@
+TITLE:
+The First 72 Hours — Apocalypse Survival Guide
+
+DESCRIPTION:
+The world just ended. Here's how to survive the first 72 hours — and what comes after.
+
+In this video, we walk through the critical first three days after a collapse: water, shelter, food, security, and the mental test that separates survivors from the rest. The person who survives isn't the strongest or the smartest — it's the one who can think clearly while the world falls apart.
+
+CHAPTERS:
+(Fill from timings.csv after Kaggle render)
+
+SOURCES:
+- FEMA Emergency Preparedness Guidelines
+- CDC Emergency Water Storage Recommendations
+- Red Cross Disaster Preparedness
+
+#apocalypse #survival #prepper #72hours #emergency #endofworld
