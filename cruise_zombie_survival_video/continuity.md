@@ -115,3 +115,14 @@ Create one standalone 16:9 location-reference image for the same animated story,
 - Repair budget this turn: 2 / 2 used across the `beat02m16` and `beat02m19` repairs.
 - New anchors: none.
 - Declared exceptions: none.
+
+## Batch 5 QC — 8 accepted
+- Accepted: `beat02m26`, `beat03m01`, `beat03m02`, `beat03m03`, `beat03m04`, `beat03m05`, `beat03m06`, `beat03m07`.
+- `beat03m01` is the approved calm-atrium prior frame for the batch. It retains the established geography without copying anchor B's panic action or Mara.
+- Reject: `beat03m05_r1` — pseudo-lettering on the yellow wristband violated the no-readable-text/gibberish floor. Changed only the wristband clause to require a completely blank band; replacement `beat03m05` passed.
+- Rejects: `beat03m06_r1` and `beat03m06_r2` — both scale-shot attempts retained pseudo-lettering on the yellow wristband despite a wristband-clause-only repair. Both originals are preserved. With a fresh repair allowance, changed only the wristband visibility clause: the left-wrist band is occluded by the torso/backpack and the visible right cuff is plain green. Replacement `beat03m06` passed with no lettering and the required atrium scale.
+- `beat03m07` passed as a single continuous restaurant-and-theater architectural view with icon-only plaques, no siblings, and no clinic or cabins shown early.
+- Contact sheet: `frames/contact_sheets/batch05.jpg` includes all eight accepted frames and all three rejects.
+- Repair budget final turn: 1 / 2 used; the batch required two turns because the earlier image and repair caps were reached.
+- New anchors: none.
+- Declared exceptions: none.
