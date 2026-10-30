@@ -1,0 +1,17 @@
+{
+  "title": "The First Miracle",
+  "status": "frame_generation_in_progress",
+  "runtime_target_minutes": 8,
+  "platform": "YouTube",
+  "narration_pov": "second-person",
+  "voice": "en-US-AndrewNeural",
+  "voice_rate": "+10%",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "hook_direction": "The first miracle, followed by the bell that erases its memory",
+  "thumbnail_direction": "Future Genius",
+  "setting": "entirely imagined world",
+  "world_entry": "wakes there; arrival unexplained",
+  "central_mystery": "A bell steals new ideas and memories at sunset",
+  "antagonist": "The Keeper of Heights hoards the stolen inventions"
+}
