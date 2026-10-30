@@ -33,12 +33,14 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (43, QC'd by eye): all rows slide_01..slide_28 EXCEPT:
-OUTSTANDING:
-- beat20m02 REJECT #2: protagonist drifted to brown-haired shirted boy → repair clause: "NO hair, NO shirt — bare plain stick figure, round pure-white head, torso a single black line"
-- beat24m03 REJECT: white-shirt torso drift (torso clause was omitted from that reword) → restore full protagonist blocks + line-torso clause
-- MISSING GEN: beat27m02, beat28m01, beat28m02 (turn cap hit)
-Notes: 403 account-flag errors seen once (transient — retries succeeded).
+ACCEPTED (46, QC'd by eye): all rows slide_01..slide_28 EXCEPT:
+OUTSTANDING repairs (R=2 next turn):
+- beat27m02 REJECT: stranger's jacket + jeans missing (slumped as plain pale
+  stick) → clause: "the slumped stranger still wears his dark jacket and blue
+  jeans"
+- beat28m02 REJECT: open lit window with two watcher silhouettes contradicts
+  28m01's slammed-shut curtain → clause: "every window dark and empty, no
+  people visible in any window"
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03 stray mark; 15m01
 paper bag; 18m01 marks both forearms; 19m01/20m01/21m01 close-up face detail
 register; 22m01 shadow shape; 26m01 stranger pants darker under night light.
