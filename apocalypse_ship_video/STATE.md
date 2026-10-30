@@ -33,14 +33,20 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (46, QC'd by eye): all rows slide_01..slide_28 EXCEPT:
+ACCEPTED (53, QC'd by eye): all rows slide_01..slide_32 EXCEPT:
 OUTSTANDING repairs (R=2 next turn):
-- beat27m02 REJECT: stranger's jacket + jeans missing (slumped as plain pale
-  stick) → clause: "the slumped stranger still wears his dark jacket and blue
-  jeans"
-- beat28m02 REJECT: open lit window with two watcher silhouettes contradicts
-  28m01's slammed-shut curtain → clause: "every window dark and empty, no
-  people visible in any window"
+- beat30m01 REJECT: model added a crowd of grey figures — but this is the
+  empty night street (stranger knocked down, nobody else around) → clause:
+  "he is ALONE on the street, no other figures anywhere in the frame"
+- beat33m01: transient 403 on retry (never saved)
+- beat34m01: not yet fired (turn cap)
+Notes: transient 403 account-flag recurs sporadically — 100% recovered on
+retry within the same or next turn.
+Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
+on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
+close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
+27m02 stranger slumped against low sidewalk ledge (costume correct); 30m02
+forearm warm-tinted by streetlight.
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03 stray mark; 15m01
 paper bag; 18m01 marks both forearms; 19m01/20m01/21m01 close-up face detail
 register; 22m01 shadow shape; 26m01 stranger pants darker under night light.
