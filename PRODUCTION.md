@@ -32,6 +32,16 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-10-30: State 1 Step A ✅ — new premise (user's original: bite ignored,
+  1-week gap, immunity twist), 10–12 min, YouTube long-form 16:9, POV second
+  person (user-confirmed). 3 style refs received into
+  `apocalypse_ship_video/refs/` (minimal 2D stick-figure storytime style).
+  Step B v2 (hook + thumbnail pick) awaiting user.
+- 2026-10-30: Animated-story master-spec session started on branch
+  arena/c93850c6-newrepo2. Project folder `apocalypse_ship_video/`
+  initialized (State 0 done; State 1 Step A pending: runtime, platform,
+  visual style). Voice remains en-US-AndrewNeural @ +10%. No TTS in
+  workspace.
 - 2026-10-28: Preflight crash fixed: edge-tts 7.3.1 stores `Communicate.texts`
   as a generator consumed by the stream; chunk counting now tees instead of
   len()-ing. Selftest 43/43 PASS. Re-run Phase 0 on Kaggle.
