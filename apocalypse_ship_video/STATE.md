@@ -33,16 +33,14 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (55, QC'd by eye): all rows slide_01..slide_36 EXCEPT:
-OUTSTANDING:
-- beat33m01: transient 403 (never saved)
-- NOT FIRED/FAILED 403: beat34m01, beat34m02, beat35m01, beat36m01,
-  beat36m03, beat37m01, beat37m02
-Notes: service 403 account-flag ("check the email associated with your
-account") now SUSTAINED at ~70-80% failure rate — still intermittent (some
-retries pass). Ground rules: keep firing the pending queue each turn, take
-every pass, re-fire failures next turn; no prompt wording change fixes a
-403 (account-side, not content-side).
+ACCEPTED (57, QC'd by eye): all rows slide_01..slide_37 EXCEPT:
+OUTSTANDING (6 — re-fire each turn, take every pass):
+- beat33m01 REJECT: tiny stick figure visible standing outside in the door
+  gap → clause: "the street outside the door is completely EMPTY, no figures
+  outside anywhere"
+- never-saved 403s: beat34m01, beat35m01, beat36m01, beat36m03, beat37m02
+Flag status: ~30% pass rate this turn (worsening). Retries are free — keep
+firing the 6-row queue per turn until clear.
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
