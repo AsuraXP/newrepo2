@@ -33,11 +33,12 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (30, QC'd by eye): all rows slide_01..slide_20 EXCEPT rejects below.
-OUTSTANDING repairs (R=2 next turn):
-- beat17m01: white panel border vs full-bleed frames → add "edge-to-edge full-bleed art, no white border"
-- beat20m02: stranger's dark jacket missing at frame edge → add "the stranger wears his dark jacket with visible dark sleeve"
-Tolerated notes: 05m02 dashed upper-arm stroke + mitten-with-index; 09m03
-stray small mark on second arm; 15m01 paper-bag prop (anchor bleed); 18m01 red
-marks appear on both forearms (focus is scream face); 19m01/20m01 detailed
-close-up faces (expressive register, consistent with 10m03).
+ACCEPTED (37, QC'd by eye): all rows slide_01..slide_24 EXCEPT:
+OUTSTANDING repairs:
+- beat20m02 REJECT #2: protagonist drifted to brown-haired shirted boy → add "the protagonist has NO hair and NO shirt — bare plain stick figure, round pure-white head, torso a single black line, arms thin black lines"
+- beat24m01: moderation block ×1 ("pushes ... reels backward") → reword pending
+- beat24m03: moderation block ×1 ("starts forward quickly ... arms rising") → reword pending
+Tolerated notes: 05m02 dashed arm + mitten-index; 09m03 stray mark; 15m01
+paper bag; 18m01 marks both forearms; 19m01/20m01 detailed close-up faces
+(register by shot scale); 21m01 stranger medium-shot face detail + cropped
+protagonist shoulder ambiguity; 22m01 streetlight shadow shape behind him.
