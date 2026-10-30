@@ -33,5 +33,10 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (14, QC'd by eye): 01m01 01m02 01m03 01m04 02m01 03m01 04m01 05m01 05m02 06m01 07m01 08m01 09m01 09m02
-Minor tolerated notes: 05m02 dashed upper-arm stroke + mitten-with-index (gesture legible), kept.
+ACCEPTED (23, QC'd by eye): rows through slide_15 except 11m01 —
+01m01..01m04 02m01 03m01 04m01 04m02 05m01 05m02 06m01 07m01 08m01
+09m01 09m02 09m03 10m01 10m02 10m03 12m01 13m01 14m01 15m01
+OUTSTANDING: beat11m01 (moderation block ×1 — reword queued, R next turn)
+Tolerated notes: 05m02 dashed upper-arm stroke + mitten-with-index; 09m03
+stray small mark on second arm; 15m01 paper-bag prop (anchor bleed, set-dressing
+level) + protagonist half-lidded eyes (requested by prompt clause).

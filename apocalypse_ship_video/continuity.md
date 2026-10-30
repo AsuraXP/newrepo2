@@ -57,6 +57,7 @@ STORY-STATE RULES (explicit on every prompt):
 |---|---|---|
 | "throws one punch at ... lunging" (beat01m02) | "swings his arm in a wide comic arc ... leans far too close" (slapstick wording) | 2026-10-30 |
 | "lies flat motionless on the pavement ... fists" (beat01m03) | "sits slumped against the curb looking dazed with spiral eyes ... stands over it" (cartoon-dazed wording) | 2026-10-30 |
+| "shadow of a second figure stretches toward the walking protagonist ... ominous" (beat11m01, 1st block) | pending retry: "he glances back over his shoulder ... a long shadow slides across the pavement at the frame edge" | 2026-10-30 |
 
 ## Composition rule
 
