@@ -191,3 +191,14 @@ Create one standalone 16:9 location-reference image for the same animated story.
 - Repair budget: 1 / 2 used for the successful `beat06m08` repair; the batch required two turns because the earlier image cap was reached.
 - New anchors: none.
 - Declared exceptions: missing ignored reject original, documented in the sheet and above.
+
+## Batch 11 QC — 8 accepted
+- Accepted: `beat06m09`, `beat06m10`, `beat06m11`, `beat06m12`, `beat06m13`, `beat06m14`, `beat06m15`, `beat06m16`.
+- Escalation timing: `beat06m09` shows room-wide alarm with all chairs upright; `beat06m10` isolates exactly two toppling chairs; `beat06m11` places one tray impact beside the protagonist's shoe; `beat06m12` shows the siblings' handhold and protected-counter movement; `beat06m13` sends anonymous adults toward one blank narrow doorway; `beat06m14` isolates the motionless normal-white-headed crew member without injury detail; `beat06m15` establishes the running child and following mother at a wide distance from the turning old man; `beat06m16` keeps the single pitcher airborne with a clear gap before contact.
+- Reject: `beat06m12_r1` — the protagonist had yellow bands on both wrists instead of the established single left-wrist band. Changed only the wristband clause to make the joined-hand cuff plain green and Lina's cuffs plain purple; replacement `beat06m12` passed with exactly one yellow band on the protagonist's left wrist.
+- Mother/child continuity established in `beat06m15`: child with two short light-brown pigtails, mustard-yellow shirt, and blue pants; mother with one brown ponytail and a dusty-blue long cardigan. Both have round normal-white heads and black mitten hands. Reuse these details for the rescue and later toddler/family distinctions; do not substitute Lina's dark braids or purple hoodie.
+- `beat06m16` first returned a moderation-blocked no-image response with no artifact. A fresh simplified composition removed the child and mother from the frame and showed only the siblings, airborne pitcher, and old man; it succeeded and passed. No contact or impact appears before `beat06m17`.
+- Contact sheet: `frames/contact_sheets/batch11.jpg` includes all eight accepted frames and the `beat06m12_r1` reject thumbnail.
+- Repair budget: 1 / 2 used; image cap 10 / 10 reached including the no-image blocked response.
+- New anchors: none.
+- Declared exceptions: none.
