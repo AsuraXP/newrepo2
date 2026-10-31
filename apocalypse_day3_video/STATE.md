@@ -5,7 +5,7 @@
 - **Project Folder**: `apocalypse_day3_video/`
 - **Script Metrics**: `935 words` (`301.6s` / `5m 02s` projected at `3.1 wps`) — APPROVED
 - **Spine Metrics (`visuals.csv`)**: `90 micro-beat rows` across `6` slides (`{1: 17, 2: 14, 3: 15, 4: 13, 5: 14, 6: 17}`)
-- **Frames Completed**: `51 / 90` (`beat01m01`–`beat04m05` 100% contiguous; Slides 1–3 100% complete + `5 / 13` of Slide 4; `39 remaining`)
+- **Frames Completed**: `59 / 90` (`beat01m01`–`beat04m13` 100% contiguous; Slides 1–4 100% complete; `31 remaining` across Slides 5–6)
 - **Declared Exceptions**: `None`
 
 ## Batch Log
@@ -14,4 +14,5 @@
 - **Batch 03 (`beat02m02`–`beat02m11`)**: `10 / 10` FIRST-TRY PASS (`contact_sheets/batch_03.jpg`).
 - **Batch 04 (`beat02m12`–`beat03m05`)**: `7 / 8` PASS (`contact_sheets/batch_04.jpg`).
 - **Batch 05 (`beat02m12` + `beat03m06`–`beat03m12`)**: `8 / 8` PASS (`contact_sheets/batch_05.jpg`).
-- **Batch 06 (`beat03m13`–`beat04m05`)**: `8 / 8` PASS (`beat04m02` repaired removing extra left-hand rod; `beat04m05` repaired removing duplicate background boathouse; `contact_sheets/batch_06.jpg`).
+- **Batch 06 (`beat03m13`–`beat04m05`)**: `8 / 8` PASS (`contact_sheets/batch_06.jpg`).
+- **Batch 07 (`beat04m06`–`beat04m13`)**: `8 / 8` PASS (`beat04m08` repaired removing lockpick & punctuation; `beat04m10` repaired isolating solo scavenger high on the steel catwalk; Slide 4 `100%` complete; `contact_sheets/batch_07.jpg`).
