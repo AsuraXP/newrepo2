@@ -48,15 +48,18 @@ no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
 Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
 Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-ACCEPTED (149, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
-84m02, 85m01, 86m01, 87m01, 87m02, 88m02 (all hunched/glassy/ragged = reference)
-+ kept no-zombie frames 85m02, 90m01, 90m02, 91m01.
-QUEUE (11, zombie-block re-rolls, in order): 88m01 (old plain-grey still on
-disk — re-roll hit turn cap), 89m01 (re-roll SAVED but STILL plain grey —
-model ignored block; re-word with stronger hunch/slack-jaw first phrase),
-89m02, 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-Zombie tint drift tolerated so far: 84m02/86m01/87m02/88m02 grey-green,
-85m01/87m01 greener — all read unmistakably as the same zombie type.
+ACCEPTED (152, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
+84m02, 85m01, 86m01, 87m01, 87m02, 88m01, 88m02, 92m01, 93m01 + kept no-zombie
+frames 85m02, 90m01, 90m02, 91m01.
+QUEUE (8, zombie-block re-rolls, in order): 89m01, 89m02, 92m02, 92m03,
+93m02, 93m03, 94m01, 95m01 (never made; protagonist-only, no block needed).
+MODERATION NOTE (batch 21): 7 blocks in 10 attempts on the standing zombie
+block — flaky, same recipe passed 7/7 in batch 20. Recipe that re-passed
+88m01 att: "harmless comedy scene" opener + "cartoon zombie figure" + "no
+biting" in negatives + two separate figure descriptions without interaction
+verbs between them.
+Zombie tint drift tolerated: grey-green to greener across cuts — same type.
+88m01 flash-panel border tolerated (established class, cf. 78m02).
 OUTSTANDING repairs (R=4):
 - beat87m02 attempt 3: now hollow outlined robe-torso → "torso is ONE single
   vertical black stick line like a classic stick-figure drawing, no outline,
