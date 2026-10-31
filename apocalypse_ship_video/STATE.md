@@ -48,20 +48,23 @@ no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
 Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
 Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-ACCEPTED (187, QC'd by eye): rows slide_01..slide_113m01 COMPLETE — queue has
-one item only. Batch 25 = 10 attempts, 9 PASS (106m01, 107m01, 108m01,
-109m01, 110m01, 111m01, 111m02, 112m01, 113m01), zero blocks.
-OUTSTANDING repair (R=1):
-- beat114m01 REJECT: solid-black filled torso (same class as 92m02) →
-  strict protagonist clause that fixed 92m02: "torso ONE single vertical
-  black stick line like a child's stick drawing — no body outline, no oval,
-  no shirt, no fill, no color on him anywhere" placed at prompt END.
-QUEUE: 114m01.
-Next rows: 114m02, 114m03, 115m01, 115m02, 116m01, 116m02, 117m01
-(CSV read); slide_118+ NOT yet read — grep before that batch.
-Tolerated (additions): 107m01 peach/tan forearm in close-up (existing
-class cf. 53m01/54m01/54m02/56m01); 106m01/114m01 index-finger/pinch
-gestures drawn fingered (script-required gestures).
+ACCEPTED (195, QC'd by eye): rows slide_01..slide_115m02 + 116m01, 117m01,
+118m01, 119m01. Batch 26 = 10 attempts, 8 PASS, 2 problems below.
+QUEUE (2):
+- beat114m02 REJECT: white wedge/tunic torso fill (87m02 family) →
+  strict protagonist clause at prompt END (same as 114m01 fix).
+- beat116m02 moderation block ×2 ("finger zips lips" phrasing + reworded
+  version both blocked; hit turn cap before attempt 3) → try attempt 3 with
+  "finger held over the lower face" and no close-up of the face? or
+  simplify to hand at mouth level, half-body.
+Next rows: 120m01+ (CSV read through slide_137; 120 montage notepad →
+121 buffet doorway → 122 ghost drift → 123 sniff/snap → 124 invisible/
+dance → 125–127 store → 128–129 car → 130–132 shuffle blend → 133–135
+shoot/papers → 136–137 survivor camp). slide_138+ NOT yet read.
+Tolerated (additions): 114m03 TWO drawers instead of one (decisive push
+reads); 115m02 white hollow hands/feet (white-extremities family, cf.
+89m01 legs); 119m01 tiny jar-label marks diegetic (cf. 2B plaque);
+116m01/115m01 fingered index gestures script-required.
 MODERATION NOTE (batch 21): 7 blocks in 10 attempts on the standing zombie
 block — flaky, same recipe passed 7/7 in batch 20. Recipe that re-passed
 88m01 att: "harmless comedy scene" opener + "cartoon zombie figure" + "no
