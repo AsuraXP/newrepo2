@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 155 of 191 frames accepted; 36 remain. Batch 20 accepted eight new frames through `beat94m01` with two repairs. One introductory fragment was merged with its following beat, preserving narration and reducing the total from 192 to 191. Next batch starts `beat95m01`. Survivor has entered the farm; farmhouse front door remains closed at beat94m01. Farm anchor remains `refs/farm_test.png`.
+State 5: 170 of 190 frames accepted; 20 remain. Batch 22 repaired `beat96m01`, accepted seven new frames and left `beat104m01` pending due to illegible note writing. Both repair slots used. Next turn repair `beat104m01`, then start new frames at `beat107m01`. Survivor and infected grandfather are inside farmhouse, several feet apart; grandfather has gray side hair, gray mustache and torn brown vest. Project slug provisional.

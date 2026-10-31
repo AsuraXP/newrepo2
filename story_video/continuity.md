@@ -151,3 +151,18 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat92m01` initial rejected: "beat92m01 gate appeared closed while narration says it opens". Changed gate clause to show a visible open gap and swung leaf; replacement accepted.
 - `beat93m01` initial rejected: "beat93m01 two cream farmhouses vs farm anchor one farmhouse". Changed subject clause to specify a single farmhouse; replacement accepted.
 - Merged the introductory phrase "For the first time all day," with the hope beat, reducing total moments from 192 to 191 without removing words. Gate opens at `beat92m01`; survivor has entered and house door remains closed through `beat94m01`. No new anchors or moderation blocks.
+
+## Batch 21 QC
+
+- `beat100m01` initial rejected: "beat100m01 survivor physically appears in grandparents' earlier bedroom memory vs survivor reads the note in present". Changed composition clause to exactly two grandparents, survivor offscreen; replacement accepted.
+- `beat102m01` initial rejected: "beat102m01 illegible writing on note vs no-text requirement". Changed paper clause to blank reverse facing viewer; replacement accepted.
+- `beat96m01` pending: "beat96m01 empty round table vs beat97m01 grandmother's cup and note already on table". Repair next turn; both repair slots used.
+- Minor interior drift: "beat102m01 oil lamp and exposed beams vs beat96m01 electric table lamp and plaster walls". Preserve the lavender cup, round wooden table and warm lamp in subsequent scenes.
+- Merged isolated "Inside," with the following lamp beat, reducing total from 191 to 190 with no narration removed. No new anchors or moderation blocks.
+
+## Batch 22 QC
+
+- `beat96m01` repaired: added lavender cup and folded blank note to round table before discovery; replacement accepted.
+- `beat103m01` initial rejected: "beat103m01 illegible writing on note vs no-text rule". Changed note orientation clause to blank reverse facing viewer; replacement accepted.
+- `beat104m01` pending: "beat104m01 illegible writing on note on table vs no-text rule". Repair next turn; both repair slots used.
+- `beat105m01`–`beat106m02` show the infected grandfather with gray side hair, mustache and torn brown vest. Minor drift: `beat105m03` vacant eyes read as downcast more than unfocused; no gore or contact. New anchor: none. No moderation blocks.
