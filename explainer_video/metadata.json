@@ -3,7 +3,7 @@
   "project_slug": "explainer",
   "slug_status": "provisional_until_topic_selected",
   "title": null,
-  "workflow_state": "5_batch_3_complete",
+  "workflow_state": "5_batch_4_complete",
   "concept_status": "brief_confirmed",
   "autopilot": false,
   "target_runtime_minutes": 5,
@@ -73,8 +73,8 @@
     "refs/character_test.png",
     "refs/location_test.png"
   ],
-  "accepted_frame_count": 23,
-  "remaining_frame_count": 154,
+  "accepted_frame_count": 31,
+  "remaining_frame_count": 146,
   "pending_repairs": [],
   "thumbnail_status": "not_started"
 }

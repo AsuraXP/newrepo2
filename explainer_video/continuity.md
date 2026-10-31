@@ -98,3 +98,13 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat03m07` repair 1 accepted: incomplete roof is under construction but panes are not shattered; beam and watch illustrate rapid construction.
 - Drift check: `beat03m03` worker cap charcoal and vest slate blue vs `character_test.png` charcoal cap and slate-blue vest; `beat03m05` pale teal glass and dark iron arches vs `location_test.png` pale teal glass and dark iron arches. No new anchors.
 - All 8 accepted frame files and 2 rejected attempts compressed to 256-color indexed PNG at unchanged native dimensions; batch contact sheet `refs/reviews/batch03_contact.png` shows each, including rejects.
+
+## Batch 4 QC — repairs
+
+- `beat05m04` original rejected: closed hand forms a tangled swirl of fingers instead of the anchor's simple white hand. Repair changes only the closed-hand clause to an uncomplicated white mitten shape.
+- `beat06m01` original rejected: peach-colored, anatomically detailed palm drifts from the anchor's simple white cartoon hands. Repair changes only the open-palm clause to a white oval cartoon mitten.
+
+- `beat05m04` repair 1 accepted: clean white mitten replaces tangled fingers and conceals the object.
+- `beat06m01` repair 1 accepted: white cartoon mitten replaces peach anatomically detailed palm; nut and bolt remain distinct.
+- Drift check: `beat05m04` cap charcoal, waistcoat slate-blue and hand white vs `character_test.png` charcoal cap, slate-blue waistcoat and white hands; `beat04m03` glass pale teal and arches dark vs `location_test.png` pale teal glass and dark arches. No new anchors.
+- All eight accepted frames and both rejected attempts converted to indexed PNG at unchanged native dimensions; `refs/reviews/batch04_contact.png` shows all attempts.
