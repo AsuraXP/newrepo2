@@ -1,6 +1,6 @@
 # Production state
 
-- Current state: **5 — first 47 frames accepted; batch 6 complete**.
+- Current state: **5 — 61 frames accepted; batch 8 has a pending repair**.
 - AUTOPILOT: off.
 - Branch: `arena/9714bb12-newrepo2`.
 - Discovery: completed; existing `vidsync/`, `kaggle/`, and `tools/` inventoried for reuse.
@@ -16,7 +16,7 @@
 - The old ship-survival premise is not selected.
 - `visuals.csv`: 177 provisional word-reactive rows, covering the approved script in order. Frame 01 shows the selected mismatched-bolt hook. Prompts require refinement and the approved anchor blocks before frame generation.
 - Reference tests: `refs/character_test.png` and `refs/location_test.png` generated successfully after the earlier HTTP 403 errors. Both explicitly approved as anchors. Original user-provided style inputs are intact.
-- Sequence frames: 47 accepted of 177; 130 remain. Batch 6 repair passed for `beat08m02`. Review sheets: `refs/reviews/batch01_contact.png` through `batch06_contact.png`.
+- Sequence frames: 61 accepted of 177; 116 remain. `beat10m04` shipped as a declared exception after three failed repairs; `beat10m05` is pending after one failed repair. Review sheets: `refs/reviews/batch01_contact.png` through `batch08_contact.png`.
 - Thumbnail and Kaggle runner: not started.
 - Audio: none generated; all synthesis/mixing/encoding is reserved for Kaggle.
 
@@ -29,10 +29,10 @@
 | 2 — script | COMPLETE | Explicitly approved by user |
 | 3 — word-reactive spine | DRAFTED | 177 rows; refine prompts against approved anchor before generation |
 | 4 — references | COMPLETE | Character and location tests explicitly approved |
-| 5 — frames/thumbnail | IN PROGRESS | 47 accepted; generate next 8; thumbnail pending |
+| 5 — frames/thumbnail | IN PROGRESS | 61 accepted; repair `beat10m05` and generate the next 7; thumbnail pending |
 | 6 — Kaggle runner | NOT STARTED | Reuse existing code where compatible; validate offline |
 | 7 — handoff | NOT STARTED | Provide ready-to-run Kaggle cell |
 
 ## Next action
 
-The user chose the recommended history topic and supplied style images. Commit and push batch 6 to the current branch. Next batch begins with `slide_09m01` and continues into `slide_10m04`. No thumbnail yet.
+The user chose the recommended history topic and supplied style images. Commit and push batches 7 and 8. On continuation, repair `beat10m05` for the second time, then generate seven new frames beginning with `slide_12m01`. No thumbnail yet.

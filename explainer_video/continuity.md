@@ -124,3 +124,23 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat08m02` repair 1 accepted: side-on bolt displays the full ridged shaft; the worker’s hands are no longer visible.
 - Drift check: `beat08m01` cap charcoal and waistcoat slate blue vs `character_test.png` charcoal cap and slate-blue waistcoat; `beat08m04` pale teal glass and dark iron vs `location_test.png` pale teal glass and dark iron. No new anchors.
 - All eight accepted frames and the rejected attempt converted to 256-color indexed PNG at unchanged native dimensions. Contact sheet `refs/reviews/batch06_contact.png` includes accepted frames and the rejected original.
+
+## Batch 7 QC — repair
+
+- `beat10m04` original rejected: the nut appears fully seated on the bolt, so the intended binding is not readable. Repair changes only the nut/bolt relationship clause to require a visible gap and a bolt shaft wider than the nut opening.
+- `beat10m04` repair 1 rejected: a disembodied black arm rises from the bottom edge and holds the bolt, violating the no-extra-limbs invariant. Repair 2 changes only the object placement clause so both pieces rest on the bench without hands.
+- `beat10m04` repair 2 rejected: the bolt and nut sit far apart, so the described threads binding are not actually shown. The disembodied arm is gone, but a third repair is needed next turn to show contact with a visibly jammed, partially engaged nut. Both failed rerolls and the original are retained; the frame is pending, not accepted.
+
+- `beat09m01`–`beat10m03` inspected and accepted (seven frames). Drift check: `beat09m02` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat09m04` pale teal glass and dark iron match `location_test.png`. No new anchors.
+- Seven accepted frames and three rejected attempts converted to 256-color indexed PNG without changing native dimensions. `refs/reviews/batch07_contact.png` shows the accepted frames and all rejects. The 10-call budget is exhausted; third repair deferred to next turn.
+
+## Batch 8 QC — exception and repairs
+
+- `beat10m04` repair 3: the nut appears partly tilted but the bolt passes through, so binding remains ambiguous. After three unsuccessful repairs, this attempt is the closest: ship as an explicit visual exception, with the mismatch conveyed imperfectly by the tilted nut and worried worker. The scene is an imagined demonstration, not a recorded palace incident.
+- `beat10m05` original rejected: the curved arrow and straight seated nut suggest smooth rotation, contradicting the narrated binding. Repair changes only the movement-symbol clause to short jagged black resistance marks and no arrows.
+- `beat11m02` original rejected: only one bolt-and-nut pair is visible, so the intended shared system across several pairs is missing. Repair changes only the pair-count clause to three visibly separate paired examples.
+- `beat10m05` repair 1 rejected: the nut and bolt are clearly separated, so even though resistance marks replace the misleading rotation arrow, they cannot depict binding. A second repair is pending next turn; original and repair 1 are retained.
+- `beat11m02` repair 1 accepted: three bolt-and-nut pairs are visibly present on the workbench, with the worker smiling.
+
+- `beat10m06`–`beat10m09` and `beat11m01` inspected and accepted. Drift check: `beat10m08` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat11m01` pale teal glass and dark iron match `location_test.png`. No new anchors.
+- Seven frames accepted this turn, including the declared `beat10m04` exception; the only pending shot among the first 62 is `beat10m05`. Accepted frames and all batch 8 rejects converted to 256-color indexed PNG without resizing. `refs/reviews/batch08_contact.png` includes the exception, accepted frames, and both rejected shots.
