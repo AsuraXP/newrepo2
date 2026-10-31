@@ -125,3 +125,17 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat70m02` initial rejected: "beat70m02 driver door open vs story state shut before pulling away in beat70m03". Changed door clause to fully shut with window visible; replacement accepted.
 - Vehicle anchor: `beat70m01`, dark slate-blue compact hatchback, rounded body and five doors. The driver's door is open only while entering, then closed while driving. Survivor wears olive jacket; dark backpack travels with them.
 - Minor drift: "beat71m01 car looks sedan-like from the front vs beat70m01 hatchback side profile"; subsequent shots should match the accepted vehicle anchor. No moderation blocks.
+
+## Batch 17 QC
+
+- `beat76m01` initial rejected: "beat76m01 tiny storefront lettering vs no text rule". Changed storefront clause to blank facades, no signage; replacement accepted.
+- `beat77m02` initial rejected: "beat77m02 car faces lone person rather than clearly steering past". Changed action/composition clause to an elevated view showing the car passing with a safe gap; replacement accepted.
+- `beat77m01` pending: "beat77m01 dusk purple sky vs beat76m01 and beat77m02 pale daytime sky"; repair next turn for matching daylight. Both repair slots used.
+- Merged isolated "Once," with the following phrase (now `beat77m01`), reducing total moments from 195 to 194 without omitting narration. No new anchors or moderation blocks.
+
+## Batch 18 QC
+
+- `beat77m01` repaired: changed sky clause to pale daytime for consistency with `beat77m02`; replacement accepted.
+- `beat82m01` initial rejected: "beat82m01 car appears ahead of walker despite being left behind". Changed composition clause to keep car and farm out of view; replacement accepted.
+- `beat81m01` pending: "beat81m01 farm and windmill clearly visible before the scripted windmill reveal vs later story beat". Both repair slots used; repair next turn with the farm and windmill out of frame.
+- `beat80m03` has tiny indistinct distant buildings, but the farm is not clearly established there. No new anchors or moderation blocks.
