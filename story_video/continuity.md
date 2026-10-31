@@ -78,3 +78,8 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 
 - `beat34m01` initial rejected: "beat34m01 food packets replace the cans and bread established in beat32m02". Changed the food description to specify the same cans, half loaf and bottles; used the previous accepted inventory frame as reference. Replacement accepted.
 - Minor continuity drift: quantities and grouping of cans and bottles vary across `beat30m01`–`beat34m01`; no backpack or jacket appears. New anchor: none. No moderation blocks.
+
+## Batch 9 QC
+
+- `beat37m01` initial rejected: "beat37m01 static appears before emergency alert vs beat39m01 alert then beat39m02 static". Changed TV screen clause to an empty news studio; replacement accepted.
+- Minor drift: "beat37m01 blue news studio vs beat38m01 muted green studio"; both show an empty desk, and set dressing is secondary. `beat39m01` represents the emergency message as a text-free alert icon so no illegible text appears. No new anchors or moderation blocks.
