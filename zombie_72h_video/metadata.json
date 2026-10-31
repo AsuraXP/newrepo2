@@ -1,0 +1,53 @@
+{
+  "slug": "zombie_72h",
+  "title": "72 Hours After the Zombie Breakout",
+  "status": "in_production_script_stage",
+  "platform": "youtube",
+  "format": "long_form",
+  "aspect_ratio": "16:9",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "pov": "second_person",
+  "genre": "instructional_survival_deadpan_fiction",
+  "explicit_fiction": true,
+  "narration": {
+    "voice": "en-US-AndrewNeural",
+    "rate": "+10%",
+    "volume": "+0%",
+    "pitch": "+0Hz",
+    "engine": "edge-tts",
+    "synthesis_location": "kaggle_only"
+  },
+  "script": {
+    "file": "script.md",
+    "word_count": 1513,
+    "projected_runtime_s": 488,
+    "runtime_basis": "1513 words / 3.1 words per second - PROJECTION, NOT MEASURED",
+    "sources_file": "script.md#sources"
+  },
+  "render": {
+    "runtime_measured_s": null,
+    "frame_count": null,
+    "frame_count_source": "visuals.csv rows",
+    "audio_codec": "aac",
+    "audio_bitrate": "192k",
+    "loudness_target": "-14 LUFS",
+    "video_codec": "libx264",
+    "pix_fmt": "yuv420p",
+    "deliverable": "zombie_72h_DELIVERABLE.zip"
+  },
+  "style": {
+    "name": "stick_figure_deadpan_cartoon",
+    "tokens_file": "continuity.md",
+    "reference_images": [
+      "../style_refs/ref_source_01_cave_campfire.png",
+      "../style_refs/ref_source_02_stick_figure.png",
+      "../style_refs/ref_source_03_couch_phone.png"
+    ],
+    "anchor_approved": false
+  },
+  "captions": "none",
+  "chapters": [],
+  "publish_note": "chapters and runtime_measured_s are written from build/timings.csv after the Kaggle render; never from projections"
+}

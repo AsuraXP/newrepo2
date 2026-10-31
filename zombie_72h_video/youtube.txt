@@ -1,0 +1,39 @@
+TITLE
+72 Hours After the Zombie Breakout
+
+ALT TITLES
+The First 72 Hours
+Three Days Before the Easy Part Ends
+
+DESCRIPTION
+DRAFT - runtime and chapters are filled from build/timings.csv after the
+Kaggle render. Do not publish this until the measured runtime is inserted.
+
+The streets go quiet before the shelves go empty. For the first three days,
+almost nothing that kills you is dead, and almost everything that saves you is
+boring: water in a bathtub, a curtain, a door that makes a noise when it moves.
+
+This is a fictional drill. The survival logic underneath it is not.
+
+00:00 PENDING - hour zero
+PENDING - hour three
+PENDING - hour twelve
+PENDING - hour twenty four
+PENDING - hour forty eight
+PENDING - day three
+
+Sources
+Sphere Handbook, Water Supply standard - https://interactive.spherestandards.org/
+FDA, food and water safety during power outages - https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
+CDC, avoiding carbon monoxide poisoning - https://www.cdc.gov/natural-disasters/psa-toolkit/avoiding-carbon-monoxide-poisoning.html
+
+TAGS
+zombie survival, first 72 hours, emergency preparedness, what to do in a zombie
+apocalypse, survival guide, water storage, bug in, fictional drill
+
+THUMBNAIL TEXT
+3 DAYS
+
+THUMBNAIL NOTE
+Three to four words maximum, baked into the art, legible at 336 px. Candidate
+line: "3 DAYS, THEN IT'S OVER" - verify legibility before shipping.
