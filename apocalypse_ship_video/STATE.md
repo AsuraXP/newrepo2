@@ -33,15 +33,14 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (96, QC'd by eye): all rows slide_01..slide_58 EXCEPT:
-OUTSTANDING repair (R=1):
-- beat55m01 REJECT: three faint marks on forearm, script says two → clause:
-  "exactly two faint marks, no third mark anywhere"
+ACCEPTED (106, QC'd by eye): all rows slide_01..slide_64m02 COMPLETE.
 QUEUE: none.
-Tolerated (additions): 52m02 white rounded shape at crop bottom reads as
-duvet; 53m01/54m01/54m02/56m01 peach skin tone in forearm close-ups
-(close-up register, consistent); 55m02 faint marks as light ticks on line
-arm (mid-shot register).
+Next rows: slide_65..72 (map spread → YOUR city → phone dates → he was
+early) = 15 rows.
+Tolerated (additions): 60m02 pale figures press at glass panel beside the
+door (reads as entrance assault); 62m01 comic sprawl-drops onto couch;
+64m02 news-anchor stick figure added to collapsing-skyline TV frame (style-
+consistent, reads as generic newsreader).
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
