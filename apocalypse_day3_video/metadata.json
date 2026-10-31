@@ -1,0 +1,21 @@
+{
+  "slug": "apocalypse_day3",
+  "series_episode": 3,
+  "sequel_to": "apocalypse_day2",
+  "title": "Can You Survive Day Three of the Apocalypse?",
+  "logline": "Reaching Clearwater Dam at dawn on Day Three expecting a safe fortress, you and Maya uncover a breached gate overrun with forty infected and two armed scavengers laying a road-crate ambush from the high catwalk—forcing a silent crawl beneath the dam, a perilous dockside escape, and a dash across deep mountain water.",
+  "target_runtime_minutes": 5,
+  "word_count": 935,
+  "projected_runtime_seconds": 301.6,
+  "frame_count": 90,
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%",
+  "pov": "Voice-of (second-person story)",
+  "style": "2D minimalist stick-figure cartoon (strict match to user_style_ref_01..03)",
+  "hard_rules": "none",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "platform": "YouTube",
+  "autopilot": true,
+  "status": "STATE_4_AWAITING_ANCHOR_APPROVAL"
+}
