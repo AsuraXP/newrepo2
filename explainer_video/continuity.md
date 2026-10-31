@@ -165,3 +165,21 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat13m01` repair 1 accepted: a regular threaded bolt replaces the ambiguous wavy sheet; this remains a stylized object rather than a measured engineering diagram. `beat13m02` also inspected and accepted.
 - Drift check: `beat12m02` worker charcoal cap, slate-blue waistcoat, and simple white hands match `character_test.png`; `beat12m03`–`beat13m02` consistently use enclosed cream-walled workshops for the 1840s, avoiding the later `location_test.png` palace. No new anchors.
 - Eight accepted frames and the batch 10 reject converted to 256-color indexed PNG without resizing; `refs/reviews/batch10_contact.png` includes prior rejected attempts for these repairs as well as accepted frames. No pending repairs.
+
+## Batch 11 QC — repairs
+
+- `beat13m03` original rejected: the three bolts change in length but appear almost the same shaft diameter, so the narrated diameter differences are unclear. Repair changes only the bolt-size clause to make shaft widths visibly different.
+- `beat13m04` original rejected: the engineer holds the measuring gauge in empty space while the bolt lies elsewhere, so the shot does not show a measurement. Repair changes only the gauge-to-bolt relation clause, placing the jaws around the bolt shaft.
+- `beat13m03` repair 1 accepted: three bolt shafts are visibly different widths and remain in the enclosed 1840s workshop.
+- `beat13m04` repair 1 rejected: the tool's jaws appear against the bolt head rather than measuring the threaded shaft, and the engineer is replaced by the capped worker. A second repair is pending; both failed attempts are retained. Next repair should change only the measuring relation clause, requiring jaws enclosing the shaft away from the head.
+
+- `beat13m05`–`beat14m03` inspected and accepted. Drift check: `beat13m05` capped worker charcoal cap, slate-blue waistcoat and white hands match `character_test.png`; `beat14m03` dark iron arches and pale teal glass match `location_test.png`. The 1840s proposal scenes have no palace backdrop. No new anchors.
+- Seven accepted frames and three rejects converted to 256-color indexed PNG without changing dimensions; `refs/reviews/batch11_contact.png` includes them. The repair budget is exhausted and `beat13m04` remains pending.
+
+## Batch 12 QC — repair
+
+- `beat13m04` repair 2 rejected: the gauge jaws sit along the bolt's length instead of enclosing the shaft diameter; the figure also blends the capped worker and Whitworth. Repair 3 changes only the gauge-to-shaft relation to show opposed jaws above and below the thread.
+
+- `beat13m04` repair 3 rejected: the gauge is still above the bolt rather than enclosing the shaft. After three failed repairs, ship this closest attempt as a declared visual exception: it conveys measurement conceptually, not the precise use of a caliper. Prior attempts are retained.
+- `beat14m04`–`beat16m03` inspected and accepted. Paxton is an illustrative brown-haired character in a dark green frock coat and ochre waistcoat, not an exact likeness or new approved anchor; his greenhouse scenes have no Crystal Palace. Drift check: `beat14m05` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat16m03` pale teal glass and dark iron match `location_test.png`.
+- Eight frames and the newest reject converted to 256-color indexed PNG without resizing; `refs/reviews/batch12_contact.png` includes the exception, all accepted shots and previous rejects. No pending repairs.
