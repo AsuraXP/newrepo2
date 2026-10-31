@@ -48,20 +48,20 @@ no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
 Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
 Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-ACCEPTED (178, QC'd by eye): rows slide_01..slide_105m01 COMPLETE except none
-— queue clear. Includes batch 24 (10/10 zero rejects/blocks): TV lab-movie
-run 100m01–101m02, lock-down abstracts 102m01/102m02, vials 103m01,
-paperwork 103m02, door-line 104m01, life-icons 104m02, sunrise-bars 105m01.
-QUEUE: none.
-Next rows: slide_106+ (CSV read through slide_117; 106 sneaky thought →
-107 unmarked forearm → 108 blood drop shield → 109 glow over crowd →
-110 droplet map → 111 nice/wrong cut → 112 reaching hands → 113 hands
-multiply → 114 drawer → 115–117 rules).
-Tolerated (additions): 101m01/101m02 retro CRT TV casing (cf. 68m01);
-102m01 outer white-coat silhouettes' arm shapes angled toward slab (no
-contact, no straps = non-graphic holds); 104m02 generic phone icon with
-home button (blank screen); abstract-run palette = flat greys/cold blues
-per CSV spec.
+ACCEPTED (187, QC'd by eye): rows slide_01..slide_113m01 COMPLETE — queue has
+one item only. Batch 25 = 10 attempts, 9 PASS (106m01, 107m01, 108m01,
+109m01, 110m01, 111m01, 111m02, 112m01, 113m01), zero blocks.
+OUTSTANDING repair (R=1):
+- beat114m01 REJECT: solid-black filled torso (same class as 92m02) →
+  strict protagonist clause that fixed 92m02: "torso ONE single vertical
+  black stick line like a child's stick drawing — no body outline, no oval,
+  no shirt, no fill, no color on him anywhere" placed at prompt END.
+QUEUE: 114m01.
+Next rows: 114m02, 114m03, 115m01, 115m02, 116m01, 116m02, 117m01
+(CSV read); slide_118+ NOT yet read — grep before that batch.
+Tolerated (additions): 107m01 peach/tan forearm in close-up (existing
+class cf. 53m01/54m01/54m02/56m01); 106m01/114m01 index-finger/pinch
+gestures drawn fingered (script-required gestures).
 MODERATION NOTE (batch 21): 7 blocks in 10 attempts on the standing zombie
 block — flaky, same recipe passed 7/7 in batch 20. Recipe that re-passed
 88m01 att: "harmless comedy scene" opener + "cartoon zombie figure" + "no
