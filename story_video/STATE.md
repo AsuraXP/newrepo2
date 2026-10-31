@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 39 of 196 frames accepted; 157 remain. Batch 5 repaired `beat15m03`, accepted seven new shots, and left `beat21m03` pending: its first retry contains prominent text and broadcast logos. It has one failed re-roll. Both repair slots used this turn. Next turn repair `beat21m03`, then continue from `beat23m01` as budget allows. The survivor does not wear a backpack or jacket during the at-home news sequence. Project slug is provisional.
+State 5: 51 of 196 frames accepted; 145 remain. Batch 7 repaired three previously pending frames and replaced two previously accepted shots to remove premature backpacks. Three new shots through `beat29m01` are accepted. No pending frames remain from batch 6. Next new batch starts `beat30m01`. Before the packing sequence do not show a packed backpack in the room and do not show the survivor wearing a jacket or backpack. Project slug is provisional.

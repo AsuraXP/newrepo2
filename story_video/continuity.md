@@ -58,3 +58,18 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat15m03`: initial rejected in batch 4 for two TVs; changed the TV-count clause to exactly one. Replacement accepted, no backpack worn.
 - `beat21m03`: initial rejected: the bodies were not discernible on a distant TV in a room. Changed composition clause to footage-only. Retry still pending: "beat21m03 retry has LIVE/GNN logos and news ticker vs no text rule". Two candidate versions retained; retry next turn with a single-clause ban on broadcast graphics. One re-roll has failed for this shot.
 - `beat20m02`: blank ticker rectangle, no legible text; monitor for broadcast overlay drift. No new anchors; no moderation blocks.
+
+## Batch 6 QC
+
+- `beat21m03`: second retry accepted; changed broadcast graphics clause to prohibit all text and used street footage reference. Smoke and motionless figures are visible without logos.
+- `beat26m01` initial rejected: floating, disconnected arm vs body. Changed composition clause to connected arm in medium full-body view. Retry remains pending: "beat26m01 backpack on couch before packing vs no visible packed bag during news". One failed re-roll.
+- `beat24m01` and `beat27m02` pending: "backpack sitting in living room during news vs no visible packed bag during news". Neither was re-rolled this turn.
+- Story-state refinement: Before the decision to leave and packing, do not depict a packed backpack anywhere in the room; never wear the jacket or backpack until departure. Earlier accepted `beat08m01` and `beat10m01` also show a backpack in the room and must be reviewed/repaired for this stronger rule.
+- No new anchors or moderation blocks.
+
+## Batch 7 QC and moderation
+
+- `beat08m01`, `beat10m01`, `beat24m01`, `beat26m01`, and `beat27m02` regenerated without the prematurely visible backpack. `beat26m01` now has connected limbs. All accepted.
+- `beat28m01` initial rejected: "beat28m01 detached foreground hand holding a can vs survivor's hands at sides". Changed action clause to hands at sides; replacement accepted.
+- `beat29m01` first generation was blocked by moderation; the service did not identify a blocked word, so none can be reported. Changed "half a loaf of bread" to "a small piece of bread"; retry succeeded and was accepted.
+- Minor clothing drift: "beat26m01 white shirt vs beat09m01 bare stick torso"; no jacket or backpack appears. `beat28m01` and `beat29m01` show a gray shirt matching the earlier kitchen frame `beat07m01`. No new anchors.
