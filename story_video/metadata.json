@@ -1,1 +1,11 @@
-{}
+{
+  "title": "The Farm That Survived the Zombie Apocalypse",
+  "description": "When the world falls to a zombie outbreak, you race to the self-sufficient farm your grandfather built. But reaching safety brings a heartbreaking discovery.",
+  "tags": ["zombie apocalypse", "survival story", "animated story", "self sufficient farm"],
+  "language": "en-US",
+  "aspect_ratio": "16:9",
+  "platform": "YouTube",
+  "captions": "none",
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%"
+}

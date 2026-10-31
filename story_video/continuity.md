@@ -172,3 +172,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat104m01` repaired: note reverse now blank, matching no-text rule; accepted.
 - `beat111m02` initial rejected: "beat111m02 door wide open vs nearly closed door described by moment". Changed door clause to nearly fully closed; retry still shows the door wide open. Pending; one failed re-roll.
 - `beat111m03` shows a closed door secured from outside; grandfather remains inside. `beat108m02` has glossy eyes vs dot-eye anchor, emotional tears remain readable. No new anchors or moderation blocks.
+
+## Batch 24 QC
+
+- `beat111m02` second retry accepted: changed action clause to show door fully closed and flush, hand resting against it; `beat111m03` then secures it. Previous retry retained as reject.
+- Minor drift: "beat113m01/beat114m01 farmhouse windows boarded vs farm anchor clear windows"; farm remains intact and the animals and garden are readable.
+- Merged introductory fragments "Beyond the fence,", "Tomorrow," and "Tonight," with their following beats. Total 190 to 187; narration unchanged. No new anchors or moderation blocks.
