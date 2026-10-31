@@ -89,3 +89,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat44m01` initial rejected: "beat44m01 arm stretches beyond top of image vs anchor's normal short stick-figure limbs". Changed close-up clause to medium full-body view with two natural arms; replacement accepted.
 - `beat45m01` combines the isolated conjunction "And" with the following phrase into one meaningful beat. This reduced the CSV total from 196 to 195; no narration was removed.
 - `beat46m01` shows the farm in a distant imagined view; actual location remains the approved farm reference. No new anchors or moderation blocks.
+
+## Batch 11 QC
+
+- `beat48m02` initial rejected: "beat48m02 grandfather lacked gray hair and mustache vs beat48m01 gray side hair and gray mustache". Changed grandfather clause to match `beat48m01` and used it as prior approved frame; replacement accepted.
+- `beat50m01` initial rejected: "beat50m01 disconnected floating lightbulb diagram vs solar panels powering farmhouse lights". Changed illustration clause to illuminated farmhouse windows; replacement accepted.
+- Recurring grandfather reference: `beat48m01` (gray side hair, gray mustache, brown vest over pale shirt); use alongside approved character and farm anchors for later grandfather scenes. Minor drift: `beat47m01` vest is lighter than `beat48m01`; both retain gray side hair and mustache. No moderation blocks.
