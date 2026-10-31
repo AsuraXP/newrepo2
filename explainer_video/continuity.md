@@ -88,3 +88,13 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - Drift check: `beat02m07` worker cap charcoal and waistcoat slate blue vs `character_test.png` charcoal cap and slate-blue waistcoat; `beat03m01` facade pale teal glass and dark iron arches vs `location_test.png` pale teal glass and dark iron arches. No new anchors.
 - Review sheet: `refs/reviews/batch02_contact.png` (accepted images and earlier rejects for the repaired shot).
 - Reviewed PNG frames and rejects were converted to 256-color indexed PNG without changing pixel dimensions to keep the repository compact; `beat02m07` was visually rechecked after conversion. All future frames must be reviewed after any compression.
+
+## Batch 3 QC — repairs
+
+- `beat03m03` original rejected: two large foreground workers overlap so their heads and bodies merge. Repair changes only the visitor-count clause to one small visitor standing alone.
+- `beat03m07` original rejected: visible shattered panes on the central transept contradict the explicit intact-palace state. Repair changes only the palace condition clause to say every pane is unbroken.
+
+- `beat03m03` repair 1 accepted: a single isolated visitor under the arched roof replaces the merged foreground figures.
+- `beat03m07` repair 1 accepted: incomplete roof is under construction but panes are not shattered; beam and watch illustrate rapid construction.
+- Drift check: `beat03m03` worker cap charcoal and vest slate blue vs `character_test.png` charcoal cap and slate-blue vest; `beat03m05` pale teal glass and dark iron arches vs `location_test.png` pale teal glass and dark iron arches. No new anchors.
+- All 8 accepted frame files and 2 rejected attempts compressed to 256-color indexed PNG at unchanged native dimensions; batch contact sheet `refs/reviews/batch03_contact.png` shows each, including rejects.
