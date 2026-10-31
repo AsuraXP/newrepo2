@@ -33,16 +33,24 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (144, QC'd by eye): all rows slide_01..slide_88m01 EXCEPT:
-OUTSTANDING repair (R=1):
-- beat87m02 REJECT: white rounded torso fill (no shirt rule) → restore full
-  protagonist blocks + "torso a single thin black line, no shirt, no body fill"
-QUEUE: none.
-Next rows: slide_88m02..92m03 (arm's reach → furniture → could run/scream →
-grin → immune).
+ACCEPTED (150, QC'd by eye): all rows slide_01..slide_92m01 EXCEPT queue:
+OUTSTANDING repairs (R=4):
+- beat87m02 attempt 3: now hollow outlined robe-torso → "torso is ONE single
+  vertical black stick line like a classic stick-figure drawing, no outline,
+  no robe/peanut enclosure, no fill"
+- beat88m02 REJECT: duplicate white-headed stick man (two-shot shows 3 figures)
+  → "exactly two figures in frame: him + the grey figure, nobody else"
+- beat92m02 REJECT: readable SFX/speech text "Heh heh!"/"FLICK!" added
+  (captions-none production) → same composition, "no words, no lettering,
+  no speech bubbles, no sound-effect text anywhere"
+- beat92m03 REJECT: same — "HURRAY!" text added → hero pose, "no words, no
+  lettering, no speech bubbles, no sound-effect text anywhere"
+QUEUE: those 4.
+Next rows: slide_93+ (CSV unread) — likely tail of immune beat / Episode-2 hook.
 Tolerated (additions): 84m02/86m01/87m01 landing zombie reads plain pale-grey
 after ragged 84m01 (same figure, wardrobe under-specified in text);
-87m01 paper-bag prop recurrence (established comic motif).
+87m01 paper-bag prop recurrence (established comic motif);
+89m02 wave lands a step away from its head instead of inches (beat reads).
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
