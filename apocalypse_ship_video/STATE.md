@@ -33,13 +33,13 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (116, QC'd by eye): all rows slide_01..slide_69m02 COMPLETE.
-QUEUE: none.
-Next rows: slide_70..72 (phone dates → bitten night before → he was early)
-= 5 rows, then slide_73+.
-Tolerated (additions): 65m02 colorful world-map palette (retreat columns
-read); 68m01 retro CRT TV casing prop; 68m03 reflection rendered as tiny
-screen-face on building (reads as his lit window in the swarm).
+ACCEPTED (125, QC'd by eye): all rows slide_01..slide_75m01 COMPLETE.
+QUEUE: none. Pending gen: beat76m01 (memory-jolt, turn cap).
+Next rows: slide_76..82 (memory hits → flash panels → he was one of them →
+why aren't you out there → door decision).
+Tolerated (additions): 70m01 POV thumbs on phone; 71m01 right panel uses
+squiggle-lines as unreadable text; 74m01 blue tee + grey boxers
+(script-specified clothing beat); 72m01/72m02 full-half red TV wash.
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
