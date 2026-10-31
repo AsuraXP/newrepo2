@@ -145,3 +145,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat81m01` prior rejected: premature farm and windmill reveal. Changed environment clause to exclude buildings and windmill; replacement accepted.
 - `beat83m01` initial rejected: "beat83m01 survivor faces forward rather than turning toward grass". Changed pose clause to turn head and torso toward grass; replacement accepted.
 - Merged standalone phrases "At last," and "Beyond it," with the following beats: total moments 194 to 192, no words removed. `beat86m01` shows the closed gate; survivor must remain outside until the scripted opening. No new anchors or moderation blocks.
+
+## Batch 20 QC
+
+- `beat92m01` initial rejected: "beat92m01 gate appeared closed while narration says it opens". Changed gate clause to show a visible open gap and swung leaf; replacement accepted.
+- `beat93m01` initial rejected: "beat93m01 two cream farmhouses vs farm anchor one farmhouse". Changed subject clause to specify a single farmhouse; replacement accepted.
+- Merged the introductory phrase "For the first time all day," with the hope beat, reducing total moments from 192 to 191 without removing words. Gate opens at `beat92m01`; survivor has entered and house door remains closed through `beat94m01`. No new anchors or moderation blocks.
