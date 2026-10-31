@@ -139,3 +139,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat82m01` initial rejected: "beat82m01 car appears ahead of walker despite being left behind". Changed composition clause to keep car and farm out of view; replacement accepted.
 - `beat81m01` pending: "beat81m01 farm and windmill clearly visible before the scripted windmill reveal vs later story beat". Both repair slots used; repair next turn with the farm and windmill out of frame.
 - `beat80m03` has tiny indistinct distant buildings, but the farm is not clearly established there. No new anchors or moderation blocks.
+
+## Batch 19 QC
+
+- `beat81m01` prior rejected: premature farm and windmill reveal. Changed environment clause to exclude buildings and windmill; replacement accepted.
+- `beat83m01` initial rejected: "beat83m01 survivor faces forward rather than turning toward grass". Changed pose clause to turn head and torso toward grass; replacement accepted.
+- Merged standalone phrases "At last," and "Beyond it," with the following beats: total moments 194 to 192, no words removed. `beat86m01` shows the closed gate; survivor must remain outside until the scripted opening. No new anchors or moderation blocks.

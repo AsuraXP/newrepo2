@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 138 of 194 frames accepted; 56 remain. Batch 18 repaired `beat77m01`, accepted seven new frames and left `beat81m01` pending due to premature farm/windmill reveal. Both repair slots used. Next turn repair `beat81m01`, then start new frames at `beat82m02`. Survivor has left the car and is walking in olive jacket and backpack. Vehicle anchor: `beat70m01`.
+State 5: 147 of 192 frames accepted; 45 remain. Batch 19 repaired `beat81m01` and accepted eight new frames through `beat88m01`. Two standalone introductory chunks were merged with following beats, preserving all narration and reducing the total from 194 to 192. Next batch starts `beat89m01`. Survivor is outside the closed farm gate at gray-blue twilight; gate opens only on the scripted entry.
