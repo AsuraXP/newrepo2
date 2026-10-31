@@ -83,3 +83,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 
 - `beat37m01` initial rejected: "beat37m01 static appears before emergency alert vs beat39m01 alert then beat39m02 static". Changed TV screen clause to an empty news studio; replacement accepted.
 - Minor drift: "beat37m01 blue news studio vs beat38m01 muted green studio"; both show an empty desk, and set dressing is secondary. `beat39m01` represents the emergency message as a text-free alert icon so no illegible text appears. No new anchors or moderation blocks.
+
+## Batch 10 QC
+
+- `beat44m01` initial rejected: "beat44m01 arm stretches beyond top of image vs anchor's normal short stick-figure limbs". Changed close-up clause to medium full-body view with two natural arms; replacement accepted.
+- `beat45m01` combines the isolated conjunction "And" with the following phrase into one meaningful beat. This reduced the CSV total from 196 to 195; no narration was removed.
+- `beat46m01` shows the farm in a distant imagined view; actual location remains the approved farm reference. No new anchors or moderation blocks.
