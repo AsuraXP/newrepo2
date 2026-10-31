@@ -113,3 +113,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat59m01` first generation produced no image (service error, no moderation block). Simplified the two-thought-bubble clause to a survivor lowering a silent phone; retry accepted.
 - `beat60m01` pending: "beat60m01 white filled arms with five-finger hands vs beat57m02 black stick limbs and mitten-like hands". No repair budget remains this turn.
 - `beat63m01` begins outdoor sequence: survivor now wears olive jacket and dark backpack as departure has occurred. No new anchors or moderation blocks.
+
+## Batch 15 QC
+
+- `beat60m01` repaired: specified solid black stick arms and mitten hands instead of the prior filled white arms. Accepted.
+- `beat67m03` initial rejected: "beat67m03 white five-fingered hand vs anchor black mitten hands". Changed hand clause to solid black mitten shape; replacement accepted.
+- `beat66m03` has a distant gray swarm behind fleeing civilians, though individual expressions are indistinct at this distance. No new anchors or moderation blocks.
