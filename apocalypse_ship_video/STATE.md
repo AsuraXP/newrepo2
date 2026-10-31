@@ -33,12 +33,16 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (135, QC'd by eye): all rows slide_01..slide_82m01 COMPLETE.
+ACCEPTED (144, QC'd by eye): all rows slide_01..slide_88m01 EXCEPT:
+OUTSTANDING repair (R=1):
+- beat87m02 REJECT: white rounded torso fill (no shirt rule) → restore full
+  protagonist blocks + "torso a single thin black line, no shirt, no body fill"
 QUEUE: none.
-Next rows: slide_83+ (door test / immune reveal arc) — check CSV.
-Tolerated (additions): 78m02 stranger jacketed among pale marching crowd
-(memory panel, flash-frame border); 79m01 two marks + one tiny dot (no
-spoken count this moment); 82m01 diegetic door-number plaque "2B".
+Next rows: slide_88m02..92m03 (arm's reach → furniture → could run/scream →
+grin → immune).
+Tolerated (additions): 84m02/86m01/87m01 landing zombie reads plain pale-grey
+after ragged 84m01 (same figure, wardrobe under-specified in text);
+87m01 paper-bag prop recurrence (established comic motif).
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
