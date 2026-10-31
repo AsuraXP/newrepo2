@@ -183,3 +183,23 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat13m04` repair 3 rejected: the gauge is still above the bolt rather than enclosing the shaft. After three failed repairs, ship this closest attempt as a declared visual exception: it conveys measurement conceptually, not the precise use of a caliper. Prior attempts are retained.
 - `beat14m04`–`beat16m03` inspected and accepted. Paxton is an illustrative brown-haired character in a dark green frock coat and ochre waistcoat, not an exact likeness or new approved anchor; his greenhouse scenes have no Crystal Palace. Drift check: `beat14m05` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat16m03` pale teal glass and dark iron match `location_test.png`.
 - Eight frames and the newest reject converted to 256-color indexed PNG without resizing; `refs/reviews/batch12_contact.png` includes the exception, all accepted shots and previous rejects. No pending repairs.
+
+## Batch 13 QC — repairs
+
+- `beat16m06` original withheld despite matching the reference visually: its STYLE block inadvertently omitted the word `simple` before `black dot eyes`, violating the frozen prompt-block requirement. Restore the exact approved block on the next attempt; this is pending while the two available repairs address visible defects.
+- `beat16m08` original rejected: crates contain visible `GLASS` lettering, violating the no-text invariant. Repair changes only the installation clause to place panels on the ground without crates or labels.
+- `beat17m01` original rejected: the foreground worker has three arms, with two hands on the right side. Repair changes only the objects-and-hands clause to require one nut and one bolt held by two hands.
+- `beat16m08` repair 1 accepted: unlabeled glass panels are stacked beside the framing, with no crate text or damaged glass.
+- `beat17m01` repair 1 accepted: the worker has exactly two arms holding one nut and one bolt.
+
+- `beat16m04`, `beat16m05`, `beat16m07`, `beat16m09`, and `beat17m02` inspected and accepted. Drift check: `beat16m07` charcoal cap, slate-blue waistcoat, white face and mittens match `character_test.png`; `beat16m04` pale teal glass and dark iron match `location_test.png`. No new anchors.
+- Seven accepted frames and three rejects converted to 256-color indexed PNG at native dimensions. `refs/reviews/batch13_contact.png` shows all accepted and rejected/withheld shots. `beat16m06` remains pending because its original generation omitted one word from the frozen style block.
+
+## Batch 14 QC — repair
+
+- `beat16m06` regenerated with the exact frozen STYLE block and accepted; worker, glass panels and palette match the anchors. Its prior attempt is retained as withheld in batch 13.
+- `beat18m02` original rejected: one freestanding panel has a central vertical bar while the other does not, contradicting the narrated identical design. Repair changes only the panel-design clause to make the center bar identical in both panels.
+
+- `beat18m02` repair 1 accepted: both unbroken panels have a matching central vertical bar. `beat17m03`–`beat18m05` otherwise inspected and accepted.
+- Drift check: `beat18m03` cap charcoal, waistcoat slate-blue and hands white match `character_test.png`; `beat17m03` pale teal glass and dark iron match `location_test.png`. The exact approved style block was used throughout this batch; no new anchors.
+- Eight accepted frames and the batch 14 rejected attempt converted to 256-color indexed PNG at unchanged dimensions. `refs/reviews/batch14_contact.png` includes accepted frames, the previous withheld original, and the rejected panel attempt. No pending repairs.

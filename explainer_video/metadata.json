@@ -3,7 +3,7 @@
   "project_slug": "explainer",
   "slug_status": "provisional_until_topic_selected",
   "title": null,
-  "workflow_state": "5_batch_12_complete",
+  "workflow_state": "5_batch_14_complete",
   "concept_status": "brief_confirmed",
   "autopilot": false,
   "target_runtime_minutes": 5,
@@ -65,7 +65,7 @@
     "explainer_video/refs/Screenshot Capture - 2026-10-28 - 08-14-55.png"
   ],
   "script_status": "approved",
-  "spine_status": "approved_anchor_blocks_added_shots_refined_through_slide_16m03",
+  "spine_status": "approved_anchor_blocks_added_shots_refined_through_slide_18m05",
   "frame_naming": "frames/beat{slide:02d}m{moment:02d}.png",
   "reference_status": "character_and_location_approved",
   "image_error": null,
@@ -73,8 +73,8 @@
     "refs/character_test.png",
     "refs/location_test.png"
   ],
-  "accepted_frame_count": 86,
-  "remaining_frame_count": 91,
+  "accepted_frame_count": 101,
+  "remaining_frame_count": 76,
   "pending_repairs": [],
   "thumbnail_status": "not_started",
   "frame_exceptions": [

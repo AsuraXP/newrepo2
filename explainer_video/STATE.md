@@ -1,6 +1,6 @@
 # Production state
 
-- Current state: **5 — first 86 frames accepted; batch 12 complete**.
+- Current state: **5 — first 101 frames accepted; batch 14 complete**.
 - AUTOPILOT: off.
 - Branch: `arena/9714bb12-newrepo2`.
 - Discovery: completed; existing `vidsync/`, `kaggle/`, and `tools/` inventoried for reuse.
@@ -16,7 +16,7 @@
 - The old ship-survival premise is not selected.
 - `visuals.csv`: 177 provisional word-reactive rows, covering the approved script in order. Frame 01 shows the selected mismatched-bolt hook. Prompts require refinement and the approved anchor blocks before frame generation.
 - Reference tests: `refs/character_test.png` and `refs/location_test.png` generated successfully after the earlier HTTP 403 errors. Both explicitly approved as anchors. Original user-provided style inputs are intact.
-- Sequence frames: 86 accepted of 177; 91 remain. `beat10m04` and `beat13m04` are declared visual exceptions after three failed repairs each. Review sheets: `refs/reviews/batch01_contact.png` through `batch12_contact.png`.
+- Sequence frames: 101 accepted of 177; 76 remain. `beat10m04` and `beat13m04` remain declared visual exceptions; `beat16m06` passed with the corrected frozen prompt. Review sheets: `refs/reviews/batch01_contact.png` through `batch14_contact.png`.
 - Thumbnail and Kaggle runner: not started.
 - Audio: none generated; all synthesis/mixing/encoding is reserved for Kaggle.
 
@@ -29,10 +29,10 @@
 | 2 — script | COMPLETE | Explicitly approved by user |
 | 3 — word-reactive spine | DRAFTED | 177 rows; refine prompts against approved anchor before generation |
 | 4 — references | COMPLETE | Character and location tests explicitly approved |
-| 5 — frames/thumbnail | IN PROGRESS | 86 accepted; generate next 8; thumbnail pending |
+| 5 — frames/thumbnail | IN PROGRESS | 101 accepted; generate next 8; thumbnail pending |
 | 6 — Kaggle runner | NOT STARTED | Reuse existing code where compatible; validate offline |
 | 7 — handoff | NOT STARTED | Provide ready-to-run Kaggle cell |
 
 ## Next action
 
-The user chose the recommended history topic and supplied style images. Commit and push batches 11 and 12. On continuation, generate the next eight frames beginning with `slide_16m04`. No thumbnail yet.
+The user chose the recommended history topic and supplied style images. Commit and push batches 13 and 14. On continuation, generate the next eight frames beginning with `slide_18m06`. No thumbnail yet.
