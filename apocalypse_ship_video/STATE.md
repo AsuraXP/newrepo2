@@ -33,7 +33,30 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (150, QC'd by eye): all rows slide_01..slide_92m01 EXCEPT queue:
+USER CORRECTION (batch 19): "latest generation zombies don't look like zombies,
+frames don't match reference, some are using mobile phones". ROOT CAUSE: weak
+block "pale grey stick figure, faint dot eyes" → grey people standing idly;
+model adds phones to idle figures. FIX — ZOMBIE BLOCK MANDATORY in every frame
+containing the undead, from batch 20 on:
+"the SAME pale-grey stairwell zombie: sickly pale grey-green skin, HUNCHED
+forward, head lolling to one side, slack jaw hanging open, big GLASSY
+UNFOCUSED eyes with a wet white glint staring at nothing (ref beat77m02),
+torn ragged shirt with jagged uneven hem (ref beat84m01), arms dangling loose
+or swaying half-lifted, dragging its feet in an uneven stagger — clearly the
+undead: never upright, never attentive, never holding any object, no phone,
+no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
+Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
+Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
+92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
+ACCEPTED (149, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
+84m02, 85m01, 86m01, 87m01, 87m02, 88m02 (all hunched/glassy/ragged = reference)
++ kept no-zombie frames 85m02, 90m01, 90m02, 91m01.
+QUEUE (11, zombie-block re-rolls, in order): 88m01 (old plain-grey still on
+disk — re-roll hit turn cap), 89m01 (re-roll SAVED but STILL plain grey —
+model ignored block; re-word with stronger hunch/slack-jaw first phrase),
+89m02, 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
+Zombie tint drift tolerated so far: 84m02/86m01/87m02/88m02 grey-green,
+85m01/87m01 greener — all read unmistakably as the same zombie type.
 OUTSTANDING repairs (R=4):
 - beat87m02 attempt 3: now hollow outlined robe-torso → "torso is ONE single
   vertical black stick line like a classic stick-figure drawing, no outline,
