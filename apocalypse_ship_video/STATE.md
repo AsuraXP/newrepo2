@@ -48,11 +48,19 @@ no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
 Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
 Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-ACCEPTED (152, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
-84m02, 85m01, 86m01, 87m01, 87m02, 88m01, 88m02, 92m01, 93m01 + kept no-zombie
-frames 85m02, 90m01, 90m02, 91m01.
-QUEUE (8, zombie-block re-rolls, in order): 89m01, 89m02, 92m02, 92m03,
-93m02, 93m03, 94m01, 95m01 (never made; protagonist-only, no block needed).
+ACCEPTED (158, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
+84m02, 85m01, 86m01, 87m01, 87m02, 88m01, 88m02, 89m02, 92m01, 92m03, 93m01,
+93m02, 93m03, 94m01, 95m01 + kept no-zombie frames 85m02, 90m01, 90m02, 91m01.
+QUEUE (2, protagonist anatomy re-rolls; zombie side already correct — keep it):
+- beat89m01: protagonist drawn with capsule outline torso + nipple dots +
+  fingered hands + toes → "torso ONE single vertical black stick line, no body
+  outline, no oval, mitten hands, no fingers, no toes"
+- beat92m02: protagonist in solid-black filled shirt-torso + white shoes
+  → same stick blocks: "torso a single vertical black stick line, no shirt,
+  no fill, plain black stick legs, no shoes"
+(These two prompts must keep the zombie-block opening that passed, and add
+the strict protagonist clause at the END so it can't be crowded out.)
+Next new rows after queue clears: slide_94m02+ (CSV read through slide_117).
 MODERATION NOTE (batch 21): 7 blocks in 10 attempts on the standing zombie
 block — flaky, same recipe passed 7/7 in batch 20. Recipe that re-passed
 88m01 att: "harmless comedy scene" opener + "cartoon zombie figure" + "no
