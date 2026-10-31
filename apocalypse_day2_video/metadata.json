@@ -1,0 +1,21 @@
+{
+  "slug": "apocalypse_day2",
+  "series_episode": 2,
+  "sequel_to": "apocalypse_day1",
+  "title": "Can You Survive Day Two of the Zombie Apocalypse?",
+  "logline": "Picking up at 5:45 AM inside the mountain fire-lookout cabin with almost zero water left as hundreds of infected pour uphill from the dead city, you must find pure mountain spring water, rescue stranded paramedic Maya at a forestry ranger station, and cross a shattered gorge suspension bridge ahead of the horde.",
+  "target_runtime_minutes": 5,
+  "word_count": 926,
+  "projected_runtime_seconds": 298.7,
+  "frame_count": 93,
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%",
+  "pov": "Voice-of (second-person story)",
+  "style": "2D minimalist stick-figure cartoon (strict match to user_style_ref_01..03)",
+  "hard_rules": "none",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "platform": "YouTube",
+  "autopilot": true,
+  "status": "STATE_4_AWAITING_ANCHOR_APPROVAL"
+}
