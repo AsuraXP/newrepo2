@@ -1,14 +1,14 @@
 # Production state
 
-- Current state: **5 — first 39 frames accepted; batch 5 complete**.
+- Current state: **5 — first 47 frames accepted; batch 6 complete**.
 - AUTOPILOT: off.
 - Branch: `arena/9714bb12-newrepo2`.
 - Discovery: completed; existing `vidsync/`, `kaggle/`, and `tools/` inventoried for reuse.
 - Project initialization: completed under provisional slug `explainer`.
 - Confirmed: explainer, YouTube, five-minute target, second-person narration.
-- Planning target: approximately 930 spoken words; no script written or measured.
+- Planning target: approximately 930 spoken words; approved script is 971 words, with runtime not measured.
 - Topic selected: how standardized screw threads helped build the Crystal Palace. Preliminary channel and competitor checks are recorded in brief.md; completeness is limited.
-- Visual style selected: user-supplied hand-drawn 2D stick-figure references, copied into `refs/`. Generated anchors are not yet approved.
+- Visual style selected: user-supplied hand-drawn 2D stick-figure references, copied into `refs/`. Generated character and location anchors are approved.
 - Visual hook: 1, The wrong bolt (stylized metaphor).
 - Thumbnail direction: 1 / A, TINY SCREW, HUGE PALACE.
 - Defaults: confirmed (16:9, no captions, en-US-AndrewNeural +10%, Kaggle-only audio).
@@ -16,7 +16,7 @@
 - The old ship-survival premise is not selected.
 - `visuals.csv`: 177 provisional word-reactive rows, covering the approved script in order. Frame 01 shows the selected mismatched-bolt hook. Prompts require refinement and the approved anchor blocks before frame generation.
 - Reference tests: `refs/character_test.png` and `refs/location_test.png` generated successfully after the earlier HTTP 403 errors. Both explicitly approved as anchors. Original user-provided style inputs are intact.
-- Sequence frames: 39 accepted of 177; 138 remain. Batch 5 repair passed for `beat07m03`. Review sheets: `refs/reviews/batch01_contact.png` through `batch05_contact.png`.
+- Sequence frames: 47 accepted of 177; 130 remain. Batch 6 repair passed for `beat08m02`. Review sheets: `refs/reviews/batch01_contact.png` through `batch06_contact.png`.
 - Thumbnail and Kaggle runner: not started.
 - Audio: none generated; all synthesis/mixing/encoding is reserved for Kaggle.
 
@@ -29,10 +29,10 @@
 | 2 — script | COMPLETE | Explicitly approved by user |
 | 3 — word-reactive spine | DRAFTED | 177 rows; refine prompts against approved anchor before generation |
 | 4 — references | COMPLETE | Character and location tests explicitly approved |
-| 5 — frames/thumbnail | IN PROGRESS | 39 accepted; generate next 8; thumbnail pending |
+| 5 — frames/thumbnail | IN PROGRESS | 47 accepted; generate next 8; thumbnail pending |
 | 6 — Kaggle runner | NOT STARTED | Reuse existing code where compatible; validate offline |
 | 7 — handoff | NOT STARTED | Provide ready-to-run Kaggle cell |
 
 ## Next action
 
-The user chose the recommended history topic and supplied style images. Commit and push batch 5 to the current branch. Next batch begins with `slide_07m09` and continues into `slide_08`, illustrating threaded connections. No thumbnail yet.
+The user chose the recommended history topic and supplied style images. Commit and push batch 6 to the current branch. Next batch begins with `slide_09m01` and continues into `slide_10m04`. No thumbnail yet.

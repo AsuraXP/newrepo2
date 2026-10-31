@@ -116,3 +116,11 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat07m03` repair 1 accepted: the book pages are blank apart from the palace image; illegible pseudo-writing removed.
 - Drift check: `beat07m01` cap charcoal and waistcoat slate blue vs `character_test.png` charcoal cap and slate-blue waistcoat; `beat07m02` palace glass pale teal and iron dark vs `location_test.png` pale teal glass and dark iron. No new anchors.
 - Eight accepted frames and the rejected attempt converted to 256-color indexed PNG at unchanged native dimensions; contact sheet `refs/reviews/batch05_contact.png` shows all accepted frames and the reject.
+
+## Batch 6 QC — repair
+
+- `beat08m02` original rejected: the bolt is shown end-on like a solid hexagon, so its threaded shaft is not visible; the cropped worker also has black hands rather than the approved white hands. Repair changes the bolt-view clause to a clear side-on view of its entire threaded shaft.
+
+- `beat08m02` repair 1 accepted: side-on bolt displays the full ridged shaft; the worker’s hands are no longer visible.
+- Drift check: `beat08m01` cap charcoal and waistcoat slate blue vs `character_test.png` charcoal cap and slate-blue waistcoat; `beat08m04` pale teal glass and dark iron vs `location_test.png` pale teal glass and dark iron. No new anchors.
+- All eight accepted frames and the rejected attempt converted to 256-color indexed PNG at unchanged native dimensions. Contact sheet `refs/reviews/batch06_contact.png` includes accepted frames and the rejected original.
