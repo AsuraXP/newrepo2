@@ -1,3 +1,3 @@
 # Production state
 
-State 5: anchors approved. 16 of 196 frames accepted; 180 remain. Batch 2 includes the repaired `beat04m01` and eight new frames through `beat09m01`; contact sheet includes rejected `beat09m01`. Next batch starts `beat09m02`. Character and farm reference anchors approved; preserve town apartment continuity. Project slug is provisional.
+State 5: 24 of 196 frames accepted; 172 remain. Batch 3's three pending news shots were repaired after user feedback; no pending frames remain in that batch. The survivor must not wear a backpack or jacket during the at-home news sequence. Next batch starts `beat14m01`. Project slug is provisional.
