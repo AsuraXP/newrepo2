@@ -119,3 +119,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat60m01` repaired: specified solid black stick arms and mitten hands instead of the prior filled white arms. Accepted.
 - `beat67m03` initial rejected: "beat67m03 white five-fingered hand vs anchor black mitten hands". Changed hand clause to solid black mitten shape; replacement accepted.
 - `beat66m03` has a distant gray swarm behind fleeing civilians, though individual expressions are indistinct at this distance. No new anchors or moderation blocks.
+
+## Batch 16 QC
+
+- `beat70m02` initial rejected: "beat70m02 driver door open vs story state shut before pulling away in beat70m03". Changed door clause to fully shut with window visible; replacement accepted.
+- Vehicle anchor: `beat70m01`, dark slate-blue compact hatchback, rounded body and five doors. The driver's door is open only while entering, then closed while driving. Survivor wears olive jacket; dark backpack travels with them.
+- Minor drift: "beat71m01 car looks sedan-like from the front vs beat70m01 hatchback side profile"; subsequent shots should match the accepted vehicle anchor. No moderation blocks.
