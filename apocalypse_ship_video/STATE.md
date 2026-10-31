@@ -48,19 +48,22 @@ no device, no bag, no weapon; non-graphic, no blood, no gore, no wounds".
 Reference frames: beat77m02 (glassy eyes), beat84m01 (ragged clothing).
 Re-roll list (un-accepted): 84m02, 86m01, 87m01, 87m02, 88m02, 89m01, 89m02,
 92m01, 92m02, 92m03, 93m01, 93m02, 93m03, 94m01, 95m01 (never made).
-ACCEPTED (158, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
-84m02, 85m01, 86m01, 87m01, 87m02, 88m01, 88m02, 89m02, 92m01, 92m03, 93m01,
-93m02, 93m03, 94m01, 95m01 + kept no-zombie frames 85m02, 90m01, 90m02, 91m01.
-QUEUE (2, protagonist anatomy re-rolls; zombie side already correct — keep it):
-- beat89m01: protagonist drawn with capsule outline torso + nipple dots +
-  fingered hands + toes → "torso ONE single vertical black stick line, no body
-  outline, no oval, mitten hands, no fingers, no toes"
-- beat92m02: protagonist in solid-black filled shirt-torso + white shoes
-  → same stick blocks: "torso a single vertical black stick line, no shirt,
-  no fill, plain black stick legs, no shoes"
-(These two prompts must keep the zombie-block opening that passed, and add
-the strict protagonist clause at the END so it can't be crowded out.)
-Next new rows after queue clears: slide_94m02+ (CSV read through slide_117).
+ACCEPTED (168, QC'd by eye): rows slide_01..slide_84m01 + zombie-block re-rolls
+84m02, 85m01, 86m01, 87m01, 87m02, 88m01, 88m02, 89m01, 89m02, 92m01, 92m02,
+92m03, 93m01, 93m02, 93m03, 94m01, 94m02, 95m01 + no-zombie frames 85m02,
+90m01, 90m02, 91m01, 96m01, 96m02, 97m01, 98m01, 98m02, 99m01, 99m02
+(batch 23: 10/10 zero rejects, zero blocks).
+QUEUE: none.
+Next rows: slide_100+ (CSV read through slide_117; 100 couch/TV lab →
+statue/cell → lock down → paperwork → freedom/life gone → sunrise bars →
+sneaky cure thought → blood/drop → maybe cure → planet → nice/wrong →
+everyone needs it → drawer → rules).
+Tolerated (additions): 89m01 white-outlined legs read as light trousers
+(zombie side + line torso now correct); 99m02 richer rendered still-life
+(style exception for dark object frames); 97m01 silhouettes wear neckties
+(corporate menace, reads fine); parallel read_file display can shuffle —
+verify disk mapping with a sequential read when in doubt (97m01/98m01
+confirmed correct this way).
 MODERATION NOTE (batch 21): 7 blocks in 10 attempts on the standing zombie
 block — flaky, same recipe passed 7/7 in batch 20. Recipe that re-passed
 88m01 att: "harmless comedy scene" opener + "cartoon zombie figure" + "no
