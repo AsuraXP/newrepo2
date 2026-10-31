@@ -108,3 +108,11 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 - `beat06m01` repair 1 accepted: white cartoon mitten replaces peach anatomically detailed palm; nut and bolt remain distinct.
 - Drift check: `beat05m04` cap charcoal, waistcoat slate-blue and hand white vs `character_test.png` charcoal cap, slate-blue waistcoat and white hands; `beat04m03` glass pale teal and arches dark vs `location_test.png` pale teal glass and dark arches. No new anchors.
 - All eight accepted frames and both rejected attempts converted to indexed PNG at unchanged native dimensions; `refs/reviews/batch04_contact.png` shows all attempts.
+
+## Batch 5 QC — repair
+
+- `beat07m03` original rejected: the archival book contains illegible pseudo-writing despite the no-text invariant. Repair changes only the book-page clause to make the pages blank except for a palace drawing.
+
+- `beat07m03` repair 1 accepted: the book pages are blank apart from the palace image; illegible pseudo-writing removed.
+- Drift check: `beat07m01` cap charcoal and waistcoat slate blue vs `character_test.png` charcoal cap and slate-blue waistcoat; `beat07m02` palace glass pale teal and iron dark vs `location_test.png` pale teal glass and dark iron. No new anchors.
+- Eight accepted frames and the rejected attempt converted to 256-color indexed PNG at unchanged native dimensions; contact sheet `refs/reviews/batch05_contact.png` shows all accepted frames and the reject.
