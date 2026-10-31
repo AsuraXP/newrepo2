@@ -73,3 +73,8 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat28m01` initial rejected: "beat28m01 detached foreground hand holding a can vs survivor's hands at sides". Changed action clause to hands at sides; replacement accepted.
 - `beat29m01` first generation was blocked by moderation; the service did not identify a blocked word, so none can be reported. Changed "half a loaf of bread" to "a small piece of bread"; retry succeeded and was accepted.
 - Minor clothing drift: "beat26m01 white shirt vs beat09m01 bare stick torso"; no jacket or backpack appears. `beat28m01` and `beat29m01` show a gray shirt matching the earlier kitchen frame `beat07m01`. No new anchors.
+
+## Batch 8 QC
+
+- `beat34m01` initial rejected: "beat34m01 food packets replace the cans and bread established in beat32m02". Changed the food description to specify the same cans, half loaf and bottles; used the previous accepted inventory frame as reference. Replacement accepted.
+- Minor continuity drift: quantities and grouping of cans and bottles vary across `beat30m01`–`beat34m01`; no backpack or jacket appears. New anchor: none. No moderation blocks.
