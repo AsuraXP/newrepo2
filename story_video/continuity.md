@@ -46,3 +46,15 @@ User approved `character_test.png` and `farm_test.png` as character and farm anc
 ## News corrections after user feedback
 
 The survivor does not wear a jacket or backpack at home during the news; departure clothing and packed backpack appear only later, after packing (except the opening foreshadowing shots). The three previously pending shots were repaired and accepted: `beat11m01` now shows the broadcast only; `beat12m02` shows the smoky street with no foreground survivor; `beat13m01` shows fleeing civilians rather than the survivor in the street. Prior rejects remain in `refs/pending`. No new anchors.
+
+## Batch 4 QC
+
+- `beat15m01` initial rejected: "beat15m01 survivor wears olive jacket during news at home vs beat09m01 bare torso before departure". Changed composition clause to broadcast only; replacement accepted.
+- `beat15m02` initial rejected: "beat15m02 TV news ticker contains gibberish vs no text rule". Changed TV clause to prohibit captions and tickers; replacement accepted. Minor drift: "beat15m02 beige shirt and gray trousers vs beat09m01 bare stick torso"; no jacket or backpack is worn.
+- `beat15m03` pending: "beat15m03 two televisions in room vs beat09m01 one TV"; repair next turn with exactly one television. No new anchors or moderation blocks.
+
+## Batch 5 QC
+
+- `beat15m03`: initial rejected in batch 4 for two TVs; changed the TV-count clause to exactly one. Replacement accepted, no backpack worn.
+- `beat21m03`: initial rejected: the bodies were not discernible on a distant TV in a room. Changed composition clause to footage-only. Retry still pending: "beat21m03 retry has LIVE/GNN logos and news ticker vs no text rule". Two candidate versions retained; retry next turn with a single-clause ban on broadcast graphics. One re-roll has failed for this shot.
+- `beat20m02`: blank ticker rectangle, no legible text; monitor for broadcast overlay drift. No new anchors; no moderation blocks.
