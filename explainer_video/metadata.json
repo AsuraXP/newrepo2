@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "project_slug": "explainer",
+  "slug_status": "provisional_until_topic_selected",
+  "title": null,
+  "workflow_state": "5_batch_2_complete",
+  "concept_status": "brief_confirmed",
+  "autopilot": false,
+  "target_runtime_minutes": 5,
+  "platform": "YouTube",
+  "narration_pov": "second-person",
+  "visual_style": "User-supplied hand-drawn 2D stick-figure style: expressive round pale faces, black ink outlines and thin limbs, simple flat muted colors, sparse textured backgrounds.",
+  "aspect_ratio": "16:9",
+  "captions": false,
+  "defaults_status": "confirmed",
+  "planning_words_per_second": 3.1,
+  "word_count": 971,
+  "projected_runtime_seconds": 313.2,
+  "frame_count": 177,
+  "tts": {
+    "execution_environment": "kaggle_only",
+    "voice": "en-US-AndrewNeural",
+    "rate": "+10%",
+    "boundary": "WordBoundary",
+    "continuous_take": true
+  },
+  "render": {
+    "fps": 30,
+    "video_codec": "libx264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_bitrate": "192k",
+    "loudness_lufs": -14,
+    "canvas_policy": "PIL pre-pad to common even dimensions at (0,0); native-resolution concat; no post-concat scale or pad"
+  },
+  "image_generation": {
+    "per_turn_cap": 10,
+    "batch_target": 8,
+    "repair_budget": 2
+  },
+  "visual_hook": {
+    "id": 1,
+    "name": "The wrong bolt",
+    "concept": "Close-up of a mismatched bolt and nut; worried builders struggle with a palace frame. Stylized metaphor, not a claim of historical collapse."
+  },
+  "thumbnail_concept": {
+    "id": "A",
+    "name": "TINY SCREW, HUGE PALACE",
+    "concept": "Oversized screw, simplified glass palace, surprised stick figure; cream background, teal-blue glass and dark ink outlines."
+  },
+  "approved_anchors": [
+    "refs/character_test.png",
+    "refs/location_test.png"
+  ],
+  "branch": "arena/9714bb12-newrepo2",
+  "repository": "https://github.com/AsuraXP/newrepo2.git",
+  "video_format": "explainer",
+  "target_word_count_estimate": 930,
+  "style_source": "user_supplied_reference_images",
+  "topic_direction": "history explainer; seek a less-covered subject",
+  "topic": "How standardized screw threads helped build the Crystal Palace",
+  "visual_style_reference_paths": [
+    "explainer_video/refs/Screenshot Capture - 2026-10-28 - 08-14-25.png",
+    "explainer_video/refs/Screenshot Capture - 2026-10-28 - 08-14-40.png",
+    "explainer_video/refs/Screenshot Capture - 2026-10-28 - 08-14-55.png"
+  ],
+  "script_status": "approved",
+  "spine_status": "approved_anchor_blocks_added_first_8_shots_refined",
+  "frame_naming": "frames/beat{slide:02d}m{moment:02d}.png",
+  "reference_status": "character_and_location_approved",
+  "image_error": null,
+  "candidate_references": [
+    "refs/character_test.png",
+    "refs/location_test.png"
+  ],
+  "accepted_frame_count": 15,
+  "remaining_frame_count": 162,
+  "pending_repairs": [],
+  "thumbnail_status": "not_started"
+}
