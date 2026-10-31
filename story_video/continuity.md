@@ -166,3 +166,9 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat103m01` initial rejected: "beat103m01 illegible writing on note vs no-text rule". Changed note orientation clause to blank reverse facing viewer; replacement accepted.
 - `beat104m01` pending: "beat104m01 illegible writing on note on table vs no-text rule". Repair next turn; both repair slots used.
 - `beat105m01`–`beat106m02` show the infected grandfather with gray side hair, mustache and torn brown vest. Minor drift: `beat105m03` vacant eyes read as downcast more than unfocused; no gore or contact. New anchor: none. No moderation blocks.
+
+## Batch 23 QC
+
+- `beat104m01` repaired: note reverse now blank, matching no-text rule; accepted.
+- `beat111m02` initial rejected: "beat111m02 door wide open vs nearly closed door described by moment". Changed door clause to nearly fully closed; retry still shows the door wide open. Pending; one failed re-roll.
+- `beat111m03` shows a closed door secured from outside; grandfather remains inside. `beat108m02` has glossy eyes vs dot-eye anchor, emotional tears remain readable. No new anchors or moderation blocks.

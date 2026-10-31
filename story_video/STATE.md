@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 170 of 190 frames accepted; 20 remain. Batch 22 repaired `beat96m01`, accepted seven new frames and left `beat104m01` pending due to illegible note writing. Both repair slots used. Next turn repair `beat104m01`, then start new frames at `beat107m01`. Survivor and infected grandfather are inside farmhouse, several feet apart; grandfather has gray side hair, gray mustache and torn brown vest. Project slug provisional.
+State 5: 178 of 190 frames accepted; 12 remain. Batch 23 repaired `beat104m01`, accepted seven new frames and left `beat111m02` pending: first reroll still shows a wide-open door instead of closing. Two repair slots used. Next turn repair `beat111m02` (one failed reroll), then start at `beat112m01`. Grandfather stays inside; survivor outside after `beat111m01`; front door closed and secured after `beat111m03`.
