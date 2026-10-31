@@ -33,13 +33,15 @@ Anchors FROZEN: B2 (character+palette) + C2 (interior/composition) ✅
 | beat09m03 | tan skin-filled forearm vs line-limb invariant; red marks oversized scribbles | "arm is a single thin black line, no skin fill; marks small" | queued |
 | beat09m02 | USER-FLAGGED: head detached — floating head behind mugs + headless body on stool (impossible anatomy; assistant QC missed it) | "EXACTLY ONE connected figure — head sitting directly on the spine, never detached" | ✅ repaired, PASS |
 
-ACCEPTED (87, QC'd by eye): all rows slide_01..slide_51 COMPLETE +
-beat52m01; pending: beat52m02, beat52m03 (not yet fired).
+ACCEPTED (96, QC'd by eye): all rows slide_01..slide_58 EXCEPT:
+OUTSTANDING repair (R=1):
+- beat55m01 REJECT: three faint marks on forearm, script says two → clause:
+  "exactly two faint marks, no third mark anywhere"
 QUEUE: none.
-Tolerated notes (additions): 46m01/50m01 finger-bump mitten hands (gestural
-frames); 47m01 zoom-circle device with faint-faced bag figure; 49m02/51m01
-living-room window corner (same apartment, window language consistent);
-50m02 fully fingered dark hand (finger-to-camera beat).
+Tolerated (additions): 52m02 white rounded shape at crop bottom reads as
+duvet; 53m01/54m01/54m02/56m01 peach skin tone in forearm close-ups
+(close-up register, consistent); 55m02 faint marks as light ticks on line
+arm (mid-shot register).
 Tolerated notes: 05m02 dashed arm + mitten-index; 09m03/18m01/28m02 red marks
 on both forearms (close-up class); 15m01 paper bag; 19m01/20m01/21m01/31m01
 close-up face detail; 22m01 shadow shape; 26m01 darker pants under light;
