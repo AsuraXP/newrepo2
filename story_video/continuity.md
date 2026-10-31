@@ -100,3 +100,16 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 
 - `beat53m04` initial rejected: "beat53m04 survivor wears olive jacket and backpack during pre-packing thought vs beat49m01 still at home before packing". Changed composition clause to stormy farm only, no person or thought bubble; replacement accepted.
 - Minor set-dressing drift: "beat53m04 barn roof lacks solar panels vs farm anchor roof panels"; focus is the sturdy barn during an imagined storm, not the system detail. `beat54m01` introduces the backpack only at the scripted grab; `beat55m01` packs it without wearing it. No new anchors or moderation blocks.
+
+## Batch 13 QC
+
+- `beat55m04` initial rejected: "beat55m04 two olive jackets vs single jacket in packing sequence". Changed the held jacket clause to specify the only jacket in the room. Retry pending: "beat55m04 retry olive pullover has no zipper vs character anchor olive zip-front jacket". One failed re-roll.
+- `beat57m02` initial rejected: "beat57m02 curtains open vs beat27m02 curtains closed". Changed story-state clause to fully shut curtains; replacement accepted.
+- Grandmother proposed recurring appearance in `beat58m01`: gray hair bun, muted lavender cardigan, round white face. No other new anchor or moderation blocks.
+
+## Batch 14 QC
+
+- `beat55m04` repaired: changed garment clause to specify an open zip-front jacket and collar. Replacement matches olive jacket anchor and is accepted.
+- `beat59m01` first generation produced no image (service error, no moderation block). Simplified the two-thought-bubble clause to a survivor lowering a silent phone; retry accepted.
+- `beat60m01` pending: "beat60m01 white filled arms with five-finger hands vs beat57m02 black stick limbs and mitten-like hands". No repair budget remains this turn.
+- `beat63m01` begins outdoor sequence: survivor now wears olive jacket and dark backpack as departure has occurred. No new anchors or moderation blocks.

@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 91 of 195 frames accepted; 104 remain. Batch 12 accepted eight frames through `beat55m01` including the first packing shot; corrected premature jacket/backpack in `beat53m04`. Next batch starts `beat55m02`. At packing, backpack is held or on counter; jacket and backpack are not worn yet. Project slug is provisional.
+State 5: 106 of 195 frames accepted; 89 remain. Batch 14 repaired `beat55m04`, accepted seven new frames, and left `beat60m01` pending for white arms inconsistent with the stick-figure style. Both repair slots used (including the no-image retry). Next turn repair `beat60m01` then continue from `beat65m02`. Outside after packing, survivor wears olive zip-front jacket and dark backpack. Project slug is provisional.
