@@ -95,3 +95,8 @@ The survivor does not wear a jacket or backpack at home during the news; departu
 - `beat48m02` initial rejected: "beat48m02 grandfather lacked gray hair and mustache vs beat48m01 gray side hair and gray mustache". Changed grandfather clause to match `beat48m01` and used it as prior approved frame; replacement accepted.
 - `beat50m01` initial rejected: "beat50m01 disconnected floating lightbulb diagram vs solar panels powering farmhouse lights". Changed illustration clause to illuminated farmhouse windows; replacement accepted.
 - Recurring grandfather reference: `beat48m01` (gray side hair, gray mustache, brown vest over pale shirt); use alongside approved character and farm anchors for later grandfather scenes. Minor drift: `beat47m01` vest is lighter than `beat48m01`; both retain gray side hair and mustache. No moderation blocks.
+
+## Batch 12 QC
+
+- `beat53m04` initial rejected: "beat53m04 survivor wears olive jacket and backpack during pre-packing thought vs beat49m01 still at home before packing". Changed composition clause to stormy farm only, no person or thought bubble; replacement accepted.
+- Minor set-dressing drift: "beat53m04 barn roof lacks solar panels vs farm anchor roof panels"; focus is the sturdy barn during an imagined storm, not the system detail. `beat54m01` introduces the backpack only at the scripted grab; `beat55m01` packs it without wearing it. No new anchors or moderation blocks.

@@ -1,3 +1,3 @@
 # Production state
 
-State 5: 83 of 195 frames accepted; 112 remain. Batch 11 accepted eight frames through `beat51m01`, with two repairs. Grandfather reference established at `frames/beat48m01.png`. Next batch starts `beat52m01`. Before packing, do not show a packed backpack in the room or the survivor wearing a jacket or backpack. Project slug is provisional.
+State 5: 91 of 195 frames accepted; 104 remain. Batch 12 accepted eight frames through `beat55m01` including the first packing shot; corrected premature jacket/backpack in `beat53m04`. Next batch starts `beat55m02`. At packing, backpack is held or on counter; jacket and backpack are not worn yet. Project slug is provisional.
