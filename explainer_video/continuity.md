@@ -144,3 +144,24 @@ First batch shot prompts: `visuals.csv`, rows 1–8. Explicit story state: the p
 
 - `beat10m06`–`beat10m09` and `beat11m01` inspected and accepted. Drift check: `beat10m08` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat11m01` pale teal glass and dark iron match `location_test.png`. No new anchors.
 - Seven frames accepted this turn, including the declared `beat10m04` exception; the only pending shot among the first 62 is `beat10m05`. Accepted frames and all batch 8 rejects converted to 256-color indexed PNG without resizing. `refs/reviews/batch08_contact.png` includes the exception, accepted frames, and both rejected shots.
+
+## Batch 9 QC — historical chronology repairs
+
+- `beat10m05` repair 2 accepted: nut touches the bolt and jagged resistance marks plus the worker's worried expression suggest the hypothetical jam; the exact binding remains stylized.
+- `beat12m01`–`beat12m07` originals rejected: all depict the Crystal Palace in the background while the narration describes Whitworth's 1841 proposal, a decade before the 1851 building. This could imply an impossible location or chronology. The first two repairs change only each shot's setting clause to an enclosed 1840s workshop without the palace; the other five are pending due to the two-repair budget. These are conceptual representations, not historical portraits.
+- `beat12m01` repair 1 accepted: the scene now occurs in an enclosed plain-walled workshop, with no anachronistic palace backdrop.
+- `beat12m02` repair 1 rejected: the chronology was corrected, but the capped worker has tan hands and the engineer's hand is black, both drifting from the simple white hands of `character_test.png`. Next repair should change only the hand-color clause to white mitten hands on both figures. The original and repair 1 are retained.
+- `beat12m03`–`beat12m07` remain pending after their original anachronistic palace backdrops; their first repairs should change only the setting clause to an enclosed workshop without an exterior palace view. The per-turn repair budget is exhausted.
+
+- Drift check: `beat10m05` charcoal cap and slate-blue waistcoat match `character_test.png`; `beat12m01` uses an enclosed cream-walled workshop instead of the later palace for chronological accuracy. The Whitworth character is an illustrative short dark-haired engineer in a charcoal-brown coat, not a new approved anchor or exact likeness.
+- Two accepted frames and eight rejected attempts converted to 256-color indexed PNG without changing dimensions; `refs/reviews/batch09_contact.png` shows them. Six pending repairs remain.
+
+## Batch 10 QC — repair
+
+- `beat12m02` repair 2 accepted: both figures have simple white hands and the workshop has no anachronistic palace view.
+- `beat12m03`–`beat12m07` repair 1 accepted: enclosed workshops replace the palace backdrop; Whitworth remains an illustrative character, not an exact likeness or a new anchor.
+- `beat13m01` original rejected: the drawn thread profile looks like an irregular wavy sheet rather than a clear thread shape. Repair changes only the object being studied to an actual metal bolt with clearly regular rounded thread ridges.
+
+- `beat13m01` repair 1 accepted: a regular threaded bolt replaces the ambiguous wavy sheet; this remains a stylized object rather than a measured engineering diagram. `beat13m02` also inspected and accepted.
+- Drift check: `beat12m02` worker charcoal cap, slate-blue waistcoat, and simple white hands match `character_test.png`; `beat12m03`–`beat13m02` consistently use enclosed cream-walled workshops for the 1840s, avoiding the later `location_test.png` palace. No new anchors.
+- Eight accepted frames and the batch 10 reject converted to 256-color indexed PNG without resizing; `refs/reviews/batch10_contact.png` includes prior rejected attempts for these repairs as well as accepted frames. No pending repairs.
