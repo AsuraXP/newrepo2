@@ -1,0 +1,5 @@
+# Rejected source candidates stay local; committed QC sheets retain their thumbnails.
+qc/**/rejects/
+
+# Local worker scratch, never production frames.
+qc/**/scratch/

@@ -1,0 +1,1 @@
+PASS: 6 accepted PNGs in frames/; 4 rejected candidates isolated in ignored rejects/; 10 candidate records and hashes verified; all prompts include locked style/negative blocks; first-attempt scene prompts match CSV; all images decode; contact sheet includes all 10 candidates; script/CSV byte-identical to source; session branch verified.
