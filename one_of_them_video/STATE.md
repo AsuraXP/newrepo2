@@ -57,3 +57,8 @@ Branch: arena/65278339-newrepo2
 - DECLARED EXCEPTION — beat04m11: after three failed re-rolls, the best
   stopped-zombie shot has dot eyes rather than the anchor's droopy eyes.
   Replace with an anchor-consistent stopped zombie when possible.
+
+## Worker 2 moderation notes
+- beat05m03: original close-up prompt was blocked; retry with "two clean
+  crescent marks" and "two faint pale curved lines" was accepted.
+- beat05m02: private scar close-up retry was blocked; frame remains pending.
