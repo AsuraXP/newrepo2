@@ -106,6 +106,11 @@ anchor is approved. Contents when locked:
   doodle-bubble treatment, generic non-protagonist figure, locked STYLE BLOCK
   and identical NEGATIVE BLOCK. It is a prompt-safety replacement only; the
   narration and visuals.csv remain byte-identical to the locked source.
-- Status at batch end: safe replacement logged in
+- Status at batch 002 end: safe replacement logged in
   `qc/worker_1/batch_002/prompts.json` as NOT_SENT; retry next turn within the
   image cap. No generated image exists for the blocked attempt.
+- RESOLVED in batch 003: the logged safe replacement was sent unchanged and
+  saved successfully as `frames/beat01m14.png` (attempt 2). Visual QC passed:
+  generic pale figure, separated gray-green silhouettes, desaturated thought
+  bubble, actual protagonist absent, no contact. The original blocked attempt
+  remains image-less; the accepted retry is recorded in batch_003/prompts.json.

@@ -121,7 +121,7 @@ Branch: arena/65278339-newrepo2
   candidates and a labelled blocked-attempt placeholder; `QC.md`,
   `prompts.json` and `validation.txt` record diagnoses and exact prompts.
 
-### Current Worker 1 next action
+### Worker 1 next action after batch 002 (completed in batch 003)
 - Row 5: attempt 4 / reroll 3, changing only the opening sentence again.
   If this third reroll fails, ship the closest existing candidate and log
   the precise DECLARED EXCEPTION here, then move on as the spec requires.
@@ -130,3 +130,35 @@ Branch: arena/65278339-newrepo2
   the protagonist. Do not alter visuals.csv.
 - Then rows 17–24 in order. Ten planned calls reach the cap; defer the last
   new row if another repair is needed. Stay inside assigned rows 1–92.
+
+## 2026-11-01 — WORKER 1 / STATE 5 / BATCH 003
+
+- Coverage: pending rows 5 and 14, then new rows 17–24. Ten image calls,
+  ten saved candidates, nine accepted. All candidates opened individually;
+  contact sheet reviewed end to end.
+- ACCEPTED (9): beat01m05 (attempt 4), beat01m14 (attempt 2), beat01m17,
+  beat01m18, beat02m01, beat02m03, beat02m04, beat02m05, beat02m06.
+- Row 5 PASSED on reroll 3: tight shoulder-to-sleeved-arm contact with separate
+  garment outlines and no exchanged sleeve colors. No declared exception.
+- Row 14 PASSED using the exact prompt-safe replacement logged in batch 002.
+  Moderation addendum in continuity.md updated to RESOLVED.
+- PENDING (1): beat02m02 / row 20. The pharmacy door/window layout mirrors
+  approved row 19, facade proportions change and the green cross disappears.
+  Rejected for storefront drift despite correct memory palette and smoke.
+- CUMULATIVE: 23/92 accepted; 69 remaining to accept (row 20 pending +
+  rows 25–92 not started). Rows 1–19 and 21–24 are accepted.
+- New master anchors: none. Row 19 is an optional local storefront reference
+  for the queued row 20 repair, not a new master anchor.
+- No TTS, voice audition, audio mix, FFmpeg, thumbnail or Kaggle-stage work.
+  No manual durations or post-generation image edits. script.md and
+  visuals.csv remain byte-identical to the locked source hashes.
+- QC artifacts: `qc/worker_1/batch_003/contact_sheet.jpg`, `QC.md`,
+  `prompts.json`, `validation.txt`. Reject source stays local; its thumbnail
+  is included in the contact sheet.
+
+### Current Worker 1 next action
+- Repair row 20 first using the logged single-sentence change and accepted
+  beat02m01.png as the prior-frame reference. Keep door left, broken window
+  right, green cross and storefront proportions consistent.
+- Then generate rows 25–32 in narration order. Nine planned calls leave one
+  repair slot under the ten-image cap. Stay inside assigned rows 1–92.

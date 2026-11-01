@@ -1,0 +1,244 @@
+{
+  "worker": 1,
+  "batch": 3,
+  "assigned_rows": [
+    1,
+    92
+  ],
+  "coverage": {
+    "carryover_retries": [
+      5,
+      14
+    ],
+    "new_rows": [
+      17,
+      24
+    ]
+  },
+  "branch": "arena/62425825-newrepo2",
+  "master_anchor": "one_of_them_video/refs/style_test_winner.png",
+  "style_block": "Hand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.",
+  "negative_block": "text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+  "generation_calls": 10,
+  "saved_candidates": 10,
+  "accepted_rows": [
+    5,
+    14,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24
+  ],
+  "pending_rows": [
+    20
+  ],
+  "attempts": [
+    {
+      "row": 5,
+      "frame_id": "beat01m05",
+      "moment_text": "One of them bumps your arm",
+      "attempt": 4,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "Extreme close-up cropped from neck to waist of two separate walking bodies touching at exactly one point: the zombie's sage-gray-shirted shoulder on the left meets the protagonist's brown-sleeved upper arm on the right, with a continuous black outline separating their garments.\n\nUse the attached master anchor as the character, location, palette and line-weight reference. Create one 16:9 landscape frame on the same cream city sidewalk. Show the calm white-headed protagonist mid-stride as the shoulder of the adjacent gray-green zombie makes a small incidental bump against the protagonist's covered upper arm. Make the shoulder-to-arm contact clear with two tiny cartoon motion ticks. The zombie continues forward with its head and gaze facing its own walking direction, never turning toward the protagonist. This is a passing bump, not a grab or attack. No cup or other carried prop.\n\nSTORY-STATE RULES: Present day, before the bite flashback. The protagonist has a white round head, dot eyes, a calm face, thin black stick limbs, a muted brown LONG-SLEEVED shirt with cuffs covering both forearms to the wrists, and muted blue trousers. No wound, bite, bandage or scar is visible. The bumping zombie has a gray-green round head with a few sparse hair strokes, droopy half-lidded eyes, a ragged muted sage-gray shirt and dark-gray trousers. Zombies NEVER bite, chase, attack or react to the protagonist. No exposed protagonist forearm, fangs, injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m05.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "58378eb5f72f2e6b1f47135f722c6384b1f440029deb089a328f3c998a3f9087",
+      "changed_prompt_text": {
+        "old": "Tight upper-body side view with no gap at the contact point: a gray-green zombie shoulder physically touches the outside of the protagonist's brown long-sleeved upper arm as both pass mid-stride.",
+        "new": "Extreme close-up cropped from neck to waist of two separate walking bodies touching at exactly one point: the zombie's sage-gray-shirted shoulder on the left meets the protagonist's brown-sleeved upper arm on the right, with a continuous black outline separating their garments."
+      },
+      "repair_result": "Third reroll passes: the sage-gray shoulder and brown sleeve meet at a visible contact point, with separate garment outlines and no exchanged sleeve colors or merged limbs. No declared exception needed."
+    },
+    {
+      "row": 14,
+      "frame_id": "beat01m14",
+      "moment_text": "this street would have killed you",
+      "attempt": 2,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Memory tone: a lone pale doodle figure stands inside a ring of separated gray-green silhouettes on the street.\n\nUse the attached master anchor for street geometry, muted palette and bold doodle outlines. Create one 16:9 landscape frame as a desaturated hypothetical memory diagram inside a wobbly thought bubble. Place a small generic pale-gray figure in the center and six stationary gray-green silhouettes around the edges, leaning slightly inward with clear empty gaps between every figure. The central figure is not the brown-shirted, blue-trousered protagonist. Keep this a quiet symbolic illustration of the old street, with no physical contact and no real event involving the protagonist.\n\nSTORY-STATE RULES: Hypothetical desaturated memory/thought-bubble tone. The actual protagonist is absent. The generic pale-gray figure has no brown shirt, blue trousers, wound, wrap or exposed forearm. Actual-series zombies remain indifferent to the protagonist and never pursue or react to them. All silhouettes in this diagram stay separate and make no contact. No injuries or readable text.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m14.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "989ba6151dc519d71cf073e01402ebc2b9c480118de28fd3b20b7a1a6c99a489",
+      "repair_result": "Logged prompt-safe retry succeeded. A generic pale figure is surrounded by separated gray-green figures inside a desaturated thought bubble; the actual brown-shirted protagonist is absent and no contact occurs."
+    },
+    {
+      "row": 17,
+      "frame_id": "beat01m17",
+      "moment_text": "you are the safest person in the world.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "Low hero angle: the figure untouched as zombies part around them, blue sky.\n\nUse the attached master anchor for the protagonist, zombie designs, bold outline weight and flat muted palette; the second reference supplies the approved long-sleeved wardrobe. Create one 16:9 landscape frame from a low sidewalk-level viewpoint looking slightly upward. Exactly one calm white-headed protagonist stands unharmed in the center while gray-green zombies leave a clear open space around them on both sides. Show a simple muted-blue sky above the low dusty-pink building edges. The protagonist's steady upright silhouette is the focal point; the zombies continue their own routes without touching or noticing them.\n\nSTORY-STATE RULES: Present day, before the bite flashback. The protagonist has a white round head, dot eyes, a calm flat mouth, thin black stick limbs, a muted brown LONG-SLEEVED shirt with cuffs covering both forearms to the wrists, muted blue trousers and black shoes. No wound, bite, wrap or scar visible. Zombies have gray-green heads and limbs, droopy half-lidded eyes and ragged gray-green clothes, never brown protagonist sleeves. Zombies NEVER bite, chase, attack or react to the protagonist. No injuries, blood, snarling or exposed forearm.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m17.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "720fd043614d508fe6938962319bd6b877621726c40f000e1e0d1a89e4b47713"
+    },
+    {
+      "row": 18,
+      "frame_id": "beat01m18",
+      "moment_text": "And you can never tell anyone why.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "The figure glances sideways nervously, one hand over the sleeved forearm, zombies behind.\n\nUse the attached master anchor for character designs, sidewalk location and palette; the second reference supplies the approved long-sleeved wardrobe. Create one 16:9 landscape frame in a readable medium shot. The single white-headed protagonist glances sideways with one slightly raised eyebrow while placing the opposite black hand protectively over the other brown-sleeved forearm. Keep both forearms fully covered and the protective gesture clear. Several indifferent gray-green zombies shuffle behind at a distance. The nervous glance is subtle, not a panicked grimace.\n\nSTORY-STATE RULES: Present day, before the bite flashback. Exactly one living protagonist with a white round head, dot eyes, thin black stick limbs, muted brown LONG-SLEEVED shirt covering both forearms to the wrists, blue trousers and black shoes/hands. No wound, bite, wrap or scar visible; the hand rests on intact fabric. Zombies have gray-green skin and ragged gray-green clothing, droopy half-lidded eyes, and NEVER bite, chase, attack or react to the protagonist. No brown clothing on zombies, merged limbs, exposed forearm, blood or injuries.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m18.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "59a2d30d50503f340b3d107b7dc219d8dece8c73825a2164e57b91865ceb8944"
+    },
+    {
+      "row": 19,
+      "frame_id": "beat02m01",
+      "moment_text": "It started with a pharmacy,",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Establishing shot: small corner pharmacy storefront with a broken window, muted colors.\n\nUse the attached master anchor for the hand-drawn city architecture, outline weight and muted cream/dusty-pink palette. Create one 16:9 landscape establishing shot of a small corner pharmacy on an empty sidewalk. Give it a simple blank rectangular signboard, a broad front window with one jagged broken opening, a door beside the window, and low brick walls. A simple flat medical cross icon may identify the pharmacy, but absolutely no words or letters. Keep the storefront compact and readable, with restrained debris shapes below the broken window and no people in frame.\n\nSTORY-STATE RULES: This is the beginning of the slide-02 flashback, before the bite. The protagonist and all zombies are outside this establishing crop; no forearm, wound, wrap or scar is visible. Later protagonist sleeves must remain long, but no figure appears here. No attacking creatures, injuries, blood or gore. The broken window contains only simple jagged glass outlines. No readable sign text; the painted MEDS wording belongs to a later beat, not this frame.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat02m01.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "e51a809ee549e3a786456a27361cdd7f221056505b1201bca1c5d5fa066dde3b"
+    },
+    {
+      "row": 20,
+      "frame_id": "beat02m02",
+      "moment_text": "three weeks ago,",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Same storefront in desaturated memory tone, smoke on the horizon.\n\nUse the attached master anchor for architecture, outline weight and palette relationships. Create one 16:9 landscape frame of the same small corner pharmacy established in the previous row: blank rectangular signboard, broad front window with one jagged broken opening, door beside the window, low brick walls and empty sidewalk. Keep the storefront geometry and camera position consistent, but shift to a paler desaturated flashback palette. Add simple flat dark-gray smoke shapes rising beyond the rooftops on the horizon. No people or creatures in frame.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite. No protagonist or zombie appears, so no sleeve, forearm, wound, wrap or scar is visible. No attacks, injuries, blood or gore. The broken window is a simple jagged opening only. No readable words, letters or numerals on the blank signboard; the painted MEDS wording belongs to a later beat.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "REJECTED_PENDING_REPAIR",
+      "tool_status": "success",
+      "file": "one_of_them_video/qc/worker_1/batch_003/rejects/beat02m02_attempt01.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "8f6163aed219ae23686cec0ae4d8b530a9e27686b0ca616572786c85687dc9c2",
+      "fault": "Storefront continuity drift: row 19 places the door left of the broken window with a green cross on the left wall; row 20 mirrors the door to the right and window to the left, changes the facade proportions and omits the cross. The memory palette and smoke pass, but this is not the same storefront layout."
+    },
+    {
+      "row": 21,
+      "frame_id": "beat02m03",
+      "moment_text": "on a street called Fifth.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "A bent street sign pole at a corner with no readable text, empty street.\n\nUse the attached master anchor for the muted flat city palette, simple architecture and bold wobbly outlines. Create one 16:9 landscape frame focused on a slender street-sign pole bending at an angle beside an empty sidewalk corner. Its rectangular sign panel is completely blank, with no letters, numbers or symbols. Keep the corner, curb and a few simple facade shapes recognizable in the same desaturated flashback treatment. The street is empty and quiet; the bent pole is the sole focal point.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite. No protagonist, zombie or other person is visible; therefore no sleeve, forearm, wound, wrap or scar is shown. No zombie behavior or attack occurs. No injuries, blood or gore. The narration names Fifth, but the visual sign must remain blank to obey the no-lettering rule.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat02m03.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "daaeb6c2d3f1c80e46f703381e745ed0ebaf7fa9c0bc3d5b813bcdf2f1b8de14"
+    },
+    {
+      "row": 22,
+      "frame_id": "beat02m04",
+      "moment_text": "The city was already coming apart.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Wide city skyline with black smoke columns rising over rooftops.\n\nUse the attached master anchor for bold wobbly outlines, simplified building shapes and flat muted color treatment. Create one 16:9 landscape wide skyline in desaturated flashback colors: layered low-rise and mid-rise rooftops beneath a pale cream-gray sky, with several distinct flat charcoal-black smoke columns rising from behind them. Keep the smoke shapes simple and graphic, not photorealistic. No street-level people, monsters, fire detail or destruction close-up; the scale is the whole city coming apart.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite. The protagonist and zombies are outside this wide skyline crop; no sleeve, forearm, wound, wrap or scar is visible. No creature attacks or reactions, injuries, blood or gore. No readable signs, letters or numerals anywhere.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat02m04.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "ef65f9cb59654f35f115ab9ad2c264b96b220c37c03b2bfa85de0fa9121a85f9"
+    },
+    {
+      "row": 23,
+      "frame_id": "beat02m05",
+      "moment_text": "Smoke over the river.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "A bridge over a river with thick black smoke drifting above the water.\n\nUse the attached master anchor for bold wobbly black outlines, simplified city shapes and flat muted colors. Create one 16:9 landscape frame showing a modest road bridge crossing a broad muted blue-gray river, with a distant cream-and-dusty-gray city shoreline. Thick flat charcoal smoke drifts horizontally above the water and partly across the far shoreline. Keep the bridge structure clear with simple rails and supports. No cars are the focal point yet; this beat establishes the river and smoke before the next row moves onto the bridge. No people or creatures visible.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite, desaturated memory palette. The protagonist and zombies are absent; no sleeve, forearm, wound, wrap or scar visible. No attacks, injuries, blood or gore. Smoke is flat stylized shapes, not realistic disaster footage. No readable signs or lettering.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat02m05.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "60cdc746af7b63c728fa9f1567c7684f65178563f5ce260cb0222916ce83ddcd"
+    },
+    {
+      "row": 24,
+      "frame_id": "beat02m06",
+      "moment_text": "Cars packed across the bridge",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Cars jammed bumper to bumper across the bridge, abandoned.\n\nUse the attached master anchor for bold wobbly outlines, simple everyday object design and flat muted colors. Create one 16:9 landscape frame looking along the same modest road bridge in the desaturated flashback palette. Fill its lanes with simple muted blue-gray, beige and brown cars packed bumper to bumper in a stalled jam. The bridge rails remain visible and the river sits below. All cars are empty and abandoned, with doors still closed: the open-door reveal is reserved for the next narrated beat. No visible drivers, pedestrians or creatures.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite. No protagonist or zombie is visible; no sleeve, forearm, wound, wrap or scar shown. No attacks, injuries, blood or gore. Keep every car door closed in this frame. No readable license plates, signs, letters or numerals.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat02m06.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "d61e01e4385a71a543beea7f7c631b0de0c6578a30a02fcd4cf593a7dafef3d7"
+    }
+  ],
+  "planned_repair": {
+    "row": 20,
+    "status": "NOT_SENT",
+    "attempt": 2,
+    "prompt": "Same storefront with the door on the left and the broken window on the right exactly as in the approved reference, in desaturated memory tone with smoke on the horizon.\n\nUse the attached master anchor for architecture, outline weight and palette relationships. Create one 16:9 landscape frame of the same small corner pharmacy established in the previous row: blank rectangular signboard, broad front window with one jagged broken opening, door beside the window, low brick walls and empty sidewalk. Keep the storefront geometry and camera position consistent, but shift to a paler desaturated flashback palette. Add simple flat dark-gray smoke shapes rising beyond the rooftops on the horizon. No people or creatures in frame.\n\nSTORY-STATE RULES: Slide-02 flashback, three weeks before the present and before the bite. No protagonist or zombie appears, so no sleeve, forearm, wound, wrap or scar is visible. No attacks, injuries, blood or gore. The broken window is a simple jagged opening only. No readable words, letters or numerals on the blank signboard; the painted MEDS wording belongs to a later beat.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+    "images": [
+      "one_of_them_video/refs/style_test_winner.png",
+      "one_of_them_video/frames/beat02m01.png"
+    ],
+    "changed_prompt_text": {
+      "old": "Same storefront in desaturated memory tone, smoke on the horizon.",
+      "new": "Same storefront with the door on the left and the broken window on the right exactly as in the approved reference, in desaturated memory tone with smoke on the horizon."
+    }
+  }
+}
