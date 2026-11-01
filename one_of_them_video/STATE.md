@@ -68,3 +68,5 @@ Branch: arena/65278339-newrepo2
   with an anatomically clear forearm view when possible.
 - beat05m18: retry of the imagined weapon scene was blocked by content
   moderation; frame remains pending.
+- beat05m18: a second reworded attempt was blocked; no replacement was
+  produced, and the scene remains pending.
