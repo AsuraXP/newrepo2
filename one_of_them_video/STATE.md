@@ -127,3 +127,21 @@ Branch: arena/65278339-newrepo2
   placeholder and both 10m29 rejects included).
 - Next coverage: 11m02 onward, with 10m06, 10m23, 10m29 explicitly pending
   and required before delivery.
+
+## 2026-11-01 (Worker 4, batch 5 QC)
+
+- Rows 293-300 attempted, 11m02-09. Accepted 11m03, 04, 06, 07, 08,
+  09: six new frames, 33/83 Worker 4 frames total, 50 remain.
+- 11m02 initial reject: protagonist was sitting on the bunk rather than lying
+  awake. Changed the pose clause to specify lying flat, head on pillow. The
+  reroll showed an uncovered forearm despite the sleeve rule; rejected it too.
+  Both are in the contact sheet; 11m02 remains missing.
+- 11m05 original and first reroll blocked by moderation. Changed the scene
+  clause from silhouette survivors with boards and stick rifles to raised
+  arms and wooden boards; no image returned. 11m05 remains missing.
+- Drift: 11m03 and 11m06-07 protagonist's brown shirt matches 10m14; 11m04
+  zombies' gray-green appearance matches the master anchor. No new anchor.
+- Contact sheet: /home/user/one_of_them_qc/batch11_01_sheet.jpg (both 11m02
+  rejects and the blocked 11m05 placeholder included).
+- Next coverage: 11m10 onward; pending frames 10m06, 10m23, 10m29, 11m02,
+  11m05 must be resolved before delivery.
