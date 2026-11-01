@@ -220,3 +220,22 @@ Branch: arena/65278339-newrepo2
 - Contact sheet: /home/user/one_of_them_qc/batch12_03_sheet.jpg.
 - Next coverage: 12m25-32. Nine prior frames remain pending: 10m06, 10m23,
   10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17.
+
+## 2026-11-01 (Worker 4, batch 10 QC)
+
+- Rows 333-340 (12m25-32): accepted 12m25-26 and 12m28-32, seven frames.
+  Worker 4 total 68/83; 15 remain. 12m27 is still pending.
+- 12m27 initial image rejected because both sleeves left forearms exposed;
+  changed the sleeve clause to require opaque fabric from shoulders to
+  wrists. Reroll covered the arms but placed zombies among camp tents with no
+  boundary; rejected it. Both candidates are in the contact sheet.
+- 12m28 initial image rejected because zombies appeared amid camp shelters;
+  changed the setting clause to a quiet indoor room. Reroll accepted: mirror
+  and fearful expression read clearly, zombies visible only outside a window.
+- 12m25 two healed crescents match provisional scar reference 12m19; its
+  small door outline is the row's explicit symbolic doodle. 12m32 Ollie's
+  blue-gray shirt and small tuft match provisional Ollie reference 12m02.
+  No new anchor.
+- Contact sheet, including rejects: /home/user/one_of_them_qc/batch12_04_sheet.jpg.
+- Next coverage: 12m33-37, then resolve pending frames. Pending: 10m06,
+  10m23, 10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17, 12m27.
