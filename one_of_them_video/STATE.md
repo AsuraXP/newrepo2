@@ -239,3 +239,24 @@ Branch: arena/65278339-newrepo2
 - Contact sheet, including rejects: /home/user/one_of_them_qc/batch12_04_sheet.jpg.
 - Next coverage: 12m33-37, then resolve pending frames. Pending: 10m06,
   10m23, 10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17, 12m27.
+
+## 2026-11-01 (Worker 4, batch 11 QC)
+
+- Attempted final rows 341-345 (12m33-37) plus prior pending 10m29, 11m02,
+  11m13. All eight frames accepted. Worker 4 total 76/83; seven remain.
+- 10m29 repair used an enclosed bunk room to exclude zombies inside camp;
+  covered sleeves and trembling hands now read clearly. 11m02 repair placed
+  both arms under a blanket, showing the figure lying awake without an
+  exposed forearm. Previous rejects are in earlier contact sheets.
+- 11m13 first candidate this turn rejected: half-lidded eyes made the
+  protagonist resemble a zombie. Changed the face clause to specify two dot
+  eyes with no eyelids; reroll accepted, portrait cropped to avoid bare arms.
+- 12m35 interprets the row's greeting as zombies passing without noticing,
+  respecting the stronger story invariant. 12m37 suggests the hidden
+  crescents as glints on the covered sleeve rather than revealing the scar
+  outside the permitted close-up shots. 12m34 uses the requested question
+  mark doodle without captions. Ollie's tuft and blue-gray shirt match 12m02.
+- No new anchor. Contact sheet includes this turn's 11m13 reject:
+  /home/user/one_of_them_qc/batch12_05_sheet.jpg.
+- All assigned story rows have now been attempted; remaining missing frames:
+  10m06, 10m23, 11m05, 11m14, 11m16, 11m17, 12m27. Resolve before delivery.
