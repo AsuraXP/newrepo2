@@ -106,3 +106,24 @@ Branch: arena/65278339-newrepo2
   /home/user/one_of_them_qc/batch10_03_sheet.jpg.
 - Next coverage: rows 285-292 (10m23-29 and 11m01). 10m06 remains an
   explicitly missing declared exception that must be resolved before delivery.
+
+## 2026-11-01 (Worker 4, batch 4 QC)
+
+- Rows 285-292 attempted (10m23-29, 11m01); accepted 10m24-28 and
+  11m01, six new frames. Worker 4 total 27/83; 56 remain, including
+  missing 10m06, 10m23 and 10m29.
+- 10m23 initial and first reroll blocked by moderation; no image returned.
+  Changed the scene clause from a stylized knife swing and impact to a raised
+  knife with a motion line and abstract impact star. Still missing; no closest
+  image exists, retry later within the cap.
+- 10m29 first image rejected because sleeves stopped above the forearms;
+  changed sleeve clause to say sleeves cover shoulders through wrists. Reroll
+  covered sleeves but placed zombies inside the night shelter rather than
+  showing the protagonist safely in camp. Rejected both, frame remains
+  missing. Both attempts are in the contact sheet, saved outside the repo.
+- 10m24-25 green-coat woman's short hair and olive coat match 10m08;
+  10m26-27 Hector's charcoal jacket matches 10m08. No new anchor.
+- Contact sheet: /home/user/one_of_them_qc/batch10_04_sheet.jpg (blocked
+  placeholder and both 10m29 rejects included).
+- Next coverage: 11m02 onward, with 10m06, 10m23, 10m29 explicitly pending
+  and required before delivery.
