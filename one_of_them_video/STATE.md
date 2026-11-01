@@ -187,3 +187,17 @@ Branch: arena/65278339-newrepo2
   /home/user/one_of_them_qc/batch12_01_sheet.jpg.
 - Next coverage: 12m09-16. Nine prior frames remain explicitly pending:
   10m06, 10m23, 10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17.
+
+## 2026-11-01 (Worker 4, batch 8 QC)
+
+- Rows 317-324 (12m09-16): eight images accepted, no rejects or rerolls.
+  Worker 4 total 53/83, 30 remain, including the nine previously pending.
+- Continuity: 12m10-11 and 12m13-14 green-coat woman retains the short dark
+  hair, gray-green skin and olive coat of 10m07/08; 12m14 is desaturated as
+  a flashback. 12m09/12/15 Ollie retains the small white head, hair tuft and
+  blue-gray top from provisional reference 12m02. Protagonist's brown
+  sleeves remain down. 12m15 uses one question-mark doodle as specified by
+  the row; no words or captions. No new anchor.
+- Batch contact sheet: /home/user/one_of_them_qc/batch12_02_sheet.jpg.
+- Next coverage: 12m17-24. Prior pending 10m06, 10m23, 10m29, 11m02,
+  11m05, 11m13, 11m14, 11m16, 11m17 must be resolved before delivery.
