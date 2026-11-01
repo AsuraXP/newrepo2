@@ -260,3 +260,30 @@ Branch: arena/65278339-newrepo2
   /home/user/one_of_them_qc/batch12_05_sheet.jpg.
 - All assigned story rows have now been attempted; remaining missing frames:
   10m06, 10m23, 11m05, 11m14, 11m16, 11m17, 12m27. Resolve before delivery.
+
+## 2026-11-01 (Worker 4, pending-frame QC batch)
+
+- Attempted seven missing frames; accepted 11m14, 11m16, 11m17 (declared
+  exception below), 12m27. Worker 4 has 80/83 frames; three remain MISSING.
+- 10m06 blocked again (five blocked attempts total, no image returned).
+  The prior declared missing-frame exception remains; cannot ship a closest
+  version because moderation has never returned a frame.
+- 10m23 and 11m05 were also blocked again, each with three blocked attempts
+  total; no image returned. Both remain missing; don't silently skip them.
+- 11m14 repair changed zombie poses to arms at sides with clear gaps; no
+  zombie reaches toward the protagonist. Accepted.
+- 11m16 candidate rejected because it contained three arms. Changed the
+  composition clause to a side view of one visible body with two arms; reroll
+  accepted with both brown sleeves down and a tap. Distant zombies are beyond
+  a low camp boundary and not interacting with the protagonist.
+- DECLARED EXCEPTION 11m17: first candidate today returned a technical
+  no-image error. After earlier rejects for an empty sleeve and an extra arm,
+  the closest generated version depicts the sleeve tug and valid anatomy but
+  exposes the other arm as a black stick limb, contrary to the full-sleeve
+  invariant; no scar is exposed. Shipped as the closest version under the
+  repair-limit rule; flag for review or replacement before delivery.
+- 12m27 repair changed the setting to a plain enclosed room; the brown sleeve
+  covers both forearms and no zombies are in camp. Accepted.
+- Contact sheet: /home/user/one_of_them_qc/batch_pending_01_sheet.jpg.
+- Next: resolve missing 10m06, 10m23, 11m05 and review the 11m17 exception;
+  no final video is possible until every required frame is present.
