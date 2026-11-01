@@ -37,8 +37,37 @@ Branch: arena/65278339-newrepo2
   arena/65278339-newrepo2 (spec says "main"; session rules require the
   session branch — flagged to user).
 
-## Next
-- AWAITING USER: approval of winning style anchor + DEPLOY of 4 worker chats.
+## 2026-11-01 (STATE 4 gate resolution)
+
+- DEPLOY MODE: HYBRID (user choice). Producer chat = Worker 4: rows 263-345
+  (slides 10-12, 83 frames), generated here via STATE 5 loop (B=8/turn,
+  R=2, QC + contact sheet each turn). Workers 1-3 = external chats fed
+  packets/worker_1..3.md by the user (rows 1-262).
+- Branch note: producer frames commit to session branch
+  arena/65278339-newrepo2 (session rules; worker-4 branch not used here).
+- STATE 5 started: batch 1 = rows 263-270 (beat10m01-m08).
 - Then workers run STATE 5 on their branches; STATE 5.5 thumbnail after merge;
   STATE 6 Kaggle runner; STATE 7 handoff cell.
 - Exceptions: none yet.
+
+## 2026-11-01 (Worker 4, batch 1 QC)
+
+- Attempted rows 263-270 (beat10m01-08); accepted 10m01, 03, 04, 05,
+  07, 08 (6/83 Worker 4 frames). Remaining 77, including 10m02 and 10m06.
+- Rejected 10m02: survivors' gaze directions are scattered rather than
+  clearly snapping toward the street. Reroll pending; the two-repair budget
+  for this turn was exhausted by 10m06. Contact sheet includes the reject.
+- 10m06: initial generation and two repair attempts were blocked by image
+  moderation; no image was returned, so there is no closest version to ship.
+  Scene clause softened from survivors fighting zombies with bats and boards
+  to swinging boards as figures approach, then waving boards while figures
+  gather. Not declared a completed frame; retry in a future batch. No rejected
+  image exists for these blocked attempts.
+- Continuity: 10m07 shows a gray-green, droopy-eyed woman in an olive coat
+  with short dark hair; 10m08 maintains her coat, hair and complexion while
+  grabbing Hector's charcoal jacket. Use 10m07 as the green-coat reference
+  for subsequent appearances. Master style reference remains unchanged.
+- Batch contact sheet saved outside the repository for QC at
+  /home/user/one_of_them_qc/batch10_01_sheet.jpg.
+- Next: retry pending 10m02 and 10m06 within the per-turn cap, then continue
+  rows 271 onward (10m09 and later); never skip the missing frames silently.
