@@ -66,3 +66,5 @@ Branch: arena/65278339-newrepo2
   one blocked attempt), the closest private over-shoulder image puts the
   crescent marks near the elbow rather than clearly on the forearm. Replace
   with an anatomically clear forearm view when possible.
+- beat05m18: retry of the imagined weapon scene was blocked by content
+  moderation; frame remains pending.
