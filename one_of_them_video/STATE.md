@@ -121,7 +121,7 @@ Branch: arena/65278339-newrepo2
   covered sleeves but placed zombies inside the night shelter rather than
   showing the protagonist safely in camp. Rejected both, frame remains
   missing. Both attempts are in the contact sheet, saved outside the repo.
-- 10m24-25 green-coat woman's short hair and olive coat match 10m08;
+- 10m25 green-coat woman's short hair and olive coat match 10m08;
   10m26-27 Hector's charcoal jacket matches 10m08. No new anchor.
 - Contact sheet: /home/user/one_of_them_qc/batch10_04_sheet.jpg (blocked
   placeholder and both 10m29 rejects included).
