@@ -79,3 +79,7 @@ Branch: arena/65278339-newrepo2
   never react to the protagonist outside slides 02 and 10. This frame follows
   the assigned visual prompt with a brief non-aggressive glance; resolve the
   source conflict before final assembly.
+- DECLARED EXCEPTION — beat06m19: after three failed re-rolls, closest
+  candidate suggests a shoulder jostle with motion lines but the shoulders
+  do not actually touch. Replace with a clearly touching, non-grabbing shot
+  when possible.
