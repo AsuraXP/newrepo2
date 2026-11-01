@@ -145,3 +145,25 @@ Branch: arena/65278339-newrepo2
   rejects and the blocked 11m05 placeholder included).
 - Next coverage: 11m10 onward; pending frames 10m06, 10m23, 10m29, 11m02,
   11m05 must be resolved before delivery.
+
+## 2026-11-01 (Worker 4, batch 6 QC)
+
+- Rows 301-308 attempted (11m10-17). Accepted 11m10-12 and 11m15:
+  four new frames. Worker 4 total 37/83; 46 remain.
+- 11m13 rejected: portrait shows short sleeves with uncovered forearms,
+  inconsistent with the protagonist's covered-arm rule. Reroll pending.
+- 11m14 rejected: a zombie reaches toward the protagonist instead of clearly
+  drifting past without reacting. Reroll pending.
+- 11m16 first image rejected for bare forearms; changed sleeve clause to
+  insist on fabric from shoulder to wrist. Reroll rejected: three arms appear
+  at the tap. Both versions remain out of frames/.
+- 11m17 first image rejected: sleeve ends in an empty tube with no hand;
+  changed composition clause to show a hand emerging from that sleeve.
+  Reroll rejected: a third arm intrudes from the left. Both versions remain
+  out of frames/. The text of this row refers to crescent marks; the current
+  story-state rule requires the forearm to stay covered in this shot.
+- No new anchor. 11m10-12 zombie figures match master gray-green palette;
+  11m15 retains the wire gate established in 11m09. Contact sheet including
+  all rejected candidates: /home/user/one_of_them_qc/batch11_02_sheet.jpg.
+- Next coverage: 12m01 onward, with pending 10m06, 10m23, 10m29, 11m02,
+  11m05, 11m13, 11m14, 11m16, 11m17 to resolve before delivery.
