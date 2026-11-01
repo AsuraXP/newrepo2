@@ -72,3 +72,10 @@ Branch: arena/65278339-newrepo2
   produced, and the scene remains pending.
 - beat05m18: a later symbolic thought-bubble prompt was accepted; the frame
   is no longer pending.
+- beat06m12: initial prompt was blocked; the non-graphic phrasing "places
+  the palm firmly against the shoulder" generated an acceptable frame.
+- CONTINUITY REVIEW — beat06m13: the script and visual prompt explicitly
+  call for a zombie to notice a shove, while continuity.md says zombies
+  never react to the protagonist outside slides 02 and 10. This frame follows
+  the assigned visual prompt with a brief non-aggressive glance; resolve the
+  source conflict before final assembly.
