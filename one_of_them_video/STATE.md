@@ -83,3 +83,7 @@ Branch: arena/65278339-newrepo2
   candidate suggests a shoulder jostle with motion lines but the shoulders
   do not actually touch. Replace with a clearly touching, non-grabbing shot
   when possible.
+- CONTINUITY REVIEW — beat06m29: narration and visual prompt specify that
+  zombies watch the protagonist run, while the general continuity rule says
+  zombies never react. The image follows the specified beat without pursuit;
+  resolve this source conflict before final assembly.
