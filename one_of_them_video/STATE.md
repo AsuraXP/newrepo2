@@ -48,3 +48,12 @@ Branch: arena/65278339-newrepo2
   candidate depicts eight gray-green zombies rather than the seven specified
   by the narration. Retained for continuity of production; replace if a
   correctly counted frame becomes available.
+- DECLARED EXCEPTION — beat04m09: after three failed re-rolls, closest
+  candidate shows twelve zombies rather than eleven, including one cropped
+  at the edge. Replace with an accurately counted shot when possible.
+- DECLARED EXCEPTION — beat04m10: after three failed re-rolls, closest
+  candidate shows thirteen zombies rather than fifteen. Replace with an
+  accurately counted shot when possible.
+- DECLARED EXCEPTION — beat04m11: after three failed re-rolls, the best
+  stopped-zombie shot has dot eyes rather than the anchor's droopy eyes.
+  Replace with an anchor-consistent stopped zombie when possible.
