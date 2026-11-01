@@ -201,3 +201,22 @@ Branch: arena/65278339-newrepo2
 - Batch contact sheet: /home/user/one_of_them_qc/batch12_02_sheet.jpg.
 - Next coverage: 12m17-24. Prior pending 10m06, 10m23, 10m29, 11m02,
   11m05, 11m13, 11m14, 11m16, 11m17 must be resolved before delivery.
+
+## 2026-11-01 (Worker 4, batch 9 QC)
+
+- Rows 325-332, 12m17-24: eight frames accepted; Worker 4 total 61/83,
+  22 remain. Two repair attempts were spent on 12m22.
+- 12m22 initial image rejected for two fused torsos under one head; changed
+  the subject clause to require one torso and two naturally connected arms.
+  Reroll had one body but looked straight ahead instead of at the mark;
+  rejected it. Changed the pose clause to lower head and eyes toward the
+  forearm; second reroll accepted. All versions appear in the contact sheet.
+- 12m17 adapted the row's casual-greeting image to zombies passing without
+  reacting, respecting the higher-priority story invariant that they ignore
+  the protagonist. 12m19 is a provisional scar reference: two healed brown
+  crescent lines on the forearm. 12m22 and 12m24 match it, and exposed arms
+  in those shots are explicit story-state exceptions. Reconcile scars against
+  Worker 1's earlier frames when available; master style anchor unchanged.
+- Contact sheet: /home/user/one_of_them_qc/batch12_03_sheet.jpg.
+- Next coverage: 12m25-32. Nine prior frames remain pending: 10m06, 10m23,
+  10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17.
