@@ -93,3 +93,16 @@ Branch: arena/65278339-newrepo2
 - Contact sheet: /home/user/one_of_them_qc/batch10_02_sheet.jpg (includes
   the 10m14 reject and a placeholder for blocked 10m06; no blocked image exists).
 - Next coverage: 10m15-22. 10m06 remains explicitly outstanding.
+
+## 2026-11-01 (Worker 4, batch 3 QC)
+
+- Rows 277-284, 10m15-22: all eight images accepted, no rejects or
+  rerolls. Worker 4 total: 21/83 frames; 62 remain, including missing 10m06.
+- Continuity check: 10m15-21 green-coat woman's olive coat, short dark hair,
+  gray-green skin and droopy eyes match 10m07/08; 10m20-21 Hector's charcoal
+  jacket matches 10m08. The protagonist's brown sleeves cover their forearms.
+  The image in 10m22 uses a clock without lettering or numerals.
+- No new anchor. Batch contact sheet:
+  /home/user/one_of_them_qc/batch10_03_sheet.jpg.
+- Next coverage: rows 285-292 (10m23-29 and 11m01). 10m06 remains an
+  explicitly missing declared exception that must be resolved before delivery.
