@@ -71,3 +71,25 @@ Branch: arena/65278339-newrepo2
   /home/user/one_of_them_qc/batch10_01_sheet.jpg.
 - Next: retry pending 10m02 and 10m06 within the per-turn cap, then continue
   rows 271 onward (10m09 and later); never skip the missing frames silently.
+
+## 2026-11-01 (Worker 4, batch 2 QC)
+
+- Attempted the two pending frames 10m02 and 10m06 plus 10m09-14. Accepted
+  10m02 and 10m09-14: 7 new frames, 13/83 Worker 4 frames total, 70 remaining.
+- 10m02 repair: specified three survivors looking in the same direction
+  toward the street corner, fixing the scattered gaze of the prior reject.
+- 10m14 initial image rejected: protagonist's face appeared disconnected
+  from the held arm, suggesting a third person. Changed the composition
+  clause to show the head attached to the held-arm body; repaired version
+  accepted. Rejected and accepted versions appear in the contact sheet.
+- DECLARED EXCEPTION, 10m06: third reroll was also blocked by moderation
+  (four blocked attempts total, across two turns). There is no image to ship
+  as the closest version. Frame remains MISSING and must be resolved before
+  the final video. Changed scene clause to survivors holding boards in
+  defensive poses while distant figures approach; no image was returned.
+- Recurring-character drift check: 10m09-14 green-coat woman's olive coat,
+  short dark hair and gray-green skin match 10m07; Hector's charcoal jacket
+  matches 10m08. No new anchor; use 10m07/08 as references.
+- Contact sheet: /home/user/one_of_them_qc/batch10_02_sheet.jpg (includes
+  the 10m14 reject and a placeholder for blocked 10m06; no blocked image exists).
+- Next coverage: 10m15-22. 10m06 remains explicitly outstanding.
