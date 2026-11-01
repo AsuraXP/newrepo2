@@ -70,3 +70,5 @@ Branch: arena/65278339-newrepo2
   moderation; frame remains pending.
 - beat05m18: a second reworded attempt was blocked; no replacement was
   produced, and the scene remains pending.
+- beat05m18: a later symbolic thought-bubble prompt was accepted; the frame
+  is no longer pending.
