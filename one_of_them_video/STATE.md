@@ -79,7 +79,7 @@ Branch: arena/65278339-newrepo2
   No manual frame durations. script.md and visuals.csv remain byte-identical
   to the supplied source branch.
 
-### Current Worker 1 next action
+### Worker 1 next action after batch 001 (completed in batch 002)
 - Repair row 5 first (attempt 3 / repair 2), changing only its opening scene
   sentence to require a tight crop with actual shoulder-to-sleeved-arm contact.
 - Repair row 8 next (attempt 2 / repair 1), changing only its opening scene
@@ -87,3 +87,46 @@ Branch: arena/65278339-newrepo2
 - Then continue rows 9–16 in order. These ten planned generations reach the
   next turn's image cap; if another repair is needed, defer the last new row
   rather than exceed the cap. Stay inside rows 1–92.
+
+## 2026-11-01 — WORKER 1 / STATE 5 / BATCH 002
+
+- Coverage: carry-over rows 5 and 8, then new rows 9–16 in narration order.
+  Ten image-tool calls: nine saved candidates and one moderation block.
+  Both repair slots were consumed by the carry-over rows.
+- ACCEPTED THIS BATCH (8): beat01m08 (attempt 2), beat01m09, beat01m10,
+  beat01m11, beat01m12, beat01m13, beat01m15, beat01m16. Every saved candidate
+  was opened individually and the contact sheet reviewed end to end.
+- Row 8's face-only repair removes the brown-sleeve/gray-green-limb defect;
+  the neutral half-lidded face now passes without character contamination.
+- Row 5 attempt 3 / failed reroll 2: the foreground zombie inherits a brown
+  protagonist sleeve and cuff, merging character designs instead of showing
+  a clean shoulder-to-arm bump. REJECTED; no declared exception yet because
+  the threshold is three failed rerolls, not two.
+- Row 14 attempt 1: MODERATION BLOCKED, no image saved. The tool did not
+  disclose a trigger token. Attempted wording and a safer replacement are
+  logged in continuity.md and batch_002/prompts.json; replacement NOT_SENT.
+  The CSV and script were not edited.
+- Hypothetical memory frames use desaturated doodle bubbles and a generic
+  pale-gray figure, not the actual protagonist. Row 15 passes with no contact;
+  row 16 returns to the present-day palette and a still, calm protagonist.
+- CUMULATIVE: 14/92 accepted; 78 remaining to accept (rows 5 and 14 pending,
+  rows 17–92 not started). Accepted files now cover rows 1–4 and 6–13,
+  15–16. No other worker's rows were generated.
+- New master anchors: none. Locked winner unchanged. No TTS, voice audition,
+  FFmpeg, audio mix, thumbnail, runtime measurement or Kaggle-stage work.
+- Protected script.md and visuals.csv remain byte-identical to the source
+  hashes recorded in batch 001. Native accepted PNGs are 1376 × 768; no
+  manual durations, scaling or post-generation frame edits were applied.
+- QC: `qc/worker_1/batch_002/contact_sheet.jpg` includes all nine saved
+  candidates and a labelled blocked-attempt placeholder; `QC.md`,
+  `prompts.json` and `validation.txt` record diagnoses and exact prompts.
+
+### Current Worker 1 next action
+- Row 5: attempt 4 / reroll 3, changing only the opening sentence again.
+  If this third reroll fails, ship the closest existing candidate and log
+  the precise DECLARED EXCEPTION here, then move on as the spec requires.
+- Row 14: send the logged prompt-safe replacement, keeping the locked style
+  and negative blocks verbatim and the generic memory figure distinct from
+  the protagonist. Do not alter visuals.csv.
+- Then rows 17–24 in order. Ten planned calls reach the cap; defer the last
+  new row if another repair is needed. Stay inside assigned rows 1–92.

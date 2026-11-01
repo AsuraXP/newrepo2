@@ -88,3 +88,24 @@ anchor is approved. Contents when locked:
   from the viewer's side — figures from behind, hands on viewer's side of the
   surface, interior visible through it.
 - Story-state rules per shot (sleeve up/down, wound stage, door open/closed)
+
+## Worker 1 image-moderation addendum — 2026-11-01, batch 002
+
+- Row 14 / beat01m14, attempt 1: the image tool returned “The generated image
+  was blocked by content moderation and was not saved.” No specific trigger
+  token was disclosed; none is claimed as confirmed below.
+- Attempted wording → planned prompt-only replacement:
+  - “a lone stick figure cornered by lunging zombies” → “a lone pale doodle
+    figure stands inside a ring of separated gray-green silhouettes.”
+  - “backed against a wall” / “exaggerated inward-leaning poses” → “stationary
+    gray-green silhouettes” with “clear empty gaps between every figure.”
+  - “imagined danger diagram” / repeated chase-and-attack descriptions →
+    “quiet symbolic illustration of the old street,” with the actual
+    protagonist absent and no physical contact.
+- The replacement preserves the hypothetical memory meaning, desaturated
+  doodle-bubble treatment, generic non-protagonist figure, locked STYLE BLOCK
+  and identical NEGATIVE BLOCK. It is a prompt-safety replacement only; the
+  narration and visuals.csv remain byte-identical to the locked source.
+- Status at batch end: safe replacement logged in
+  `qc/worker_1/batch_002/prompts.json` as NOT_SENT; retry next turn within the
+  image cap. No generated image exists for the blocked attempt.

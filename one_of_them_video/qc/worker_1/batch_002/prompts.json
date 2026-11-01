@@ -1,0 +1,246 @@
+{
+  "worker": 1,
+  "batch": 2,
+  "assigned_rows": [
+    1,
+    92
+  ],
+  "coverage": {
+    "carryover_repairs": [
+      5,
+      8
+    ],
+    "new_rows": [
+      9,
+      16
+    ]
+  },
+  "branch": "arena/62425825-newrepo2",
+  "master_anchor": "one_of_them_video/refs/style_test_winner.png",
+  "style_block": "Hand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.",
+  "negative_block": "text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+  "generation_calls": 10,
+  "saved_candidates": 9,
+  "accepted_rows": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16
+  ],
+  "pending_rows": [
+    5,
+    14
+  ],
+  "moderation_blocked_rows": [
+    14
+  ],
+  "attempts": [
+    {
+      "row": 5,
+      "frame_id": "beat01m05",
+      "moment_text": "One of them bumps your arm",
+      "attempt": 3,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "Tight upper-body side view with no gap at the contact point: a gray-green zombie shoulder physically touches the outside of the protagonist's brown long-sleeved upper arm as both pass mid-stride.\n\nUse the attached master anchor as the character, location, palette and line-weight reference. Create one 16:9 landscape frame on the same cream city sidewalk. Show the calm white-headed protagonist mid-stride as the shoulder of the adjacent gray-green zombie makes a small incidental bump against the protagonist's covered upper arm. Make the shoulder-to-arm contact clear with two tiny cartoon motion ticks. The zombie continues forward with its head and gaze facing its own walking direction, never turning toward the protagonist. This is a passing bump, not a grab or attack. No cup or other carried prop.\n\nSTORY-STATE RULES: Present day, before the bite flashback. The protagonist has a white round head, dot eyes, a calm face, thin black stick limbs, a muted brown LONG-SLEEVED shirt with cuffs covering both forearms to the wrists, and muted blue trousers. No wound, bite, bandage or scar is visible. The bumping zombie has a gray-green round head with a few sparse hair strokes, droopy half-lidded eyes, a ragged muted sage-gray shirt and dark-gray trousers. Zombies NEVER bite, chase, attack or react to the protagonist. No exposed protagonist forearm, fangs, injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "REJECTED_PENDING_REPAIR",
+      "tool_status": "success",
+      "changed_prompt_text": {
+        "old": "In a medium two-shot, the zombie's gray-green shoulder visibly presses against the protagonist's brown long-sleeved upper arm mid-stride, their bodies adjacent at the point of contact.",
+        "new": "Tight upper-body side view with no gap at the contact point: a gray-green zombie shoulder physically touches the outside of the protagonist's brown long-sleeved upper arm as both pass mid-stride."
+      },
+      "file": "one_of_them_video/qc/worker_1/batch_002/rejects/beat01m05_attempt03.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "b453f06c2972eeec43a0561c63e2c5c369fa0f3c516a8001ba127ea83930307e",
+      "fault": "The foreground zombie inherits a brown protagonist-style sleeve and cuff on its near arm, with a gray-green hand emerging; the protagonist torso is partly occluded. This merges the two character designs instead of showing a clean zombie-shoulder to brown-sleeved-arm bump."
+    },
+    {
+      "row": 8,
+      "frame_id": "beat01m08",
+      "moment_text": "It does not snarl.",
+      "attempt": 2,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Close on a zombie face alone, with no other person, arm, hand, or brown clothing anywhere in the frame: droopy half-lidded eyes, slack mouth, no snarl.\n\nUse the attached master anchor as the zombie character, palette and line-weight reference. Create one 16:9 landscape frame with a single large close-up of the same bumping zombie's gray-green round head, a few sparse hair strokes, heavy drooping upper eyelids and a small relaxed slack mouth. Its expression is vacant and completely neutral, NOT angry, hungry, threatening or surprised. No raised eyebrows, wrinkled nose, snarling lips, exposed teeth or fangs. Keep the background a simple flat cream wall with a restrained muted dusty-pink architectural shape. No additional faces or inset panels.\n\nSTORY-STATE RULES: Present day, before the bite flashback. This zombie has gray-green skin, droopy half-lidded eyes and ragged muted gray-green clothing at the bottom of the crop. Zombies NEVER bite, chase, attack or react to the protagonist. This close-up shows the absence of a snarl, not an attack. The protagonist is outside this tight crop; if any clothing appears, the protagonist's muted brown sleeve remains long and fully covers the forearm, with no wound, bite, bandage or scar visible. No injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "changed_prompt_text": {
+        "old": "Close on a zombie face: droopy half-lidded eyes, slack mouth, no snarl.",
+        "new": "Close on a zombie face alone, with no other person, arm, hand, or brown clothing anywhere in the frame: droopy half-lidded eyes, slack mouth, no snarl."
+      },
+      "file": "one_of_them_video/frames/beat01m08.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "9d0b9ea65c8e5041b813d01460ec41164ff98e831d9e66c4cd2a1dea9ae5d64a",
+      "repair_result": "The face-only crop removes all brown clothing and other limbs. Half-lidded eyes and slack neutral mouth match the beat; accepted."
+    },
+    {
+      "row": 9,
+      "frame_id": "beat01m09",
+      "moment_text": "It does not even look.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m08.png"
+      ],
+      "prompt": "Profile: the zombie's gaze slides past the figure, uninterested.\n\nUse the attached master anchor for style, character design, palette and location; the second reference is the approved close-up of this same zombie. Create one 16:9 landscape frame in a clear side-on two-person composition on the same cream city sidewalk. At left, a gray-green zombie is shown in profile facing right, its half-lidded eyes directed straight ahead past the protagonist, with no eye contact. At right, the white-headed protagonist stands or walks in profile with a calm face. Their eyelines do not meet. The zombie's expression is vacant, not hostile or curious. Keep heads and bodies distinct, with a small natural walking gap.\n\nSTORY-STATE RULES: Present day, before the bite flashback. Exactly one white-headed living protagonist: simple dot eyes, thin black stick limbs, muted brown LONG-SLEEVED shirt covering both forearms to the wrists, muted blue trousers, black shoes and hands. No wound, bite, wrap or scar visible. Zombies have gray-green heads and limbs, droopy half-lidded eyes and ragged muted gray-green clothing, never brown protagonist sleeves. Zombies NEVER bite, chase, attack or react to the protagonist. No reaching, head turning toward the protagonist, snarling, exposed teeth, injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m09.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "cfe0f0d17b87f6409ef9d7fd7071c92cf02a6c2ff4b592f3d62f4d1b84624e27"
+    },
+    {
+      "row": 10,
+      "frame_id": "beat01m10",
+      "moment_text": "You keep walking.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "The figure walks on with a steady gait, zombies flowing around.\n\nUse the attached master anchor for style, palette and location; the second reference establishes the approved long-sleeved protagonist. Create one 16:9 landscape frame on the same cream and dusty-pink city sidewalk. The single white-headed protagonist continues walking steadily from left to right with a relaxed upright posture and an even stride. Gray-green zombies shuffle in both directions around the protagonist, leaving a natural narrow path. The protagonist is calm outwardly and unharmed; every zombie looks along its own route, indifferent. No cup or other carried prop.\n\nSTORY-STATE RULES: Present day, before the bite flashback. Exactly one white-headed living protagonist: simple dot eyes, calm face, thin black stick limbs, muted brown LONG-SLEEVED shirt with cuffs covering both forearms to the wrists, muted blue trousers, black shoes and hands. No wound, bite, wrap or scar visible. All other pedestrians are gray-green zombies with droopy half-lidded eyes and ragged muted gray-green clothing. Zombies NEVER bite, chase, attack or react to the protagonist. No grabbing, pursuit, snarling, exposed protagonist forearm, injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m10.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "c5901bae56dcf1a3cb79c0f3781da7044ec36f094788832482dd14b35bff1b54"
+    },
+    {
+      "row": 11,
+      "frame_id": "beat01m11",
+      "moment_text": "Your heart is hammering,",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "Close on the figure's chest with a small cartoon heart thumping hard.\n\nUse the attached master anchor for style, palette and character design; the second reference establishes the approved brown long-sleeved shirt. Create one 16:9 landscape frame tightly cropped on the protagonist's upper torso, with the head outside the crop. Center a small simple muted-red cartoon heart symbol on the outside of the brown shirt over the chest, surrounded by a few short black vibration ticks and one offset heart-outline echo to convey a hard, fast heartbeat. This is a non-anatomical emotional doodle, not an injury or exposed organ. Keep the chest and heartbeat symbol unmistakably readable.\n\nSTORY-STATE RULES: Present day, before the bite flashback. The living protagonist wears a muted brown LONG-SLEEVED shirt; any visible arms retain sleeves covering the forearms to the wrists and simple black hands. No wound, bite, wrap or scar visible. No gray-green limb touching or emerging from the brown clothing. Any surrounding zombies remain gray-green, half-lidded and indifferent, NEVER biting, chasing, attacking or reacting to the protagonist. The red heart is a flat cartoon symbol only: no blood, anatomical detail, gore or injury.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m11.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "69386c3679df86f4256620a111c87184c68a0f953d10cd875ce102c0aad3e6a7"
+    },
+    {
+      "row": 12,
+      "frame_id": "beat01m12",
+      "moment_text": "but your face is calm.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Close on the figure's face: dot eyes, flat calm mouth.\n\nUse the attached master anchor for the living protagonist's head shape, minimal face, palette and line weight. Create one 16:9 landscape frame with a single large white round protagonist head centered against the cream city-wall background. Two simple black dot eyes look steadily ahead; a short flat horizontal mouth and relaxed neutral brows deliberately show calm composure despite the preceding heartbeat. No smile, fear grimace, sweat drops or exaggerated emotion. Only a small portion of the brown shirt collar may appear below the head; no other person, limb or sleeve enters the frame.\n\nSTORY-STATE RULES: Present day, before the bite flashback. Exactly one living protagonist with a white round head, dot eyes and thin black stick-limb design. The muted brown shirt has LONG sleeves covering the forearms, although arms are outside this face-only crop. No wound, bite, wrap or scar visible. No zombie or gray-green limb appears in this frame. Zombies elsewhere NEVER bite, chase, attack or react to the protagonist. No injuries, blood, teeth or horror detail.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m12.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "56b67e6f2bc33d5ae6bc0df5d551f4e72284489e18f35ad0fa3e7ec60d40d618"
+    },
+    {
+      "row": 13,
+      "frame_id": "beat01m13",
+      "moment_text": "Three weeks ago,",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Flashback frame in desaturated memory tone: the same street empty and ominous.\n\nUse the attached master anchor for the exact sidewalk location, building shapes, palette relationships and line weight. Create one 16:9 landscape frame of that same street completely empty of people, rendered in a paler desaturated memory palette with a simple wobbly doodle-memory border. Keep the cream sidewalk, dusty-pink facades, blank windows, doorway and planters recognizable, but remove every walker. Long quiet shadows and the empty pavement create an ominous remembered mood without monsters or damage. This is the transition into a remembered version of the street, not the present-day crowd.\n\nSTORY-STATE RULES: Desaturated flashback/memory tone, three weeks before the present. No protagonist or zombie is visible in this empty establishing frame, so no sleeve or wound is shown. If any figure were present it would require the locked character rules, but here the street must remain empty. No zombie bites, chasing, attacks or reactions; no injury, blood or gore. No readable signage or lettering.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m13.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "4b5a6d8ef304ba96a4c75f966d95ecfc992eebb77fdcdcc87fd6f556de7cd99d"
+    },
+    {
+      "row": 14,
+      "frame_id": "beat01m14",
+      "moment_text": "this street would have killed you",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Memory tone: a lone stick figure cornered by lunging zombies on the street.\n\nUse the attached master anchor for street design, zombie shapes, palette and bold doodle line weight. Create one 16:9 landscape frame showing a desaturated hypothetical memory doodle inside a large wobbly thought bubble: a generic pale-gray survivor silhouette backed against a wall, with several gray-green zombie silhouettes frozen in exaggerated inward-leaning poses around them. The generic survivor is NOT the actual brown-shirted, blue-trousered protagonist; the real protagonist is not present. This is an imagined illustration of what the street used to be like, not an event happening to the protagonist. Keep the bubble and its street vignette the sole clear scene, with no contact, bite or injury.\n\nSTORY-STATE RULES: Hypothetical desaturated memory/thought-bubble tone, not present action. The actual protagonist NEVER appears being chased or attacked by zombies. The generic pale-gray silhouette inside this imagined danger diagram is a different, non-recurring hypothetical person, with no brown shirt, blue trousers or visible wound. Actual-series zombies NEVER bite, chase, attack or react to the protagonist; the leaning silhouettes here illustrate a counterfactual danger to a generic person only. No zombie makes contact with anyone. No blood, gore, teeth, exposed forearm or injury. No readable text.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "MODERATION_BLOCKED_PENDING_SAFE_RETRY",
+      "tool_status": "error",
+      "file": null,
+      "dimensions": null,
+      "sha256": null,
+      "error": "Failed to generate image: The generated image was blocked by content moderation and was not saved.",
+      "moderation_trigger": "Not disclosed by the image tool; no specific blocked token can be identified."
+    },
+    {
+      "row": 15,
+      "frame_id": "beat01m15",
+      "moment_text": "in ten seconds.",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png"
+      ],
+      "prompt": "Memory tone: zombie silhouettes converging fast on the lone figure.\n\nUse the attached master anchor for simplified zombie silhouettes, street geometry, palette and line weight. Create one 16:9 landscape frame continuing the same desaturated hypothetical thought-bubble diagram: a small generic pale-gray survivor silhouette stands isolated in the center while dark gray-green zombie silhouettes lean inward from the edges, with short flat speed ticks showing how quickly danger would close in. Use converging diagonal composition and a clear empty center. This remains an imagined warning about the street, NOT the actual protagonist's experience. The generic survivor is not brown-shirted or blue-trousered. No physical contact or bite.\n\nSTORY-STATE RULES: Hypothetical desaturated memory/thought-bubble tone, not present action. The actual protagonist NEVER appears being chased or attacked by zombies. The generic pale-gray silhouette is a non-recurring hypothetical person, not the brown-shirted, blue-trousered protagonist. Actual-series zombies NEVER bite, chase, attack or react to the protagonist; these frozen leaning silhouettes illustrate counterfactual danger to the generic person only. No contact, injury, blood, gore, teeth, exposed protagonist forearm or wound. No readable text or numerals.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m15.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "eacbed8eb3867a475db1a30f49835d6ae124a3b8fab5155d0e4dfb74c780f278"
+    },
+    {
+      "row": 16,
+      "frame_id": "beat01m16",
+      "moment_text": "Right now,",
+      "attempt": 1,
+      "images": [
+        "one_of_them_video/refs/style_test_winner.png",
+        "one_of_them_video/frames/beat01m01.png"
+      ],
+      "prompt": "Back to present palette: the figure standing calmly in the moving crowd.\n\nUse the attached master anchor for location, palette and zombie design; the second reference establishes the approved long-sleeved protagonist. Create one 16:9 landscape frame returning sharply from the pale memory treatment to the normal warm cream and muted dusty-pink present-day sidewalk. Exactly one white-headed protagonist stands calmly upright and still at the center while gray-green zombies shuffle past on both sides. The contrast between the still protagonist and the moving crowd is clear from walking poses and a few restrained motion ticks. No memory border or thought bubble remains. No carried prop.\n\nSTORY-STATE RULES: Present day, after the memory comparison and before the bite flashback. Exactly one white-headed living protagonist: simple dot eyes, calm flat mouth, thin black stick limbs, muted brown LONG-SLEEVED shirt with cuffs covering both forearms to the wrists, muted blue trousers, black shoes and hands. No wound, bite, wrap or scar visible. Zombies have gray-green heads and limbs, droopy half-lidded eyes and ragged muted gray-green clothing, never brown protagonist sleeves. Zombies NEVER bite, chase, attack or react to the protagonist. No grabbing, pursuit, snarling, exposed protagonist forearm, injuries or blood.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+      "status": "ACCEPTED",
+      "tool_status": "success",
+      "file": "one_of_them_video/frames/beat01m16.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "sha256": "3e2eee68b6a57df21b79ce1e52d53ed9517d87140ae5ac893d3d226a8a3aa6a6"
+    }
+  ],
+  "planned_safe_retry": {
+    "row": 14,
+    "status": "NOT_SENT",
+    "prompt": "Memory tone: a lone pale doodle figure stands inside a ring of separated gray-green silhouettes on the street.\n\nUse the attached master anchor for street geometry, muted palette and bold doodle outlines. Create one 16:9 landscape frame as a desaturated hypothetical memory diagram inside a wobbly thought bubble. Place a small generic pale-gray figure in the center and six stationary gray-green silhouettes around the edges, leaning slightly inward with clear empty gaps between every figure. The central figure is not the brown-shirted, blue-trousered protagonist. Keep this a quiet symbolic illustration of the old street, with no physical contact and no real event involving the protagonist.\n\nSTORY-STATE RULES: Hypothetical desaturated memory/thought-bubble tone. The actual protagonist is absent. The generic pale-gray figure has no brown shirt, blue trousers, wound, wrap or exposed forearm. Actual-series zombies remain indifferent to the protagonist and never pursue or react to them. All silhouettes in this diagram stay separate and make no contact. No injuries or readable text.\n\nHand-drawn stick figure storytime style exactly like the master anchor refs: white round heads, minimal dot-eye faces with expressive eyebrows, thin black stick limbs, bold wobbly black outlines, flat muted colors, warm cream/beige backgrounds, simple everyday props, no gradients, no text or lettering anywhere, no watermarks. Single clear scene per frame.\n\nNEGATIVE BLOCK: text, letters, watermark, signature, photorealism, 3D render, gradients, gore, blood splatter, extra limbs, merged faces, gibberish signs",
+    "images": [
+      "one_of_them_video/refs/style_test_winner.png"
+    ],
+    "replacement_note": "CSV remains unchanged. Replace only the risky scene wording for the image-tool retry; preserve locked style and negative blocks."
+  }
+}
