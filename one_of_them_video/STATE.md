@@ -287,3 +287,33 @@ Branch: arena/65278339-newrepo2
 - Contact sheet: /home/user/one_of_them_qc/batch_pending_01_sheet.jpg.
 - Next: resolve missing 10m06, 10m23, 11m05 and review the 11m17 exception;
   no final video is possible until every required frame is present.
+
+## 2026-11-01 (Worker 4, final pending-frame batch)
+
+- All 83 assigned frame paths now exist (verified against rows 263-345).
+  This is NOT full-project completion: Workers 1-3 remain separate, and
+  two Worker 4 images below are declared visual exceptions for review.
+- DECLARED VISUAL EXCEPTION 10m06: after repeated moderation blocks, the
+  closest returned image shows survivors waving boards, but it resembles a
+  split composition and the protagonist holds a cup rather than actively
+  fighting. A repair specifying a single continuous scene was blocked. It is
+  shipped as the closest available image, not represented as a full QC pass.
+  The prior missing-frame exception is resolved by this candidate.
+- DECLARED VISUAL EXCEPTION 10m23: repeated attempts showing the knife were
+  blocked. The only returned candidate shows the protagonist behind the
+  green-coat woman with a star and motion lines, but does NOT clearly depict
+  the knife or action in the narration. It is shipped as an implied-action
+  substitute for review, not represented as an exact depiction.
+- 11m05 resolved: symbolic survivor silhouettes with raised boards and the
+  protagonist at a distance convey the feared living-world threat. No gun is
+  visible; boards are the weapon shapes. No actual event is implied.
+- 11m17 replacement resolves the earlier sleeve exception: both arms now
+  have brown sleeves down, one hand adjusts the other sleeve and no scar is
+  exposed. The previous short-sleeve version is in the contact sheet.
+- 10m23 green coat and short dark hair match 10m07; 11m17 protagonist's
+  brown long sleeves match 10m14. No new anchor.
+- Contact sheet (including earlier 11m17 version and 10m06 closest image):
+  /home/user/one_of_them_qc/batch_pending_02_sheet.jpg. The blocked 10m06
+  repair returned no image and is therefore not shown as an image.
+- Next: review exceptions 10m06/10m23, collect and integrate Workers 1-3,
+  verify all 345 frames before thumbnail and Kaggle runner/handoff stages.
