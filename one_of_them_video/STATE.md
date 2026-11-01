@@ -62,3 +62,7 @@ Branch: arena/65278339-newrepo2
 - beat05m03: original close-up prompt was blocked; retry with "two clean
   crescent marks" and "two faint pale curved lines" was accepted.
 - beat05m02: private scar close-up retry was blocked; frame remains pending.
+- DECLARED EXCEPTION — beat05m02: after three failed re-rolls (including
+  one blocked attempt), the closest private over-shoulder image puts the
+  crescent marks near the elbow rather than clearly on the forearm. Replace
+  with an anatomically clear forearm view when possible.
