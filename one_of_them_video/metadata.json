@@ -1,0 +1,20 @@
+{
+  "series": "ONE OF THEM",
+  "episode": 1,
+  "episode_title": "The Bite",
+  "premise": "You were bitten by a zombie and survived, uninfected. The dead see you as one of their own. You must hide it from every survivor.",
+  "status": "STATE 2 complete — script awaiting approval",
+  "voice": "en-US-AndrewNeural",
+  "rate": "+10%",
+  "pov": "second-person, present tense",
+  "captions": "none",
+  "aspect_ratio": "16:9",
+  "platform": "YouTube",
+  "target_runtime_min": "8-10",
+  "word_count": 1667,
+  "projected_runtime": "8:58 (word_count / 3.1 wps — estimate only)",
+  "runtime_final": null,
+  "frame_count": null,
+  "style": "PENDING — user art-style image",
+  "notes": "Runtime_final, frame_count and style are written only from measured/locked output (STATE 4–6)."
+}

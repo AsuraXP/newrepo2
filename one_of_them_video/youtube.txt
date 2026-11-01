@@ -1,0 +1,20 @@
+TITLE (draft):
+I Was Bitten By a Zombie — And Survived | ONE OF THEM Episode 1
+
+DESCRIPTION (draft — chapters and final runtime written from measured timings at STATE 6):
+You were bitten. You survived. You did not turn. Now the dead see you as one
+of their own — and the living can never know.
+
+ONE OF THEM is an animated story series about the only person in the world
+who walks among the dead in plain sight — and among the living in disguise.
+
+Episode 1: The Bite — the pharmacy, the wound, the three days of waiting to
+turn, and the first morning the dead walk past you like you are nothing.
+
+Chapters: (cut from measured timings.csv at STATE 6)
+Runtime: (measured render runtime at STATE 6)
+
+Explicitly fictional. Animated story, not real footage.
+
+TAGS (draft):
+animated story, zombie animation, zombie survival, story animation, you are the last survivor, zombie story, second person story, one of them
