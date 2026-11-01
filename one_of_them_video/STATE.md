@@ -167,3 +167,23 @@ Branch: arena/65278339-newrepo2
   all rejected candidates: /home/user/one_of_them_qc/batch11_02_sheet.jpg.
 - Next coverage: 12m01 onward, with pending 10m06, 10m23, 10m29, 11m02,
   11m05, 11m13, 11m14, 11m16, 11m17 to resolve before delivery.
+
+## 2026-11-01 (Worker 4, batch 7 QC)
+
+- Rows 309-316, 12m01-08: eight frames accepted; Worker 4 total 45/83,
+  38 remain. Both repair attempts succeeded.
+- 12m07 first image rejected because Ollie put a hand on the protagonist's
+  mouth instead of simply speaking softly; changed the pose clause to keep
+  Ollie's hands in his lap. Accepted reroll shows him whispering beside them.
+- 12m08 first image rejected because the protagonist was standing despite
+  the ongoing shared breakfast; changed the pose clause to seat both on the
+  bench. Accepted reroll preserves the shared breakfast and Ollie's gaze.
+- Provisional Ollie reference: 12m02, small white-headed child with tiny dark
+  hair tuft and muted blue-gray shirt; 12m03/06-08 follow this appearance.
+  Reconcile this with Worker 3's earlier Ollie frames when they arrive; no
+  final cross-worker character anchor has been established. Protagonist's
+  brown long sleeves match 10m14. Master anchor remains unchanged.
+- Batch contact sheet including both rejects and repairs:
+  /home/user/one_of_them_qc/batch12_01_sheet.jpg.
+- Next coverage: 12m09-16. Nine prior frames remain explicitly pending:
+  10m06, 10m23, 10m29, 11m02, 11m05, 11m13, 11m14, 11m16, 11m17.
