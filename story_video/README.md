@@ -13,3 +13,9 @@ stream with word timestamps, pads frames before concatenation, and writes
 word-boundary recovery is incomplete. Cuts are based on the next spoken word's
 start; natural gaps between words are held on the preceding frame. Output is
 30 fps, so cuts are quantized to the video frame grid.
+
+If the speech service splits a contraction across word events, the runner
+aligns the full spoken character stream and uses only actual event boundaries
+for frame cuts. It still fails rather than guessing if a frame begins inside
+one event or event text differs. For troubleshooting, word events are saved to
+`/kaggle/working/story_video_build/word_events.json` before alignment.

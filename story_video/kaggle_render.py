@@ -21,7 +21,6 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / 'story_video'
 sys.path.insert(0, str(ROOT))
 from vidsync.textnorm import tokenize
-from vidsync.timing import recover_word_times
 from vidsync.tts import RealEdgeTTS, is_kaggle
 
 VOICE = 'en-US-AndrewNeural'
@@ -70,6 +69,57 @@ def preflight():
     return text, rows, files, starts
 
 
+def _letters(text):
+    """Normalize punctuation/spacing only; never invent or drop spoken letters."""
+    return ''.join(c for c in text.casefold() if c.isalnum())
+
+
+def measured_cut_starts(text, events, frame_word_indices):
+    """Map frame starts to actual event offsets, including split contractions.
+
+    A strict character-stream comparison proves no words were skipped. A cut
+    inside an event is not measured, so it is rejected instead of guessed.
+    """
+    words = tokenize(text)
+    source_offsets = []
+    parts = []
+    char_offset = 0
+    for word in words:
+        token = _letters(word.text)
+        if not token:
+            raise ValueError(f'Cannot align empty word {word.text!r}')
+        source_offsets.append(char_offset)
+        parts.append(token)
+        char_offset += len(token)
+    source = ''.join(parts)
+    event_parts = []
+    boundaries = {}
+    previous_time = -1.0
+    offset = 0
+    for event in events:
+        if event.type != 'WordBoundary' or event.offset_s < previous_time or event.duration_s < 0:
+            raise ValueError('Word events are missing, out of order, or invalid')
+        previous_time = event.offset_s
+        token = _letters(event.text)
+        if not token:
+            raise ValueError(f'Empty word boundary event at {event.offset_s}: {event.text!r}')
+        boundaries[offset] = event.offset_s
+        event_parts.append(token)
+        offset += len(token)
+    spoken = ''.join(event_parts)
+    if source != spoken:
+        at = next((i for i, (a, b) in enumerate(zip(source, spoken)) if a != b), min(len(source), len(spoken)))
+        lo, hi = max(0, at - 35), at + 35
+        raise ValueError(f'Word event text differs near character {at}; script={source[lo:hi]!r}; events={spoken[lo:hi]!r}. See word_events.json')
+    result = []
+    for frame_no, word_index in enumerate(frame_word_indices, 1):
+        char_index = source_offsets[word_index]
+        if char_index not in boundaries:
+            raise ValueError(f'Frame {frame_no} starts inside a single TTS event at {words[word_index].text!r}; no measured cut available. See word_events.json')
+        result.append(boundaries[char_index])
+    return result
+
+
 def render():
     if not is_kaggle():
         raise RuntimeError('Rendering and synthesis are only permitted on Kaggle')
@@ -106,16 +156,13 @@ def render():
     result = RealEdgeTTS(VOICE, rate=RATE).synthesize(text, audio, boundary='WordBoundary')
     if result.returned_boundary_types != ['WordBoundary']:
         raise RuntimeError(f'Word-boundary timestamps unavailable: {result.returned_boundary_types}')
-    times, report = recover_word_times(text, result.events)
-    print(report.summary(), flush=True)
-    if not report.correspondence_ok or report.interpolated_words or report.unrecovered_words:
-        raise RuntimeError('Cannot map every narration word to a measured timestamp; refusing approximate cuts')
-    if not report.timestamps_monotonic or any(times[i].source != 'measured' for i in starts):
-        raise RuntimeError('Invalid or unmeasured frame-start timestamps')
-    cuts = [0.0] + [times[i].t_start for i in starts[1:]] + [result.audio_duration_s]
+    # Preserve diagnostic events even if alignment fails, to make Kaggle errors actionable.
+    (out / 'word_events.json').write_text(result.to_json(), encoding='utf-8')
+    frame_starts = measured_cut_starts(text, result.events, starts)
+    print(f'Measured boundaries aligned: {len(frame_starts)} frame starts.', flush=True)
+    cuts = [0.0] + frame_starts[1:] + [result.audio_duration_s]
     if any(x is None for x in cuts) or any(b <= a for a, b in zip(cuts, cuts[1:])):
         raise RuntimeError('Invalid or non-increasing frame cut times')
-    (out / 'word_events.json').write_text(result.to_json(), encoding='utf-8')
     concat = out / 'frames.ffconcat'
     with concat.open('w', encoding='utf-8') as fh:
         fh.write('ffconcat version 1.0\n')
