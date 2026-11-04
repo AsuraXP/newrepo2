@@ -4,10 +4,9 @@ set -euo pipefail
 # ==============================================================================
 # KAGGLE RUNNER: segmented_sleep_video
 # Topic: "Why Did Ancient Humans Stop Sleeping Twice a Night?"
-# Pipeline: Edge-TTS (WordBoundary) -> PIL Padding -> FFmpeg Stitch -> Deliverable ZIP
+# Pipeline: Edge-TTS -> PIL Pre-Padding -> FFmpeg Concat & LUFS Normalization -> Deliverable ZIP
 # ==============================================================================
 
-# Determine directory of this script so execution works from any cwd
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
@@ -47,10 +46,8 @@ mkdir -p build/padded_frames
 
 echo "=== [3/7] Edge-TTS Narration & Word-Level Timing Synthesis ==="
 python3 - << 'EOF'
-import asyncio
-import csv
 import json
-import re
+import subprocess
 import edge_tts
 
 VOICE = "en-US-AndrewNeural"
@@ -59,78 +56,85 @@ RATE = "+10%"
 with open("segmented_sleep_video/script.md", "r", encoding="utf-8") as f:
     script_text = f.read().strip()
 
-print(f"Synthesizing narration take ({len(script_text.split())} words) via Edge-TTS [{VOICE}, {RATE}]...")
+print(f"Synthesizing narration take ({len(script_text.split())} words) via Edge-TTS [{VOICE}, {RATE}, boundary=WordBoundary]...")
 
-communicate = edge_tts.Communicate(script_text, voice=VOICE, rate=RATE)
+# Request boundary=WordBoundary explicitly as per edge-tts 7.x specification
+comm = edge_tts.Communicate(script_text, voice=VOICE, rate=RATE, boundary="WordBoundary")
 
 word_events = []
-audio_chunks = bytearray()
-
-async def run_tts():
-    async for event in communicate.stream():
-        if event["type"] == "audio":
-            audio_chunks.extend(event["data"])
-        elif event["type"] == "WordBoundary":
-            # offset and duration in 100ns units
-            offset_s = event["offset"] / 10_000_000
-            duration_s = event["duration"] / 10_000_000
+with open("build/narration.mp3", "wb") as f:
+    for chunk in comm.stream_sync():
+        ctype = chunk.get("type")
+        if ctype == "audio":
+            f.write(chunk["data"])
+        elif ctype == "WordBoundary":
+            offset_s = chunk["offset"] / 10_000_000
+            duration_s = chunk["duration"] / 10_000_000
             word_events.append({
-                "word": event["text"],
+                "word": chunk.get("text", ""),
                 "start": offset_s,
                 "end": offset_s + duration_s
             })
 
-asyncio.run(run_tts())
-
-with open("build/narration.mp3", "wb") as f:
-    f.write(audio_chunks)
+# Measure precise audio file duration via ffprobe
+probe_cmd = [
+    "ffprobe", "-v", "error", "-show_entries", "format=duration",
+    "-of", "default=noprint_wrappers=1:nokey=1", "build/narration.mp3"
+]
+audio_dur_str = subprocess.check_output(probe_cmd).decode("utf-8").strip()
+audio_duration_s = float(audio_dur_str)
 
 with open("build/word_timings.json", "w", encoding="utf-8") as f:
-    json.dump(word_events, f, indent=2)
+    json.dump({
+        "audio_duration_s": audio_duration_s,
+        "words": word_events
+    }, f, indent=2)
 
-print(f"TTS synthesis complete: build/narration.mp3 ({len(audio_chunks)} bytes), {len(word_events)} words timed.")
+print(f"TTS synthesis complete: build/narration.mp3 ({audio_duration_s:.2f}s), {len(word_events)} word timestamps captured.")
 EOF
 
 echo "=== [4/7] Calculate Frame Timings Matching Micro-Beats ==="
 python3 - << 'EOF'
 import csv
 import json
-import os
-import re
 
 with open("build/word_timings.json", "r", encoding="utf-8") as f:
-    timings = json.load(f)
+    data = json.load(f)
 
-# Total audio duration from last word end + 1.2s tail buffer
-audio_duration = timings[-1]["end"] + 1.2
+audio_duration = data["audio_duration_s"]
+words = data["words"]
 
 with open("segmented_sleep_video/visuals.csv", "r", encoding="utf-8") as f:
     beats = list(csv.DictReader(f))
 
-# Match each beat to timestamps proportionally based on word count
-total_words = sum(len(b["moment_text"].split()) for b in beats)
-current_word_idx = 0
 frame_segments = []
 
-for idx, beat in enumerate(beats):
-    m_words = len(beat["moment_text"].split())
-    # find corresponding time
-    start_t = timings[min(current_word_idx, len(timings)-1)]["start"]
-    end_word_idx = min(current_word_idx + m_words - 1, len(timings)-1)
-    
-    if idx == len(beats) - 1:
-        end_t = audio_duration
-    else:
-        end_t = timings[min(end_word_idx + 1, len(timings)-1)]["start"]
-    
-    duration = max(0.4, end_t - start_t)
-    frame_file = f"beat{int(beat['slide_id']):02d}m{int(beat['moment']):02d}.png"
-    
-    frame_segments.append({
-        "frame": frame_file,
-        "duration": duration
-    })
-    current_word_idx += m_words
+if len(words) > 0:
+    # Use exact word-level timestamps when provided by engine
+    current_word_idx = 0
+    for idx, beat in enumerate(beats):
+        m_words = len(beat["moment_text"].split())
+        start_t = words[min(current_word_idx, len(words) - 1)]["start"]
+        end_word_idx = min(current_word_idx + m_words - 1, len(words) - 1)
+        
+        if idx == len(beats) - 1:
+            end_t = audio_duration
+        else:
+            end_t = words[min(end_word_idx + 1, len(words) - 1)]["start"]
+            
+        dur = max(0.4, end_t - start_t)
+        frame_file = f"beat{int(beat['slide_id']):02d}m{int(beat['moment']):02d}.png"
+        frame_segments.append({"frame": frame_file, "duration": dur})
+        current_word_idx += m_words
+else:
+    # Robust fallback: proportional allocation by beat word count
+    print("Notice: Word boundary events empty from engine, allocating frame holds proportionally to beat word count...")
+    total_words = sum(len(b["moment_text"].split()) for b in beats)
+    for beat in beats:
+        w_count = len(beat["moment_text"].split())
+        dur = (w_count / total_words) * audio_duration
+        frame_file = f"beat{int(beat['slide_id']):02d}m{int(beat['moment']):02d}.png"
+        frame_segments.append({"frame": frame_file, "duration": max(0.4, dur)})
 
 # Generate FFmpeg concat demuxer file
 with open("build/concat_list.txt", "w", encoding="utf-8") as f:
@@ -140,7 +144,8 @@ with open("build/concat_list.txt", "w", encoding="utf-8") as f:
     # Concat demuxer requirement: repeat last file once
     f.write(f"file 'padded_frames/{frame_segments[-1]['frame']}'\n")
 
-print(f"Timing list generated: {len(frame_segments)} frames, total video time: {sum(s['duration'] for s in frame_segments):.2f}s")
+total_visual_time = sum(s["duration"] for s in frame_segments)
+print(f"Timing list generated: {len(frame_segments)} frames, total visual time: {total_visual_time:.2f}s (audio: {audio_duration:.2f}s)")
 EOF
 
 echo "=== [5/7] PIL Canvas Pre-Padding Snap ==="
@@ -167,9 +172,7 @@ for f in src_frames:
     out_path = os.path.join("build/padded_frames", fname)
     with Image.open(f) as img:
         img_rgb = img.convert("RGB")
-        # Create uniform canvas
         canvas = Image.new("RGB", (max_w, max_h), (0, 0, 0))
-        # Center frame on canvas
         offset_x = (max_w - img_rgb.width) // 2
         offset_y = (max_h - img_rgb.height) // 2
         canvas.paste(img_rgb, (offset_x, offset_y))
