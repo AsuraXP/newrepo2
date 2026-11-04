@@ -5,7 +5,7 @@
 - Target Runtime: ~4m 53s (909 words)
 - Total Micro-Beats: 134 frames across 64 slides
 - Anchors: Locked (`refs/anchor_modern_sleepless.png`, `refs/anchor_ancient_cave.png`, `refs/anchor_expressive_idea.png`)
-- Frames Completed: 108 / 134 (80% Completed!)
+- Frames Completed: 118 / 134 (88% Completed!)
   - Batch 1: `beat01m01` to `beat05m09` (9 frames)
   - Batch 2: `beat06m10` to `beat09m17` (8 frames)
   - Batch 3: `beat10m18` to `beat15m27` (10 frames)
@@ -17,7 +17,8 @@
   - Batch 9: `beat37m77` to `beat41m86` (10 frames)
   - Batch 10: `beat42m87` to `beat44m96` (10 frames)
   - Batch 11: `beat45m97` to `beat50m106` (10 frames)
-  - Batch 12 (In Progress): `beat51m107`, `beat51m108` (2 frames)
+  - Batch 12: `beat51m107` to `beat55m116` (10 frames)
+  - Batch 13 (In Progress): `beat56m117`, `beat56m118` (2 frames)
 - Contact Sheets:
-  - `contact_sheet_batch01.jpg` through `contact_sheet_batch11.jpg`
-- Next Batch: Batch 12 continuation (`beat52m109` through `beat56m116`: taverns & theaters, Edison electric bulb, eradication of darkness, pineal gland confusion, factory clock discipline, and compressed 8-hour sleep demand)
+  - `contact_sheet_batch01.jpg` through `contact_sheet_batch12.jpg`
+- Next Batch: Batch 13 continuation (`beat57m119` through `beat61m126`: factory workers marching under clock tower, vice clamp compressing sleep into 8 hours, 20th century disappearance, return to modern bedroom at 3:00 AM, biology remembering)
