@@ -7,10 +7,12 @@ set -euo pipefail
 # Pipeline: Edge-TTS (WordBoundary) -> PIL Padding -> FFmpeg Stitch -> Deliverable ZIP
 # ==============================================================================
 
+# Determine directory of this script so execution works from any cwd
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
 PROJECT="segmented_sleep"
 PROJECT_DIR="${PROJECT}_video"
-BRANCH="arena/41c2bd65-newrepo2"
-REPO_URL="https://github.com/AsuraXP/newrepo2.git"
 WORK_DIR="$(pwd)"
 
 echo "=== [1/7] Environment Setup ==="
@@ -25,7 +27,7 @@ python3 -m pip install --quiet edge-tts pillow
 
 echo "=== [2/7] Preflight Checks ==="
 if [ ! -d "$PROJECT_DIR" ]; then
-    echo "ERROR: Project directory $PROJECT_DIR not found!"
+    echo "ERROR: Project directory $PROJECT_DIR not found in $(pwd)!"
     exit 1
 fi
 
