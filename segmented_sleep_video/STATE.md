@@ -1,25 +1,11 @@
-# Current State: STATE 5 (Frame Generation Loop)
+# Current State: STATE 7 (Handoff & Complete)
 
 - Topic: Why Did Ancient Humans Stop Sleeping Twice a Night?
 - Slug: segmented_sleep
 - Target Runtime: ~4m 53s (909 words)
-- Total Micro-Beats: 134 frames across 64 slides
-- Anchors: Locked (`refs/anchor_modern_sleepless.png`, `refs/anchor_ancient_cave.png`, `refs/anchor_expressive_idea.png`)
-- Frames Completed: 128 / 134 (95.5% Completed! Final 6 frames remaining!)
-  - Batch 1: `beat01m01` to `beat05m09` (9 frames)
-  - Batch 2: `beat06m10` to `beat09m17` (8 frames)
-  - Batch 3: `beat10m18` to `beat15m27` (10 frames)
-  - Batch 4: `beat15m28` to `beat19m37` (10 frames)
-  - Batch 5: `beat19m38` to `beat24m46` (9 frames)
-  - Batch 6: `beat24m47` to `beat27m56` (10 frames)
-  - Batch 7: `beat28m57` to `beat32m66` (10 frames)
-  - Batch 8: `beat32m67` to `beat37m76` (10 frames)
-  - Batch 9: `beat37m77` to `beat41m86` (10 frames)
-  - Batch 10: `beat42m87` to `beat44m96` (10 frames)
-  - Batch 11: `beat45m97` to `beat50m106` (10 frames)
-  - Batch 12: `beat51m107` to `beat55m116` (10 frames)
-  - Batch 13: `beat56m117` to `beat61m126` (10 frames)
-  - Batch 14 (Final Batch): `beat61m127`, `beat62m128` (2 frames)
-- Contact Sheets:
-  - `contact_sheet_batch01.jpg` through `contact_sheet_batch13.jpg`
-- Final Frames: `beat62m129` through `beat64m134` (phone placed face-down, no panic, smile, deep breath, gazing out window at stars embracing the ancient intermission)
+- Total Micro-Beats: 134 frames across 64 slides (100% COMPLETE!)
+- Frames Generated: 134 / 134 (`frames/beat01m01.png` to `frames/beat64m134.png`)
+- Contact Sheets: `contact_sheet_batch01.jpg` through `contact_sheet_batch14.jpg`
+- Standalone Thumbnail: `thumbnail.jpg` (High-CTR, 15% mobile readability split-concept)
+- Kaggle Automation Script: `run_segmented_sleep_kaggle.sh`
+- Pipeline Status: Fully verified and pushed to remote branch `arena/41c2bd65-newrepo2`
