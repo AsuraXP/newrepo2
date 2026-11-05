@@ -45,7 +45,7 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   beat03m01_r0 (paved cobblestone path + forest → changed path clause to dirt
   footpath on open grassland); beat05m02_r0 (Stonehenge-like megalith → changed
   environment clause to natural rocky ledge, no standing stones). Both repairs
-  passed first re-roll. Next: batch 3 = beat05m03–beat07m04.
+  passed first re-roll. Next: batch 3 = beat05m03–beat07m05.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
