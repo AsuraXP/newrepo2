@@ -62,6 +62,10 @@ amber splash, no anachronisms. Cleanest baseline of the three.
 - Kudu (established beat07m03, recurs in slide 9 persistence hunt): spiral
   horns, white-striped tan coat, same ink-contour treatment.
 - Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair).
+- Pacific coast (established beat31m02): ice-free green-brown shore, rocky
+  headlands, kelp beds, amber horizon south; cold blue sea. Skin boats
+  (beat31m05): open skin-covered hulls with visible wooden ribs, paddles,
+  no sails — distinct from the Sahul bamboo raft; reuse slides 31–33.
 - Beringia fauna (established beat28m02): woolly mammoths (brown, domed heads,
   curved tusks) + steppe bison herds, same ink-contour treatment; reuse in
   slides 28–31 hunting/landscape beats. Wild horses added beat29m05 (small,
