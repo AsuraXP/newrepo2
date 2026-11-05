@@ -90,6 +90,7 @@ environment in the locked style/palette. Never force an old location ref.
 | Beach / coast at dusk (deep blue sea, amber sky) | — (style anchor only) | 1–6 |
 | Savanna (acacia trees, dry gold grass, dusk gradient) | — (style anchor only) | 6–8 |
 | Kalahari (red sand, dry scrub, blazing white sun, distant mesas) | — (style anchor only) | 9–10 |
+| Camp (A-frame hide lean-tos, crossed poles, central fire, savanna edge, acacias) | — (style anchor only) | 11–16 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity
