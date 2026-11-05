@@ -79,6 +79,15 @@ amber splash, no anachronisms. Cleanest baseline of the three.
   trimmed dark beard, dot eyes, muted olive long-sleeve hiking shirt, dark grey
   trekking trousers, worn brown hiking boots, small olive backpack, wooden
   walking stick; no logos. Reuse slides 37–42.
+- Modern everyday "you" (present-day, established beat39m01): separate from both
+  the ancient protagonist and Salopek — round white head, short dark hair, dot
+  eyes, plain muted blue t-shirt, dark jeans, simple sneakers; mildly tired
+  expression. Reuse slide 39 and any present-day everyday beats.
+- Ghosted memory overlay (beat39m03–06): foreground modern legs (exactly two,
+  jeans + sneakers) with a SEPARATE translucent amber background layer showing
+  an ancient callback (savanna / bamboo raft / ice age / Tierra del Fuego). The
+  ghost layer must read as background, never attached to the foreground body —
+  this prevents extra-limb drift.
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)
@@ -117,6 +126,7 @@ environment in the locked style/palette. Never force an old location ref.
 | Andes / continental spine (cold rocky passes, snow peaks, condors, breath puffs, cloud layers below) | — (style anchor only) | 34–35 |
 | Tierra del Fuego (cold wind-scoured tip, grey sea, Antarctica hint) | — (style anchor only) | 35 |
 | Present-day Salopek walk (gravel roads, open hills, Ethiopian rift valley, seasonal passing landscapes; modern hiking gear) | — (style anchor only) | 37–38 |
+| Present-day everyday street (sidewalk, small corner store with no signage, streetlamp, residential houses, amber afternoon) | — (style anchor only) | 39 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity
@@ -139,6 +149,12 @@ background". Lifetime-vs-route map beats need explicit "full faint route spans
 Africa to Tierra del Fuego; only one short bright segment highlighted" or the
 route collapses to a single continent. Repaired beat37m02 + beat38m01 this way
 (first re-roll PASS).
+
+DRIFT LESSON (batch 22): even with the plain-silhouette clause, world-map beats
+can still leak political borders (beat38m02 r1 + r2). Reliable fallback for
+route/lifetime emphasis beats: abstract pure route diagram — "no landmasses, no
+continents, no map, no borders", just the glowing route line in a blue void.
+Accepted beat38m02 on third attempt this way.
 
 ## Standing composition rule (spec)
 Figures pressing against glass/windows/barriers: camera on the viewer's side;

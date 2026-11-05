@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–21 DONE. 168/182 frames done, 14 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–22 DONE. 176/182 frames done, 6 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -178,6 +178,16 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   wordless 42,000 km route map; seasons-passing; still not done; one-lifetime
   map. Portrait + lifetime-map drift lessons logged. Next: batch 22 =
   beat38m02–beat39m06.
+- Batch 22 (2026-11-05): beat38m02–beat39m06. 7/8 first pass; beat38m02 map
+  border-drift rejected twice (r1, r2) then PASS on abstract pure-route-diagram
+  fallback (no landmasses); 0 moderation blocks. Contact sheet:
+  sheets/contact_batch22.jpg (10 thumbs incl. 2 rejects). Emphatic lifetime-vs-
+  route diagram; ancient protagonist fourth-wall bust; modern everyday store
+  walk (no signage); legs reflective glow; four ghosted-overlay callbacks
+  (savanna, bamboo raft, ice age, Tierra del Fuego) with foreground modern legs
+  exactly two + separate translucent amber memory layer. Modern everyday figure
+  + ghosted-overlay technique locked in continuity.md. Next: batch 23 (FINAL) =
+  beat40m01–beat42m01 (6 frames).
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
