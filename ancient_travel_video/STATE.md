@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batch 1 DONE (8/8 accepted, 0 rejects). 8/182 frames done, 174 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–2 DONE. 16/182 frames done, 166 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -40,6 +40,15 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   beat01m01 = reused approved anchor B. Location shifts (beach → S. headland →
   map) generated fresh in locked style. Contact sheet: sheets/contact_batch01.jpg.
   Next: batch 2 = beat03m01–beat05m02.
+- Batch 2 (2026-11-05): beat03m01–beat05m02. 8/8 accepted after 2 repairs (R=2
+  used). Contact sheet: sheets/contact_batch02.jpg (incl. rejects). Rejects:
+  beat03m01_r0 (paved cobblestone path + forest → changed path clause to dirt
+  footpath on open grassland); beat05m02_r0 (Stonehenge-like megalith → changed
+  environment clause to natural rocky ledge, no standing stones). Both repairs
+  passed first re-roll. Next: batch 3 = beat05m03–beat07m04.
 
 ## Declared exceptions / reject log
-(empty)
+- beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
+- beat05m02_r0: REJECTED (anachronistic megalith monument). Fixed r1, accepted.
+- Reject sources kept locally in frames/rejects/ (gitignored); audit trail in
+  contact sheets. No DECLARED EXCEPTIONS (all frames eventually passed).
