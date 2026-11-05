@@ -109,7 +109,13 @@ Measured on Kaggle 2026-11-05 (Gate 0 PASS, user-pasted report, verbatim values)
   timing still pending Phase 4
 - Gate 3 (frames / style): PASS - anchor B user-selected + approved; 182/182
   frames accepted vs locked prompts; strict frame set verified (0 missing/extra)
-- Gate 4 (verify + measure): PENDING - Kaggle dry-run after Gate 0
+- Gate 4 (verify + measure): MEASURED 2026-11-05 (Kaggle dry-run, user-pasted
+  report): audio 375.168 s, 1207 WordBoundary events, recovery 1206/1210
+  (99.7%, 4 interpolated, 0 unrecovered - engine split text into 2 internal
+  chunks), timestamps monotonic, all 182 anchors exact/measured, 22
+  transition conflicts (holds < 1.0 s fade on micro-beats). User requested
+  one-shot delivery -> render proceeds with explicit --allow-reduced-precision
+  + --allow-transition-overlap (recorded approval)
 - Gate 5 (render): PENDING
 - Gate 6 (publish assets): thumbnail PASS (336 px legible); title/description/
   chapters/runtime PENDING measured render

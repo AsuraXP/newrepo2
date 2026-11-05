@@ -49,16 +49,42 @@ case "$MODE" in
     python kaggle/run.py --out "$REPO/ancient_travel_FINAL.mp4" --repo "$REPO" "$@"
     ;;
   all)
-    # ONE-SHOT: dry-run -> render -> measured youtube.txt -> ZIP.
-    # Passes --allow-transition-overlap and --allow-reduced-precision so the
-    # pipeline cannot stall on micro-beat holds shorter than the 1.0 s fade
-    # (user-approved one-shot mode). All numbers still come from measured
-    # Phase 4 word-boundary timing; review build/timings.csv in the report.
+    # ONE-SHOT (user-approved): measure -> render -> measured youtube.txt -> ZIP.
+    # Carries explicit approval flags end-to-end:
+    #   --allow-reduced-precision : dry-run rc=5 means a handful of words were
+    #     interpolated (engine chunking); all frame anchors must still be
+    #     'exact/measured' - check the printed table.
+    #   --allow-transition-overlap: micro-beat holds shorter than the 1.0 s
+    #     fade overlap their neighbours instead of aborting the render.
+    # All numbers still come from measured Phase 4 timing (build/timings.csv).
     install_deps
     prepare_frames
-    python kaggle/run.py --dry-run --repo "$REPO"
+    run_dry_tolerant() {
+      set +e
+      python kaggle/run.py --dry-run --repo "$REPO"
+      local rc=$?
+      set -e
+      case "$rc" in
+        0) ;;
+        5) echo "NOTE: Gate 4 rc=5 (diagnostics flagged, e.g. interpolated words)." \
+               "Proceeding under explicit --allow-reduced-precision approval." ;;
+        *) exit "$rc" ;;
+      esac
+    }
+    if [ ! -f "$REPO/build/manifest.json" ]; then
+      run_dry_tolerant
+    fi
+    set +e
     python kaggle/run.py --out "$REPO/ancient_travel_FINAL.mp4" --repo "$REPO" \
       --allow-transition-overlap --allow-reduced-precision
+    RENDER_RC=$?
+    set -e
+    if [ "$RENDER_RC" -ne 0 ]; then
+      echo "render failed (rc=$RENDER_RC) - re-measuring once, then retrying render"
+      run_dry_tolerant
+      python kaggle/run.py --out "$REPO/ancient_travel_FINAL.mp4" --repo "$REPO" \
+        --allow-transition-overlap --allow-reduced-precision
+    fi
     python ancient_travel_video/make_youtube_txt.py
     bash "${BASH_SOURCE[0]}" package
     ;;
