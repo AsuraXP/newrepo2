@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–3 DONE. 24/182 frames done, 158 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–4 DONE. 32/182 frames done, 150 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -53,11 +53,19 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   Both repairs passed first re-roll. New location: savanna (acacia). Kudu
   design established (spiral horns, white-striped tan coat) for slide 9.
   Next: batch 4 = beat07m06–beat08m04.
+- Batch 4 (2026-11-05): beat07m06–beat08m04. 8/8 accepted after 2 repairs (R=2
+  used). Contact sheet: sheets/contact_batch04.jpg (incl. rejects). Rejects:
+  beat08m01_r0 (baked-in letterbox bars → full-bleed 16:9); beat08m02_r0
+  (gibberish pseudo-text annotations → wordless coil, no labels/arrows).
+  Both repairs passed first re-roll. Anatomy-diagram beats use amber glow
+  highlights, no text. Next: batch 5 = beat08m05–beat09m07.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
 - beat05m02_r0: REJECTED (anachronistic megalith monument). Fixed r1, accepted.
 - beat06m02_r0: REJECTED (feet drifted to tan boot-like shapes). Fixed r1, accepted.
 - beat07m01_r0: REJECTED (extra limb-like lines in frame corners). Fixed r1, accepted.
+- beat08m01_r0: REJECTED (baked-in black letterbox bars). Fixed r1, accepted.
+- beat08m02_r0: REJECTED (gibberish pseudo-text annotations/arrows). Fixed r1, accepted.
 - Reject sources kept locally in frames/rejects/ (gitignored); audit trail in
   contact sheets. No DECLARED EXCEPTIONS (all frames eventually passed).
