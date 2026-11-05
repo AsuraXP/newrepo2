@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–19 DONE. 152/182 frames done, 30 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–20 DONE. 160/182 frames done, 22 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -159,6 +159,15 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   Locations locked: White Sands, tropical Panama/rainforest, Andes, Tierra del
   Fuego (pre-logged); bamboo-raft design row added (backlog cleared).
   Next: batch 20 = beat35m01–beat36m03.
+- Batch 20 (2026-11-05): beat35m01–beat36m03. 7/8 first pass + 1 repair PASS
+  (1 QC reject: beat36m02 map had modern political borders → re-rolled with
+  plain-silhouette/no-internal-lines clause, PASS; 0 moderation blocks).
+  Contact sheet: sheets/contact_batch20.jpg. Tierra del Fuego arrival → last
+  headland → Antarctica ice line across the sea → empty ocean "no more land"
+  → quiet bookend (lone figure from behind, footprint trail, mirrors opening
+  beach) → wordless glowing-path map (ice→tip) → crawl-vs-sprint world map →
+  rich-land payoff (bison + guanacos, family upright). Map-border drift lesson
+  logged in continuity.md. Next: batch 21 = beat36m04–beat38m01.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.

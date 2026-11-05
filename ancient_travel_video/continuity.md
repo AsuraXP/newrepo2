@@ -120,6 +120,12 @@ conifer/pine forest unless the scene clause explicitly says "flat savanna
 horizon with acacia silhouettes and no forest". ALWAYS include that clause for
 camp beats (slides 11–16). Repaired beat15m01 + beat15m06 this way.
 
+DRIFT LESSON (batch 20): wordless map beats default to modern political borders
+(internal country lines) unless the scene clause explicitly says "plain solid
+landmass silhouettes, no internal lines of any kind, no country borders, no
+grid". ALWAYS include that clause for map/diagram beats. Repaired beat36m02
+this way (first re-roll PASS).
+
 ## Standing composition rule (spec)
 Figures pressing against glass/windows/barriers: camera on the viewer's side;
 figures seen from behind; hands on the viewer's side of the surface; interior
