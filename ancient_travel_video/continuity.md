@@ -70,6 +70,9 @@ amber splash, no anachronisms. Cleanest baseline of the three.
   curved tusks) + steppe bison herds, same ink-contour treatment; reuse in
   slides 28–31 hunting/landscape beats. Wild horses added beat29m05 (small,
   brown, simple ink) — part of the Beringia fauna set.
+- Bamboo raft (Sahul crossing, beat22m07–beat25m01): lashed bamboo poles +
+  cordage, wooden paddles, no sail, no wheel — pre-wheel era. Distinct from
+  the Pacific skin boats.
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)
@@ -102,6 +105,11 @@ environment in the locked style/palette. Never force an old location ref.
 | Australian outback (red sand, spinifex grass, flat-topped monoliths, glowing amber songlines) | — (style anchor only) | 19–20 |
 | Lush Asian coastline (tropical palms, dense jungle, open sea, amber dusk) | — (style anchor only) | 21–25 |
 | Ice-age north (snow, advancing ice sheets, frozen ridges, cold blue palette) | — (style anchor only) | 26–31 |
+| Pacific coast (ice-free green-brown shore, rocky headlands, kelp beds, cold blue sea) | — (style anchor only) | 31–33 |
+| White Sands (pale white gypsum flats, ancient lake, mud, fossil trackways) | — (style anchor only) | 33 |
+| Tropical Panama / rainforest (dense green, buttressed giants, vines, humid amber light, dirt footpath) | — (style anchor only) | 34 |
+| Andes / continental spine (cold rocky passes, snow peaks, condors, breath puffs, cloud layers below) | — (style anchor only) | 34–35 |
+| Tierra del Fuego (cold wind-scoured tip, grey sea, Antarctica hint) | — (style anchor only) | 35 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity
