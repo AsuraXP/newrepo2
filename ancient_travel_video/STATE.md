@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–12 DONE. 96/182 frames done, 86 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–13 DONE. 104/182 frames done, 78 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -112,6 +112,12 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   song-path network (standout). "No paper / No GPS" = empty hands, no device.
   Melody-to-waterhole. New location locked: lush Asian coastline (tropical
   palms, jungle, open sea) for Sahul section. Next: batch 13 = beat21m02–beat22m06.
+- Batch 13 (2026-11-05): beat21m02–beat22m06. 8/8 accepted first pass, 0 QC
+  rejects, 0 moderation blocks. Contact sheet: sheets/contact_batch13.jpg.
+  Sahul problem setup: concerned pause, ultra-wide daunting ocean, faint land
+  hint, squint at empty horizon, subtle sign, seabirds, stationary cloud over
+  unseen land, vast open ocean. Lush Asian coast + deep-blue/amber palette held.
+  Next: batch 14 = beat22m07–beat23m04.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
