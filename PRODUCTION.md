@@ -25,21 +25,32 @@ were observed - every value below must come from an actual run.
 ## Calibration
 
 Filled ONLY from an actual Kaggle preflight run of narration/preflight.md.
-Until then every field reads PENDING - nothing here is measured yet.
+Measured on Kaggle 2026-11-05 (Gate 0 PASS, user-pasted report, verbatim values).
 
-- edge-tts: PENDING
-- voice and rate: PENDING measurement (config set to user choice: en-US-AndrewNeural / +10%)
-- requested boundary type: PENDING (config requests WordBoundary explicitly)
-- observed boundary type: PENDING
-- granularity and coverage: PENDING
-- sync_source: PENDING
-- sec_per_word: PENDING (kaggle/config.yaml estimate.sec_per_word is still null)
-- audio duration: PENDING
-- source-word recovery: PENDING
-- measured with: narration/preflight.md
-- limitations: PENDING
+- edge-tts: 7.3.1
+- voice and rate: en-US-AndrewNeural / +10% (volume +0%, pitch +0Hz) — measured, matches config
+- requested boundary type: WordBoundary (explicit, never engine default)
+- observed boundary type: WordBoundary
+- granularity and coverage: WORD-LEVEL — 57 boundary events, 57/57 events carried
+  exactly 1 word (min 1 / max 1 / mean 1.00); every covered word has a measured timestamp
+- sync_source: measured: word-boundary event timestamps (verified word correspondence);
+  timestamp order monotonically non-decreasing; event text corresponds to source words in order
+- sec_per_word: 0.3381 (audio: 19.272 s / 57 words) — recorded in kaggle/config.yaml
+  estimate.sec_per_word; events-based value 0.3319 (last event end / words) noted for reference
+- audio duration: 19.272 s (measured from file)
+- source-word recovery: 57/57 (100.0% coverage), interpolated: 0, unrecovered: 0;
+  timestamp provenance: 57 words backed by measured event timestamps, 0 interpolated
+- measured with: narration/preflight.md (57 words, target ~60)
+- limitations: calibration passage is 57 words — sec_per_word for the full 1,210-word
+  narration may drift slightly; Gate 4 dry-run holds are the authoritative measurement.
+  Gate 0 measurement checks: PASS.
 
 ## Progress log
+
+- 2026-11-05: Gate 0 PASS. User ran Kaggle preflight (Cell 1): edge-tts 7.3.1,
+  WordBoundary observed, 57 events / 57 words (100% recovery, 0 interpolated),
+  audio 19.272 s, sec_per_word 0.3381. Recorded verbatim in Calibration above;
+  kaggle/config.yaml estimate.sec_per_word set to 0.3381. Next: Phase 4 dry-run.
 
 - 2026-11-05: STATE 5.5 + STATE 6 prep. Thumbnail: textless anchor-B art +
   baked 4-word hook "50,000 YEARS / 2,000 DAYS" (thumbnail.jpg 1280x720;
@@ -88,7 +99,9 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Gate status
 
-- Gate 0 (calibration): PENDING - awaiting user's Kaggle preflight run
+- Gate 0 (calibration): PASS 2026-11-05 - Kaggle preflight measured: edge-tts
+  7.3.1, WordBoundary observed, 57/57 words word-level (100% recovery, 0
+  interpolated), audio 19.272 s, sec_per_word 0.3381 recorded in config
 - Gate 1 (script): PASS - approved 1,210-word second-person script; speakable
   marker passage checks clean (no markdown/URLs/parentheses)
 - Gate 2 (anchors): PASS offline - 182/182 anchors matched, no ambiguity/order

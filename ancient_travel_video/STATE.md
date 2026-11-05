@@ -1,7 +1,7 @@
 # STATE — ancient_travel_video
 
 Machine: STATE 0 → 7 (single-agent producer spec).
-**Current: STATE 5.5 DONE + STATE 6 READY — 182/182 frames accepted; thumbnail baked; engine bridge + Kaggle runner committed. Next: user runs Kaggle Phase 0 preflight (Gate 0), then Phase 4 dry-run.**
+**Current: STATE 6 IN PROGRESS — Gate 0 calibration PASS (sec_per_word 0.3381 measured on Kaggle 2026-11-05). Next: user runs Kaggle Phase 4 dry-run (Cell 2), then review timings before render.**
 
 | State | Status |
 |---|---|
@@ -22,8 +22,10 @@ Machine: STATE 0 → 7 (single-agent producer spec).
   scenes/props (logged in continuity.md).
 - Title hook: "It took them ___ days…" → 2,000 walking-days vs 50,000 years
   (42,000 km Out of Eden route ÷ ~20 km/day; sources in script.md).
-- Repo Gate 0 calibration still PENDING (`sec_per_word: null`); Kaggle run
-  measures word-level timing. Workspace numbers are labelled estimates.
+- Gate 0 calibration DONE 2026-11-05: Kaggle preflight measured
+  `sec_per_word = 0.3381` (19.272 s / 57 words, edge-tts 7.3.1, WordBoundary,
+  100% word-level recovery); recorded in kaggle/config.yaml + PRODUCTION.md.
+  Gate 4 dry-run measured holds remain the authoritative timing.
 - Reuse at STATE 6: `vidsync/` (tts, timing, stitch, media), `kaggle/run.py`,
   `tools/prep_frames.py` where compatible with the CSV spine.
 - STATE 6 bridge (2026-11-05): `ancient_travel_video/build_engine_bridge.py`
