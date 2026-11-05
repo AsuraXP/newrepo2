@@ -64,7 +64,8 @@ amber splash, no anachronisms. Cleanest baseline of the three.
 - Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair).
 - Beringia fauna (established beat28m02): woolly mammoths (brown, domed heads,
   curved tusks) + steppe bison herds, same ink-contour treatment; reuse in
-  slides 28–31 hunting/landscape beats.
+  slides 28–31 hunting/landscape beats. Wild horses added beat29m05 (small,
+  brown, simple ink) — part of the Beringia fauna set.
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)
