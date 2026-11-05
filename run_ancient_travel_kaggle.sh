@@ -48,6 +48,20 @@ case "$MODE" in
     prepare_frames
     python kaggle/run.py --out "$REPO/ancient_travel_FINAL.mp4" --repo "$REPO" "$@"
     ;;
+  all)
+    # ONE-SHOT: dry-run -> render -> measured youtube.txt -> ZIP.
+    # Passes --allow-transition-overlap and --allow-reduced-precision so the
+    # pipeline cannot stall on micro-beat holds shorter than the 1.0 s fade
+    # (user-approved one-shot mode). All numbers still come from measured
+    # Phase 4 word-boundary timing; review build/timings.csv in the report.
+    install_deps
+    prepare_frames
+    python kaggle/run.py --dry-run --repo "$REPO"
+    python kaggle/run.py --out "$REPO/ancient_travel_FINAL.mp4" --repo "$REPO" \
+      --allow-transition-overlap --allow-reduced-precision
+    python ancient_travel_video/make_youtube_txt.py
+    bash "${BASH_SOURCE[0]}" package
+    ;;
   package)
     python - <<'PY'
 from pathlib import Path
