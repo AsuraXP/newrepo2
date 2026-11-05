@@ -62,6 +62,9 @@ amber splash, no anachronisms. Cleanest baseline of the three.
 - Kudu (established beat07m03, recurs in slide 9 persistence hunt): spiral
   horns, white-striped tan coat, same ink-contour treatment.
 - Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair).
+- Beringia fauna (established beat28m02): woolly mammoths (brown, domed heads,
+  curved tusks) + steppe bison herds, same ink-contour treatment; reuse in
+  slides 28–31 hunting/landscape beats.
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)
