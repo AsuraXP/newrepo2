@@ -96,6 +96,11 @@ No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity
 memory (see contact sheets).
 
+DRIFT LESSON (batch 8): "camp firelight / dusk" prompts default to temperate
+conifer/pine forest unless the scene clause explicitly says "flat savanna
+horizon with acacia silhouettes and no forest". ALWAYS include that clause for
+camp beats (slides 11–16). Repaired beat15m01 + beat15m06 this way.
+
 ## Standing composition rule (spec)
 Figures pressing against glass/windows/barriers: camera on the viewer's side;
 figures seen from behind; hands on the viewer's side of the surface; interior

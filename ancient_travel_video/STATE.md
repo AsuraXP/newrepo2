@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–7 DONE. 56/182 frames done, 126 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–8 DONE. 64/182 frames done, 118 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -79,6 +79,13 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   prop set established (folded hide, digging stick, woven basket, fire drill).
   Distance contrast m02 (short path, both camps in frame) vs m03 (long aerial
   path, camp at horizon) reads clearly. Next: batch 8 = beat14m01–beat15m06.
+- Batch 8 (2026-11-05): beat14m01–beat15m06. 8/8 accepted after 2 repairs (R=2
+  used). Contact sheet: sheets/contact_batch08.jpg (incl. rejects). Rejects:
+  beat15m01_r0 + beat15m06_r0 (both conifer/pine-forest background drift →
+  explicit "flat savanna horizon with acacia silhouettes and no forest").
+  Both repairs passed first re-roll. "Again/And again" beats use intentional
+  compositional repetition with dusk→morning→wet-season light shifts; lifetime
+  beat = child→adult→grey elder silhouettes. Next: batch 9 = beat15m07–beat16m05.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
@@ -87,5 +94,7 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
 - beat07m01_r0: REJECTED (extra limb-like lines in frame corners). Fixed r1, accepted.
 - beat08m01_r0: REJECTED (baked-in black letterbox bars). Fixed r1, accepted.
 - beat08m02_r0: REJECTED (gibberish pseudo-text annotations/arrows). Fixed r1, accepted.
+- beat15m01_r0: REJECTED (conifer/pine-forest background drift). Fixed r1, accepted.
+- beat15m06_r0: REJECTED (conifer/pine-forest background drift). Fixed r1, accepted.
 - Reject sources kept locally in frames/rejects/ (gitignored); audit trail in
   contact sheets. No DECLARED EXCEPTIONS (all frames eventually passed).
