@@ -1,7 +1,7 @@
 # STATE — ancient_travel_video
 
 Machine: STATE 0 → 7 (single-agent producer spec).
-**Current: STATE 4 — ANCHOR LOCK (STOPPED, awaiting user's winning-style pick).**
+**Current: STATE 5 — FRAME GENERATION (batch 1 in progress).**
 
 | State | Status |
 |---|---|
@@ -9,8 +9,8 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 1 — Brief | DONE 2026-11-05 — user confirmed: 6 min (can be longer), default voice, 2nd person, style-only refs, no hard rules, no captions, 16:9, YouTube |
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
-| 4 — Master anchor lock | IN PROGRESS — 3 style test refs generated (A cozy / B cinematic / C comic), exact prompts + QC logged in continuity.md, comparison sheet built. **Awaiting user's winning pick.** |
-| 5 — Frame batches | pending (8 frames + 2 repairs per turn; QC + contact sheet) |
+| 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
+| 5 — Frame batches | IN PROGRESS — batch 1 (beat01m01–beat02m04, 8 frames). 8/turn + 2 repairs; QC + contact sheet each batch. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |

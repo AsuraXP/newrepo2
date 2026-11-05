@@ -1,7 +1,8 @@
 # Continuity — ancient_travel_video
 
-STATUS: style direction received from user (2026-11-05); anchor lock happens at
-STATE 4 after script approval.
+STATUS: **MASTER ANCHOR LOCKED 2026-11-05 — winner B (cinematic), user-selected.**
+Verbatim style/character/negative blocks frozen below and injected into all 182
+visual_prompts via build_visuals.py. Frame generation may proceed (STATE 5).
 
 ## User-provided style refs (STYLE ONLY — never literal)
 | File | What to take from it | What NOT to take |
@@ -36,7 +37,31 @@ or correct toward the tuft/bare baseline.
 QC: on-model character (tuft, bare stick limbs, minimal face), halftone shadow,
 amber splash, no anachronisms. Cleanest baseline of the three.
 
-## Candidate invariants (to be frozen verbatim at STATE 4)
+## LOCKED MASTER ANCHOR — B (cinematic)
+- Anchor file: `refs/anchor_B_cinematic.png` (also reused as frames/beat01m01.png,
+  the approved opening shot).
+- Character decision: B's fuller look is LOCKED (spiky dark-brown hair + ragged
+  brown hide tunic) — era-appropriate and matches the user's cinematic reference.
+  The earlier tuft/bare baseline is superseded.
+
+### VERBATIM STYLE + CHARACTER BLOCK (in every prompt; never rephrase)
+> Cinematic storytime style: dramatic atmospheric lighting, deep desaturated blues with a warm amber accent, heavy film grain, bold expressive shading, moody depth, hand-drawn 2D illustration with slightly wobbly ink contours. Match ONLY the rendering style, palette, grain and line weight of the reference image; do not copy its scene or composition. Recurring protagonist, when present: a stick-figure human with a large round white head, messy spiky dark-brown hair, a minimal expressive face with two dot eyes, simple brows and a small mouth, thin black stick limbs, and a simple ragged brown hide tunic.
+
+### VERBATIM NEGATIVE BLOCK (in every prompt)
+> No text, no letters, no numbers, no watermark, no signature, no extra limbs, no melted faces, no photorealism, no 3D render.
+
+### Locked invariants
+- Palette: deep desaturated blue base + warm amber focal accent; night = near-navy;
+  day = muted blue-grey with amber light; ice = pale cold blue.
+- Line weight: medium-bold black ink contour on figures, thinner on environment.
+- Medium: hand-drawn 2D, heavy film grain, bold expressive shading, moody depth.
+- Protagonist: round white head, messy spiky dark-brown hair, minimal face (dot
+  eyes, simple brows, small mouth), thin black stick limbs, ragged brown hide tunic.
+- Crowd figures: same stick construction, smaller, varied head sizes, same hides.
+- Animals: same ink-contour + flat-fill treatment, recognizable silhouettes.
+- Set dressing: LOW priority.
+
+## Candidate invariants (superseded by the lock above)
 - Medium: hand-drawn 2D storytime illustration, visible paper grain, slightly
   wobbly ink contours, flat muted fills with soft grain shading.
 - Protagonist ("you"): large round white head, thin black stick limbs, small

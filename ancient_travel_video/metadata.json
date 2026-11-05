@@ -22,7 +22,8 @@
   "fps": 30,
   "loudness_lufs": -14,
   "audio_bitrate": "192k",
-  "style": "user-provided hand-drawn textured stick-figure storytime; refs are STYLE ONLY",
+  "style": "LOCKED anchor B (cinematic storytime): desaturated blue + amber, film grain, spiky-haired hide-tunic stick protagonist; refs are STYLE ONLY",
+  "master_anchor": "refs/anchor_B_cinematic.png",
   "branch": "arena/1cbb32ec-newrepo2",
   "status": "STATE 2 - script awaiting user approval"
 }

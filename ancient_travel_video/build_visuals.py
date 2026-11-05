@@ -14,8 +14,18 @@ import csv, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-STYLE = "[STYLE_BLOCK]"
-NEG = "[NEG_BLOCK]"
+# MASTER ANCHOR LOCK — winner B (cinematic), user-selected 2026-11-05.
+# These blocks are copied VERBATIM into every visual_prompt. Never rephrase.
+STYLE = ("Cinematic storytime style: dramatic atmospheric lighting, deep desaturated blues "
+         "with a warm amber accent, heavy film grain, bold expressive shading, moody depth, "
+         "hand-drawn 2D illustration with slightly wobbly ink contours. Match ONLY the rendering "
+         "style, palette, grain and line weight of the reference image; do not copy its scene or "
+         "composition. Recurring protagonist, when present: a stick-figure human with a large "
+         "round white head, messy spiky dark-brown hair, a minimal expressive face with two dot "
+         "eyes, simple brows and a small mouth, thin black stick limbs, and a simple ragged brown "
+         "hide tunic.")
+NEG = ("No text, no letters, no numbers, no watermark, no signature, no extra limbs, "
+       "no melted faces, no photorealism, no 3D render.")
 
 # Each slide = one sentence / tight visual idea; moments = its micro-beats.
 # (moment_text, scene_content)
@@ -300,7 +310,7 @@ def main():
                 "slide_id": slide_idx,
                 "moment": m_idx,
                 "moment_text": mtext,
-                "visual_prompt": f"{scene} {STYLE} {NEG}",
+                "visual_prompt": f"Wide 16:9 cinematic frame. {scene} {STYLE} {NEG}",
             })
 
     # Verify concatenation equals narration word-for-word
