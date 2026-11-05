@@ -61,7 +61,8 @@ amber splash, no anachronisms. Cleanest baseline of the three.
 - Animals: same ink-contour + flat-fill treatment, recognizable silhouettes.
 - Kudu (established beat07m03, recurs in slide 9 persistence hunt): spiral
   horns, white-striped tan coat, same ink-contour treatment.
-- Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair).
+- Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair) —
+  applies to the ANCIENT protagonist only; the modern walker wears hiking boots.
 - Pacific coast (established beat31m02): ice-free green-brown shore, rocky
   headlands, kelp beds, amber horizon south; cold blue sea. Skin boats
   (beat31m05): open skin-covered hulls with visible wooden ribs, paddles,
@@ -73,6 +74,11 @@ amber splash, no anachronisms. Cleanest baseline of the three.
 - Bamboo raft (Sahul crossing, beat22m07–beat25m01): lashed bamboo poles +
   cordage, wooden paddles, no sail, no wheel — pre-wheel era. Distinct from
   the Pacific skin boats.
+- Modern walker (Paul Salopek, present-day, established beat37m01): separate
+  from the ancient protagonist — round white head, short cropped dark hair,
+  trimmed dark beard, dot eyes, muted olive long-sleeve hiking shirt, dark grey
+  trekking trousers, worn brown hiking boots, small olive backpack, wooden
+  walking stick; no logos. Reuse slides 37–42.
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)
@@ -110,6 +116,7 @@ environment in the locked style/palette. Never force an old location ref.
 | Tropical Panama / rainforest (dense green, buttressed giants, vines, humid amber light, dirt footpath) | — (style anchor only) | 34 |
 | Andes / continental spine (cold rocky passes, snow peaks, condors, breath puffs, cloud layers below) | — (style anchor only) | 34–35 |
 | Tierra del Fuego (cold wind-scoured tip, grey sea, Antarctica hint) | — (style anchor only) | 35 |
+| Present-day Salopek walk (gravel roads, open hills, Ethiopian rift valley, seasonal passing landscapes; modern hiking gear) | — (style anchor only) | 37–38 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity
@@ -125,6 +132,13 @@ DRIFT LESSON (batch 20): wordless map beats default to modern political borders
 landmass silhouettes, no internal lines of any kind, no country borders, no
 grid". ALWAYS include that clause for map/diagram beats. Repaired beat36m02
 this way (first re-roll PASS).
+
+DRIFT LESSON (batch 21): portrait beats default to full-body landscape unless
+the scene clause says "close-up portrait bust, cropped at the chest, plain
+background". Lifetime-vs-route map beats need explicit "full faint route spans
+Africa to Tierra del Fuego; only one short bright segment highlighted" or the
+route collapses to a single continent. Repaired beat37m02 + beat38m01 this way
+(first re-roll PASS).
 
 ## Standing composition rule (spec)
 Figures pressing against glass/windows/barriers: camera on the viewer's side;

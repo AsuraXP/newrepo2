@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–20 DONE. 160/182 frames done, 22 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–21 DONE. 168/182 frames done, 14 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -168,6 +168,16 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   beach) → wordless glowing-path map (ice→tip) → crawl-vs-sprint world map →
   rich-land payoff (bison + guanacos, family upright). Map-border drift lesson
   logged in continuity.md. Next: batch 21 = beat36m04–beat38m01.
+- Batch 21 (2026-11-05): beat36m04–beat38m01. 6/8 first pass + 2 repair PASS
+  (2 QC rejects: beat37m02 full-body landscape → close bust portrait;
+  beat38m01 route confined to Africa → full faint Africa→TdF route with short
+  bright lifetime segment; 0 moderation blocks). Contact sheet:
+  sheets/contact_batch21.jpg. "It runs" ancient sprint; modern walker introduced
+  (design locked in continuity.md: olive shirt, dark trousers, boots, small
+  pack, stick, beard — separate from ancient protagonist); Ethiopia departure;
+  wordless 42,000 km route map; seasons-passing; still not done; one-lifetime
+  map. Portrait + lifetime-map drift lessons logged. Next: batch 22 =
+  beat38m02–beat39m06.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
