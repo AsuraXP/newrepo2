@@ -127,6 +127,7 @@ environment in the locked style/palette. Never force an old location ref.
 | Tierra del Fuego (cold wind-scoured tip, grey sea, Antarctica hint) | — (style anchor only) | 35 |
 | Present-day Salopek walk (gravel roads, open hills, Ethiopian rift valley, seasonal passing landscapes; modern hiking gear) | — (style anchor only) | 37–38 |
 | Present-day everyday street (sidewalk, small corner store with no signage, streetlamp, residential houses, amber afternoon) | — (style anchor only) | 39 |
+| Final blended horizon (open clean path, amber dawn, ancient + modern side by side, no markers/stones) | — (style anchor only) | 42 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity

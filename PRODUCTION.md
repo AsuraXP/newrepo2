@@ -12,10 +12,13 @@ were observed - every value below must come from an actual run.
   ancient_travel_video/).
 - narrator voice: en-US-AndrewNeural @ +10% (user-selected 2026-10-28; calibrate with this)
 - working branch: arena/1cbb32ec-newrepo2
-- status: ancient_travel_video/ STATE 5 - frame batches in progress (40/182
-  done, batches 1-5; anchor B locked, script approved 1,210 words ~6.5 min).
-  Brief confirmed (6 min+, default voice, 2nd person, style-only refs, no
-  captions, 16:9, YouTube). Phase 0 preflight still awaiting user's Kaggle run
+- status: ancient_travel_video/ STATE 5 COMPLETE (182/182 frames accepted,
+  batches 1-23; anchor B locked, script approved 1,210 words ~6.5 min;
+  104.6 MB quantized 1280x720 PNG, 23 contact sheets, 14 QC rejects all
+  repaired + 2 moderation re-words, 0 unresolved). Brief confirmed (6 min+,
+  default voice, 2nd person, style-only refs, no captions, 16:9, YouTube).
+  Next: STATE 5.5 thumbnail / STATE 6 Kaggle runner. Phase 0 preflight still
+  awaiting user's Kaggle run
 
 ## Calibration
 
@@ -36,6 +39,12 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-11-05: STATE 5 COMPLETE. All 182/182 frames accepted (batches 1-23),
+  verified vs visuals.csv (0 missing / 0 extra), 104.6 MB quantized 1280x720
+  PNG. 23 contact sheets with reject audit trail; 14 cumulative QC rejects
+  (all repaired) + 2 moderation re-words; 0 unresolved. Closing montage +
+  ancient/modern blended final horizon locked. Next: STATE 5.5 thumbnail /
+  STATE 6 Kaggle runner (TTS/mix/FFmpeg/ZIP on Kaggle only; no audio here).
 - 2026-11-05: STATE 3-5. visuals.csv locked (182 micro-beats / 42 slides,
   verbatim invariant check PASS). Anchor B (cinematic) approved + locked.
   Frame batches 1-5 done: 40/182 quantized 1280x720 PNGs, contact sheets with

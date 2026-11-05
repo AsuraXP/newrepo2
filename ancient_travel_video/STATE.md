@@ -1,7 +1,7 @@
 # STATE — ancient_travel_video
 
 Machine: STATE 0 → 7 (single-agent producer spec).
-**Current: STATE 5 — FRAME GENERATION (batch 1 in progress).**
+**Current: STATE 5 COMPLETE — 182/182 frames accepted. Next: STATE 5.5 thumbnail / STATE 6 Kaggle runner.**
 
 | State | Status |
 |---|---|
@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–22 DONE. 176/182 frames done, 6 remain. |
+| 5 — Frame batches | DONE 2026-11-05 — batches 1–23 COMPLETE. 182/182 frames accepted (104.6 MB quantized 1280×720 PNG). |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -188,6 +188,15 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   exactly two + separate translucent amber memory layer. Modern everyday figure
   + ghosted-overlay technique locked in continuity.md. Next: batch 23 (FINAL) =
   beat40m01–beat42m01 (6 frames).
+- Batch 23 FINAL (2026-11-05): beat40m01–beat42m01. 5/6 first pass + 1 repair
+  PASS (beat42m01 modern figure bald + stray markers → short dark hair + clean
+  horizon; 0 moderation blocks). Contact sheet: sheets/contact_batch23.jpg.
+  Closing callbacks: bare footprint trail → deep-time starfield over tiny
+  patient figure → generations of camp-move silhouettes → steady NOT-running
+  walk → decisive bare next step → ancient + modern side-by-side into hopeful
+  horizon. STATE 5 COMPLETE: 182/182 frames, 23 contact sheets, 14 cumulative
+  QC rejects (all repaired), 2 moderation re-words, 0 unresolved. Full set
+  verified vs CSV (0 missing / 0 extra). Next: STATE 5.5 thumbnail / STATE 6.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
