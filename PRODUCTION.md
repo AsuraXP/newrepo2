@@ -6,12 +6,16 @@ were observed - every value below must come from an actual run.
 
 ## Episode
 
-- topic: Apocalypse survival aboard a ship you just boarded — crowds onboard, a few
-  infections among passengers, but safer than land: no contact with shore, and far
-  more zombies on land than on the ship (second person, explicitly fictional).
+- topic: How ancient humans traveled such long distances — second-person walk from
+  East Africa (~60 ka) to Tierra del Fuego (~11 ka); hook "It Took Them 2,000 Days
+  to Walk to the End of the World" (topic pivot by user 2026-11-05; project folder
+  ancient_travel_video/).
 - narrator voice: en-US-AndrewNeural @ +10% (user-selected 2026-10-28; calibrate with this)
-- working branch: arena/99202f8c-newrepo2
-- status: Topic + voice recorded; Phase 0 preflight awaiting user's Kaggle run
+- working branch: arena/1cbb32ec-newrepo2
+- status: ancient_travel_video/ STATE 5 - frame batches in progress (40/182
+  done, batches 1-5; anchor B locked, script approved 1,210 words ~6.5 min).
+  Brief confirmed (6 min+, default voice, 2nd person, style-only refs, no
+  captions, 16:9, YouTube). Phase 0 preflight still awaiting user's Kaggle run
 
 ## Calibration
 
@@ -32,6 +36,18 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-11-05: STATE 3-5. visuals.csv locked (182 micro-beats / 42 slides,
+  verbatim invariant check PASS). Anchor B (cinematic) approved + locked.
+  Frame batches 1-5 done: 40/182 quantized 1280x720 PNGs, contact sheets with
+  reject audit trail, 6 QC rejects repaired + 2 moderation re-words, all
+  accepted. Locations locked: beach/coast, savanna, Kalahari. Next: batch 6.
+- 2026-11-05: Topic pivot to ancient human long-distance travel (user brief).
+  Folder renamed ancient_travel_video/; user style refs copied to refs/
+  (STYLE ONLY). Script written: 1,210 words, second person, sourced; STATE 2
+  stop for approval.
+- 2026-11-05: Single-agent producer spec adopted; project folder
+  ancient_travel_video/ initialized (STATE 0). Existing vidsync/kaggle/tools
+  pipeline retained for reuse. STATE 1 brief questions issued; awaiting user.
 - 2026-10-28: Preflight crash fixed: edge-tts 7.3.1 stores `Communicate.texts`
   as a generator consumed by the stream; chunk counting now tees instead of
   len()-ing. Selftest 43/43 PASS. Re-run Phase 0 on Kaggle.
