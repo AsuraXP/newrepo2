@@ -1,0 +1,28 @@
+{
+  "slug": "ancient_travel",
+  "project_dir": "ancient_travel_video",
+  "title": "It Took Them 2,000 Days to Walk to the End of the World",
+  "title_alternates": [
+    "It Took Them 2,000 Days to Reach This Destination",
+    "Ancient Humans Walked 42,000 km. It Took 50,000 Years."
+  ],
+  "logline": "Second-person immersion: how ancient humans walked from East Africa to Tierra del Fuego - the greatest journey ever made, one camp-move at a time.",
+  "explicitly_fictional": false,
+  "genre": "educational storytime, second-person",
+  "pov": "second-person",
+  "voice": "en-US-AndrewNeural",
+  "tts_rate": "+10%",
+  "target_minutes": 6,
+  "allow_longer": true,
+  "script_words": 1210,
+  "projected_runtime_estimate": "~6.5 min at ~3.1 wps (silent estimate; measured on Kaggle)",
+  "aspect_ratio": "16:9",
+  "captions": "none",
+  "platform": "YouTube",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "audio_bitrate": "192k",
+  "style": "user-provided hand-drawn textured stick-figure storytime; refs are STYLE ONLY",
+  "branch": "arena/1cbb32ec-newrepo2",
+  "status": "STATE 2 - script awaiting user approval"
+}

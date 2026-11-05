@@ -1,0 +1,6 @@
+PENDING — publish copy (title / description / tags / chapters) is written from
+MEASURED Kaggle output after render, never from predictions (repo rule 12).
+
+Working title (user-approved direction, hook bracket filled from research):
+"It Took Them 2,000 Days to Walk to the End of the World"
+Alternates in metadata.json. Chapters come from measured timings on Kaggle.
