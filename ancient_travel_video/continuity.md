@@ -93,6 +93,7 @@ environment in the locked style/palette. Never force an old location ref.
 | Camp (A-frame hide lean-tos, crossed poles, central fire, savanna edge, acacias) | — (style anchor only) | 11–16 |
 | Australian outback (red sand, spinifex grass, flat-topped monoliths, glowing amber songlines) | — (style anchor only) | 19–20 |
 | Lush Asian coastline (tropical palms, dense jungle, open sea, amber dusk) | — (style anchor only) | 21–25 |
+| Ice-age north (snow, advancing ice sheets, frozen ridges, cold blue palette) | — (style anchor only) | 26–31 |
 
 No dedicated location_ref files exist; each setting is re-described in scene
 clauses using the locked style. Established frames serve as visual continuity

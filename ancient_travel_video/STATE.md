@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–14 DONE. 112/182 frames done, 70 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–15 DONE. 120/182 frames done, 62 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -123,6 +123,13 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   No-land-bridge wordless cross-sections (deep trench persists at low sea
   level); bamboo raft build → cordage close → founding-group boarding → paddle
   out, home shore shrinking. Next: batch 15 = beat24m01–beat26m02.
+- Batch 15 (2026-11-05): beat24m01–beat26m02. 8/8 accepted first pass, 0 QC
+  rejects, 0 moderation blocks. Contact sheet: sheets/contact_batch15.jpg.
+  Voyage payoff (awe, deliberate paddling, decisive point), thriving Australian
+  camp (monolith backdrop), Madjedbebe rock shelter (tools + ochre, no
+  paintings), pre-wheel raft, turn-north warm→cold transition, advancing ice
+  sheets. New location locked: ice-age north (cold blue). Next: batch 16 =
+  beat27m01–beat29m02.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
