@@ -59,6 +59,9 @@ amber splash, no anachronisms. Cleanest baseline of the three.
   eyes, simple brows, small mouth), thin black stick limbs, ragged brown hide tunic.
 - Crowd figures: same stick construction, smaller, varied head sizes, same hides.
 - Animals: same ink-contour + flat-fill treatment, recognizable silhouettes.
+- Kudu (established beat07m03, recurs in slide 9 persistence hunt): spiral
+  horns, white-striped tan coat, same ink-contour treatment.
+- Feet: simple black stick-line feet, never shoes/boots (beat06m02 repair).
 - Set dressing: LOW priority.
 
 ## Candidate invariants (superseded by the lock above)

@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–2 DONE. 16/182 frames done, 166 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–3 DONE. 24/182 frames done, 158 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -46,9 +46,18 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   footpath on open grassland); beat05m02_r0 (Stonehenge-like megalith → changed
   environment clause to natural rocky ledge, no standing stones). Both repairs
   passed first re-roll. Next: batch 3 = beat05m03–beat07m05.
+- Batch 3 (2026-11-05): beat05m03–beat07m05. 8/8 accepted after 2 repairs (R=2
+  used). Contact sheet: sheets/contact_batch03.jpg (incl. rejects). Rejects:
+  beat06m02_r0 (tan boot-like feet → bare black stick feet, no shoes);
+  beat07m01_r0 (extra corner limb-lines → exactly two legs, nothing else).
+  Both repairs passed first re-roll. New location: savanna (acacia). Kudu
+  design established (spiral horns, white-striped tan coat) for slide 9.
+  Next: batch 4 = beat07m06–beat08m04.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
 - beat05m02_r0: REJECTED (anachronistic megalith monument). Fixed r1, accepted.
+- beat06m02_r0: REJECTED (feet drifted to tan boot-like shapes). Fixed r1, accepted.
+- beat07m01_r0: REJECTED (extra limb-like lines in frame corners). Fixed r1, accepted.
 - Reject sources kept locally in frames/rejects/ (gitignored); audit trail in
   contact sheets. No DECLARED EXCEPTIONS (all frames eventually passed).
