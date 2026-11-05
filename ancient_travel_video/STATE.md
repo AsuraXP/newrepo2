@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–8 DONE. 64/182 frames done, 118 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–9 DONE. 72/182 frames done, 110 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -86,6 +86,12 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   Both repairs passed first re-roll. "Again/And again" beats use intentional
   compositional repetition with dusk→morning→wet-season light shifts; lifetime
   beat = child→adult→grey elder silhouettes. Next: batch 9 = beat15m07–beat16m05.
+- Batch 9 (2026-11-05): beat15m07–beat16m05. 8/8 accepted first pass, 0 QC
+  rejects, 0 moderation blocks. Contact sheet: sheets/contact_batch09.jpg.
+  Drift lesson applied: all savanna/camp beats carry acacia + no-forest clause.
+  Drift-math beats (stylized map w/ tiny amber arrow; tiny camp vs enormous
+  Earth) wordless. Elder = distinct secondary character (grey hair/robe),
+  protagonist child on-model. Next: batch 10 = beat16m06–beat18m06.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
