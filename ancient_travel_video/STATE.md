@@ -1,7 +1,7 @@
 # STATE — ancient_travel_video
 
 Machine: STATE 0 → 7 (single-agent producer spec).
-**Current: STATE 5 COMPLETE — 182/182 frames accepted. Next: STATE 5.5 thumbnail / STATE 6 Kaggle runner.**
+**Current: STATE 5.5 DONE + STATE 6 READY — 182/182 frames accepted; thumbnail baked; engine bridge + Kaggle runner committed. Next: user runs Kaggle Phase 0 preflight (Gate 0), then Phase 4 dry-run.**
 
 | State | Status |
 |---|---|
@@ -11,9 +11,9 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
 | 5 — Frame batches | DONE 2026-11-05 — batches 1–23 COMPLETE. 182/182 frames accepted (104.6 MB quantized 1280×720 PNG). |
-| 5.5 — Thumbnail | pending |
-| 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
-| 7 — Handoff cell | pending |
+| 5.5 — Thumbnail | DONE 2026-11-05 — `thumbnail.jpg` 1280×720, baked 4-word hook "50,000 YEARS / 2,000 DAYS", legible at 336 px (`thumbnail_336.jpg`). Textless art: `thumbnail_art.png`. |
+| 6 — Kaggle runner | READY 2026-11-05 — `run_ancient_travel_kaggle.sh` + `KAGGLE_CELLS.md`; bridge `frames.json` (182) + `narration/narration.md`; offline Gate 2 PASS (uncalibrated estimate). Awaiting user Kaggle Gate 0/4. |
+| 7 — Handoff cell | pending measured render + publish copy |
 
 ## Standing notes
 - All git ops on `arena/1cbb32ec-newrepo2` (session-pinned; no other branch).
@@ -26,6 +26,14 @@ Machine: STATE 0 → 7 (single-agent producer spec).
   measures word-level timing. Workspace numbers are labelled estimates.
 - Reuse at STATE 6: `vidsync/` (tts, timing, stitch, media), `kaggle/run.py`,
   `tools/prep_frames.py` where compatible with the CSV spine.
+- STATE 6 bridge (2026-11-05): `ancient_travel_video/build_engine_bridge.py`
+  emits root `frames.json` (182 entries, id == frame stem, prompts/neg from
+  visuals.csv, verbatim anchors; 15 short beats forward-extended to the 3-word
+  minimum, 50 long beats anchored on first 8 words, 4 explicit occurrences;
+  no durations) and `narration/narration.md` (approved script between TTS
+  markers). `kaggle/run.py --estimate` PASS; selftest 43/43 PASS. Kaggle runner
+  symlinks `assets/frames/source -> ancient_travel_video/frames` and derives
+  render JPGs via `tools/prep_frames.py --strict` (JPGs gitignored, not committed).
 
 ## Frame storage pipeline (decided batch 1)
 Native generated PNGs (~2.3 MB each) would exceed the ~128 MB patchset cap at 182
@@ -36,6 +44,13 @@ survive quantization (contact_batch01.jpg). Contact sheets in sheets/ (~380px
 thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
 
 ## Batch log
+- STATE 5.5 + STATE 6 prep (2026-11-05): thumbnail.jpg baked (4-word hook
+  "50,000 YEARS / 2,000 DAYS", 1280×720, 336 px legibility PASS). Engine bridge:
+  frames.json 182 entries + narration/narration.md from approved script/CSV;
+  offline Gate 2 PASS (uncalibrated estimate 484.0 s / 8.07 min, fallback
+  0.4000 s/word — NOT measured). Selftest 43/43 PASS. Runner
+  run_ancient_travel_kaggle.sh + KAGGLE_CELLS.md committed. Next: user Kaggle
+  Phase 0 preflight → record sec_per_word → Phase 4 dry-run → review → render.
 - Batch 1 (2026-11-05): beat01m01–beat02m04. 8/8 accepted, 0 rejects, 0 repairs.
   beat01m01 = reused approved anchor B. Location shifts (beach → S. headland →
   map) generated fresh in locked style. Contact sheet: sheets/contact_batch01.jpg.

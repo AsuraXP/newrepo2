@@ -25,5 +25,5 @@
   "style": "LOCKED anchor B (cinematic storytime): desaturated blue + amber, film grain, spiky-haired hide-tunic stick protagonist; refs are STYLE ONLY",
   "master_anchor": "refs/anchor_B_cinematic.png",
   "branch": "arena/1cbb32ec-newrepo2",
-  "status": "STATE 2 - script awaiting user approval"
+  "status": "STATE 6 READY - frames/thumbnail/bridge/runner complete; awaiting Kaggle Gate 0 preflight + Gate 4 measured timing"
 }

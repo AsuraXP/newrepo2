@@ -12,13 +12,15 @@ were observed - every value below must come from an actual run.
   ancient_travel_video/).
 - narrator voice: en-US-AndrewNeural @ +10% (user-selected 2026-10-28; calibrate with this)
 - working branch: arena/1cbb32ec-newrepo2
-- status: ancient_travel_video/ STATE 5 COMPLETE (182/182 frames accepted,
-  batches 1-23; anchor B locked, script approved 1,210 words ~6.5 min;
+- status: ancient_travel_video/ STATE 5.5 DONE + STATE 6 READY (182/182 frames
+  accepted, batches 1-23; anchor B locked, script approved 1,210 words;
   104.6 MB quantized 1280x720 PNG, 23 contact sheets, 14 QC rejects all
-  repaired + 2 moderation re-words, 0 unresolved). Brief confirmed (6 min+,
-  default voice, 2nd person, style-only refs, no captions, 16:9, YouTube).
-  Next: STATE 5.5 thumbnail / STATE 6 Kaggle runner. Phase 0 preflight still
-  awaiting user's Kaggle run
+  repaired + 2 moderation re-words, 0 unresolved). Thumbnail baked
+  (thumbnail.jpg, 4-word hook, legible at 336 px). Engine bridge committed:
+  frames.json 182 entries + narration/narration.md; offline Gate 2 PASS
+  (UNCALIBRATED fallback estimate only); selftest 43/43 PASS. Kaggle runner
+  run_ancient_travel_kaggle.sh + KAGGLE_CELLS.md ready. Next: user runs Kaggle
+  Phase 0 preflight (Gate 0), then Phase 4 dry-run. No TTS/audio in workspace.
 
 ## Calibration
 
@@ -39,6 +41,18 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-11-05: STATE 5.5 + STATE 6 prep. Thumbnail: textless anchor-B art +
+  baked 4-word hook "50,000 YEARS / 2,000 DAYS" (thumbnail.jpg 1280x720;
+  thumbnail_336.jpg legibility QC PASS). Bridge: build_engine_bridge.py emits
+  frames.json (182 entries; verbatim anchors, 15 short beats forward-extended
+  to 3-word minimum, 50 long beats first-8-word anchors, 4 explicit
+  occurrences, no durations) + narration/narration.md (approved script between
+  TTS markers). kaggle/run.py --estimate: GATE 2 offline PASS; estimated
+  runtime 484.0 s / 8.07 min using UNCALIBRATED fallback 0.4000 s/word —
+  diagnostics only, NOT measured. tools/selftest.py 43/43 PASS. Runner:
+  run_ancient_travel_kaggle.sh (preflight/dry/render/package) + KAGGLE_CELLS.md;
+  Kaggle derives render JPGs from committed PNG spine via prep_frames --strict.
+  Phase 0 preflight still awaiting user's Kaggle run.
 - 2026-11-05: STATE 5 COMPLETE. All 182/182 frames accepted (batches 1-23),
   verified vs visuals.csv (0 missing / 0 extra), 104.6 MB quantized 1280x720
   PNG. 23 contact sheets with reject audit trail; 14 cumulative QC rejects
@@ -74,10 +88,15 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Gate status
 
-- Gate 0 (calibration): PENDING - awaiting user's Kaggle run
-- Gate 1 (script): not started (topic not selected)
-- Gate 2 (anchors): not started
-- Gate 3 (frames / style): not started - MANDATORY STOP for user style selection
-- Gate 4 (verify + measure): not started
-- Gate 5 (render): not started
-- Gate 6 (publish assets): not started
+- Gate 0 (calibration): PENDING - awaiting user's Kaggle preflight run
+- Gate 1 (script): PASS - approved 1,210-word second-person script; speakable
+  marker passage checks clean (no markdown/URLs/parentheses)
+- Gate 2 (anchors): PASS offline - 182/182 anchors matched, no ambiguity/order
+  errors; runtime estimate UNCALIBRATED (fallback 0.4000 s/word), measured
+  timing still pending Phase 4
+- Gate 3 (frames / style): PASS - anchor B user-selected + approved; 182/182
+  frames accepted vs locked prompts; strict frame set verified (0 missing/extra)
+- Gate 4 (verify + measure): PENDING - Kaggle dry-run after Gate 0
+- Gate 5 (render): PENDING
+- Gate 6 (publish assets): thumbnail PASS (336 px legible); title/description/
+  chapters/runtime PENDING measured render

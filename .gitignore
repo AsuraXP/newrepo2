@@ -9,6 +9,11 @@ build/
 
 # Generated source images stay out; only reviewed, compressed JPGs are committed.
 assets/frames/source/
+# ancient_travel_video: the reviewed spine is committed as quantized PNGs in
+# ancient_travel_video/frames/. Render JPGs are derived on Kaggle by
+# tools/prep_frames.py and must not be committed.
+assets/frames/*.jpg
+assets/contact_sheet.jpg
 
 # Media binaries.
 *.mp3
