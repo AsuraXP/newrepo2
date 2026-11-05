@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–10 DONE. 80/182 frames done, 102 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–11 DONE. 88/182 frames done, 94 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -98,6 +98,13 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   (wordless), east-west sun arc, circular star-trail vortex, river, mountains,
   coastline-as-road (shifts to coast setting). Acacia/no-forest held throughout.
   Next: batch 11 = beat18m07–beat19m06.
+- Batch 11 (2026-11-05): beat18m07–beat19m06. 8/8 accepted first pass, 0 QC
+  rejects, 0 moderation blocks. Contact sheet: sheets/contact_batch11.jpg.
+  Beach foraging (tide pools, seal/fish/shellfish, peaceful) → featureless
+  desert memory → Australian outback songlines. Musical-note symbols rendered
+  clean (treble clef + notes), not gibberish — accepted as intentional metaphor.
+  New location locked: Australian outback (red sand, spinifex, monoliths,
+  glowing amber songlines). Next: batch 12 = beat19m07–beat21m01.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
