@@ -87,7 +87,13 @@ environment in the locked style/palette. Never force an old location ref.
 
 | Location | Ref file | Beats (slide ids) |
 |---|---|---|
-| PENDING (assigned at STATE 4/5) | — | — |
+| Beach / coast at dusk (deep blue sea, amber sky) | — (style anchor only) | 1–6 |
+| Savanna (acacia trees, dry gold grass, dusk gradient) | — (style anchor only) | 6–8 |
+| Kalahari (red sand, dry scrub, blazing white sun, distant mesas) | — (style anchor only) | 9–10 |
+
+No dedicated location_ref files exist; each setting is re-described in scene
+clauses using the locked style. Established frames serve as visual continuity
+memory (see contact sheets).
 
 ## Standing composition rule (spec)
 Figures pressing against glass/windows/barriers: camera on the viewer's side;
@@ -95,6 +101,14 @@ figures seen from behind; hands on the viewer's side of the surface; interior
 visible through it. (Rarely applicable to this episode; kept for rule parity.)
 
 ## Moderation log (blocked term → replacement)
-(empty — no hard rules from user; standard image-model moderation applies:
-persistence-hunt kill rendered as hunter approaching an exhausted, lying kudu,
-no wound/blood detail.)
+Standard image-model moderation applies (no hard rules from user).
+Persistence-hunt kill rendered as hunter approaching an exhausted, lying kudu;
+no wound/blood detail.
+- beat09m02 (batch 5): "Hunters jogging after a kudu" BLOCKED →
+  "Three stick figures jogging ... behind a running kudu" — accepted.
+- beat09m07 (batch 5): "A lone hunter jogging ... toward a resting exhausted
+  kudu ..., relentless" BLOCKED → "A lone stick figure jogging steadily ...
+  toward a kudu ... lying down resting in the distance" — accepted.
+- Lesson: avoid "hunter/chase/relentless/exhausted" pursuit framing in scene
+  clauses; use neutral "figures jogging behind / toward a resting kudu".
+  Narration (moment_text) is unaffected — only the visual scene clause changes.

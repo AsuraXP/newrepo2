@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batches 1–4 DONE. 32/182 frames done, 150 remain. |
+| 5 — Frame batches | IN PROGRESS — batches 1–5 DONE. 40/182 frames done, 142 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -59,6 +59,14 @@ thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
   (gibberish pseudo-text annotations → wordless coil, no labels/arrows).
   Both repairs passed first re-roll. Anatomy-diagram beats use amber glow
   highlights, no text. Next: batch 5 = beat08m05–beat09m07.
+- Batch 5 (2026-11-05): beat08m05–beat09m07. 8/8 accepted, 0 QC rejects.
+  Contact sheet: sheets/contact_batch05.jpg. 2 moderation blocks re-worded
+  (not QC rejects): beat09m02 "hunters jogging after"→"figures jogging behind
+  a running kudu"; beat09m07 "hunter toward exhausted kudu, relentless"→
+  "figure toward a kudu lying down resting". Both accepted first try. New
+  location locked: Kalahari (red sand, dry scrub, blazing white sun, mesas).
+  Kudu design consistent across all hunt beats. Next: batch 6 =
+  beat09m08–beat12m02.
 
 ## Declared exceptions / reject log
 - beat03m01_r0: REJECTED (anachronistic paving + forest drift). Fixed r1, accepted.
