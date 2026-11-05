@@ -10,7 +10,7 @@ Machine: STATE 0 → 7 (single-agent producer spec).
 | 2 — Script | DONE 2026-11-05 — user approved ("apprive"). 1,210 words ≈ 6.5 min (estimate). |
 | 3 — visuals.csv spine | DONE 2026-11-05 — N=182 rows, 42 slides, 23 batches; moment_text concatenation verified == narration word-for-word (build_visuals.py). |
 | 4 — Master anchor lock | DONE 2026-11-05 — user picked **B (cinematic)**. Verbatim style/character/negative blocks frozen in continuity.md + build_visuals.py, injected into all 182 prompts. anchor_B reused as beat01m01. |
-| 5 — Frame batches | IN PROGRESS — batch 1 (beat01m01–beat02m04, 8 frames). 8/turn + 2 repairs; QC + contact sheet each batch. |
+| 5 — Frame batches | IN PROGRESS — batch 1 DONE (8/8 accepted, 0 rejects). 8/182 frames done, 174 remain. |
 | 5.5 — Thumbnail | pending |
 | 6 — Kaggle runner | pending (`run_ancient_travel_kaggle.sh`) |
 | 7 — Handoff cell | pending |
@@ -26,6 +26,20 @@ Machine: STATE 0 → 7 (single-agent producer spec).
   measures word-level timing. Workspace numbers are labelled estimates.
 - Reuse at STATE 6: `vidsync/` (tts, timing, stitch, media), `kaggle/run.py`,
   `tools/prep_frames.py` where compatible with the CSV spine.
+
+## Frame storage pipeline (decided batch 1)
+Native generated PNGs (~2.3 MB each) would exceed the ~128 MB patchset cap at 182
+frames (~387 MB). Pipeline: resize to 1280×720 (render target) + quantize to
+256-color PNG (optimize=True) → ~550 KB/frame, ~98 MB projected total. Keeps the
+spec's `.png` naming and stays under cap. QC confirmed grain/gradients/character
+survive quantization (contact_batch01.jpg). Contact sheets in sheets/ (~380px
+thumbs) are QC-only; the STATE 6 runner globs frames/beat*.png only.
+
+## Batch log
+- Batch 1 (2026-11-05): beat01m01–beat02m04. 8/8 accepted, 0 rejects, 0 repairs.
+  beat01m01 = reused approved anchor B. Location shifts (beach → S. headland →
+  map) generated fresh in locked style. Contact sheet: sheets/contact_batch01.jpg.
+  Next: batch 2 = beat03m01–beat05m02.
 
 ## Declared exceptions / reject log
 (empty)
