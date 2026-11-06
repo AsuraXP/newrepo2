@@ -7,8 +7,8 @@ they are instructed to append).
 | # | State | Status | Date | Notes |
 |---|---|---|---|---|
 | 0 | Repo discovery + init | DONE | 2026-11-06 | Layout inspected; folder scaffolded on `arena/c25b4281-newrepo2`. |
-| 1 | Brief | AWAITING USER | 2026-11-06 | One concise brief block issued; STOPPED per spec. |
-| 2 | Scripting | BLOCKED | - | Needs brief confirmation. |
+| 1 | Brief | PARTIAL | 2026-11-06 | Ship premise retired. Voice/pace/POV/captions/format locked. Channel researched; 3 topics issued; awaiting pick (also awaiting style choice at State 4). |
+| 2 | Scripting | BLOCKED | - | Needs topic pick. |
 | 3 | Spine (`visuals.csv`) | BLOCKED | - | Row count is an output, never an input. |
 | 4 | Anchor lock + worker packets | BLOCKED | - | Needs a written script. |
 | 5 | Swarm frame generation | BLOCKED | - | Needs worker deployment approval. |

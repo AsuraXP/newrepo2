@@ -1,32 +1,27 @@
-# BRIEF — ship_survival
+# BRIEF — awaiting topic pick
 
-Status: **proposed from `PRODUCTION.md`, awaiting user confirmation.**
-Nothing in this file is approved until the user says so. Fields marked
-PROPOSED are carried over from the recorded 2026-10-28 session; fields marked
-PENDING have no recorded answer.
+Status: **topic selection open.** The previous ship-survival premise is retired
+by user instruction (2026-11-06). This file is rewritten once the user picks one
+of the three researched Ink Explainer concepts in
+`research/inkexplainer_channel.md`.
 
 | Field | Value | Source |
 |---|---|---|
-| Topic / logline | Apocalypse survival aboard a ship you just boarded: crowds onboard, a few infections among passengers, still safer than land — no shore contact, and far more zombies on land than on the ship. | PROPOSED (`PRODUCTION.md`) |
-| Target runtime | PENDING | no record |
-| Voice + pace | `en-US-AndrewNeural`, `+10%` (Edge-TTS) | PROPOSED + spec default (`kaggle/config.yaml`) |
-| Narration POV | Second person ("you open the door…") | PENDING (spec default for stories) |
-| Style / look | PENDING | user must choose (hard rule: never auto-chosen) |
-| Hard rules — must appear | PENDING | - |
-| Hard rules — must never appear | PENDING | - |
-| Captions | None | spec default |
-| Aspect ratio | 16:9 (1280x720 per `kaggle/config.yaml`) | spec default |
-| Platform | YouTube | PENDING |
+| Channel to model | Ink Explainer (`@inkexplainer96`) — faceless stick-figure prehistory explainers, 6-11 min, cited sources | research note |
+| Topic / logline | PENDING — three candidates issued (A broken leg / care, B broken tooth, C night watch) | awaits user pick |
+| Target runtime | 6-10 min band; scripting target 8:00 ≈ 1,480 words at 3.1 wps (estimate) | user, 2026-11-06 |
+| Voice + pace | `en-US-AndrewNeural`, `+10%` (Edge-TTS) | user: "default" |
+| Narration POV | Second person ("you") | user |
+| Style / look | PENDING — user has not chosen; never auto-selected | hard rule |
+| Hard rules — must appear | none | user |
+| Hard rules — must never appear | none | user |
+| Captions | None | user |
+| Aspect ratio | 16:9 (1280x720) | default |
+| Platform | YouTube long-form | user request |
 
-## Fictional framing
+## Standing constraints from the repo
 
-The premise is explicitly fictional and must be narrated as such (no
-real-world instructions presented as advice). Recorded with the topic.
-
-## Pipeline note
-
-This episode runs on the existing `vidsync/` + `kaggle/` tooling. That tooling
-already implements measured, word-reactive timing; `visuals.csv` here is the
-swarm-spec front end for micro-beat granularity and is converted into the
-pipeline's frame manifest at the spine stage. Existing code is used, not
-rewritten.
+- Fictional/evidentiary honesty: every factual claim carries a source in
+  `script.md`; inference is labelled as inference.
+- No audio, no TTS, no FFmpeg preview in this workspace.
+- Style is a user decision, recorded in `continuity.md` after the State 4 tests.
