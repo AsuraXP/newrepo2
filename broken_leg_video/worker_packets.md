@@ -1,86 +1,112 @@
 # ULTRA-LEAN WORKER PACKETS — broken_leg
 
-200 rows in `visuals.csv`, 3 non-overlapping chunks. Each packet is fully
-self-contained: copy the whole block into its own worker chat.
+200 rows, **4 workers × 50 rows**. Master chat takes Worker 1 itself.
+Branch base for every worker: `arena/c25b4281-newrepo2` (PR back into it, not
+`main` — `main` does not carry this episode).
 
-Shared branch base: `arena/c25b4281-newrepo2` (workers PR back into it, not into
-`main` — `main` does not carry this session's branch).
+Style ref for every worker: `broken_leg_video/refs/proof1_day_hillside.jpg`
+(round-2 anchor, awaiting final approval). Use `proof2_night_cave.jpg` for the
+firelit key and `proof3_diagram_bone.jpg` for diagram beats. Never use the
+rejected `test_*` files.
 
 ---
 
-## WORKER 1 — rows 1-67 (slides 01-09, starts slide 10)
+## WORKER 1 — rows 1-50 (me, master chat) — slides 01m01 .. 09m02
 
 ```markdown
 WORKER ASSIGNMENT:
-- Branch: git checkout -b broken-leg-worker-1 origin/arena/c25b4281-newrepo2
-- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 1 to 67)
-- Output Dir: broken_leg_video/frames/  (files: beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90)
+- Branch: arena/c25b4281-newrepo2 (already checked out)
+- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 1 to 50)
+- Output Dir: broken_leg_video/frames/  -> beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90
 
-LOCKED STYLE (copy/paste verbatim into every prompt):
-Hand-inked 2D animation still on warm cream paper, thick slightly wobbly dark-brown outlines, flat gouache fills with soft paper grain, limited earthy palette of mustard ochre, sage blue-grey, warm sand, deep navy and one brick-red accent, halftone dot shading only in contact shadows, simple round-headed figures with dot eyes and thin expressive brows, soft daylight or firelight bloom, muted film grain, locked-off camera, 16:9 widescreen.
-LOCKED NEGATIVE (verbatim): photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
-PROTAGONIST ("YOU"): round white head, two black dot eyes, thin arched brows, small ink tuft of hair at the crown, one ink-stroke body, fringed hide tunic to mid-thigh, simple three-finger hands, thick dark-brown mitten boots. Never a wound, cast, splint or blood.
-BAND: same design language, darker shaggy hair, hides in sage grey or warm sand, emotion carried by brows and posture only.
+LOCKED STYLE (verbatim into every prompt):
+Hand-drawn 2D animation still, clean confident ink line in deep warm brown-black with slightly varied marker weight, flat gouache fills and soft paper grain on warm cream paper, palette of cream, sage green-blue, mustard yellow, terracotta, deep navy with brick-red accents, halftone dot patches used sparingly as small accent shadows only, simple round-headed stick figures with dot eyes and thin expressive brows, soft warm light with gentle bloom, muted film grain, locked-off camera, 16:9 widescreen.
+LOCKED NEGATIVE (verbatim): sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
+YOU: round white head, two black dot eyes, thin arched brows, three or four ink hair strands, one ink-stroke body, fringed mustard hide tunic to mid-thigh, three-finger hands, dark-brown mitten boots. Never a wound, cast, splint, bandage or blood.
+BAND: same language, darker shaggy hair, sage or cream hides, emotion via brows and posture only.
 
 INSTRUCTIONS:
-1. Pull the branch, read ONLY rows 1-67 of visuals.csv, load broken_leg_video/refs/ and continuity.md.
-2. Generate 6 frames per turn matching each moment_text; attach refs/<WINNING_ANCHOR>.jpg as the style reference every time. No location_ref yet - build fresh backgrounds in the locked style.
-3. QC each frame against its moment_text and the anchor; re-roll max 2 per turn, changing ONE clause each time. After 3 failed rolls, ship the closest and append a DECLARED EXCEPTION line to broken_leg_video/STATE.md.
-4. Save, commit and push after every batch of 6. Never touch rows outside 1-67, never edit visuals.csv.
+1. Read ONLY rows 1-50, load refs/proof1_day_hillside.jpg, proof2_night_cave.jpg, proof3_diagram_bone.jpg and continuity.md.
+2. 6 frames per turn matching each moment_text; style block first, prompt second. Day key for slides 1-8, museum key for slide 8-9, diagram key for slide 9 anatomy beats.
+3. QC against moment_text and the anchor; re-roll max 2 per turn changing ONE clause. After 3 failed rolls ship the closest and append a DECLARED EXCEPTION to STATE.md.
+4. Save, commit, push after every batch of 6. Never touch rows outside 1-50, never edit visuals.csv.
 ```
 
 ---
 
-## WORKER 2 — rows 68-134 (slide 10 mid to slide 22)
+## WORKER 2 — rows 51-100 — slides 09m03 .. 16m02
 
 ```markdown
 WORKER ASSIGNMENT:
 - Branch: git checkout -b broken-leg-worker-2 origin/arena/c25b4281-newrepo2
-- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 68 to 134)
-- Output Dir: broken_leg_video/frames/  (files: beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90)
+- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 51 to 100)
+- Output Dir: broken_leg_video/frames/  -> beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90
 
-LOCKED STYLE (copy/paste verbatim into every prompt):
-Hand-inked 2D animation still on warm cream paper, thick slightly wobbly dark-brown outlines, flat gouache fills with soft paper grain, limited earthy palette of mustard ochre, sage blue-grey, warm sand, deep navy and one brick-red accent, halftone dot shading only in contact shadows, simple round-headed figures with dot eyes and thin expressive brows, soft daylight or firelight bloom, muted film grain, locked-off camera, 16:9 widescreen.
-LOCKED NEGATIVE (verbatim): photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
-PROTAGONIST ("YOU"): round white head, two black dot eyes, thin arched brows, small ink tuft of hair at the crown, one ink-stroke body, fringed hide tunic to mid-thigh, simple three-finger hands, thick dark-brown mitten boots. Never a wound, cast, splint or blood.
-BAND: same design language, darker shaggy hair, hides in sage grey or warm sand, emotion carried by brows and posture only.
+LOCKED STYLE (verbatim into every prompt):
+Hand-drawn 2D animation still, clean confident ink line in deep warm brown-black with slightly varied marker weight, flat gouache fills and soft paper grain on warm cream paper, palette of cream, sage green-blue, mustard yellow, terracotta, deep navy with brick-red accents, halftone dot patches used sparingly as small accent shadows only, simple round-headed stick figures with dot eyes and thin expressive brows, soft warm light with gentle bloom, muted film grain, locked-off camera, 16:9 widescreen.
+LOCKED NEGATIVE (verbatim): sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
+YOU: round white head, two black dot eyes, thin arched brows, three or four ink hair strands, one ink-stroke body, fringed mustard hide tunic to mid-thigh, three-finger hands, dark-brown mitten boots. Never a wound, cast, splint, bandage or blood.
+BAND: same language, darker shaggy hair, sage or cream hides, emotion via brows and posture only.
 ELDER (Shanidar 1): grey-streaked hair, heavy brow, hide across the shoulders, right forearm ended smooth below the elbow, left eye socket flattened.
 
 INSTRUCTIONS:
-1. Pull the branch, read ONLY rows 68-134 of visuals.csv, load broken_leg_video/refs/ and continuity.md.
-2. Generate 6 frames per turn matching each moment_text; attach refs/<WINNING_ANCHOR>.jpg as the style reference every time. No location_ref yet - build fresh backgrounds; museum and lab beats use the cold-light key, cave beats the firelight key.
-3. QC each frame against its moment_text and the anchor; re-roll max 2 per turn, changing ONE clause each time. After 3 failed rolls, ship the closest and append a DECLARED EXCEPTION line to broken_leg_video/STATE.md.
-4. Save, commit and push after every batch of 6. Never touch rows outside 68-134, never edit visuals.csv.
+1. Read ONLY rows 51-100, load refs/proof1_day_hillside.jpg, proof2_night_cave.jpg, proof3_diagram_bone.jpg and continuity.md.
+2. 6 frames per turn matching each moment_text; style block first, prompt second. Diagram key for slide 9 anatomy beats, museum key for slides 10-14 and 18, firelit for cave beats.
+3. QC against moment_text and the anchor; re-roll max 2 per turn changing ONE clause. After 3 failed rolls ship the closest and append a DECLARED EXCEPTION to STATE.md.
+4. Save, commit, push after every batch of 6. Never touch rows outside 51-100, never edit visuals.csv.
 ```
 
 ---
 
-## WORKER 3 — rows 135-200 (slide 22 mid to end)
+## WORKER 3 — rows 101-150 — slides 16m03 .. 24m05
 
 ```markdown
 WORKER ASSIGNMENT:
 - Branch: git checkout -b broken-leg-worker-3 origin/arena/c25b4281-newrepo2
-- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 135 to 200)
-- Output Dir: broken_leg_video/frames/  (files: beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90)
+- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 101 to 150)
+- Output Dir: broken_leg_video/frames/  -> beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90
 
-LOCKED STYLE (copy/paste verbatim into every prompt):
-Hand-inked 2D animation still on warm cream paper, thick slightly wobbly dark-brown outlines, flat gouache fills with soft paper grain, limited earthy palette of mustard ochre, sage blue-grey, warm sand, deep navy and one brick-red accent, halftone dot shading only in contact shadows, simple round-headed figures with dot eyes and thin expressive brows, soft daylight or firelight bloom, muted film grain, locked-off camera, 16:9 widescreen.
-LOCKED NEGATIVE (verbatim): photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
-PROTAGONIST ("YOU"): round white head, two black dot eyes, thin arched brows, small ink tuft of hair at the crown, one ink-stroke body, fringed hide tunic to mid-thigh, simple three-finger hands, thick dark-brown mitten boots. Never a wound, cast, splint or blood.
-BAND: same design language, darker shaggy hair, hides in sage grey or warm sand, emotion carried by brows and posture only.
+LOCKED STYLE (verbatim into every prompt):
+Hand-drawn 2D animation still, clean confident ink line in deep warm brown-black with slightly varied marker weight, flat gouache fills and soft paper grain on warm cream paper, palette of cream, sage green-blue, mustard yellow, terracotta, deep navy with brick-red accents, halftone dot patches used sparingly as small accent shadows only, simple round-headed stick figures with dot eyes and thin expressive brows, soft warm light with gentle bloom, muted film grain, locked-off camera, 16:9 widescreen.
+LOCKED NEGATIVE (verbatim): sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
+YOU: round white head, two black dot eyes, thin arched brows, three or four ink hair strands, one ink-stroke body, fringed mustard hide tunic to mid-thigh, three-finger hands, dark-brown mitten boots. Never a wound, cast, splint, bandage or blood.
+BAND: same language, darker shaggy hair, sage or cream hides, emotion via brows and posture only.
 ELDER (Shanidar 1): grey-streaked hair, heavy brow, hide across the shoulders, right forearm ended smooth below the elbow, left eye socket flattened.
 
 INSTRUCTIONS:
-1. Pull the branch, read ONLY rows 135-200 of visuals.csv, load broken_leg_video/refs/ and continuity.md.
-2. Generate 6 frames per turn matching each moment_text; attach refs/<WINNING_ANCHOR>.jpg as the style reference every time. No location_ref yet - build fresh backgrounds; hillside beats warm dusk, museum beats cold white.
-3. QC each frame against its moment_text and the anchor; re-roll max 2 per turn, changing ONE clause each time. After 3 failed rolls, ship the closest and append a DECLARED EXCEPTION line to broken_leg_video/STATE.md.
-4. Save, commit and push after every batch of 6. Never touch rows outside 135-200, never edit visuals.csv.
+1. Read ONLY rows 101-150, load refs/proof1_day_hillside.jpg, proof2_night_cave.jpg, proof3_diagram_bone.jpg and continuity.md.
+2. 6 frames per turn matching each moment_text; style block first, prompt second. Firelit key for cave beats, day key for slide 19-20, museum key for 24, diagram key for 25.
+3. QC against moment_text and the anchor; re-roll max 2 per turn changing ONE clause. After 3 failed rolls ship the closest and append a DECLARED EXCEPTION to STATE.md.
+4. Save, commit, push after every batch of 6. Never touch rows outside 101-150, never edit visuals.csv.
 ```
 
 ---
 
-## Frame naming examples
+## WORKER 4 — rows 151-200 — slides 24m06 .. 32m09
 
-`beat01m03.jpg`, `beat09m17.jpg`, `beat32m09.jpg` — slide is 2 digits, moment is
-2 digits, matching the `slide_id` / `moment` columns exactly. No zero rows, no
-renames, no renumbering.
+```markdown
+WORKER ASSIGNMENT:
+- Branch: git checkout -b broken-leg-worker-4 origin/arena/c25b4281-newrepo2
+- Target CSV: broken_leg_video/visuals.csv (Assigned Rows 151 to 200)
+- Output Dir: broken_leg_video/frames/  -> beat{slide:02d}m{moment:02d}.jpg, 1280x720, quality 90
+
+LOCKED STYLE (verbatim into every prompt):
+Hand-drawn 2D animation still, clean confident ink line in deep warm brown-black with slightly varied marker weight, flat gouache fills and soft paper grain on warm cream paper, palette of cream, sage green-blue, mustard yellow, terracotta, deep navy with brick-red accents, halftone dot patches used sparingly as small accent shadows only, simple round-headed stick figures with dot eyes and thin expressive brows, soft warm light with gentle bloom, muted film grain, locked-off camera, 16:9 widescreen.
+LOCKED NEGATIVE (verbatim): sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
+YOU: round white head, two black dot eyes, thin arched brows, three or four ink hair strands, one ink-stroke body, fringed mustard hide tunic to mid-thigh, three-finger hands, dark-brown mitten boots. Never a wound, cast, splint, bandage or blood.
+BAND: same language, darker shaggy hair, sage or cream hides, emotion via brows and posture only.
+ELDER (Shanidar 1): grey-streaked hair, heavy brow, hide across the shoulders, right forearm ended smooth below the elbow, left eye socket flattened.
+
+INSTRUCTIONS:
+1. Read ONLY rows 151-200, load refs/proof1_day_hillside.jpg, proof2_night_cave.jpg, proof3_diagram_bone.jpg and continuity.md.
+2. 6 frames per turn matching each moment_text; style block first, prompt second. Museum key for slides 25 and 32, firelit/day for 26-31, dusk for the return to the hillside.
+3. QC against moment_text and the anchor; re-roll max 2 per turn changing ONE clause. After 3 failed rolls ship the closest and append a DECLARED EXCEPTION to STATE.md.
+4. Save, commit, push after every batch of 6. Never touch rows outside 151-200, never edit visuals.csv.
+```
+
+---
+
+## Frame naming
+
+`beat01m03.jpg`, `beat09m17.jpg`, `beat32m09.jpg` — slide 2 digits, moment 2
+digits, matching the CSV exactly. No renames, no renumbering, no gaps.
