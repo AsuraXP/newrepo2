@@ -1,8 +1,8 @@
 # WORKER ASSIGNMENT 3 — The Rewilding
 
-- Branch: `git checkout -b rewilding-worker-3` (from arena/c251d7fe-newrepo2)
-- Target CSV: `rewilding_video/visuals.csv` — **Assigned rows 224 to 335** (112 frames to generate)
-- Slides covered: 10, 11, 12, 13, 14, 15
+- Worker: branch `rewilding-worker-3`
+- Target CSV: `rewilding_video/visuals.csv` — **Assigned rows 169 to 252** (84 frames to generate)
+- Slides covered: 7, 8, 9, 10, 11, 12
 - Output dir: `rewilding_video/frames/` — filename `beat{slide:02d}m{moment:02d}.png` (already encoded in the table below)
 - Batch: **6 frames per turn**, repair budget **R=2 per turn** (re-roll changing ONE clause only)
 - QC each frame: shows its moment_text? invariants intact? no melted limbs/merged faces/gibberish text? Reject → name the fault, re-roll, ≤3 tries then ship closest as DECLARED EXCEPTION (log in STATE.md).
@@ -29,10 +29,65 @@ round pale blue-gray heads, blank soft-white dot eyes (never red), tattered laye
 3. Attach location_ref ONLY while the beat occurs in the same continuous setting. When the setting changes (see Slides column), DROP location_ref and generate a fresh background in the locked style.
 4. Camera LOCKED OFF — no Ken Burns/zoom/drift. Fire/candle = warm light only. No text beyond diegetic signage ≤5 words. Wanderers never run, never red-eye, never glow.
 
-## ASSIGNED FRAMES — 112 prompts
+## ASSIGNED FRAMES — 84 prompts
 
 | # | frame file | moment_text | visual_prompt |
 |---|---|---|---|
+| 169 | beat07m24.png | and the team would do what teams do, | wide daydream: hazy ranger trucks pulling up at the crossing, light shimmer |
+| 170 | beat07m25.png | and the ledger would close over this like water over a stone. | close-up: the ledger slamming shut — motion blur, black cover |
+| 171 | beat07m26.png | You tell yourself a dozen other things. | montage: a burning scrap of tally sheet curling in the stove flame |
+| 172 | beat07m27.png | The truth is simpler. | close-up: nine ledger spines lined on a shelf — YEAR 1 through YEAR 9 |
+| 173 | beat07m28.png | You have spent nine years cataloguing things that cannot be helped, | close-up: nine years in the eyes — canyon lines, flat calm |
+| 174 | beat07m29.png | and you are so tired, | same eyes, fire-gleam small and steady |
+| 175 | beat07m30.png | so tired, | close-up: jaw set — a private resolve taking shape |
+| 176 | beat07m31.png | and this is the first thing in nine years that might be helped. | close-up: the photo pressed against the chest, held like a coal |
+| 177 | beat08m01.png | You follow the herd. | wide: figure tucking the photo away, turning east toward the trail |
+| 178 | beat08m02.png | It is not hard. | wide: the herd plain ahead in morning sun, unhurried, unhidden |
+| 179 | beat08m03.png | They are not hiding. | medium: figure lowering from the ridge into the boulder-dotted basin |
+| 180 | beat08m04.png | They move at the pace of growing things, | wide: the herd along the old rail grade, vines falling like curtains |
+| 181 | beat08m05.png | east along the old rail line, | wide: the rail line curving east into pine forest, fog bank waiting |
+| 182 | beat08m06.png | into the upper valley where the fog never quite lifts | wide: the upper valley wall of fog, light gone milky |
+| 183 | beat08m07.png | and the trees grow so close their trunks touch. | close-up: parallel trunks almost touching overhead, a cathedral nave |
+| 184 | beat08m08.png | You keep to the ridge. | wide: the ridge spine above the valley, figure a lone dot on skyline |
+| 185 | beat08m09.png | You watch through the binoculars. | close-up: binocular circle — the herd below, small and deliberate |
+| 186 | beat08m10.png | You log nothing. | close-up: logbook tucked away, pencil unused behind one ear |
+| 187 | beat09m01.png | On the second day you see it with your own eyes, | wide: second day, high golden light, figure set up at the scope |
+| 188 | beat09m02.png | through the glasses, | close-up: scope lenses catching sun, a hard glint |
+| 189 | beat09m03.png | from three hundred yards. | wide: three hundred yards of open slope between figure and herd |
+| 190 | beat09m04.png | The calf walking. | through the scope: toddler legs in red flannel hem, first wobbling gait |
+| 191 | beat09m05.png | Swaying, | through the scope: sway and windmill arms, deep concentration |
+| 192 | beat09m06.png | toddling, | close-up through scope: a scrunched face, furious with effort |
+| 193 | beat09m07.png | furious, | same face, the rage-cute determination right at the center |
+| 194 | beat09m08.png | alive. | close-up through scope: eyes bright, blazing, undeniably alive |
+| 195 | beat09m09.png | A girl, | through the scope: a tiny body drowning in the oversized jacket |
+| 196 | beat09m10.png | maybe two years old, | close-up through scope: flannel collar past the chin, sleeves cupped over hands |
+| 197 | beat09m11.png | wrapped in a flannel jacket too big for anyone living. | medium through scope: still wobbling upright against the world |
+| 198 | beat09m12.png | The herd walks around her the way a river moves around a stone. | through the scope: the herd arcing around her like a river around a stone |
+| 199 | beat09m13.png | The turners do not touch her. | through the scope: nearest turner walking wide of her, giving no notice at all |
+| 200 | beat09m14.png | They do not seem to see her as food, | through the scope: dead eyes fixed forward, steps never breaking rhythm |
+| 201 | beat09m15.png | or as threat, | through the scope: nothing in her posture registers as threat to them |
+| 202 | beat09m16.png | or as anything. | through the scope: nothing registers as anything — equal, blank regard |
+| 203 | beat09m17.png | They see her the way geese see a borrowed gosling. | wide real view: geese high above in a V over the fog line |
+| 204 | beat09m18.png | A thing in the middle of the flock that must be moved, | through the scope: three turners forming a moving flank beside her |
+| 205 | beat09m19.png | kept, | through the scope: the flock tightening around her like migrating geese |
+| 206 | beat09m20.png | carried, | through the scope: a subtle course-correction rippling through the herd |
+| 207 | beat09m21.png | and not lost. | through the scope: the whole formation working as one body |
+| 208 | beat09m22.png | You lower the binoculars | medium: the binoculars lowering, slow and trembling |
+| 209 | beat09m23.png | and your hands are shaking. | close-up: white-knuckled fingers shaking on rubber armor |
+| 210 | beat10m01.png | The river is rising. | wide: the river valley — swollen brown water, dam-break debris strung high |
+| 211 | beat10m02.png | The upstream dam failed in the spring, | close-up: corkboard memo — DAM BREACH SPRING — DO NOT FORD THIS CROSSING |
+| 212 | beat10m03.png | everyone knows it, | close-up: the same memo, tape corners curling, coffee ring at the corner |
+| 213 | beat10m04.png | Base reminds everyone every week. | medium: the radio on the desk mid-announcement, flashback tint, static |
+| 214 | beat10m05.png | The crossing the herd is making for | wide: the crossing ahead — brown swollen water, running high and hard |
+| 215 | beat10m06.png | is a quarter mile of open water between this bank | wide: both banks divided by a quarter mile of open water |
+| 216 | beat10m07.png | and the far hills. | wide: the far hills — a green hump on the far horizon |
+| 217 | beat10m08.png | At the pace they move, | wide: the herd small on the near bank, the river enormous |
+| 218 | beat10m09.png | they will reach it tomorrow. | close-up: debris racing the current — branches, a door, foam |
+| 219 | beat10m10.png | And the calf cannot swim. | close-up: figure's fist tightening on the jacket strap |
+| 220 | beat10m11.png | And the herd does not know what swimming is, | close-up: white water exploding over a submerged boulder |
+| 221 | beat10m12.png | or what drowning is, | wide: black-brown current swirling, nothing animate in it |
+| 222 | beat10m13.png | or what the word tomorrow means. | close-up: the ledger margin — TOMORROW circled hard in pencil |
+| 223 | beat10m14.png | You have a dart gun. | close-up: the dart gun hanging on the hip — unfired, taped |
 | 224 | beat10m15.png | You have a radio. | close-up: the radio on the belt, mic button worn shiny with thumbs |
 | 225 | beat10m16.png | You have a rule. | close-up: the manual open on a palm — Rule 1: OBSERVE. DO NOT INTERFERE. |
 | 226 | beat11m01.png | You climb down from the ridge. | wide: figure picking down the shale slide, arms out for balance |
@@ -62,86 +117,3 @@ round pale blue-gray heads, blank soft-white dot eyes (never red), tattered laye
 | 250 | beat11m25.png | and you are going to help her over. | close-up: one open palm extended — an offering, not a reach |
 | 251 | beat12m01.png | The herd watches. | wide: the herd holds still — eleven statues mid-turn |
 | 252 | beat12m02.png | The herd does not advance. | medium wide: turners motionless, heads tilted like curious deer |
-| 253 | beat12m03.png | The herd does not flee. | close-up: a turner blinking once, long and slow |
-| 254 | beat12m04.png | They turn, | wide: eleven turners rotating east as one body |
-| 255 | beat12m05.png | slowly, | close-up: one bare foot planting uphill on shale |
-| 256 | beat12m06.png | all of them, | wide: the pivot — slow as a season changing |
-| 257 | beat12m07.png | the way they turn at the season, | wide: golden light on the ridge behind them, the year turning |
-| 258 | beat12m08.png | and they begin — | wide: first eastward steps — unhurried, unanimous |
-| 259 | beat12m09.png | not toward you, | wide: the column moving — not one step toward the figure |
-| 260 | beat12m10.png | not away from you — | wide: the column tracking the contour — not fleeing either |
-| 261 | beat12m11.png | they begin toward the high ground, | wide: the column stringing out toward the rocky shoulder of the ridge |
-| 262 | beat12m12.png | up the rocky spine the old survey maps call Hawk's Back, | wide: Hawk's Back — a dark rocky spine against the dawn sky |
-| 263 | beat12m13.png | where the water cannot reach. | wide: the spine high and dry above the brown flood line |
-| 264 | beat12m14.png | And you understand, | close-up: figure's face registering something enormous |
-| 265 | beat12m15.png | standing there in the cold with your heart hammering, | close-up: chest heaving, high color flooding his round cheeks |
-| 266 | beat12m16.png | that they are not attacking. | same face — impossibility breaking loose: not an attack |
-| 267 | beat12m17.png | They are not retreating. | same face — not a retreat either — something older |
-| 268 | beat12m18.png | They are leading. | wide: the column cresting Hawk's Back — leading, unmistakably leading |
-| 269 | beat13m01.png | The calf does not understand roads. | close-up: the toddler's head pivoting toward the moving column |
-| 270 | beat13m02.png | She understands the herd. | close-up: her eyes tracking them, deciding |
-| 271 | beat13m03.png | She takes three unsteady steps after them, | low angle: flannel hem sweeping, sneakers tipping on shale |
-| 272 | beat13m04.png | up the shale. | close-up: one small shoe coming down on a loose stone |
-| 273 | beat13m05.png | And you — | medium: figure frozen mid-gesture, arm still out |
-| 274 | beat13m06.png | you sit down in the mud, | wide: figure dropping straight down, sitting hard in the mud |
-| 275 | beat13m07.png | and you laugh, | close-up: a laugh cracking through wet cheeks |
-| 276 | beat13m08.png | and you cry, | close-up: simple tear streaks on a round white head |
-| 277 | beat13m09.png | and you do not follow, | medium: figure with fists open on his knees, emptied out |
-| 278 | beat13m10.png | because some part of you, | wide from behind: figure small in the meadow, the herd tiny on the ridge |
-| 279 | beat13m11.png | the part that has been a clerk for nine years, | close-up: a torn brochure scrap in the mud, the missing page |
-| 280 | beat13m12.png | knows you cannot walk a child out of the wilderness into a world that has a page missing. | close-up: open hands flat on knees — empty, and knowing it |
-| 281 | beat13m13.png | You climb back to the ridge. | wide: figure scrambling up the shale route, far behind them |
-| 282 | beat13m14.png | You watch them cross Hawk's Back as the water takes the low ground behind them. | wide: the column crossing Hawk's Back, flood swallowing the low ground behind |
-| 283 | beat13m15.png | You watch the flannel jacket disappear into the fog above the timberline, | wide: a red flannel dot swallowed by fog above the timberline |
-| 284 | beat13m16.png | eleven shadows | close-up: eleven distant shadows strung along the spine |
-| 285 | beat13m17.png | and one small light, | close-up: one warm red-plaid ember of motion among the gray |
-| 286 | beat13m18.png | all walking the same tide-road east. | wide: all of them shrinking east into fog, one by one gone |
-| 287 | beat14m01.png | That evening you key the radio. | medium: dusk porch — the figure lifts the radio handset |
-| 288 | beat14m02.png | Your voice is very calm. | close-up: face lit low amber by the porch bulb — utterly calm |
-| 289 | beat14m03.png | "Base. | close-up: the handset grille, voice flat and even |
-| 290 | beat14m04.png | Sector Seven. | medium: same hand steady on the handset, wind stirring the porch |
-| 291 | beat14m05.png | Count complete at the crossing. | close-up: ledger page — COUNT COMPLETED — typed header |
-| 292 | beat14m06.png | Eleven confirmed, | close-up: pen writing ELEVEN CONFIRMED, |
-| 293 | beat14m07.png | heading northeast, | same hand writing heading northeast, |
-| 294 | beat14m08.png | condition good." A pause. | same hand finishing condition good. — pen stopping mid-line |
-| 295 | beat14m09.png | "Eleven? | radio burst — static crackle from the grille |
-| 296 | beat14m10.png | Last month you logged eleven." | close-up: the handset silent in the amber light, waiting for the reply |
-| 297 | beat14m11.png | "Confirmed," you say. | medium: breath moving in, out — slow and deliberate |
-| 298 | beat14m12.png | "Same eleven." Another pause, | close-up: crickets on the porch rail, legs jumping |
-| 299 | beat14m13.png | longer. | same stillness stretched — fireflies rising over the yard |
-| 300 | beat14m14.png | Then: | close-up: a finger hovering near the cradle hook — not hanging up |
-| 301 | beat14m15.png | "Copy, | close-up: the handset lowering slow — Base's voice breaking in |
-| 302 | beat14m16.png | Sector Seven. | close-up: the ledger, pen hanging above it — pause mid-sentence |
-| 303 | beat14m17.png | Ledger updated. | close-up: stamp coming down — LEDGER UPDATED |
-| 304 | beat14m18.png | Base out." | medium: figure at the rail, the yard going black around him |
-| 305 | beat15m01.png | You sit on the porch of the station as the dark comes down, | wide: the station silhouette against violet dusk, porch bulb one warm eye |
-| 306 | beat15m02.png | and the first stars come out over a country that forgot itself | close-up: first stars piercing the dark over the ridgeline |
-| 307 | beat15m03.png | and grew back anyway, | wide: arms of night opening over a country that forgot itself |
-| 308 | beat15m04.png | green over concrete, | wide: same hills gone gentle, grass over concrete ghosts |
-| 309 | beat15m05.png | deer in the parking lots, | close-up: deer browsing the rust husk of a parking-lot sedan |
-| 310 | beat15m06.png | trumpet vine up the overpasses, | close-up: trumpet vine spilling over an overpass rail |
-| 311 | beat15m07.png | and somewhere east of here, | wide: eastern horizon glow — the direction of all walking |
-| 312 | beat15m08.png | walking, | wide: eastern fog with a tiny figure-shape mid-march, ghost-image shimmer |
-| 313 | beat15m09.png | a child who belongs to the last wild thing that remembers how to keep a calf. | through memory: one red flannel center — pendulum of stolen cloth |
-| 314 | beat15m10.png | You do not know her name. | close-up: open hands, at rest and empty — no name known, none needed |
-| 315 | beat15m11.png | You are her ranger. | close-up: the ranger patch over his heart, worn soft with nine years |
-| 316 | beat15m12.png | You will come back in the spring. | close-up: wall calendar — SPRING circled hard in red grease pencil |
-| 317 | beat15m13.png | Because that is what the Rewilding Authority | close-up: AUTHORITY brochure cover — heron emblem, REWILDING |
-| 318 | beat15m14.png | never got around to printing on the brochures: | close-up: the brochure's blank back page, gloss gone dull |
-| 319 | beat15m15.png | the wild does not decide what is broken. | close-up: a fern spear punching through cracked asphalt — life wins |
-| 320 | beat15m16.png | It only decides what survives. | close-up: a droplet falling leaf to leaf, morning world reborn |
-| 321 | beat15m17.png | And sometimes, | wide: the tide-road east at dawn, fog rolling slow as surf |
-| 322 | beat15m18.png | walking the slow tide-road through the green, | wide: the slow tide of dark shapes drifting over green ridges |
-| 323 | beat15m19.png | survival looks like eleven of the dead, | wide: eleven silhouettes on the far ridge, backlit by cracked dawn |
-| 324 | beat15m20.png | and one living girl in a stolen jacket, | through memory: one red flannel center — the only warm note on the ridge |
-| 325 | beat15m21.png | and a man on a ridge pretending very hard not to cry. | wide reversal: from the herd's side — a tiny man-shape on the far ridge |
-| 326 | beat15m22.png | Your radio clicks. | wide: dawn porch rail, the radio clicking on all by itself into morning |
-| 327 | beat15m23.png | Base, | medium: figure back at the rail at daybreak, coffee untouched |
-| 328 | beat15m24.png | one more time. | close-up: the handset rising again toward the face |
-| 329 | beat15m25.png | "Sector Seven. | close-up: the eastern ridge again — blank and patient |
-| 330 | beat15m26.png | Confirm — | close-up: the same ridge — fog swelling out and in, breathing slow |
-| 331 | beat15m27.png | same eleven?" You look at the eastern hills. | wide: fog folding over the ridge like a long exhale |
-| 332 | beat15m28.png | The fog moves over them like a breath. | same fog close in — one held heartbeat of white |
-| 333 | beat15m29.png | "Same eleven," you say. | close-up: mouth close to the grille, words barely spoken |
-| 334 | beat15m30.png | And you leave the channel open, | close-up: handset set gently on the rail — channel light left green and open |
-| 335 | beat15m31.png | in case she ever needs to hear a human voice say her own name back to her. | wide: the station alone under a spill of stars, one window warm and gold |

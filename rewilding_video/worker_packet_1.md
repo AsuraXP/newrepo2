@@ -1,8 +1,8 @@
 # WORKER ASSIGNMENT 1 — The Rewilding
 
-- Branch: `git checkout -b rewilding-worker-1` (from arena/c251d7fe-newrepo2)
-- Target CSV: `rewilding_video/visuals.csv` — **Assigned rows 1 to 112** (112 frames to generate)
-- Slides covered: 1, 2, 3, 4, 5
+- Worker: branch `rewilding-worker-1`
+- Target CSV: `rewilding_video/visuals.csv` — **Assigned rows 1 to 84** (84 frames to generate)
+- Slides covered: 1, 2, 3
 - Output dir: `rewilding_video/frames/` — filename `beat{slide:02d}m{moment:02d}.png` (already encoded in the table below)
 - Batch: **6 frames per turn**, repair budget **R=2 per turn** (re-roll changing ONE clause only)
 - QC each frame: shows its moment_text? invariants intact? no melted limbs/merged faces/gibberish text? Reject → name the fault, re-roll, ≤3 tries then ship closest as DECLARED EXCEPTION (log in STATE.md).
@@ -29,7 +29,7 @@ round pale blue-gray heads, blank soft-white dot eyes (never red), tattered laye
 3. Attach location_ref ONLY while the beat occurs in the same continuous setting. When the setting changes (see Slides column), DROP location_ref and generate a fresh background in the locked style.
 4. Camera LOCKED OFF — no Ken Burns/zoom/drift. Fire/candle = warm light only. No text beyond diegetic signage ≤5 words. Wanderers never run, never red-eye, never glow.
 
-## ASSIGNED FRAMES — 112 prompts
+## ASSIGNED FRAMES — 84 prompts
 
 | # | frame file | moment_text | visual_prompt |
 |---|---|---|---|
@@ -117,31 +117,3 @@ round pale blue-gray heads, blank soft-white dot eyes (never red), tattered laye
 | 82 | beat03m19.png | They call it the Drift. | close-up: hand-drawn wall map labeled THE DRIFT, red arrows crossing contours |
 | 83 | beat03m20.png | The herds follow water | wide: herd following the river through morning mist |
 | 84 | beat03m21.png | and season, | wide: herd on a ridge in wind, bracken waves rolling around them |
-| 85 | beat03m22.png | the way elk do. | close-up: far-off elk in a meadow echoing the same spacing |
-| 86 | beat03m23.png | They do not hunt anymore. | close-up: matte pale eyes of one turned figure — blank, enormous, still |
-| 87 | beat03m24.png | They do not seek. | wide: herd drifting past an overturned fruit truck, uninterested |
-| 88 | beat03m25.png | They migrate, | side tracking wide: herd cresting a hill and vanishing, endless patience |
-| 89 | beat03m26.png | generation after silent generation, | wide time-feel: faint echo figures walking the same path, generations deep |
-| 90 | beat03m27.png | and nobody can fully explain how they persist, | close-up: manual page THE PERSISTENCE OF THE DRIFT — only diagrams, no answers |
-| 91 | beat03m28.png | only that they do, | close-up: tally sheet grid filled with years of silent ticks |
-| 92 | beat03m29.png | because they always have. | wide: a dusk valley, the herd trail worn into ferns, ancient |
-| 93 | beat03m30.png | Your job is to count them. | wide: ranger tiny on the ridge, valley vast, herd a slow river |
-| 94 | beat04m01.png | You are a ranger of the Rewilding Authority, | medium: figure pulls on olive ranger vest at the door, clipboard under arm |
-| 95 | beat04m02.png | Third Meridian, | close-up: shoulder patch REWILDING AUTHORITY — THIRD MERIDIAN |
-| 96 | beat04m03.png | Sector Seven. | close-up: chest tag SECTOR SEVEN and a brass tally counter |
-| 97 | beat04m04.png | You carry a dart gun you have never fired in anger, | close-up: dart gun on the table, red UNFIRED tape across the trigger guard |
-| 98 | beat04m05.png | a pair of binoculars older than your parents, | close-up: binoculars on a nail, brass worn bright, strap sun-faded |
-| 99 | beat04m06.png | and a manual with more addenda than rules. | close-up: manual stack with a dozen addenda tabs fanned out |
-| 100 | beat04m07.png | You collar nothing. | close-up: an open collar case on the table — empty, never used |
-| 101 | beat04m08.png | You tag nothing permanent. | close-up: dart gun re-hung on the wall rack |
-| 102 | beat04m09.png | You count, | close-up: gloved hand over a tally grid, counting heads |
-| 103 | beat04m10.png | you photograph, | close-up: figure lining up a shot through the spotting scope tripod |
-| 104 | beat04m11.png | you note condition | close-up: notebook line — CONDITION: THIN, steady column |
-| 105 | beat04m12.png | and direction, | close-up: notebook line — DIRECTION: NE, arrow scratched hard |
-| 106 | beat04m13.png | and every month Base flies a drone over the crossing | wide: a small survey drone high above the creek crossing, drifting low |
-| 107 | beat04m14.png | and checks your numbers, | close-up: drone's shadow sliding across the gray ford water |
-| 108 | beat04m15.png | and the numbers go into a ledger | close-up: a monthly ledger, columns of counts in neat block script |
-| 109 | beat04m16.png | in a tower in a walled city by the sea, | wide: walled city far across the water, one tall tower, antenna blinking |
-| 110 | beat04m17.png | because knowing where the herds are is the difference between a safe world | close-up: ledger page stamped SAFETY IS KNOWING in block letters |
-| 111 | beat04m18.png | and a lucky one. | close-up: the last page of the ledger closing over a fresh count |
-| 112 | beat05m01.png | You make coffee on the camp stove. | interior: propane camp stove ablaze, coffee pot steaming, figure waiting |

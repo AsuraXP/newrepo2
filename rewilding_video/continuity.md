@@ -63,4 +63,4 @@ Rare in this story (window beats only): camera on the viewer's side, figures see
 ## USER DECISIONS 2026-11-06
 - All three test anchors APPROVED as style/character anchors: test_anchor_ranger_dawn.png, test_anchor_herd_crossing.png, test_anchor_calf_smile.png. (NOT location anchors — locations change per scene.)
 - Location handling: each NEW continuous environment = fresh background generated in the locked style; location_ref attached ONLY within its own continuous setting (station porch/interior; creek crossing; upper valley/ridge; Hawk's Back; fog line above timberline). character_ref always.
-- Worker packets must assign the actual prompts + counts to each worker (not just row ranges). See rewilding_video/worker_packet_1.md .. worker_packet_3.md.
+- Worker packets must assign the actual prompts + counts to each worker (not just row ranges). FOUR workers: packets _1 (rows 1–84), _2 (85–168), _3 (169–252) for external worker tabs; _4 (rows 253–335) for the master chat.
