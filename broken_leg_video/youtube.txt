@@ -1,4 +1,4 @@
-# YOUTUBE — ship_survival
+# YOUTUBE — broken_leg
 
 Publish assets are written from measured output, never from predictions
 (docs/WORKFLOW_SPEC.md, Phase 6). This file stays a stub until Gate 5 passes.

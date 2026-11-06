@@ -1,4 +1,4 @@
-# CONTINUITY — ship_survival
+# CONTINUITY — broken_leg
 
 Anchor lock ledger. Style, character and moderation decisions are recorded here
 **after** the style gate, then copied VERBATIM into every prompt. Empty until

@@ -1,4 +1,4 @@
-# ship_survival — episode project
+# broken_leg — episode project
 
 Swarm-spec v3.0 project folder for the ship-survival episode. The repository's
 existing `vidsync/` + `kaggle/` pipeline is the render engine for this episode;

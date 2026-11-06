@@ -1,16 +1,16 @@
 {
-  "slug": "ship_survival",
-  "status": "state-1-brief-pending",
-  "topic": null,
-  "logline": "Apocalypse survival aboard a ship you just boarded: crowds onboard, a few infections among passengers, safer than land - no shore contact and far more infected on land than aboard.",
-  "topic_source": "PROPOSED from PRODUCTION.md 2026-10-28, awaiting confirmation",
-  "runtime_target_s": null,
-  "pov": null,
+  "slug": "broken_leg",
+  "status": "state-2-script-awaiting-approval",
+  "topic": "What Did Ancient Humans Do When Someone Broke a Leg?",
+  "logline": "A second-person account of a broken leg in the Palaeolithic, cut against the fossil evidence that healed fractures mean somebody carried you - and the scientific fight over whether that counts as care.",
+  "topic_source": "user pick 2026-11-06 (candidate A), modelled on Ink Explainer",
+  "runtime_target_s": 480,
+  "pov": "second person",
   "captions": "none",
   "aspect_ratio": "16:9",
   "resolution": "1280x720",
   "fps": 30,
-  "platform": null,
+  "platform": "YouTube long-form",
   "tts": {
     "engine": "edge-tts",
     "voice": "en-US-AndrewNeural",
@@ -23,10 +23,10 @@
     "bitrate": "192k",
     "loudness": "-14 LUFS (loudnorm)"
   },
-  "word_count": null,
+  "word_count": 1478,
   "projected_runtime_s": {
-    "value": null,
-    "basis": "word_count / 3.1 words-per-second (estimate only, never quoted as measured)"
+    "value": 477,
+    "basis": "1478 words / 3.1 words-per-second - estimate only, sec_per_word uncalibrated"
   },
   "frame_count": null,
   "frame_count_rule": "output of micro-beat splitting in visuals.csv; never an input",
