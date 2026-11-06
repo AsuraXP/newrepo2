@@ -1,0 +1,41 @@
+{
+  "project": "lost_week_video",
+  "title_working": "The Week You Lost",
+  "title_options": [
+    "The Week You Lost",
+    "You Are The Bite",
+    "Seven Days Missing"
+  ],
+  "genre": "horror / second-person narrative",
+  "runtime_target_sec": 600,
+  "narration_words": 1917,
+  "projected_runtime_sec": 618,
+  "projection_basis": "1917 words / 3.1 words per second (spec default; replaced by measured Kaggle word-boundary timing)",
+  "voice": {
+    "engine": "edge-tts",
+    "name": "en-US-AndrewNeural",
+    "rate": "+10%",
+    "takes": 1,
+    "timing_source": "WordBoundary timestamps"
+  },
+  "pov": "second person, present tense",
+  "aspect_ratio": "16:9",
+  "fps": 30,
+  "captions": "none",
+  "audio": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "loudness_target_lufs": -14
+  },
+  "frame_count": null,
+  "frame_count_note": "Output of the micro-beat split in visuals.csv, not an input",
+  "style": "PENDING - awaiting user art-style reference",
+  "logline": "You were bitten a week ago by a man who looked almost normal. You slept. You wake ravenous, seven days late, with the bite healed too well - and the city has no stage for what you are.",
+  "assets": {
+    "video": "VIDEO.mp4",
+    "thumbnail": "thumbnail.jpg",
+    "script": "script.md",
+    "captions_file": null
+  },
+  "status": "script awaiting approval"
+}
