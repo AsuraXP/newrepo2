@@ -21,7 +21,7 @@ Hand-drawn 2D animation still, clean confident ink line in deep warm brown-black
 ## LOCKED NEGATIVE BLOCK (paste verbatim)
 
 ```
-sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, motion blur, lens flare, neon colours, dense background detail
+sepia monochrome, brown-only palette, full dot grid across the ground, photorealistic, 3D render, CGI, gradients, airbrush, anime, chibi, detailed anatomy, gore, blood, open wounds, broken skin, text, letters, numbers, captions, watermark, logo, signature, frame border, extra limbs, melted faces, deformed hands, backpacks, hats, helmets, modern footwear, rubber soles, laces, masonry, built walls, metal, pottery, motion blur, lens flare, neon colours, dense background detail
 ```
 
 ## CHARACTER ANCHOR — "YOU" (protagonist)

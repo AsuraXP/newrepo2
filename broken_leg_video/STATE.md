@@ -11,7 +11,7 @@ they are instructed to append).
 | 2 | Scripting | DONE | 2026-11-06 | Approved by user. 1,478 words, ~7:57 estimated (uncalibrated). |
 | 3 | Spine (`visuals.csv`) | DONE | 2026-11-06 | 200 rows, 32 slides, 7.4 words/beat. `python tools/spine.py check` passes: every beat verbatim, unique, in order, non-overlapping. |
 | 4 | Anchor lock + worker packets | ROUND 2 TESTING | 2026-11-06 | Round 1 test refs rejected by user (sepia, over-textured). Style block rewritten: sage/mustard/terracotta/navy, thin confident line, halftone accents only. 3 round-2 proofs (day / firelit / diagram) awaiting approval. Split revised to 4 workers x 50 rows; master chat is Worker 1. |
-| 5 | Swarm frame generation | BLOCKED | - | Needs round-2 anchor approval. 4 workers x 50 rows. Budget: 6 frames/turn, 2 repairs/turn. |
+| 5 | Swarm frame generation | IN PROGRESS | 2026-11-06 | Anchor locked (proof1, full backgrounds). Worker 1 (master): 5/50 frames accepted. Batch 1 QC: 3 defects found, 2 repaired in-budget, `01m03` held for next turn's repair budget. |
 | 5.5 | Thumbnail | BLOCKED | - | Needs merged frames. |
 | 6 | Kaggle runner | BLOCKED | - | Script exists in repo root only after State 5.5. |
 | 7 | Handoff | BLOCKED | - | - |
@@ -58,6 +58,18 @@ surface. Round 2 fix: removed the brown wash, restored sage green-blue / mustard
 restricted halftone to small accent shadows, and kept backgrounds flat and
 uncluttered. The rejected files stay in refs/ for the record but are never used
 as references.
+
+## Frame QC log — Worker 1
+
+| Batch | Frames | Accepted | Repaired | Held / notes |
+|---|---|---|---|---|
+| 1 | 01m01-01m06 | 01m01, 01m02, 01m04, 01m05, 01m06 | 01m01 (featureless figures + built stone wall), 01m02 (rubber-tread boot, laces) | 01m03 rejected: black silhouettes with a modern backpack and a hat, off-model identity |
+
+Drift patterns to watch in every batch: modern footwear, backpacks and hats;
+masonry walls; figures losing their dot eyes and hide tunics at distance. The
+locked negative block now carries all four. Model still gives the close-up eyes
+white sclera with black pupils instead of bare dots - accepted as an expressive
+variant, logged rather than fought.
 
 ## Declared exceptions
 
