@@ -32,6 +32,11 @@ Until then every field reads PENDING - nothing here is measured yet.
 
 ## Progress log
 
+- 2026-11-06: Swarm-spec v3.0 project folder scaffolded at
+  `ship_survival_video/` (brief, script stub, empty `visuals.csv` spine,
+  continuity ledger, STATE ledger, empty `frames/` + `refs/`). Topic and voice
+  carried over as PROPOSED only; State 1 brief issued and stopped for the
+  user's answers. No script, no frames, no audio.
 - 2026-10-28: Preflight crash fixed: edge-tts 7.3.1 stores `Communicate.texts`
   as a generator consumed by the stream; chunk counting now tees instead of
   len()-ing. Selftest 43/43 PASS. Re-run Phase 0 on Kaggle.
@@ -56,3 +61,10 @@ Until then every field reads PENDING - nothing here is measured yet.
 - Gate 4 (verify + measure): not started
 - Gate 5 (render): not started
 - Gate 6 (publish assets): not started
+
+## Swarm-spec v3.0 state (2026-11-06)
+
+Project folder: `ship_survival_video/`. Current state: **1 - brief issued,
+awaiting user answers**. Script, spine and frames intentionally do not exist
+yet (micro-beat row count is an output of the approved script). Existing
+`vidsync/` + `kaggle/` tooling remains the render engine; not rebuilt.

@@ -1,0 +1,40 @@
+{
+  "slug": "ship_survival",
+  "status": "state-1-brief-pending",
+  "topic": null,
+  "logline": "Apocalypse survival aboard a ship you just boarded: crowds onboard, a few infections among passengers, safer than land - no shore contact and far more infected on land than aboard.",
+  "topic_source": "PROPOSED from PRODUCTION.md 2026-10-28, awaiting confirmation",
+  "runtime_target_s": null,
+  "pov": null,
+  "captions": "none",
+  "aspect_ratio": "16:9",
+  "resolution": "1280x720",
+  "fps": 30,
+  "platform": null,
+  "tts": {
+    "engine": "edge-tts",
+    "voice": "en-US-AndrewNeural",
+    "rate": "+10%",
+    "boundary": "WordBoundary",
+    "runs_on": "kaggle-only"
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "loudness": "-14 LUFS (loudnorm)"
+  },
+  "word_count": null,
+  "projected_runtime_s": {
+    "value": null,
+    "basis": "word_count / 3.1 words-per-second (estimate only, never quoted as measured)"
+  },
+  "frame_count": null,
+  "frame_count_rule": "output of micro-beat splitting in visuals.csv; never an input",
+  "thumbnail": null,
+  "measured": {
+    "audio_duration_s": null,
+    "rendered_duration_s": null,
+    "source": "KAGGLE ONLY - null until a real run is recorded"
+  },
+  "date_created": "2026-11-06"
+}

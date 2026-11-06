@@ -1,0 +1,24 @@
+# YOUTUBE — ship_survival
+
+Publish assets are written from measured output, never from predictions
+(docs/WORKFLOW_SPEC.md, Phase 6). This file stays a stub until Gate 5 passes.
+
+## Title
+
+PENDING — concrete, first person, written after the render exists.
+
+## Description
+
+PENDING — hook, honest summary, then sources.
+
+## Chapters
+
+PENDING — cut from `build/timings.csv` line by line, not from estimates.
+
+## Runtime quoted in description
+
+PENDING — must equal the rendered file's duration.
+
+## Thumbnail
+
+PENDING — `thumbnail.jpg` (State 5.5), 3-4 baked words, legible at 336 px.
