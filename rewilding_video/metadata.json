@@ -1,0 +1,16 @@
+{
+  "title": "PENDING \u2014 set in STATE 6/7 from measured output",
+  "slug": "rewilding",
+  "status": "brief-locked",
+  "logline": "Decades after the collapse, you are a rewilding ranger cataloguing a migrating herd of the turned \u2014 until something is born among them.",
+  "narrator": {
+    "voice": "en-US-AndrewNeural",
+    "rate": "+10%"
+  },
+  "pov": "second-person",
+  "target_runtime_min": 10,
+  "aspect_ratio": "16:9",
+  "platform": "youtube",
+  "captions": "none (diegetic in-frame text allowed)",
+  "hard_rules": "gritty tension OK; no explicit gore, dismemberment, or graphic mutilation"
+}
