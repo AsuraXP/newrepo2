@@ -11,7 +11,7 @@ Status: **locked except art style.** Topic chosen by the user 2026-11-06
 | Target runtime | 8:00 (inside the 6-10 min band) ≈ 1,478 words at 3.1 wps | user |
 | Voice + pace | `en-US-AndrewNeural`, `+10%` (Edge-TTS) | user: "default" |
 | Narration POV | Second person, present tense during the ordeal | user |
-| Style / look | **PENDING** — user selects from the State 4 test refs; never auto-chosen | hard rule |
+| Style / look | Art direction locked from the user's 3 reference images (art style only, not subject). Winning test ref pending: A warm daylight / B cinematic dusk / C paper comic | user refs 2026-11-06 |
 | Hard rules — must appear | none | user |
 | Hard rules — must never appear | none | user |
 | Captions | None | user |
